@@ -1,15 +1,15 @@
 ---
-title: OracleDatabase9i10g11g编程艺术深入数据库体系结构(第2版)－学习笔记
+title: oracle －学习笔记
 date: 2019-2-18 20:10:11
 tags: oracle
-categories: oracle
+categories: database
 keywords: oracle study
-description: OracleDatabase9i10g11g编程艺术深入数据库体系结构(第2版)的学习笔记
+description: oracle的一些笔记
 ---
 
 ## 一些sql语句
 
-```
+```oracle
 -- 时间格式化
 to_date('2019-01-28', 'yyyy-mm-dd')
 TO_DATE('2018-1-21 17:21:11', 'YYYY-MM-DD HH24:MI:SS')
