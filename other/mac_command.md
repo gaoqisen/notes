@@ -14,6 +14,8 @@ lsof -i:8886  // 查看端口号
 opne . // 打开终端下的目录
 touch aaa  // 在当前目录下创建一个aaa名字的文件
 diskutil list  // 查看磁盘分区表
+// 在当前文件夹以及当前文件夹的子文件夹中找到所有的.DS_Store文件，并将找到的文件通过管道传给xargs来处理。
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
 ```
 
 ## git
