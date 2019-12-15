@@ -7,6 +7,30 @@ keywords: SpringCloud
 description: SpringCloud学习
 ---
 
+## 版本对应
+
+| Spring Boot|	Spring Cloud	| Spring Cloud Alibaba|
+| --- | --- | --- | 
+|2.1.x	| Greenwich |	0.9.x|
+|2.0.x | Finchley	| 0.2.x|
+|1.5.x	| Edgware	 | 0.1.x|
+|1.5.x	| Dalston	 | 0.1.x|
+
+## SpringCloud vs SpringCloudAlibaba
+
+| 基于SpringBoot  2.x | Finchley | SpringCloudAlibaba |
+| --- |--- | --- | --- |
+| 版本 | Finchley  | 2.x |  
+| 服务注册与发现  | Eureka  | Nacos |
+| 路由网关 | Gateway(zuul-Dalston版本)  | Gateway |
+| 配置中心 | config |  Nacos  |
+| 熔断机制(限流、 降级、重试)  | Hystix |Sentinel  |
+| 消息总线  | Bus | Bus |  
+| 链路追踪  | Sleuth | Sleuth |  
+| 聚合监控  | Turbine  | Turbine |  
+| 服务消费 | Feign/Ribbon  | Nacos |
+|负载均衡| Feign/Ribbon| Dubbo|
+
 ## 启动顺序
 
 dependences(依赖管理) > config(配置中心) > eureka(服务注册与发现) > zipkin(链路追踪) > 

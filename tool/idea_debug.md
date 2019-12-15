@@ -1,5 +1,5 @@
 ---
-title: idea_debug调试技巧
+title: IdeaDebug调试按钮
 date: 2019-11-07 11:24:35
 tags: java
 categories: java idea
