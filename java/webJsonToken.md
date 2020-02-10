@@ -287,3 +287,4 @@ public static final String JWT_ID = "jwt";
     }
 }
 ```
+注: 网上说jwt只能抗2w并发， 如果并发过大会出现问题。（待验证）
