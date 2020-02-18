@@ -2,7 +2,7 @@
 title: 计算机网络原理(一)计算机网络概述
 date: 2020-02-10 12:53:40
 tags: network
-categories: network study
+categories: networkStudy
 keywords: network
 description: 第一章 计算机网络概述的习题
 ---
