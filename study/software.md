@@ -2,7 +2,7 @@
 title: 软件工程
 date: 2019-09-20 14:32:23
 tags: 软件工程
-categories: 软件工程
+categories: study
 keywords: software
 description: 软件工程的一些学习笔记。
 ---

@@ -1,8 +1,8 @@
 ---
 title: 进阶学习
 date: 2019-6-30 14:43:40
-tags: studys
-categories: 进阶学习
+tags: study
+categories: study
 keywords: 分布式 性能优化 微服务 自动化构建
 description: 在网上找的进阶学习的一些图片，后期自己努力的方向。
 ---

@@ -22,7 +22,7 @@ services:
       cluster.name: elasticsearch
 ```
 
-> 需要用docker的地址（docke inspect id）获取docker容器的ip。如果填写localhost会出现com.netflix.zuul.exception.ZuulException: Forwarding error的报错信息。（花了2个小时解决问题）
+> 需要用docker的地址（docker inspect id）获取docker容器的ip。如果填写localhost会出现com.netflix.zuul.exception.ZuulException: Forwarding error的报错信息。（花了2个小时解决问题）
 
 访问http://localhost:9200/出现json字符串表示安装并启动成功。
 

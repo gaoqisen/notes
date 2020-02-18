@@ -1,10 +1,10 @@
 ---
-title: 计算机网络原理(二)
-date: 2019-10-23 12:53:40
+title: 计算机网络原理(二)网络应用
+date: 2020-02-11 15:53:40
 tags: network
-categories: network
+categories: network study
 keywords: network
-description: 计算机网络原理-第二章网络应用的习题
+description:第二章 网络应用的习题
 ---
 
 ## 计算机网络应用可以分为哪几种体系结构的应用类型？各种应用类型的特点是什么？
@@ -64,7 +64,7 @@ description: 计算机网络原理-第二章网络应用的习题
 3. 若浏览器配置5个并行TCP连接，则基于HTTP1.0获取URL链接Web页完整内容需要的时间：6RTTh。（2分）
 4. 若浏览器没有配置并行TCP连接，则基于非流水模式的HTTP1.1获取URL链接Web页完整内容需要的时间：10RTTh；（2分）基于流水模式的HTTP1.1获取URL链接Web页完整内容需要的时间：3RTTh。（2分）
 
-## 电子邮价主要由哪几部分构成？
+## 电子邮件主要由哪几部分构成？
 
 1. 邮件服务器
 2. 简单邮件传输协议（SMTP）

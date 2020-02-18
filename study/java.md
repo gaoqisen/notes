@@ -2,7 +2,7 @@
 title: Java线程实验程序
 date: 2019-10-23 12:53:40
 tags: Java
-categories: java
+categories: java study
 keywords: java
 description: Java线程实验程序，创建Thread实现对话框显示计算阶乘的结果。
 ---
