@@ -1,11 +1,12 @@
 ---
 title: 计算机网络原理(二)网络应用
-date: 2020-02-11 15:53:40
+date: 2020-02-12 19:53:40
 tags: network
 categories: network study
 keywords: network
-description:第二章 网络应用的习题
+description: 第二章 网络应用的习题
 ---
+
 
 ## 计算机网络应用可以分为哪几种体系结构的应用类型？各种应用类型的特点是什么？
 
