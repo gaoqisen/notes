@@ -2,7 +2,7 @@
 title: 计算机网络原理(三)传输层
 date: 2020-02-12 19:53:40
 tags: network
-categories: network study
+categories: networkStudy
 keywords: network
 description: 第三章 传输层的习题
 ---
