@@ -1,6 +1,6 @@
 ---
 title: nginx实现反向代理百度
-date: 2019-11-16 13:38:10
+date: 2020-02-17 13:38:10
 tags: netword
 categories: netword
 keywords: proxy
@@ -96,8 +96,7 @@ http {
 
 ## test.conf
 
-```
-
+```nginx
 ## Basic reverse proxy server ##
 ## backend for 16.32  ##
 upstream uicps  {
