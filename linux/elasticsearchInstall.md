@@ -7,11 +7,15 @@ keywords: elasticsearch
 description: 在linux环境装了一个elasticsearch，遇到了好几个问题，记录一下，后面以后安装的时候方便快速解决。
 ---
 
+最近在服务器上面安装了一个elasticsearch，之前使用docker-compose安装的，请求松松的就安装成功了。这次在官网上面下载了安装包在服务器上面安装的时候出现了好几个问题，这次纪录下来，方便下次安装的时候快速排查到问题所在。
+
 ## 版本问题
 
 下载了一个最新的elasticsearch 7.6安装提示java版本必须11，服务器上面安装的jdk为8，因此重新下载了一个6.8.6的版本，解决问题
 
 ## root用户无法启动
+
+elasticsearch默认root帐号无法启动。
 
 ```
 // 增加elasticsearch用户

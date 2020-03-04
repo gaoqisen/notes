@@ -9,9 +9,33 @@ description: Dockerfile docker-compose的命令。
 
 ## docker
 
+## docker网络
+
+
+### 在同一个docker-compose里面创建多个服务
+
+自动创建在一个网络里面，通过服务名即可访问
+
+###  docker容器之间访问网络
+
+单个docker-compose直接的网络访问
+```docker
+docker network create mynetwork  // 创建一个桥接模式的网络
+// 在docker-compose里面加入如下配置
+
+networks:
+    default:
+        external:
+            name: mynetwork
+```
+
 ### 客服端命令
 
+```docker
+docker container prune  // 删除所有停止了的服务
 ```
+
+```docker
 attach：依附到一个正在运行的容器中；
 build：从一个 Dockerfile 创建一个镜像；
 commit：从一个容器的修改中创建一个新的镜像；
