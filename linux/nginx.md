@@ -1,11 +1,30 @@
 ---
-title: nginx.conf标签含义
+title: nginx
 date: 2019-5-31 14:43:40
-tags: nginx nginx.conf
+tags: nginx
 categories: nginx
-keywords: nginx nginx.conf
+keywords: nginx
 description: nginx学习，nginx.conf标签含义，方便自己理解和配置nginx。
 ---
+
+## 日志分析
+
+```linux
+// 统计所有的PV数（页面浏览量）cat access.log | wc -l// 获取访问IP数cat access.log | awk '{print $1}' | sort -k1 -r | uniq | wc -l// 查看日志中访问次数最多的前10个IPcat access.log |cut -d ' ' -f 1 | sort |uniq -c | sort -nr | awk '{print $0 }' | head -n 10 sed -n '/2019:21:[0-9][0-9]:[0-9][0-9]/,/2019:22:[0-9][0-9]:[0-9][0-9]/p' access.log_2019-12-18 |cut -d ' ' -f 1 | sort |uniq -c | sort -nr | awk '{print $0 }' | head -n 10// 查看日志中访问次数超过1000次的前10个IPcat access.log |cut -d ' ' -f 1 | sort |uniq -c | sort -nr | awk '{if($1>1000) print $0 }' | head -n 10// 查看日志中访问url的次数awk '{print $7}' access.log_2019-12-25|sort | uniq -c |sort -n -k 1 -r > test.txt```
+
+## 常用命令
+
+```nginx
+// 重启nginx
+./nginx -s reload
+// 启动nginx
+./nginx
+// 关闭nginx
+./nginx -s stop
+// 查看nginx并发连接数
+// TIME_WAIT表示处理完毕，等待超时结束的请求数 Linux默认的TIME_WAIT时长一般是60秒 TIME_WAIT数量较大时会出现访问很慢的情况，如网办// CLOSE-WAIT： 等待从本地用户发来的连接中断请求// SYN_SENT：应用已经开始，打开一个连接// FIN_WAIT1：应用说它已经完成// FIN_WAIT2：另一边已同意释放// ESTABLISHED：表示正常数据传输状态 or 当前并发连接数// SYN_RECV：表示正在等待处理的请求数// LAST_ACK：等待所有分组死掉
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+```
 
 > nginx配置生成网站[https://nginxconfig.io/](https://nginxconfig.io/)
 

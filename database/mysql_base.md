@@ -7,6 +7,37 @@ keywords: mysql study
 description: mysql的一些笔记
 ---
 
+## 优化方法
+
+1. sql优化
+    1. 索引优化
+        1. 重复索引
+        2. 删除多余索引
+    2. 慢查询优化
+        1. 慢查询统计工具
+    3. limit优化
+    4. 子句优化
+2. 表结构优化
+    1. 尽量设置小的类型
+    2. not null约束
+    3. 日期类型或者存储ip字段优化
+3. 服务器优化
+4. mysql配置优化
+5. 硬件优化
+    1. Disk IO 优化
+    2. cpu并不是越多越好,mysql5.5是的服务器不要超过32核,偏向选择单核频率更快的cpu;
+
+```mysql
+-- 慢查询报表生成工具
+pt-query-digest slow-log > text.log
+-- mysql执行计划
+explain select * from user;
+-- 索引维护工具
+pt-duplicate-key-checker  -u root -p '123456'
+-- 查询不使用的索引
+pt-index-usage -uroot -p '123456' mysql-slow.log
+```
+
 ## 基本操作
 
 ```mysql
@@ -35,6 +66,14 @@ service mysql restart
 /etc/inint.d/mysqld restart
 -- 链接
 mysql -uroot -p   // 回车输入密码即可
+-- 查看表的当前自增ID
+select auto_increment from information_schema.tables where table_schema='bsp' and table_name='sys_menu';
+-- 修改表的当前自增ID
+alter table sys_menu AUTO_INCREMENT=100;
+-- 查看表信息
+SHOW TABLE STATUS;
+-- 慢查询日志分析统计工具
+mysqldumpslow   
 ```
 
 ## 库操作

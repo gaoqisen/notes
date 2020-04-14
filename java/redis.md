@@ -3,7 +3,45 @@ title: java实现redis缓存功能
 date: 2018-08-30 22:50:11
 tags: redis
 categories: java
----
+---       
+     
+## 常用命令
+
+```
+　// 自增数字
+　incr num
+　// 获取字符串长度
+　strlen key
+　// 向尾部增加字符串a
+　append key 'a'
+　// 获取多个key
+　mget a b c
+　// 散列类型赋值
+　hset car name bwm
+    // 获取散列类型的值
+    hget car name
+    // 设置多个字段
+    hmset car name bwm color red price 100
+    // 获取所有的字段
+    hgetall car
+    // 判断字段是否存在
+    hexists car name
+    // 删除散列值
+    hdel car price
+    // redis事务
+    multi
+    exec
+    // 监控值,防止事务中的值被改掉
+    watch key
+    // 设置key15分钟之后过期
+    expire key 900
+    // 查看key的过期时间(s)
+    ttl key
+    // 设置不过期
+    persist key
+    
+```
+
 ## 一、安装redis
 ### 1.mac安装，如果有安装brew  可以直接快捷安装：
     brew install redis

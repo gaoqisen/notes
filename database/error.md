@@ -1,8 +1,8 @@
 ---
 title: 记录一次数据库迁移的失败经历
 date: 2018-09-10 22:50:11
-tags: data
-categories: mysql
+tags: data mysql
+categories: database
 ---
 sql数据结构
 

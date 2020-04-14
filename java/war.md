@@ -5,11 +5,13 @@ tags: nginx
 categories: linux
 ---
  环境：linux centos 7 系统、jdk8+tomcat8+nginx-1.12.1+mysql-5.7.16(jdk,tomcat,mysql是通过阿里云的java环境一键部署的，非阿里云的服务器可以自己搭建环境)
+ 
 ### 1.将java代码进行war打包
 
  * eclipse打包
 ![打包war.png](https://upload-images.jianshu.io/upload_images/7172355-63099a395fe193c5.png)
 * 选择路径，点击finish即可
+
 ### 2.将war包移动到tomcat的webapps目录下面
 
     通过ftp或者scp可以直接将本地的代码放到linux服务器上面
@@ -24,20 +26,22 @@ categories: linux
 * 安装的sh脚本如下
 
 
-    #!/bin/sh
-    yum install pcre-devel -y
-    yum install openssl-devel -y
-    yum install zlib-devel -y
-    wget http://nginx.org/download/nginx-1.12.1.tar.gz
-    tar -zvxf nginx-1.12.1.tar.gz
-    cd nginx-1.12.1
-    ./configure
-    make
-    make install
-    cd /usr/local/nginx/sbin/
-    ./nginx -t
-    /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
-详情：https://www.jianshu.com/p/73efd33b9da4
+    ```
+        !/bin/sh
+        yum install pcre-devel -y
+        yum install openssl-devel -y
+        yum install zlib-devel -y
+        wget http://nginx.org/download/nginx-1.12.1.tar.gz
+        tar -zvxf nginx-1.12.1.tar.gz
+        cd nginx-1.12.1
+        ./configure
+        make
+        make install
+        cd /usr/local/nginx/sbin/
+        ./nginx -t
+        /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+    ```
+        详情：https://www.jianshu.com/p/73efd33b9da4
 
 * 配置nginx.conf文件
        
