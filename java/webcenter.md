@@ -1,22 +1,21 @@
+---
+title: 简单的权限管理小工具
+date: 2020-04-13 20:50:11
+tags: java springBoot
+categories: java
+keywords: java springBoot
+description: GQS-WEBCENTER, 一个轻量级的WEB中心，简单的权限管理和登录。
+---
+
 <p align="center" >
     <img src="http://ku.90sjimg.com/element_origin_min_pic/16/12/22/61a01c9132884760d78c4207a532e346.jpg" width="150">
-    <h3 align="center">GQS-WEBCENTER</h3>
     <p align="center">
         GQS-WEBCENTER, 一个轻量级的WEB中心，简单的权限管理和登录。
         <br>
         <a href="https://github.com/gaoqisen/gqs-webcenter"><strong>-- GitHub --</strong></a>
         <br>
         <br>
-        <a href="https://maven-badges.herokuapp.com/maven-central/com.xuxueli/xxl-job/">
-            <img src="https://maven-badges.herokuapp.com/maven-central/com.xuxueli/xxl-job/badge.svg" >
-        </a>
-        <a href="https://github.com/gaoqisen/gqs-webcenter/">
-            <img src="https://img.shields.io/github/stars/gaoqisen/gqs-webcenter" >
-        </a>
-        <a href="http://www.gnu.org/licenses/gpl-3.0.html">
-         <img src="https://img.shields.io/badge/license-GPLv3-blue.svg" >
-        </a>
-    </p>
+        </p>
 </p>
 
 ## 一、简介
@@ -348,7 +347,7 @@ webc init webcenter sample
  |  ├── components  // 组件
  |  ├── main.js  // 入口js文件
  |  ├── router  // 路由
- |  ├── store  // 存储
+ |  ├── store  // 状态状态管理
  |  ├── utils  // 工具
  |   └── views  // 视图，需要开发的代码位置
 └── static  // 静态文件
