@@ -5,10 +5,13 @@ tags: redis
 categories: java
 ---       
      
-## 常用命令
+## 一、常用命令
+
+### 1.1 字符串
+
+> 将数据以字符串方式存储。
 
 ```
-　// 字符串
 　// 自增数字
 　incr num
 　// 获取字符串长度
@@ -17,8 +20,11 @@ categories: java
 　append key 'a'
 　// 获取多个key
 　mget a b c
-　
-　// 散列
+```
+
+### 1.2 散列
+
+```
 　// 散列类型赋值
 　hset car name bwm
 　// 获取散列类型的值
@@ -31,8 +37,11 @@ categories: java
 　hexists car name
 　// 删除散列值
 　hdel car price
-　
-　// 列表
+```
+
+### 1.3 列表
+
+```
 　// 向列表的两端添加元素
 　lpush key value
 　rpush key value
@@ -50,7 +59,11 @@ categories: java
 　// 讲元素从一个列表转移到另一个列表
 　rpoplpush source destination
 　
-　// 集合
+```
+
+### 1.4 集合
+
+```
 　// 增加元素
 　sadd key member
 　// 删除元素
@@ -67,8 +80,11 @@ categories: java
 　sunion set1 set2
 　// 获取元素的个数
 　scard key
-　
-　// 有序集合
+```
+
+### 1.5 有序集合
+
+```
 　// 增加元素 sadd key 78 tom 89 cat
 　sadd key score number
 　// 获取存的值
@@ -83,8 +99,12 @@ categories: java
 　zrem sss tom
 　// 获取元素的排名
 　zrank sss cat
-　
-　// redis事务
+```
+
+### 1.6 其他
+
+```
+ // redis事务
 　multi
 　exec
 　// 监控值,防止事务中的值被改掉
@@ -95,14 +115,13 @@ categories: java
 　ttl key
 　// 设置不过期
 　persist key
-    
     // redis最复杂的命令排序
     sort key
     sort key by field 
     
 ```
 
-### java stringRedisTemplate常用
+## 二、java stringRedisTemplate常用
 
 ```
 //向redis里存入数据和设置缓存时间  
@@ -134,14 +153,16 @@ Long expire = redisTemplate.boundHashOps("baike").getExpire();
 System.out.println("redis有效时间："+expire+"S");
 ```
 
-## redis常见问题
+https://developer.aliyun.com/article/705832
 
-### 数据的过期时间到了，redis是如何处理数据的
+## 三、redis常见问题
+
+### 3.1 数据的过期时间到了，redis是如何处理数据的
 
 1. 定期删除: 默认100ms就随机抽取一些过期的key(如果没隔100秒就是遍历所有过期key进行删除的话，cpu的负载就很大)；
 2. 惰性删除: 定期删除可能有一些数据过期了但是没有被删除掉。惰性删除就是等系统查询过数据之后在进行数据删除。
 
-### 内存淘汰机制
+### 3.2 内存淘汰机制
 
 1. volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰
 2. volatile-ttl：从已设置过期时间的数据集（server.db[i].expires）中挑选将要过期的数据淘汰
@@ -152,7 +173,7 @@ System.out.println("redis有效时间："+expire+"S");
 7. volatile-lfu（4.0版本后）：从已设置过期时间的数据集(server.db[i].expires)中挑选最不经常使用的数据淘汰
 8. allkeys-lfu（4.0版本后）：当内存不足以容纳新写入数据时，在键空间中，移除最不经常使用的key
 
-### 持久化机制
+### 3.3 持久化机制
 
 - RDB(快照): 快照持久化是redis默认的方式，如配置：save 900 1 表示在900秒(15分钟)之后，如果至少有1个key发生变化，Redis就会自动触发BGSAVE命令创建快照。 
 - AOF: AOF的持久化的实时性更好，已经成为了主流的持久化方案，默认没有开启(appendonly yes开启),有三种持久化方式：
@@ -160,11 +181,11 @@ System.out.println("redis有效时间："+expire+"S");
     2. appendfsync everysec每秒同步一次。
     3. appendfsync no让操作系统决定
 
-### 如何实现事务
+### 3.4 如何实现事务
 
 　redis通过MULTI、EXEC、WATCH实现事务功能，是一组命令的集合。如果这组命令中有语法错误，或者命令不存在。那么整组的命令都不会执行。redis保证一个事务中的所有命令要么都执行、要么都不执行。
 
-### 缓存雪崩、缓存穿透如何解决
+### 3.5 缓存雪崩、缓存穿透如何解决
 
 - 缓存雪崩: 缓存在同一时间大面积失效，导致数据库负载的压力过大而跌机
     1. 保证整个redis的高可用集群，发现宕机尽快补上。
@@ -175,34 +196,50 @@ System.out.println("redis有效时间："+expire+"S");
     2. 利用缓存无效key的方法解决变化不频繁的key
     3. 布隆过滤器：判断给定的key是否是存在于海量数据中，如果不存在，直接返回异常。
 
-### 解决并发竞争key的问题
+### 3.6 解决并发竞争key的问题
 
 如果多个系统同时操作一个key，并发处理数据导致结果和我们想的不一样，就会出现这个问题。这种情况可以利用分布式锁解决这个问题,但是这样性能不好(慎用)。
 
-### 如何保证缓存和数据库双写时的数据一致性
+### 3.7 如何保证缓存和数据库双写时的数据一致性
 
 在使用redis作为缓存的时候，就会出现缓存和数据库的双写和双存储问题。先存储数据库之后，在存储缓存。 修改数据也是同样的情况，都要同时操作。如果数据库保存成功了，但是在存入redis的时候报错了，就会导致数据不一致。如果要求必须一致的话，可以进行读请求和写请求的串行化，串到一个内存队列中去，但是这样会导致系统的吞吐量大幅度降低，用比正常多几倍的机器去支撑请求。
 
-## 节省空间
+### 3.8 节省空间
 
 1. 精简键名和键值: 将长键名改为短键名如vip:20等。
 2. 内部编码优化: redis为每种数据类型都提供了两种内部编码方式，当存储的元素变多时，redis会自动将该健的内部编码方式转换为散列表。
 
-## 一、安装redis
-### 1.mac安装，如果有安装brew  可以直接快捷安装：
-    brew install redis
-### 2.linux下载安装
-     wget http://download.redis.io/releases/redis-2.8.17.tar.gz
-     tar xzf redis-2.8.17.tar.gz
-     cd redis-2.8.17
-     make
-## 三、spring boot集成redis
-### 1.项目基于spring boot创建的，eclipse 集成spring boot 后，可以选择redis，之后自动生成如下代码（pom.xml）:
-    <dependency>
-	 <groupId>org.springframework.boot</groupId>
-	 <artifactId>spring-boot-starter-data-redis</artifactId>
-    </dependency>
-### 2.配置redis，在application.propertise 的文件里面添加如下：
+## 四、安装redis
+
+### 4.1 mac brew安装
+
+```
+brew install redis
+```
+    
+### 4.2 linux下载安装
+
+```
+wget http://download.redis.io/releases/redis-2.8.17.tar.gz
+ tar xzf redis-2.8.17.tar.gz
+ cd redis-2.8.17
+ make
+```
+     
+## 五、spring boot集成redis
+
+### 5.1 Maven引入
+
+```
+<dependency>
+     <groupId>org.springframework.boot</groupId>
+     <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+```
+   
+### 5.2 配置文件
+
+```
     spring.redis.database=0
     spring.redis.host=localhost    
     spring.redis.port=6379     // 端口号
@@ -212,7 +249,11 @@ System.out.println("redis有效时间："+expire+"S");
     spring.redis.pool.max-idle=8
     spring.redis.pool.min-idle=0
     spring.redis.timeout=5000   // 链接超时时间，可以设置大一些
-### 3.创建一个service接口（redisService）：
+```
+
+### 5.3 Service接口
+
+```
     @Service
     public class RedisService {
 	@Autowired
@@ -283,8 +324,11 @@ System.out.println("redis有效时间："+expire+"S");
         redisTemplate.delete(key);
     }
     }
+```
 
-### 4.测试
+### 5.4 测试
+
+```
     @Test
 	public void redisService(){
 		String str = "test";
@@ -295,8 +339,7 @@ System.out.println("redis有效时间："+expire+"S");
 		}
 		System.out.println(":::"+retStr);
 	}
-
-#### end
+```
 
 
 
