@@ -132,6 +132,9 @@ server:
 ## maven常用命令
 
 ```
+    mvn release:prepare   // 准备发布
+    mvn release:prepare -Dusername=myuser -Dpassword=mypassword // 准备命令
+    mvn release:preform  // 发布到nexus
     mvn clean package -D maven.test.skip=true  打包命令
     mvn -v 显示版本 
     mvn help:describe -Dplugin=help 使用 help 插件的  describe 目标来输出 Maven Help 插件的信息。 
