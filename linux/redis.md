@@ -1,9 +1,9 @@
 ---
-title: java实现redis缓存功能
+title: Redis学习
 date: 2018-08-30 22:50:11
 tags: redis
 categories: java
----       
+---
      
 ## 一、常用命令
 

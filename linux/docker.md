@@ -32,7 +32,13 @@ networks:
 ### 客服端命令
 
 ```docker
-docker container prune  // 删除所有停止了的服务
+sudo docker rm $(sudo docker ps -a -q) // 删除所有停止了的服务
+docker container prune  // 删除所有停止了的服务(1.13版本后)
+docker network create webcenter  // 网络
+docker network inspect webcenter  // 查看网络有哪些容器
+docker network connect webcenter mysql  // 将mysql容器添加到webcenter网络中
+docker build -it webcenter:1.0.1 -f ./dockerfile .  // 指定docker文件构件
+docker tag webcenter:latest gqs/webcenter:1.0.1  // 更改镜像名称
 ```
 
 ```docker
