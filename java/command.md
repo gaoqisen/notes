@@ -20,4 +20,6 @@ jmap -dump:format=b,file=test.bin 23579
 javap -c filename
 // java控制台
 jconsole
+// 查看jvm
+jvisualvm
 ```

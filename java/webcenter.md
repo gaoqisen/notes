@@ -53,7 +53,7 @@ Webpack4.0.0+
 
 #### 2.1.1 方式一(docker 推荐)
 
-> 该docker-compose安装了redis、mysql和webcenter3个服务，是否暴露端口可以自行修改。如果本地已经安装了mysql和redis可以只安装my_webcenter容器，安装的时候需要将容器之前的容器名改为db_mysql和db_redis并创建net_webcenter网络将db_mysql和db_redis加入到该网络中。启动成功之后将sql导入到数据库中访问 http://localhost:8000 即可。docker容器通信可以参考: https://www.cnblogs.com/kevingrace/p/6590319.html
+> 先执行 docker network create net_webcenter 创建网络。该docker-compose安装了redis、mysql和webcenter3个服务，是否暴露端口可以自行修改。如果本地已经安装了mysql和redis可以只安装my_webcenter容器，安装的时候需要将容器之前的容器名改为db_mysql和db_redis并创建net_webcenter网络将db_mysql和db_redis加入到该网络中。启动成功之后将sql导入到数据库中访问 http://localhost:8000 即可。docker容器通信可以参考: https://www.cnblogs.com/kevingrace/p/6590319.html
 
 ```
 version: '2.0'
