@@ -7,7 +7,116 @@ keywords: elasticsearch
 description: 在linux环境装了一个elasticsearch，遇到了好几个问题，还有一些笔记，记录一下，后面以后安装的时候方便快速解决。
 ---
 
-# 常用语法
+
+## 一、安装
+
+## 1.1 下载安装
+
+- 下载安装包地址: [https://www.elastic.co/cn/downloads/elasticsearch](https://www.elastic.co/cn/downloads/elasticsearch)
+- 修改config/elasticsearch.yml配置
+
+    ```
+    # 集群名称
+    cluster.name: web-application
+    # ------------------------------------ Node ------------------------------------
+    # 节点名称
+    node.name: node-1
+    # 增加一个自定义属性
+    #node.attr.rack: r1
+    # ----------------------------------- Paths ------------------------------------
+    # 存储数据的目录(用逗号分隔)
+    #path.data: /path/to/data
+    # 日志路径
+    #path.logs: /path/to/logs
+    # ----------------------------------- Memory -----------------------------------
+    # 启动时锁定内存:
+    #bootstrap.memory_lock: true
+    bootstrap.memory_lock: false
+    bootstrap.system_call_filter: false
+    # ---------------------------------- Network -----------------------------------
+    # 设置外网可以访问
+    network.host: 0.0.0.0
+    # 自定义端口
+    #http.port: 9200
+    # --------------------------------- Discovery ----------------------------------
+    #
+    # 启动后去发现list里面主机节点是否启动 默认列表["127.0.0.1", "[::1]"]
+    #discovery.seed_hosts: ["host1", "host2"]
+    # 初始化主节点
+    cluster.initial_master_nodes: ["node-1"]
+    # ---------------------------------- Gateway -----------------------------------
+    # 整个集群启动之后
+    #gateway.recover_after_nodes: 3
+    # ---------------------------------- Various -----------------------------------
+    # 删除索引时需要显示名称
+    #action.destructive_requires_name: true
+    # 启动输入密码访问
+    xpack.security.transport.ssl.enabled: true
+    xpack.security.enabled: true
+    ```
+    
+- 操作命令
+
+    ```
+    // 增加elasticsearch用户
+    adduser elasticsearch
+    // 设置密码
+    passwd elasticsearch
+    // 更改文件的所属用户
+    chown -R elasticsearch filename
+    // 切换用户
+    su elasticsearch
+    // 解压
+    tar -zxf XXX.tar.gz
+    // 后台启动
+    ./elasticsearch -d
+    // 修改密码，为多个用户分别设置密码
+    bin/elasticsearch-setup-passwords interactive
+    ```
+- 验证:，浏览器访问http://ip:9200输入帐号密码后返回json串表示启动成功。
+
+### 1.2 安装遇到的问题
+
+#### 1.2.1 外网无法访问
+
+```
+vim config/elasticsearch.yml
+// 增加下面配置
+network.host: 0.0.0.0
+```
+
+#### 1.2.2 启动报错
+
+- system call filters failed to install; check the logs and fix your configuration or disable system call filters at your own risk。 因为Centos6不支持SecComp，而ES5.2.1默认bootstrap.system_call_filter为true进行检测，所以导致检测失败，失败后直接导致ES不能启动。解决方法：在elasticsearch.yml中配置bootstrap.system_call_filter为false，注意要在Memory下面:
+
+    ```
+    bootstrap.memory_lock: false
+    bootstrap.system_call_filter: false
+    ```
+    
+- max number of threads [1024] for user [elasticsearch] is too low, increase to at least [4096] 最大线程数[1024]太低，至少增加到[4096]。 修改/etc/security/limits.d/90-nproc.conf文件里面1024为4096
+
+- max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144] 最大虚拟内存区域vm.max_map_count [65530]太低，至少增加到[262144]
+
+    ```
+    vim /etc/sysctl.conf
+    // 增加下面配置
+    vm.max_map_count=655360
+    ```
+- max file descriptors [65535] for elasticsearch process is too low, increase to at least[65536]。由于给帐号的最大打开文件个数或者最大打开线程数的限制，一直会报错，因此改一下限制(/etc/security/limits.conf)即可
+
+    ```
+   // 增加下面配置
+    * soft nofile 65536
+    * hard nofile 131072
+    * soft nproc 2048
+    * hard nproc 4096
+    // 退出帐号重新登录(退出重新登录生效)
+   ```
+
+## 二、常用语法
+
+### 2.1 基本操作
 
 ```
 # <REST Verb> http://localhost:9200/<Index>/<Type>/<ID>
@@ -39,7 +148,7 @@ DELETE /customer*
 DELETE /customer/external/2?pretty
 ```
 
-# 常用_search查询条件详解
+### 2.2 search查询条件详解
 
 ```elk
 # 查询出所有问题文档匹配某个查询
@@ -95,7 +204,7 @@ GET /test_index/_search
 
 ```
 
-# 返回数据详解
+### 2.3 返回数据详解
 
 ```elk
 {
@@ -129,56 +238,3 @@ GET /test_index/_search
 }
 ```
 
-最近在服务器上面安装了一个elasticsearch，之前使用docker-compose安装的，请求松松的就安装成功了。这次在官网上面下载了安装包在服务器上面安装的时候出现了好几个问题，这次纪录下来，方便下次安装的时候快速排查到问题所在。
-
-# 版本问题
-
-下载了一个最新的elasticsearch 7.6安装提示java版本必须11，服务器上面安装的jdk为8，因此重新下载了一个6.8.6的版本，解决问题
-
-# root用户无法启动
-
-elasticsearch默认root帐号无法启动。
-
-```
-// 增加elasticsearch用户
-adduser elasticsearch
-// 设置密码
-passwd elasticsearch
-// 更改文件的所属用户
-chown -R elasticsearch filename
-// 切换用户
-su elasticsearch
-// 后台启动
-./elasticsearch -d
-```
-
-# 外网无法访问
-
-```
-vim config/elasticsearch.yml
-// 增加下面配置
-network.host: 0.0.0.0
-```
-
-# 启动报错
-
-
-- [kSH2rCN] node validation exception bootstrap checks failed
-max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
-
-    ```
-    vim /etc/sysctl.conf
-    // 增加下面配置
-    vm.max_map_count=655360
-    ```
-- max file descriptors [65535] for elasticsearch process is too low, increase to at least[65536]
-        由于给帐号的最大打开文件个数或者最大打开线程数的限制，一直会报错，因此改一下限制即可
-    ```
-   vi /etc/security/limits.conf
-   // 增加下面配置
-    * soft nofile 65536
-    * hard nofile 131072
-    * soft nproc 2048
-    * hard nproc 4096
-    // 退出帐号重新登录
-    ```

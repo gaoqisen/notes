@@ -10,7 +10,7 @@ description: SpringCloud学习
 ## 版本对应
 
 | Spring Boot|	Spring Cloud	| Spring Cloud Alibaba|
-| --- | --- | --- | 
+| --- | --- | --- |
 |2.1.x	| Greenwich |	0.9.x|
 |2.0.x | Finchley	| 0.2.x|
 |1.5.x	| Edgware	 | 0.1.x|
@@ -20,14 +20,14 @@ description: SpringCloud学习
 
 | 基于SpringBoot  2.x | Finchley | SpringCloudAlibaba |
 | --- |--- | --- | --- |
-| 版本 | Finchley  | 2.x |  
+| 版本 | Finchley  | 2.x |
 | 服务注册与发现  | Eureka  | Nacos |
 | 路由网关 | Gateway(zuul-Dalston版本)  | Gateway |
 | 配置中心 | config |  Nacos  |
 | 熔断机制(限流、 降级、重试)  | Hystix |Sentinel  |
-| 消息总线  | Bus | Bus |  
-| 链路追踪  | Sleuth | Sleuth |  
-| 聚合监控  | Turbine  | Turbine |  
+| 消息总线  | Bus | Bus |
+| 链路追踪  | Sleuth | Sleuth |
+| 聚合监控  | Turbine  | Turbine |
 | 服务消费 | Feign/Ribbon  | Nacos |
 |负载均衡| Feign/Ribbon| Dubbo|
 
@@ -61,7 +61,7 @@ eureka:
    serviceUrl:
      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 ```
-    
+
 ### 分布式配置中心
 
 ```
@@ -264,7 +264,7 @@ spring:
 
 - Spring Cloud Bus：事件、消息总线，用于在集群（例如，配置变化事件）中传播状态变化，可与Spring Cloud Config联合实现热部署。
 
- 
+
 - Spring Cloud Netflix：针对多种Netflix组件提供的开发工具包，其中包括Eureka、Hystrix、Zuul、Archaius等。
 
 
