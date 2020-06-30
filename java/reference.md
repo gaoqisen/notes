@@ -4,11 +4,9 @@ date: 2020-06-27 10:31:19
 tags: java reference
 categories: reference
 keywords: reference
-description: reference学习
+description: JDK1.2之前如果reference类型的数据存储的数值代表的是另一块内存的
+起始地址,就称这块内存代表一个引用。JDK1.2以后,Java对引用的概念进行了扩充,将引用分为强引用、软引用、弱引用、虚引用四种(引用 强度逐渐减弱)
 ---
-
-> JDK1.2之前如果reference类型的数据存储的数值代表的是另一块内存的
-> 起始地址,就称这块内存代表一个引用。JDK1.2以后,Java对引用的概念进行了扩充,将引用分为强引用、软引用、弱引用、虚引用四种(引用 强度逐渐减弱)
 
 ## 对象的强、软、弱、虚引用
 

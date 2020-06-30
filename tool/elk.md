@@ -126,52 +126,7 @@ output {
 }
 ```
 
-## 四、filebeat
 
-### 4.1 简介
-
-Filebeat是一个轻量级日志传输Agent，可以将指定日志转发到Logstash、Elasticsearch、Kafka、Redis等中。Filebeat占用资源少，而且安装配置也比较简单，支持目前各类主流OS及Docker平台。
-
-### 4.2 安装
-
-```
-mac:
-    brew install filebeat
-linux:
-    wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.3.1-linux-x86_64.tar.gz
-    tar -zxvf filebeat-7.3.1-linux-x86_64.tar.gz
-    nohup ./filebeat -e -c filebeat.yml >/dev/null 2>&1 &  // 后台启动将所有标准输出及标准错误输出到/dev/null空设备，即没有任何输出
-docker:
-    docker pull docker.elastic.co/beats/filebeat:7.3.1
-    docker tag docker.elastic.co/beats/filebeat:7.3.1 filebeat
-    docker run -d --name logstash 10.45.53.221:5000/filebeat 
-    docker run --name filebeat -d --link logstash -v ~/elk/yaml/filebeat.yml:/usr/share/filebeat/filebeat.yml -v ~/elk/logs/:/home/logs/ filebeat   // 启动filebeat并关联logstash
-```
-
-### 4.3 配置文件
-
-```
-filebeat.yml
-filebeat.prospectors:
-- paths:
-    - /home/user/elk/logs/order/*.log
-  multiline:
-      pattern: ^\d{4}
-      negate: true
-      match: after
-  fields:
-    doc_type: order
-- paths:
-    - /home/user/elk/logs/customer/*.log
-  multiline:
-      pattern: ^\d{4}
-      negate: true
-      match: after
-  fields:
-    doc_type: customer
-output.logstash: # 输出地址
-  hosts: ["logstash:5043"]
-```
 
 # 单独安装
 
