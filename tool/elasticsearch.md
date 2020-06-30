@@ -1,6 +1,6 @@
 ---
-title: elasticsearch遇到的问题
-date: 2020-02-25 16:11:32
+title: elasticsearch学习
+date: 2020-06-25 16:11:32
 tags: elasticsearch
 categories: linux
 keywords: elasticsearch

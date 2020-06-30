@@ -41,7 +41,7 @@ services:
 在根目录的bin目录里面执行startup.sh或者startup.bat启动程序。启动程序成功之后，访问http://localhost:8080/出现以下页面表示成功。
 ![https://gaoqisen.github.io/GraphBed/202002/20200202132603.png](https://gaoqisen.github.io/GraphBed/202002/20200202132603.png)
 
-## 使用SkyWalking
+## 二、使用SkyWalking
 
 ### idea启动方式
 

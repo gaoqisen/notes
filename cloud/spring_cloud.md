@@ -7,7 +7,7 @@ keywords: SpringCloud
 description: SpringCloud学习
 ---
 
-## 版本对应
+## 一、版本对应
 
 | Spring Boot|	Spring Cloud	| Spring Cloud Alibaba|
 | --- | --- | --- |
@@ -16,7 +16,7 @@ description: SpringCloud学习
 |1.5.x	| Edgware	 | 0.1.x|
 |1.5.x	| Dalston	 | 0.1.x|
 
-## SpringCloud vs SpringCloudAlibaba
+## 二、SpringCloud vs SpringCloudAlibaba
 
 | 基于SpringBoot  2.x | Finchley | SpringCloudAlibaba |
 | --- |--- | --- | --- |
@@ -31,13 +31,13 @@ description: SpringCloud学习
 | 服务消费 | Feign/Ribbon  | Nacos |
 |负载均衡| Feign/Ribbon| Dubbo|
 
-## 启动顺序
+## 三、启动顺序
 
 dependences(依赖管理) > config(配置中心) > eureka(服务注册与发现) > zipkin(链路追踪) > 
 
 分布式配置中心 > 服务注册中心  > 服务提供者 > 服务消费者 > API网关
 
-### 服务注册中心(Eureka)
+## 四、服务注册中心(Eureka)
 
 ```
 // pom.xml 配置
@@ -62,7 +62,7 @@ eureka:
      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 ```
 
-### 分布式配置中心
+## 五、分布式配置中心
 
 ```
 // 服务端pom.xml配置
@@ -101,7 +101,7 @@ spring:
       profile: dev
 ```
 
-### 服务提供者
+## 六、服务提供者
 
 ```
 // ribbon服务提供者
@@ -116,7 +116,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 ```
 
-### 服务消费者
+## 七、服务消费者
 
 ```
 // ribbon服务消费
@@ -136,7 +136,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 ```
 
-### API网关
+## 八、API网关
 
 ```
 // zuul配置
@@ -156,7 +156,7 @@ zuul:
       serviceId: hello-spring-cloud-web-admin-feign
 ```
 
-## 熔断器防止服务雪崩
+## 九、熔断器防止服务雪崩
 
 ```
 // pom 配置
@@ -171,7 +171,7 @@ feign:
 // application里面添加@EnableHystrix注解，调用方法上面增加@HystrixCommand(fallbackMethod = "hiError")注解
 ```
 
-## 熔断器仪表盘监控
+## 十、熔断器仪表盘监控
 
 ```
 // pom.xml配置
@@ -196,7 +196,7 @@ public class HystrixDashboardConfiguration {
 }
 ```
 
-## 服务链路追踪
+## 十一、服务链路追踪
 
 ```
 // pom.xml 配置
@@ -221,7 +221,7 @@ management:
         auto-time-requests: false
 ```
 
-## Spring Boot Admin
+## 十二、Spring Boot Admin
 
 ```
 // 服务端pom.xml依赖
@@ -260,7 +260,7 @@ spring:
         url: http://localhost:8084
 ```
 
-## 其他
+## 十三、其他
 
 - Spring Cloud Bus：事件、消息总线，用于在集群（例如，配置变化事件）中传播状态变化，可与Spring Cloud Config联合实现热部署。
 

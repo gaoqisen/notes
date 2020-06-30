@@ -7,7 +7,7 @@ keywords: mysql study
 description: mysql的一些笔记
 ---
 
-## 优化方法
+## 一、优化方法
 
 1. sql优化
     1. 索引优化
@@ -38,7 +38,7 @@ pt-duplicate-key-checker  -u root -p '123456'
 pt-index-usage -uroot -p '123456' mysql-slow.log
 ```
 
-## 基本操作
+## 二、基本操作
 
 ```mysql
 -- 查看mysql锁表信息
@@ -76,7 +76,7 @@ SHOW TABLE STATUS;
 mysqldumpslow   
 ```
 
-## 库操作
+## 三、库操作
 
 ```mysql
 -- 查看当前数据库
@@ -98,15 +98,7 @@ alter database databasesname default character set gbk collate gbk_bin;
     DROP DATABASE[ IF EXISTS] databasesname // 同时删除该数据库相关的目录及其目录内容
 ```
 
-## 表操作
-
-```mysql
-
-```
-
-## 数据类型(列类型)
-
-
+## 四、数据类型(列类型)
 
 
 ### 数值类型
@@ -114,14 +106,14 @@ alter database databasesname default character set gbk collate gbk_bin;
 - 整型
 
     | 类型      |   字节   |  范围（有符号位）|
-    | --- | --- | --- | 
-    |  tinyint    |  1字节 |    -128 ~ 127      无符号位：0 ~ 255| 
-    |  smallint    | 2字节  |   -32768 ~ 32767| 
-    |  mediumint |   3字节|     -8388608 ~ 8388607| 
-    |  int       |   4字节| | 
-    |  bigint |      8字节| | 
-    |  int(M)|   M表示总位数| | 
-       
+    | --- | --- | --- |
+    |  tinyint    |  1字节 |    -128 ~ 127      无符号位：0 ~ 255|
+    |  smallint    | 2字节  |   -32768 ~ 32767|
+    |  mediumint |   3字节|     -8388608 ~ 8388607|
+    |  int       |   4字节| |
+    |  bigint |      8字节| |
+    |  int(M)|   M表示总位数| |
+    
     * 默认存在符号位，unsigned 属性修改
     * 显示宽度，如果某个数不够定义字段时设置的位数，则前面以0补填，zerofill 属性修改
         例：int(5)   插入一个数'123'，补填后为'00123'
@@ -131,7 +123,7 @@ alter database databasesname default character set gbk collate gbk_bin;
 - 浮点型  
 
     |类型      |       字节 |    范围|
-    | --- | --- | --- | 
+    | --- | --- | --- |
     |float(单精度)|     4字节||
     | double(双精度)   | 8字节||
    
@@ -226,7 +218,7 @@ alter database databasesname default character set gbk collate gbk_bin;
     * 当创建表时，SET成员值的尾部空格将自动被删除。
 
 
-## 列属性(列约束)
+## 五、列属性(列约束)
 
 1. PRIMARY 主键
     - 能唯一标识记录的字段，可以作为主键。
@@ -274,7 +266,7 @@ alter database databasesname default character set gbk collate gbk_bin;
         * 外键只被InnoDB存储引擎所支持。其他引擎是不支持的。
 
 
-## 建表规范
+## 六、建表规范
 
 ```
     -- Normal Format, NF

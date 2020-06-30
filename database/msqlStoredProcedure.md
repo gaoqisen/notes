@@ -7,11 +7,11 @@ keywords: procudure
 description: Mysql存储过程的一些学习笔记
 ---
 
-## mysql
+## 一、优势
 
-启动服务器后或者第一次执行后(可以设置).就可以把存储过程加载到高速缓存中,这样以后调用起来就不用再通过编译，执行效率当然就高。另外执行存储过程只需要传递几个参数用语句的话可能需要一大串，有效减少了传递数据.
+启动服务器后或者第一次执行后(可以设置)就可以把存储过程加载到高速缓存中,这样以后调用起来就不用再通过编译，执行效率当然就高。另外执行存储过程只需要传递几个参数，用语句就需要传递整个sql语句，有效减少网络数据的传递.
 
-### 存储过程
+## 二、存储过程
 
 ```sql
 -- 创建测试表
@@ -115,10 +115,10 @@ call test5();
 
 ```
 
-### 事件调度器Event Scheduler
+## 三、事件调度器Event Scheduler
 
- - 语法
- 
+1. 语法
+
   ```sql
   -- []: 表示可选，[|]: 单选
 create
@@ -140,35 +140,36 @@ on schedule schedule   // 调度规则
 do event_body;  // 事件体，可以是单行 SQL 语法，或是 BEGIN……END 语句块
   ```
 
-- 例子
-    ```sql
-    -- 查看事件调度器是否开启
-    SHOW VARIABLES LIKE 'event_scheduler';
-    SELECT @@event_scheduler;
-    -- 开启事件触发器
-    SET GLOBAL event_scheduler = ON;
-    -- 创建一个事件，并调用存储过程
-    CREATE DEFINER=`root`@`localhost` EVENT `test_sche_event`
-        ON SCHEDULE EVERY 5 SECOND STARTS '2016-07-12 22:11:50'
-        ON COMPLETION NOT PRESERVE ENABLE
-        DO CALL `add`;
-    -- 每秒插入一条数据
-    CREATE EVENT e_test
-        ON SCHEDULE EVERY 1 SECOND
-        DO INSERT INTO gqs_1.admin_user_1 (id, role) VALUES (8);
-    -- 每秒插入一条数据通过存储过程
-    CREATE EVENT e_test1
-        ON SCHEDULE EVERY 1 SECOND
-        DO CALL test();
-    -- 临时关闭事件
-    ALTER EVENT e_test1 DISABLE;
-    -- 开启事件
-    ALTER EVENT e_test1 ENABLE;
-    -- 删除事件
-    DROP EVENT IF EXISTS e_test1;
-    ```
+2. 例子
 
-### springBoot调用存储过程
+```sql
+-- 查看事件调度器是否开启
+SHOW VARIABLES LIKE 'event_scheduler';
+SELECT @@event_scheduler;
+-- 开启事件触发器
+SET GLOBAL event_scheduler = ON;
+-- 创建一个事件，并调用存储过程
+CREATE DEFINER=`root`@`localhost` EVENT `test_sche_event`
+    ON SCHEDULE EVERY 5 SECOND STARTS '2016-07-12 22:11:50'
+    ON COMPLETION NOT PRESERVE ENABLE
+    DO CALL `add`;
+-- 每秒插入一条数据
+CREATE EVENT e_test
+    ON SCHEDULE EVERY 1 SECOND
+    DO INSERT INTO gqs_1.admin_user_1 (id, role) VALUES (8);
+-- 每秒插入一条数据通过存储过程
+CREATE EVENT e_test1
+    ON SCHEDULE EVERY 1 SECOND
+    DO CALL test();
+-- 临时关闭事件
+ALTER EVENT e_test1 DISABLE;
+-- 开启事件
+ALTER EVENT e_test1 ENABLE;
+-- 删除事件
+DROP EVENT IF EXISTS e_test1;
+```
+
+## 四、springBoot调用存储过程
 
 ```
 @Query(value = "call test(?1) ", nativeQuery = true)
