@@ -13,8 +13,6 @@ Filebeat是一个日志文件托运工具，在你的服务器上安装客户端
 
 logstash 功能虽然强大，但是基于ruby的配置语法、依赖jdk、消耗系统资源等弊端，使得考虑其他方式来替换logstash，filebeat则是一个完美的替代者
 
-
-
 ## 二、安装
 
 - 最新下载地址: https://www.elastic.co/cn/downloads/beats/filebeat
