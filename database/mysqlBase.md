@@ -283,3 +283,15 @@ alter database databasesname default character set gbk collate gbk_bin;
         某个字段依赖于主键，而有其他字段依赖于该字段。这就是传递依赖。
         将一个实体信息的数据放在一个表内实现。
 ```
+
+## 七、SQL实战
+
+1. 有个部门表如下，写出不同部门之间平均工资高于2000的部门
+
+   ![https://gaoqisen.github.io/GraphBed/202007/20200701153343.png](https://gaoqisen.github.io/GraphBed/202007/20200701153343.png)
+
+   ```sql
+   select type, avg(salary) sa from dept group by type having sa > 2000;
+   ```
+
+   
