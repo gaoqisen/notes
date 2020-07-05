@@ -294,4 +294,30 @@ alter database databasesname default character set gbk collate gbk_bin;
    select type, avg(salary) sa from dept group by type having sa > 2000;
    ```
 
+2. 编写一个 SQL 查询，满足条件：无论 person 是否有地址信息，都需要基于上述两表提供 person 的以下信息：FirstName, LastName, City, State
+
+   ```mysql
+   # Person
+   +-------------+---------+
+   | 列名         | 类型     |
+   +-------------+---------+
+   | PersonId    | int     |
+   | FirstName   | varchar |
+   | LastName    | varchar |
+   +-------------+---------+
+   # PersonId 是上表主键
+   # Address
+   +-------------+---------+
+   | 列名         | 类型    |
+   +-------------+---------+
+   | AddressId   | int     |
+   | PersonId    | int     |
+   | City        | varchar |
+   | State       | varchar |
+   +-------------+---------+
+   # AddressId 是上表主键
+   # sql
+   select Person.FirstName, Person.LastName, Address.City, Address.State from Person left join Address on Person.PersonId = Address.PersonId
+   ```
+
    
