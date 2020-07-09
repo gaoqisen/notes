@@ -11,9 +11,14 @@ description: 关于线程安全的一些学习。
 
 非线程安全: ArrayList、HashMap、StringBuilder。
 
-线程安全: Vector、HashTable、StringBuffer
+线程安全: ~~Vector~~、~~HashTable~~(ConcurrentHashMap)、StringBuffer
 
-在主线程中new了一个非线程安全的ArrayList，然后开1000个线程分别向这个ArrayList里面添加元素，每个线程添加100个元素，等所有线程执行完成后查看list的总数。之后又new一个Vector用同样的方法查看数量，对比结果。例子:
+- HashMap与ConcurrentHashMap的区别
+  1. ConcurrentHashMap是线程安全的，HashMap不是线程安全的
+  2. ConcurrentHashMap对桶数组进行了分段，HashMap没有。
+  3. ConcurrentHashMap在每个分段上都用锁进行保护，从而让锁更精细一些，并发性能要好一些。HashMap没有锁机制。
+
+>  在主线程中new了一个非线程安全的ArrayList，然后开1000个线程分别向这个ArrayList里面添加元素，每个线程添加100个元素，等所有线程执行完成后查看list的总数。之后又new一个Vector用同样的方法查看数量，对比结果。例子:
 
 ```java
 // ArrayList与Vector测试

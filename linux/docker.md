@@ -7,29 +7,41 @@ keywords: Dockerfile docker-compose
 description: Dockerfile docker-compose的命令。
 ---
 
-## docker
+## 一、镜像
 
-## docker网络
+更改数据源为国内阿里的镜像
 
-
-### 在同一个docker-compose里面创建多个服务
-
-自动创建在一个网络里面，通过服务名即可访问
-
-###  docker容器之间访问网络
-
-单个docker-compose直接的网络访问
 ```docker
-docker network create mynetwork  // 创建一个桥接模式的网络
-// 在docker-compose里面加入如下配置
+# vim  /etc/docker/daemon.json
+{
+# 增加下面的数据源
+"registry-mirrors": ["https://xv4nhf8h.mirror.aliyuncs.com"],
+"exec-opts": ["native.cgroupdriver=systemd"],
+"log-driver": "json-file",
+"log-opts": {
+"max-size": "100m"
+}
+}
+# 重启docker
+service docker restart
+```
 
+## 二、网络
+
+在同一个docker-compose里面创建多个服务。自动创建在一个网络里面，通过服务名即可访问
+
+```docker
+// 创建一个桥接模式的网络
+docker network create mynetwork 
+
+// 在docker-compose里面加入如下配置
 networks:
     default:
         external:
             name: mynetwork
 ```
 
-### 客服端命令
+## 三、客服端命令
 
 ```docker
 sudo docker rm $(sudo docker ps -a -q) // 删除所有停止了的服务
@@ -89,7 +101,7 @@ volume：管理 Docker volume，包括查看、创建、删除等；
 wait：阻塞直到一个容器终止，然后输出它的退出符。
 ```
 
-### 客服端命令选项
+### 3.1 客服端命令选项
 
 ```
 --config=""：指定客户端配置文件，默认为 `/.docker`；
@@ -104,7 +116,7 @@ wait：阻塞直到一个容器终止，然后输出它的退出符。
 
 ```
 
-### dockerd 命令选项
+### 3.2 docker 命令选项
 
 ```
 --api-cors-header=""：CORS 头部域，默认不允许 CORS，要允许任意的跨域访问，可以指定为 “*”；
@@ -159,15 +171,15 @@ wait：阻塞直到一个容器终止，然后输出它的退出符。
 --userns-remap=default|uid:gid|user:group|user|uid：指定容器的用户命名空间，默认是创建新的 UID 和 GID 映射到容器内进程。
 ```
 
-## Dockerfile
+## 四、Dockerfile
 
-### 命令
+### 4.1 命令
 
 ```
 docker build -t java:image .  // 构建脚本
 ```
 
-### 脚本
+### 4.2 脚本
 
 ```
 FROM  // 镜像来源
@@ -185,9 +197,9 @@ HEALTHCHECK  // 健康检查
 ONBUILD  // 以当前镜像为基础镜像，去构建下一级镜像的时候才会被执行
 ```
 
-## docker-compose
+## 五、docker-compose
 
-### 命令
+### 5.1 命令
 
 ```
 build //构建（重新构建）项目中的服务容器
@@ -244,7 +256,7 @@ unpause  // 恢复处于暂停状态中的服务。
 top  // 查看各个服务容器内运行的进程。
 ```
 
-### 脚本
+### 5.2 脚本
 
 ```
 build  // 指定 Dockerfile 所在文件夹的路径（可以是绝对路径，或者相对 docker-compose.yml 文件的路径）。 Compose 将会利用它自动构建这个镜像，然后使用这个镜像
