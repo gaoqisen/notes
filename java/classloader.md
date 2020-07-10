@@ -55,9 +55,48 @@ description: 关于类加载的一些学习。
 
 ![https://gaoqisen.github.io/GraphBed/202007/20200710162520.png](https://gaoqisen.github.io/GraphBed/202007/20200710162520.png)
 
-- 好处:
+- 优势:
   1. 避免重复的类加载，如果父类已经加载了子类就不会再次加载。
   2. 保证Java核心API不被篡改。比如黑客自定义了java.lang.String类，有了双亲委派模型后自定义的java.lang.String类就永远都不会被加载进内存。因为首先是最顶端的类加载器加载系统的java.lang.String类，最终自定义的类加载器无法加载java.lang.String类。
+  
+- 源码:
+
+  ```java
+  //双亲委派模型的工作过程源码
+  protected synchronized Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException{
+      // First, check if the class has already been loaded
+      Class c = findLoadedClass(name);
+      if (c == null) {
+          try {
+              if (parent != null) {
+                  c = parent.loadClass(name, false);
+              } else {
+                  c = findBootstrapClassOrNull(name);
+              }
+          } 
+          catch (ClassNotFoundException e) {
+              // ClassNotFoundException thrown if class not found
+              // from the non-null parent class loader
+              //父类加载器无法完成类加载请求
+          }
+   
+          if (c == null) {
+              // If still not found, then invoke findClass in order to find the class
+              //子加载器进行类加载 
+              c = findClass(name);
+          }
+      }
+   
+      if (resolve) {
+          //判断是否需要链接过程，参数传入
+          resolveClass(c);
+      }
+   
+      return c;
+  }
+  ```
+
+  
 
 ### 2.4 破坏双亲委派模型(深入理解java虚拟机)
 
@@ -65,7 +104,81 @@ description: 关于类加载的一些学习。
 
 - 基础类调用用户的代码: 双亲委派模型很好地解决了各个类加载器的基础类统一问题(越基础的类由越上层的加载器进行加载)，基础类之所以被称为“基础”，是因为它们总是作为被调用代码调用的API。但是，如果基础类又要调用用户的代码，那该怎么办呢? 这并非是不可能的事情，一个典型的例子便是JNDI服务，它的代码由启动类加载器去加载(在JDK1.3时放进rt.jar)，但JNDI的目的就是对资源进行集中管理和查找，它需要调用独立厂商实现部部署在应用程序的classpath下的JNDI接口提供者(SPI, Service Provider Interface)的代码，但启动类加载器不可能“认识”之些代码，该怎么办？为了解决这个困境，Java设计团队只好引入了一个不太优雅的设计：线程上下文件类加载器(Thread Context ClassLoader)。这个类加载器可以通过java.lang.Thread类的setContextClassLoader()方法进行设置，如果创建线程时还未设置，它将会从父线程中继承一个；如果在应用程序的全局范围内都没有设置过，那么这个类加载器默认就是应用程序类加载器。了有线程上下文类加载器，JNDI服务使用这个线程上下文类加载器去加载所需要的SPI代码，也就是父类加载器请求子类加载器去完成类加载动作，这种行为实际上就是打通了双亲委派模型的层次结构来逆向使用类加载器，已经违背了双亲委派模型，但这也是无可奈何的事情。Java中所有涉及SPI的加载动作基本上都采用这种方式，例如JNDI，JDBC，JCE，JAXB和JBI等。
 
-  
+
+## 三、自定义类加载器
+
+### 3.1 什么时候会需要自定义类加载器
+
+1. 加密: 在类需要加密的时候可以自定义类加载器，这样就可以在读取到密文的类之后在解密之后进行类加载
+2. 非标准来源的类: 比如字节码是从网络获取，或者从数据库中读取，就可以指定来源加载类
+3. 动态创建: 根据实际的情况进行进行动态的创建类
+
+### 3.2 自定义类加载器
+
+```java
+/**
+ * 自定义类加载器
+ */
+public class CustomClassLoader extends ClassLoader{
+
+    public CustomClassLoader() {
+    }
+
+    public CustomClassLoader(ClassLoader parent)
+    {
+        super(parent);
+    }
+
+    // 重写findClass方法
+    @Override
+    protected Class<?> findClass(String name) throws ClassNotFoundException
+    {
+        File file = new File("/Users/jasongao/Desktop/People.class");
+        try{
+            byte[] bytes = getClassBytes(file);
+            //defineClass方法可以把二进制流字节组成的文件转换为一个java.lang.Class
+            Class<?> c = this.defineClass(name, bytes, 0, bytes.length);
+            return c;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return super.findClass(name);
+    }
+
+    // 通过File获取二进制流字节
+    private byte[] getClassBytes(File file) throws Exception {
+        // 这里要读入.class的字节，因此要使用字节流
+        FileInputStream fis = new FileInputStream(file);
+        FileChannel fc = fis.getChannel();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        WritableByteChannel wbc = Channels.newChannel(baos);
+        ByteBuffer by = ByteBuffer.allocate(1024);
+
+        while (true){
+            int i = fc.read(by);
+            if (i == 0 || i == -1) {
+                break;
+            }
+            by.flip();
+            wbc.write(by);
+            by.clear();
+        }
+        fis.close();
+        return baos.toByteArray();
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        CustomClassLoader customClassLoader = new CustomClassLoader();
+        Class<?> clazz = Class.forName("People", true, customClassLoader);
+        Object obj = clazz.newInstance();
+
+        System.out.println(obj);
+        System.out.println(obj.getClass().getClassLoader());
+    }
+}
+```
+
+编写People类之后，用javac People.java即可生成class文件
 
 ## 参考
 
