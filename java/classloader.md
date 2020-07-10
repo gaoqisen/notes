@@ -72,3 +72,4 @@ description: 关于类加载的一些学习。
 - 类加载: https://juejin.im/post/5a810b0e5188257a5c606a85
 - 双亲委派模型优势: https://blog.csdn.net/weixin_38055381/article/details/80167881
 - 破坏双亲委派模型: https://juejin.im/post/5d7bbea8e51d4561c541a74f
+- 线程上下文: https://blog.csdn.net/yangcheng33/article/details/52631940
