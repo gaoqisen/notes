@@ -2,7 +2,7 @@
 title: curl命令学习
 date: 2019-08-16 10:52:32
 tags: curl
-categories: curl
+categories: linux
 keywords: curl
 description: 在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。
 ---

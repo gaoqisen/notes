@@ -2,7 +2,7 @@
 title: c++学习的一些记录
 date: 2019-7-21 12:43:40
 tags: c++
-categories: c++ study
+categories: study
 keywords: c++基础
 description: 自考本科的c++一些复习的资料整理和一些简单的实验程序。
 ---
@@ -185,7 +185,7 @@ int main(){
     return 0;
 }
 
-``` 
+```
 
 ### 指针
 

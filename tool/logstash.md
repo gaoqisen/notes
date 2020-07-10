@@ -2,7 +2,7 @@
 title: logstash安装学习
 date: 2020-06-22 18:11:32
 tags: logstash
-categories: linux
+categories: tool
 keywords: logstash
 description: 在linux环境装了一个logstash，遇到了好几个问题，记录一下笔记，以后安装的时候方便快速解决。
 ---

@@ -2,7 +2,7 @@
 title: CentOS7部署MinDoc API在线文档管理系统
 date: 2018-10-16 22:50:11
 tags: MinDoc 
-categories: utils
+categories: tool
 ---
 
 > 前言：

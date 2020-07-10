@@ -2,7 +2,7 @@
 title: Docker模拟集群并进行代码同步功能的练习记录
 date: 2018-12-28 20:10:11
 tags: linux docker rsync
-categories: docker
+categories: tool
 keywords: docker
 description: 由一个rsync服务端和多个rsync客服端实现同步。并把学习docker时的命令记录下来，方便以后在忘记命令是快速找到。
 ---

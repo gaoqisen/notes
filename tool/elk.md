@@ -2,7 +2,7 @@
 title: linux+elasticsearch+logstash 自动同步mysql实现搜索引擎
 date: 2018-09-22 22:50:11
 tags: elasticsearch
-categories: linux
+categories: tool
 ---
 
 # docker安装

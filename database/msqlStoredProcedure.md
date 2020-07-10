@@ -1,9 +1,9 @@
 ---
 title: Mysql存储过程 －学习笔记
 date: 2020-02-19 17:10:11
-tags: mysql oracle
+tags: mysql procudure
 categories: database
-keywords: procudure
+keywords: procudure database
 description: Mysql存储过程的一些学习笔记
 ---
 

@@ -2,7 +2,7 @@
 title: CentOS7 安装mysql
 date: 2018-10-10 22:50:11
 tags: mysql CentOS7
-categories: mysql
+categories: tool
 ---
 
 ## 一、下载mysql的repo源

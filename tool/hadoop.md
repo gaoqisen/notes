@@ -2,7 +2,7 @@
 title: hadoop学习笔记
 date: 2019-1-26 20:10:11
 tags: hadoop
-categories: hadoop
+categories: tool
 keywords: hadoop
 description: hadoop学习的一些笔记,还在记录中， 加油！
 ---

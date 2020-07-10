@@ -2,7 +2,7 @@
 title: 在线工具收藏
 date: 2019-4-22 15:13:52
 tags: utils
-categories: utils
+categories: other
 keywords: utils
 description: 整理了一下自己的工具， 方便使用。 在线工具：自己找的一些方便使用的在线工具，在线资源 ： 一些比较好的资源， 在线文档 ： 一些需要使用的在线文档，开源镜像 ： 一下方便的工具下载，在线书籍 ： 方便自己学习的一些在线书籍。
 ---

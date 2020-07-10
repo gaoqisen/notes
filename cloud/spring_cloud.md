@@ -2,7 +2,7 @@
 title: SpringCloud学习
 date: 2019-3-15 15:13:52
 tags: SpringCloud
-categories: SpringCloud
+categories: cloud
 keywords: SpringCloud
 description: SpringCloud学习
 ---

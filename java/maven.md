@@ -2,7 +2,7 @@
 title: Maven学习记录
 date: 2019-09-19 14:32:23
 tags: Maven
-categories: Maven
+categories: java
 keywords: Maven
 description: Maven的一些简单打包，简单快速项目创建。
 ---
@@ -18,7 +18,7 @@ description: Maven的一些简单打包，简单快速项目创建。
     -DarchetypeArtifactId  //类型maven-archetype-quickstart,创建一个Java Project,maven-archetype-webapp,创建一个Web Project
     -DinteractiveMode  //是否使用交互模式,如果为false,非交互式的命令后直接创建,否则会有控制台提示输入操作
     ```
-        
+    
 - idea导入项目
 
     ![https://gaoqisen.github.io/GraphBed/201909/20190919125705.png](https://gaoqisen.github.io/GraphBed/201909/20190919125705.png)
@@ -89,9 +89,9 @@ description: Maven的一些简单打包，简单快速项目创建。
     </dependencies>
 </project>
  ```
- 
+
 - main配置
- 
+
  ```
  // 添加@SpringBootApplication注释和pringApplication.run(App.class);
     @SpringBootApplication
@@ -102,7 +102,7 @@ description: Maven的一些简单打包，简单快速项目创建。
         }
     }
  ```
- 
+
 - 创建controller/Test.java
 
  ```
@@ -115,7 +115,7 @@ public class Test {
             return "ok";
         }
 }
-  ```
+ ```
 
 - 在main文件夹下面创建配置文件的目录resources/application.yml
 ```

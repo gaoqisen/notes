@@ -2,7 +2,7 @@
 title: Java类加载的学习
 date: 2020-07-10 16:22:26
 tags: java
-categories: java classloader
+categories: java
 keywords: java classloader
 description: 关于类加载的一些学习。
 ---

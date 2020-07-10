@@ -2,7 +2,7 @@
 title: RocketMQ SpringBoot 实践
 date: 2019-10-31 14:39:20
 tags: java
-categories: RocketMQ
+categories: tool
 keywords: RocketMQ
 description: RocketMQ的一些简单安装
 ---

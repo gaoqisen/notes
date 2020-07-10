@@ -2,7 +2,7 @@
 title: Mac常用命令
 date: 2019-5-23 15:13:52
 tags: mac
-categories: mac
+categories: other
 keywords: Mac常用命令
 description: Mac常用命令。
 ---

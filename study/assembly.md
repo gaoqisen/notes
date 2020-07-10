@@ -2,7 +2,7 @@
 title: 汇编基础
 date: 2020-06-25 10:13:40
 tags: assembly
-categories: assembly
+categories: study
 keywords: assembly
 description: 汇编语言的基础入门，学习一些底层知识。
 ---

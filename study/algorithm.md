@@ -2,7 +2,7 @@
 title: 算法学习
 date: 2020-06-30 20:43:40
 tags: algorithm
-categories: algorithm
+categories: study
 keywords: algorithm
 description: 一些algorithm学习，后期自己努力的方向。
 ---

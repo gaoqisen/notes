@@ -2,7 +2,7 @@
 title: 私有仓库创建
 date: 2019-5-19 15:13:52
 tags: docker
-categories: utils docker
+categories: linux
 keywords: utils docker gitLab maven registry
 description: 整理的一些通过docker仓库创建的docker-compose笔记。
 ---

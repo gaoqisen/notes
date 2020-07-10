@@ -2,7 +2,7 @@
 title: 枚举学习
 date: 2019-10-21 10:10:05
 tags: enum
-categories: enum
+categories: java
 keywords: enum学习
 description: 一些简单的枚举使用，以及一些主意事项。并创建了EnumExample类，简单试用了下。
 ---

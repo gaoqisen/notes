@@ -2,7 +2,7 @@
 title: k8s命令记录
 date: 2020-07-02 18:10:11
 tags: k8s
-categories: k8s
+categories: linux
 keywords: k8s
 description: k8s命令记录。
 ---

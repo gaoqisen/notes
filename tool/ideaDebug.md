@@ -2,7 +2,7 @@
 title: IdeaDebug调试按钮
 date: 2019-11-07 11:24:35
 tags: java
-categories: java idea
+categories: tool
 keywords: idea java
 description: 学习ideaDebug调试技巧
 ---

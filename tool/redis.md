@@ -2,7 +2,7 @@
 title: Redis学习
 date: 2018-08-30 22:50:11
 tags: redis
-categories: java
+categories: tool
 ---
 
 ## 一、简介

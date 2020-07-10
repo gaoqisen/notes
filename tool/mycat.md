@@ -2,7 +2,7 @@
 title: MyCat－学习笔记
 date: 2019-2-24 20:10:11
 tags: MyCat
-categories: MyCat
+categories: tool
 keywords: MyCat
 description: MyCat的一些学习笔记
 ---
@@ -207,7 +207,7 @@ description: MyCat的一些学习笔记
 ```
 
 - Server.xml的配置
- 
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mycat:server SYSTEM "server.dtd">

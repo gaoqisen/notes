@@ -2,7 +2,7 @@
 title: elasticsearch学习
 date: 2020-06-25 16:11:32
 tags: elasticsearch
-categories: linux
+categories: tool
 keywords: elasticsearch
 description: 在linux环境装了一个elasticsearch，遇到了好几个问题，还有一些笔记，记录一下，后面以后安装的时候方便快速解决。
 ---

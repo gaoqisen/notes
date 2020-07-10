@@ -2,7 +2,7 @@
 title: docker命令
 date: 2019-5-28 15:13:52
 tags: Dockerfile docker-compose docker
-categories: docker
+categories: linux
 keywords: Dockerfile docker-compose
 description: Dockerfile docker-compose的命令。
 ---

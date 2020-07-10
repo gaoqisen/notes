@@ -2,7 +2,7 @@
 title: JavaIO
 date: 2019-11-14 14:36:18
 tags: java io
-categories: java io
+categories: java
 keywords: JavaIO
 description: 关于JavaIO的一些学习整理
 ---
