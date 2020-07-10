@@ -7,6 +7,12 @@ keywords: k8s
 description: k8s命令记录。
 ---
 
+## 一、来源
+
+- Infrastructure as a Service 基础设施即服务(IaaS)
+- platform as a Service 平台即服务(PaaS)
+-  Software as a Service 软件即服务(SaaS)
+
 ## 一、名词介绍
 
 - **kubernetes**: 开源的 Docker 容器编排系统，它可以调度计算集群的节点，动态管理上面的作业，保证它们按用户期望的状态运行。通过使用「labels」和「pods」的概念，Kubernetes 将应用按逻辑单元进行分组，方便管理和服务发现。
