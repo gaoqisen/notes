@@ -11,6 +11,8 @@ description: 关于类加载的一些学习。
 
 ## 一、概述
 
+类加载过程
+
 ![https://gaoqisen.github.io/GraphBed/202007/20200710125152.png](https://gaoqisen.github.io/GraphBed/202007/20200710125152.png)
 
 1. 加载: 通过类加载器查找和导入Class文件
@@ -23,7 +25,7 @@ description: 关于类加载的一些学习。
 
 3. 初始化: 类的静态变量，静态代码块等执行，类的构造器初始化操作等。虚拟机定义了5种会触发初始化的场景。
 
-   - 遇到new、getstatic、putstatic或invokestatic这四条字节码指令时，如果累没有进行初始化，则要先触发初始化；    
+   - 遇到new、getstatic、putstatic或invokestatic这四条字节码指令时，如果类没有进行初始化，则要先触发初始化；    
 
    - 使用java.lang.reflect包中的方法对类进行反射调用的时候；
 

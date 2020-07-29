@@ -32,7 +32,7 @@ description: mysql的一些笔记
 
 #### 1.1.2 慢查询优化
 
-通过记录慢查询日志，找到查询慢的sql进行优化(增加索引等)
+通过记录慢查询日志，找到查询慢的sql进行优化(增加索引等) 
 
 ```mysql
 -- 慢查询报表生成工具
@@ -210,7 +210,7 @@ alter database databasesname default character set gbk collate gbk_bin;
 ## 四、数据类型(列类型)
 
 
-### 数值类型
+### 4.1数值类型
 
 - 整型
 
@@ -251,7 +251,7 @@ alter database databasesname default character set gbk collate gbk_bin;
     * 保存一个精确的数值，不会发生数据的改变，不同于浮点数的四舍五入。
     * 将浮点数转换为字符串来保存，每9位数字保存为4个字节。
     
-### 字符串类型
+### 4.2字符串类型
 -  char, varchar ----------
     * char(M)    定长字符串，速度快，但浪费空间
     * varchar(M) 变长字符串，速度慢，但节省空间
@@ -276,7 +276,7 @@ alter database databasesname default character set gbk collate gbk_bin;
     * 类似于char和varchar，用于保存二进制字符串，也就是保存字节字符串而非字符字符串。
     * char, varchar, text 对应 binary, varbinary, blob.
     
-### 日期时间类型
+### 4.3日期时间类型
 
 |类型|字节数|名词|范围|
 | --- | --- | --- | --- |
@@ -311,7 +311,7 @@ alter database databasesname default character set gbk collate gbk_bin;
     * YYYY
     * YY
     
-### 枚举和集合
+### 4.4枚举和集合
 
 - 枚举: enum(val1, val2, val3...)
     * 在已知的值中进行单选。最大数量为65535.
@@ -429,7 +429,44 @@ alter database databasesname default character set gbk collate gbk_bin;
    select Person.FirstName, Person.LastName, Address.City, Address.State from Person left join Address on Person.PersonId = Address.PersonId
    ```
 
-   ## 八、参考
+   ## 八、锁
+   
+   ### 8.1 悲观锁
+   
+   认为别的线程会修改值。在操作数据的时候，直接给数据加锁不让其他的线程修改，当前线程修改成功之后其他线程才可以修改。实现方式就是加锁(如: Java的synchronized)。
+   
+   ### 8.2 乐观锁
+   
+   认为别的线程不会修改值。在操作数据的时候不对数据上锁，执行操作的时候判断一下数据是否被修改，如果被修改就放弃操作。实现方式有两种，CAS和版本号机制。
+   
+   - CAS(Compare And Swap)
+   
+     在修改的时候判断查出来的数据是否被修改过，如果没有则进行修改，如果被修改了可以进行自旋操作。这种情况有可能出现ABA问题(多线程的时候如果当前线程为A,线程B把num加1，线程C把num减1期间线程A查询出数据还未进行操作，当BC线程执行完成之后A线程在此执行的时候就会认为数据没有修改，但是实际上数据被修改过)，用版本号机制就不会出现这个问题。
+   
+     ```sql
+     # 查询产品数量和ID
+     select num,id from product;
+     # subNum为查出来的num-1, id和num都为查出来的数据。
+     update product set num = #{subNum} where id = #{id} and num = #{num}
+     ```
+   
+     当竞争不激烈 (出现并发冲突的概率小)时，乐观锁更有优势，因为悲观锁会锁住代码块或数据，其他线程无法同时访问，影响并发，而且加锁和释放锁都需要消耗额外的资源。
+   
+   - 版本号机制
+   
+     在字段中增加一个版本号用来判断当前数据是否被修改过
+   
+     ```sql
+     # 查询产品数量、ID和版本号
+     select num,id,version from product;
+     # 通过版本号判断数据是否被修改,subNum是通过计算过后的库存数量, id和version都为查出来的数据
+     update product set num = #{subNum} where id = #{id} and version = #{version}
+     ```
+   
+     当竞争激烈(出现并发冲突的概率大)时，悲观锁更有优势，因为乐观锁在执行更新时频繁失败，需要不断重试，浪费CPU资源。
+   
+   ## 九、参考
    
    - 索引: https://blog.csdn.net/kaka1121/article/details/53395587
    - explain: https://www.cnblogs.com/xuanzhi201111/p/4175635.html
+   - 锁: https://www.cnblogs.com/kismetv/p/10787228.html#t1

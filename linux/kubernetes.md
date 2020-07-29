@@ -216,3 +216,47 @@ spec:
 
 
 
+## 四、深入学习
+
+### 介绍说明
+
+### 基础概念
+
+Horizoontal Pod Autoscaling(HPA): 扩容缩
+
+StatefulSet: 解决有服务状态服务的问题
+
+DameonSet: 确保全部挥、或者一些Node上运行一个Pod副本。比如没有node上都安装一个logstash
+
+Job: 负责批处理任务，只执行一次的任务。如备份等。
+
+### 资源清单
+
+### Pod控制器
+
+ReplicaSets(RC): 滚动更新
+
+Horizoontal Pod Autoscaling(HPA): 扩容缩
+
+StatefulSet: 解决有服务状态服务的问题
+
+DameonSet: 确保全部挥、或者一些Node上运行一个Pod副本。比如没有node上都安装一个logstash
+
+Job: 负责批处理任务，只执行一次的任务。如备份等。
+
+### 服务发现
+
+service
+
+ ### 存储
+
+### 调度器
+
+### 安全
+
+### HELM
+
+###  运维
+
+
+
