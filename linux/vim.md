@@ -9,6 +9,13 @@ description: vi快捷键记录，方便自己查看。
 
 ## vim键盘图
 
+```
+# 查看当前文件夹下面的文件数量
+ls -l |grep "^-"|wc -l
+```
+
+
+
 ![vim键盘](https://gaoqisen.github.io/GraphBed/201902/20190224171921.png)
 
 ## vi小抄

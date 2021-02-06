@@ -7,8 +7,24 @@ keywords: idea java
 description: 学习ideaDebug调试技巧
 ---
 
+## 快捷键
 
-## 各个按钮的意思
+```
+// 多行选中
+Column Selection Mode
+// 修改所有变量名
+shift+F6
+// 方法参数提示
+Ctrl+L
+// 查看类注释
+Ctrl+Q
+// 抽取方法
+Fn+Ctrl+Alt+M
+```
+
+
+
+## DeBug各个按钮的意思
 
 ![https://gaoqisen.github.io/GraphBed/201911/20191107112132.png](https://gaoqisen.github.io/GraphBed/201911/20191107112132.png)
 

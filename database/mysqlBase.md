@@ -203,8 +203,8 @@ CREATE DATABASE[ IF NOT EXISTS] databasesname 数据库选项
     ALTER DATABASE databasesname 选项信息
 -- 修改数据库的编码，可使用上一条语句查看是否修改成功
 alter database databasesname default character set gbk collate gbk_bin;
--- 删除库
-    DROP DATABASE[ IF EXISTS] databasesname // 同时删除该数据库相关的目录及其目录内容
+-- 删除库,同时删除该数据库相关的目录及其目录内容
+DROP DATABASE[ IF EXISTS] databasesname
 ```
 
 ## 四、数据类型(列类型)
@@ -214,14 +214,15 @@ alter database databasesname default character set gbk collate gbk_bin;
 
 - 整型
 
-    | 类型      |   字节   |  范围（有符号位）|
-    | --- | --- | --- |
-    |  tinyint    |  1字节 |    -128 ~ 127      无符号位：0 ~ 255|
-    |  smallint    | 2字节  |   -32768 ~ 32767|
-    |  mediumint |   3字节|     -8388608 ~ 8388607|
-    |  int       |   4字节| |
-    |  bigint |      8字节| |
-    |  int(M)|   M表示总位数| |
+    | 类型      |   字节   | 有符号位 | 无符号位 |
+    | --- | --- | --- | --- |
+    |  tinyint    |  1 | -128 ~ 127 | 0 ~ 255 |
+    |  smallint    | 2  |   -32768 ~ 32767| 0 ~ 65535 |
+    |  mediumint | 3 |     -8388608 ~ 8388607| 0 ~ 1677215 |
+    |  int、integer  | 4 | -2147483648 ~ 2147483647 | 0 ~ 4294967295 |
+    |  bigint | 8 | -922337203684775808-9223372036854775807 | 0 ~ 148446744073709551615 |
+    | float | 4 | | |
+    | double | 8 | | |
     
     * 默认存在符号位，unsigned 属性修改
     * 显示宽度，如果某个数不够定义字段时设置的位数，则前面以0补填，zerofill 属性修改
@@ -280,11 +281,11 @@ alter database databasesname default character set gbk collate gbk_bin;
 
 |类型|字节数|名词|范围|
 | --- | --- | --- | --- |
-|  datetime |   8字节   | 日期及时间   |  1000-01-01 00:00:00 到 9999-12-31 23:59:59|
-|    date     |   3字节    |日期      |   1000-01-01 到 9999-12-31|
-|    timestamp  | 4字节  |  时间戳   |     19700101000000 到 2038-01-19 03:14:07|
-|  time    |    3字节   | 时间 |        -838:59:59 到 838:59:59|
-|   year   |     1字节 |   年份    |     1901 - 2155|
+|  datetime |   8   | 年月日时分秒 |  1000-01-01 00:00:00 到 9999-12-31 23:59:59|
+|    date     |   3    |年月日      |   1000-01-01 到 9999-12-31|
+|    timestamp  | 4  | 年月日时分秒 |     19700101000000 到 2038-01-19 03:14:07|
+|  time    |    3   | 时分秒       |        -838:59:59 到 838:59:59|
+|   year   |     1 |   年    |     1901 - 2155|
 
 - datetime    
     * YYYY-MM-DD hh:mm:ss

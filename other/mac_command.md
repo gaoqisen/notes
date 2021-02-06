@@ -18,6 +18,14 @@ diskutil list  // 查看磁盘分区表
 find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
 // 批量删除同名文件
 sudo find "需要删除的目录" -name ".DS_Store" -depth -exec rm {} \;
+// 查看路由表
+netstat -rn
+// 增加路由
+sudo route -n add -host 192.168.1.0 192.168.1.0
+// 删除路由
+sudo route -v delete -net 172.0.53.1 -gateway 172.0.53.1
+// 下载brew
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 ```
 
 ## git

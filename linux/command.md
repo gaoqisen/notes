@@ -12,6 +12,7 @@ du -h // 查看当前文件夹的占用大小
 df -h // 查看当前文件下所有的文件的大小
 free -h // 查看磁盘使用情况 swap(交换空间：防止服务器出现内存溢出时无法操作系统。云服务器没有交换空间)
 netstat -al // 显示网络状态信息
+netstat -ltunp // 查看当前启动的服务
 ps -A   // 显示所有的进程
 ps -ef|grep tomcat  // 查看tomcat的端口
 passwd  // 重置密码
@@ -21,7 +22,14 @@ tar -czvf file.tar.gz .  // 压缩当前文件夹
 tar -xzvf file.tar.gz // 解压缩文件
 apt-get  // ubuntu软件包管理  在/etc/apt/source.list可以更改数据源 apt-get update让数据源生效
 lsb_release -a // 查看系统版本
-
+// 查看文件， 不会加载整个文件 `/`向下搜索，`?`向上搜索文件 n重复前一个搜索
+less
+// 分页显示test.log日志里面包含debug的日志
+cat -n test.log |grep "debug" |less
+// 分页查看压缩包里面的文件
+zcat -n app* |grep "debug" |less
+// 查找当前目录下面文本中的内容
+grep -rn "京ICP备12049100号" *
 ```
 
 ## 常用

@@ -1,9 +1,8 @@
----
 title: centos7安装git服务器
 date: 2018-09-20 22:50:11
 tags: git
 categories: linux
----
+
 ## linux安装git，并配置仓库
 #### 1.安装git,查看版本号
       yum install -y git
@@ -42,24 +41,52 @@ categories: linux
 
       git status //查看git状态
       git remote -v //查看所有原点
-      git stash  // 暂存
+      git stash  // 暂存，遇到pull代码冲突的时候，可以先暂存代码之后，在进行pull
+      git stash pop // 返回到之前暂存的版本并删除之前的暂存版本
       git push origin master --force  //强制上传，将本地代码覆盖掉远程代码
-      
+      // 删除远程分支
+      git push origin --delete BranchName 
+      // 删除本地分支
+      git branch -d BranchName
+
 #### 分支 
-     
-      git branch //看看分支 
-      git chechout aaa //切换分支aaa 
-      git branck aaa //创建aaa分支 
-      git chechout -b aaa //本地创建 aaa分支，同时切换到aaa分支。只有提交的时候才会在服务端上创建一个分支
-      git pull origin master //更新指定分支
-      git branch -vv // 查看分支跟踪的远程分支
-      git branch -v  // 分支信息
-      git branch --no-merged // 查看尚未合并的工作
-      git merge iss53  // 将iss53合并到当前分支
-      
-      
+
+```o
+  git branch //看看分支 
+  git checkout aaa //切换分支aaa 
+  git branch aaa //创建aaa分支 
+  git checkout -b aaa //本地创建 aaa分支，同时切换到aaa分支。只有提交的时候才会在服务端上创建一个分支
+  git pull origin master //更新指定分支
+  git branch -vv // 查看分支跟踪的远程分支
+  git branch -v  // 分支信息
+  git branch --no-merged // 查看尚未合并的工作
+  git merge iss53  // 将iss53合并到当前分支
+  
+  
+  // 创建自己的分支并切换到自己的分支
+  git checkout -b Branch.gaoqisen.20200825
+  // 更新dev分支代码到自己的分支
+  git pull origin dev
+  // 冲突解决
+  git checkout bbb
+  git merge aaa
+  git push origin bbb
+```
+
 [更详细的解释](https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6)
-      
+​      
+
+## 问题解决
+
+```
+// 冲突问题Merging is not possible because you have unmerged files
+git add -u
+git commit -m ''
+git pull origin dev
+```
+
+
+
 ## git钩子自动执行更新
 
 #### 1.在初始化git仓库里面找到hooks文件夹，并在里面创建钩子文件
