@@ -1,0 +1,132 @@
+<template><div><h2 id="一、基本概念" tabindex="-1"><a class="header-anchor" href="#一、基本概念" aria-hidden="true">#</a> 一、基本概念</h2>
+<ul>
+<li>
+<p>算法: 同一个问题的不同解决方法,算法往往是针对特定数据结构的</p>
+</li>
+<li>
+<p>时间测量：计算算法时间差、幅度不够循环来凑(扩大数据量)</p>
+</li>
+<li>
+<p>空间测算: 数据占用的空间越小越好</p>
+</li>
+<li>
+<p>常数时间操作：执行时间固定的都是常数操作（算数运算、位运算、赋值、比较、数组寻址）。 反之执行时间不固定的操作都不是常数时间的操作（链表寻址去取数）</p>
+</li>
+<li>
+<p>时间复杂度（最重要的指标）：一直分解为常数级操作，最高阶的</p>
+<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th>标记</th>
+<th>解释</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O(1)</td>
+<td>常数阶</td>
+<td>没有循环（表示随着处理数据的规模增大但是处理的时间没有变化）</td>
+</tr>
+<tr>
+<td>O(logN)</td>
+<td>对数阶</td>
+<td>循环次数是n/2（从数组的中间选择一个随机点进行查找，然后重复这个过程）</td>
+</tr>
+<tr>
+<td>O(n)</td>
+<td>线性阶</td>
+<td>时间随着n的变化而变化（随着处理数据量的增加，处理时间也会增加）</td>
+</tr>
+<tr>
+<td>O(N*logN)</td>
+<td>线性对数阶</td>
+<td>将O(logN)循环n次</td>
+</tr>
+<tr>
+<td>O(N^2)</td>
+<td>平方阶</td>
+<td>O(n)嵌套循环2次</td>
+</tr>
+<tr>
+<td>O(N^3)</td>
+<td>立方阶</td>
+<td>嵌套3次循环n次</td>
+</tr>
+<tr>
+<td>O(N^k)</td>
+<td>K次方阶</td>
+<td>嵌套n次循环</td>
+</tr>
+<tr>
+<td>O(2^N)</td>
+<td>指数阶</td>
+<td>时间根据数量指数增长</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// O(n)</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// O(n2)</span>
+<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ul>
+</li>
+<li>
+<p>额外空间复杂度：除开出参和入参的空间外，额外需要开辟空间去处理的称为额外空间</p>
+<ul>
+<li>
+<table>
+<thead>
+<tr>
+<th>标记</th>
+<th>解释</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O(1)</td>
+<td>常数阶</td>
+<td>没有循环</td>
+</tr>
+<tr>
+<td>O(n)</td>
+<td>线性阶</td>
+<td>时间随着n的变化而变化</td>
+</tr>
+<tr>
+<td>O(n2)</td>
+<td>平方阶</td>
+<td>嵌套O(n)</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li>
+<p>常数项：随机数数据直接测试</p>
+</li>
+<li>
+<p>最优解：时间复杂度尽量低、空间复杂度尽量低。常数间操作优化不纳入最优解</p>
+</li>
+<li>
+<p>对数器：用来验证自己的算法，对数器是特别重要的，写对数器的过程就是练习coding能力的时候。大样本随机测试，检查算法是否正确，用足够多的样本和正确的算法计算结果样本去对比被验证的算法结果(用已有的排序算法和自己写的排序算法都去处理数据，之后将处理的结果对比一下是否一致)</p>
+</li>
+<li>
+<p>二分法：每次把数据分为两份处理。O(logn)</p>
+</li>
+</ul>
+</div></template>
+
+
