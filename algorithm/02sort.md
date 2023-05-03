@@ -917,8 +917,6 @@ https://leetcode.com/problems/count-of-range-sum/
 
 ![deap](https://gaoqisen.github.io/GraphBed/202301/20230102223739.png)
 
-![deap](https://gaoqisen.github.io/GraphBed/202301/heap.mp4)
-
 <VideoPlayer src="https://gaoqisen.github.io/GraphBed/202301/heap.mp4"/>
 
 堆规律总结：
