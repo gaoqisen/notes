@@ -40,125 +40,27 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="一、词性-10种" tabindex="-1"><a class="header-anchor" href="#一、词性-10种" aria-hidden="true">#</a> 一、词性(10种)</h2>
 <h3 id="_2-1-词性归类" tabindex="-1"><a class="header-anchor" href="#_2-1-词性归类" aria-hidden="true">#</a> 2.1 词性归类</h3>
 <h4 id="_1、重点词-实词" tabindex="-1"><a class="header-anchor" href="#_1、重点词-实词" aria-hidden="true">#</a> 1、重点词(实词)</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">分类</th>
-<th style="text-align:left">常见</th>
-<th style="text-align:left">简写</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">名词</td>
-<td style="text-align:left">表示人或者事物的名称</td>
-<td style="text-align:left">可数和不可数</td>
-<td style="text-align:left">toy 玩具，head 头</td>
-<td style="text-align:left">n</td>
-</tr>
-<tr>
-<td style="text-align:left">副词</td>
-<td style="text-align:left">表示行为或状态特征的词</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">adv</td>
-</tr>
-<tr>
-<td style="text-align:left">形容词</td>
-<td style="text-align:left">用来修饰名词、表示人或事物的特征</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">litte 小的、big 大的</td>
-<td style="text-align:left">adv</td>
-</tr>
-<tr>
-<td style="text-align:left">动词</td>
-<td style="text-align:left">表示动作或状态</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">look 看，know 认识</td>
-<td style="text-align:left">v</td>
-</tr>
-</tbody>
-</table>
-<h4 id="_2、重点词-虚词" tabindex="-1"><a class="header-anchor" href="#_2、重点词-虚词" aria-hidden="true">#</a> 2、重点词(虚词)</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-<th style="text-align:left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">介词</td>
-<td style="text-align:left">说明它与别的词之间的关系，时间介词</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">in， down</td>
-<td style="text-align:left">prep</td>
-</tr>
-<tr>
-<td style="text-align:left">连词</td>
-<td style="text-align:left">逻辑关系词，表示人或事物的名称</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">if、but</td>
-<td style="text-align:left">conj</td>
-</tr>
-<tr>
-<td style="text-align:left">冠词</td>
-<td style="text-align:left">说明名词所指的范围</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">a、an、the</td>
-<td style="text-align:left">art</td>
-</tr>
-</tbody>
-</table>
-<h4 id="_3、非重点" tabindex="-1"><a class="header-anchor" href="#_3、非重点" aria-hidden="true">#</a> 3、非重点</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">分类</th>
-<th style="text-align:left">常见</th>
-<th style="text-align:left">简写</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">代词</td>
-<td style="text-align:left">代替名词、数词、形容词(人称代词)</td>
-<td style="text-align:left">单数、复数</td>
-<td style="text-align:left">I,  you, it</td>
-<td style="text-align:left">pron</td>
-</tr>
-<tr>
-<td style="text-align:left">数词</td>
-<td style="text-align:left">表示数量或者顺序的词</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">one、 two</td>
-<td style="text-align:left">num</td>
-</tr>
-<tr>
-<td style="text-align:left">感叹词</td>
-<td style="text-align:left">语气词，代替名词，数词，形容词等</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">oh、hi</td>
-<td style="text-align:left">int</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_2-2-词性详细" tabindex="-1"><a class="header-anchor" href="#_2-2-词性详细" aria-hidden="true">#</a> 2.2 词性详细</h3>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>
+|名称|描述|分类|常见|简写|
+|:--|:--|:--|:--|:--|
+|        |||||
+|名词|表示人或者事物的名称|可数和不可数|toy 玩具，head 头|n|
+|副词|表示行为或状态特征的词|||adv|
+|形容词|用来修饰名词、表示人或事物的特征||litte 小的、big 大的|adv|
+|动词|表示动作或状态||look 看，know 认识|v|
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、重点词-虚词" tabindex="-1"><a class="header-anchor" href="#_2、重点词-虚词" aria-hidden="true">#</a> 2、重点词(虚词)</h4>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>|      |                                    |      |            |      |
+| :--- | :--------------------------------- | :--- | :--------- | :--- |
+| 介词 | 说明它与别的词之间的关系，时间介词 |      | in， down  | prep |
+| 连词 | 逻辑关系词，表示人或事物的名称     |      | if、but    | conj |
+| 冠词 | 说明名词所指的范围                 |      | a、an、the | art  |
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、非重点" tabindex="-1"><a class="header-anchor" href="#_3、非重点" aria-hidden="true">#</a> 3、非重点</h4>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>| 名称   | 描述                             | 分类       | 常见        | 简写 |
+| :----- | :------------------------------- | :--------- | :---------- | :--- |
+| 代词   | 代替名词、数词、形容词(人称代词) | 单数、复数 | I,  you, it | pron |
+| 数词   | 表示数量或者顺序的词             |            | one、 two   | num  |
+| 感叹词 | 语气词，代替名词，数词，形容词等 |            | oh、hi      | int  |
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-2-词性详细" tabindex="-1"><a class="header-anchor" href="#_2-2-词性详细" aria-hidden="true">#</a> 2.2 词性详细</h3>
 <h4 id="_1、名词-noun-n" tabindex="-1"><a class="header-anchor" href="#_1、名词-noun-n" aria-hidden="true">#</a> 1、名词(noun,n)</h4>
 <p>描述：表示人或者事物的名称</p>
 <p>分类：</p>
@@ -208,31 +110,11 @@
 <h4 id="_2、代词-pronoun-pron" tabindex="-1"><a class="header-anchor" href="#_2、代词-pronoun-pron" aria-hidden="true">#</a> 2、代词 (pronoun,pron)</h4>
 <p>描述：代替名词、数词、形容词(人称代词)</p>
 <p>常见:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left">第一人称、我</th>
-<th style="text-align:left">第二人称、你</th>
-<th style="text-align:left">第三人称、他她它</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">单数</td>
-<td style="text-align:left">I</td>
-<td style="text-align:left">you</td>
-<td style="text-align:left">It</td>
-</tr>
-<tr>
-<td style="text-align:left">复数</td>
-<td style="text-align:left">we</td>
-<td style="text-align:left">You</td>
-<td style="text-align:left">They</td>
-</tr>
-</tbody>
-</table>
-<h4 id="_3、形容词-adjective-adj" tabindex="-1"><a class="header-anchor" href="#_3、形容词-adjective-adj" aria-hidden="true">#</a> 3、形容词(adjective,adj)</h4>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>||第一人称、我|第二人称、你|第三人称、他她它|
+|:---|:---|:---|:---|
+|单数|I|you|It|
+|复数|we|You|They|
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、形容词-adjective-adj" tabindex="-1"><a class="header-anchor" href="#_3、形容词-adjective-adj" aria-hidden="true">#</a> 3、形容词(adjective,adj)</h4>
 <p>描述：用来修饰名词、表示人或事物的特征</p>
 <p>位置：放在名词前面修饰名词</p>
 <p>常见：little 小的，fat 肥胖的，thin 瘦的，big 大的</p>
@@ -295,85 +177,22 @@
 <blockquote>
 <p>主、谓、宾、表、定、状、补、同</p>
 </blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">充当者</th>
-<th style="text-align:left">例子</th>
-<th style="text-align:left">位置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">主语(句子最主要的)</td>
-<td style="text-align:left">需要描述的事物或者对象，全句诉说的对象(主角)</td>
-<td style="text-align:left">名词、代词、数词、短语</td>
-<td style="text-align:left">I^主语 will drink water</td>
-<td style="text-align:left">一般句子开头</td>
-</tr>
-<tr>
-<td style="text-align:left">谓语(主语的行为)</td>
-<td style="text-align:left">表示主语的行为或状态，对主句加以称述(动作)</td>
-<td style="text-align:left">be动词、行为动词(跑、动等实际动作意义的词)</td>
-<td style="text-align:left">I will^谓语 drink water</td>
-<td style="text-align:left">一般主语之后</td>
-</tr>
-<tr>
-<td style="text-align:left">宾语(谓语行为的承受)</td>
-<td style="text-align:left">动作承受的对象就是宾语(配角)</td>
-<td style="text-align:left">名词、代词、数词构成</td>
-<td style="text-align:left">我敲打了电视。“电视”就是宾语</td>
-<td style="text-align:left">动词、谓语后面</td>
-</tr>
-</tbody>
-</table>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 这个高大的  男孩  经常    去   大         动物园。
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>| 名称                 | 描述                                         | 充当者                                     | 例子                         | 位置           |
+| :------------------- | :------------------------------------------- | :----------------------------------------- | :--------------------------- | :------------- |
+| 主语(句子最主要的)   | 需要描述的事物或者对象，全句诉说的对象(主角) | 名词、代词、数词、短语                     | I^主语 will drink water      | 一般句子开头   |
+| 谓语(主语的行为)     | 表示主语的行为或状态，对主句加以称述(动作)   | be动词、行为动词(跑、动等实际动作意义的词) | I will^谓语 drink water      | 一般主语之后   |
+| 宾语(谓语行为的承受) | 动作承受的对象就是宾语(配角)                 | 名词、代词、数词构成                       | 我敲打了电视。“电视”就是宾语 | 动词、谓语后面 |
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 这个高大的  男孩  经常    去   大         动物园。
 如：(The tall) boy (often) go (to the big) zoo.   
    (定语)     主语 (状语)  谓语 (定语)      宾语 (状语)
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">充当者</th>
-<th style="text-align:left">例子</th>
-<th style="text-align:left">位置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">表语(表明主语特征)</td>
-<td style="text-align:left">表明主语的身份或者特征。</td>
-<td style="text-align:left">名词、代词、数词、介词短语、副词</td>
-<td style="text-align:left">This table^表语 is long. (这个桌子是长的。)</td>
-<td style="text-align:left">放在be动词和系动词的后面。</td>
-</tr>
-<tr>
-<td style="text-align:left">定语(给名词等定位)</td>
-<td style="text-align:left">修饰名词或代词(即在汉语里的……的)，一般起描述作用</td>
-<td style="text-align:left">形容词或者相当于形容词的短语或从句担任</td>
-<td style="text-align:left">优秀的人。“优秀的”就是定语</td>
-<td style="text-align:left">名词前</td>
-</tr>
-<tr>
-<td style="text-align:left">状语(形容词等的状态)</td>
-<td style="text-align:left">修饰动词，形容词或副词，有的修饰全句，用于说明地点，时间，方式，程度，原因，目的，结果，条件，方向等</td>
-<td style="text-align:left">副词</td>
-<td style="text-align:left">I often^状语 write to him. (我常给他写信。)</td>
-<td style="text-align:left">不定</td>
-</tr>
-<tr>
-<td style="text-align:left">宾语补足语(宾补)(对宾语的补充)</td>
-<td style="text-align:left">就是对宾语的描述(有时如果没有宾语补足语，句子就不完整)</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">宾语的后面</td>
-</tr>
-</tbody>
-</table>
-<h2 id="三、句形-8种" tabindex="-1"><a class="header-anchor" href="#三、句形-8种" aria-hidden="true">#</a> 三、句形(8种)</h2>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>
+| 名称                           | 描述                                                         | 充当者                                 | 例子                                        | 位置                       |
+| :----------------------------- | :----------------------------------------------------------- | :------------------------------------- | :------------------------------------------ | :------------------------- |
+| 表语(表明主语特征)             | 表明主语的身份或者特征。                                     | 名词、代词、数词、介词短语、副词       | This table^表语 is long. (这个桌子是长的。) | 放在be动词和系动词的后面。 |
+| 定语(给名词等定位)             | 修饰名词或代词(即在汉语里的……的)，一般起描述作用             | 形容词或者相当于形容词的短语或从句担任 | 优秀的人。“优秀的”就是定语                  | 名词前                     |
+| 状语(形容词等的状态)           | 修饰动词，形容词或副词，有的修饰全句，用于说明地点，时间，方式，程度，原因，目的，结果，条件，方向等 | 副词                                   | I often^状语 write to him. (我常给他写信。) | 不定                       |
+| 宾语补足语(宾补)(对宾语的补充) | 就是对宾语的描述(有时如果没有宾语补足语，句子就不完整)       |                                        |                                             | 宾语的后面                 |
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、句形-8种" tabindex="-1"><a class="header-anchor" href="#三、句形-8种" aria-hidden="true">#</a> 三、句形(8种)</h2>
 <h3 id="_3-1-常用" tabindex="-1"><a class="header-anchor" href="#_3-1-常用" aria-hidden="true">#</a> 3.1 常用</h3>
 <blockquote>
 <p>《主语＋谓语》；《主语＋系动词＋表语》；《主语＋谓语＋宾语》；《主语＋谓语＋间接宾语＋直接宾语》；《主语＋谓语＋宾语＋宾语补足语》；</p>

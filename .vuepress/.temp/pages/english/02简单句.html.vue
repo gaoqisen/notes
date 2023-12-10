@@ -52,10 +52,10 @@ I ordered hamburger their lunch (他们的午餐他们点了汉堡)
 <table>
 <thead>
 <tr>
-<th></th>
-<th>第一人称</th>
-<th>第二人称</th>
-<th>第三人称</th>
+<th>人称</th>
+<th>第一</th>
+<th>第二</th>
+<th>第三</th>
 </tr>
 </thead>
 <tbody>
@@ -74,67 +74,17 @@ I ordered hamburger their lunch (他们的午餐他们点了汉堡)
 </tbody>
 </table>
 <h5 id="_2-1-2-例子" tabindex="-1"><a class="header-anchor" href="#_2-1-2-例子" aria-hidden="true">#</a> 2.1.2 例子</h5>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>肯定句</th>
-<th>否定句</th>
-<th>一般疑问句</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>I</td>
-<td>I play</td>
-<td>I don’t play</td>
-<td>Do you play?</td>
-</tr>
-<tr>
-<td>You</td>
-<td>You help</td>
-<td>You don’t help</td>
-<td>Do you help?</td>
-</tr>
-<tr>
-<td>He</td>
-<td>He answers</td>
-<td>He does not answer</td>
-<td>Does he answer?</td>
-</tr>
-<tr>
-<td>She</td>
-<td>She sings</td>
-<td>She does not sing</td>
-<td>Does she sing?</td>
-</tr>
-<tr>
-<td>It</td>
-<td>It rains</td>
-<td>It does not rain</td>
-<td>Does it rain?</td>
-</tr>
-<tr>
-<td>We</td>
-<td>We dream</td>
-<td>We does not dream</td>
-<td>Do we dream?</td>
-</tr>
-<tr>
-<td>You</td>
-<td>You read</td>
-<td>You does not read</td>
-<td>Do you read?</td>
-</tr>
-<tr>
-<td>They</td>
-<td>They work</td>
-<td>They don’t work</td>
-<td>Do they work?</td>
-</tr>
-</tbody>
-</table>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>笔记：
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>|      | 肯定句     | 否定句             | 一般疑问句      |
+| ---- | ---------- | ------------------ | --------------- |
+| I    | I play     | I don’t play       | Do you play?    |
+| You  | You help   | You don’t help     | Do you help?    |
+| He   | He answers | He does not answer | Does he answer? |
+| She  | She sings  | She does not sing  | Does she sing?  |
+| It   | It rains   | It does not rain   | Does it rain?   |
+| We   | We dream   | We does not dream  | Do we dream?    |
+| You  | You read   | You does not read  | Do you read?    |
+| They | They work  | They don’t work    | Do they work?   |
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>笔记：
 // 一般陈述句转一般疑问句在动词前加Do(第三人称单数用Does, 非三单用Do） not，其他的照搬。（加s/es，变y为i加es）
 // 第三人称单数的动词后要加s，非三单的动词为原型。
 // 西洋乐器动词前面加the， 运动项目的动词前不加the
@@ -147,62 +97,16 @@ I ordered hamburger their lunch (他们的午餐他们点了汉堡)
 5. He has a bath every day.  转为： He doesn't have bath every day.
     注意：has的原型为have， 不能照搬为has。
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="_2-1-3-人称代词加强版" tabindex="-1"><a class="header-anchor" href="#_2-1-3-人称代词加强版" aria-hidden="true">#</a> 2.1.3 人称代词加强版</h5>
-<table>
-<thead>
-<tr>
-<th>人称代词</th>
-<th>主格</th>
-<th>宾格</th>
-<th>形容词性物主代词</th>
-<th>名词性物主代词</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>第一人称单数</td>
-<td>I</td>
-<td>Me</td>
-<td>My</td>
-<td>Mine</td>
-</tr>
-<tr>
-<td>第二人称单数</td>
-<td>You</td>
-<td>You</td>
-<td>Your</td>
-<td>Yours</td>
-</tr>
-<tr>
-<td>第三人称单数</td>
-<td>He/She/It</td>
-<td>Him/Her/It</td>
-<td>His/Her/Its</td>
-<td>His/Hers/Its</td>
-</tr>
-<tr>
-<td>第一人称复数</td>
-<td>We</td>
-<td>Us</td>
-<td>Our</td>
-<td>Ours</td>
-</tr>
-<tr>
-<td>第二人称复数</td>
-<td>You</td>
-<td>You</td>
-<td>Your</td>
-<td>Yours</td>
-</tr>
-<tr>
-<td>第三人称复数</td>
-<td>They</td>
-<td>Them</td>
-<td>Their</td>
-<td>Theirs</td>
-</tr>
-</tbody>
-</table>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 名词性物主代词 ＝  形容词物主代词 ＋ 名词
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>
+| 人称代词     | 主格      | 宾格       | 形容词性物主代词 | 名词性物主代词 |
+| ------------ | --------- | ---------- | ---------------- | -------------- |
+| 第一人称单数 | I         | Me         | My               | Mine           |
+| 第二人称单数 | You       | You        | Your             | Yours          |
+| 第三人称单数 | He/She/It | Him/Her/It | His/Her/Its      | His/Hers/Its   |
+| 第一人称复数 | We        | Us         | Our              | Ours           |
+| 第二人称复数 | You       | You        | Your             | Yours          |
+| 第三人称复数 | They      | Them       | Their            | Theirs         |
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 名词性物主代词 ＝  形容词物主代词 ＋ 名词
 // 形容词物主代词 ＝  形容词
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、陈述句变一般疑问句" tabindex="-1"><a class="header-anchor" href="#_2、陈述句变一般疑问句" aria-hidden="true">#</a> 2、陈述句变一般疑问句</h4>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>陈述句                         一般疑问句                   回答
@@ -295,15 +199,13 @@ How cute a dog it is!(他是多么可爱的一只狗啊)
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>Wow! That's totally awesome!(哇！真是厉害)
 Oh!You're Peter!(哇！你是皮特！)
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、祈使句" tabindex="-1"><a class="header-anchor" href="#四、祈使句" aria-hidden="true">#</a> 四、祈使句</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 命令、警告祈使句
-Get out!(滚)
+<h4 id="_4-1-命令、警告祈使句" tabindex="-1"><a class="header-anchor" href="#_4-1-命令、警告祈使句" aria-hidden="true">#</a> 4.1 命令、警告祈使句</h4>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code> Get out!(滚)
 Be quiet,please.(请安静)
 Be careful!(小心)
-
-// 请求祝愿祈使句
-Have a good day(祝你有美好的一天)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_4-2-请求祝愿祈使句" tabindex="-1"><a class="header-anchor" href="#_4-2-请求祝愿祈使句" aria-hidden="true">#</a> 4.2 请求祝愿祈使句</h4>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>Have a good day(祝你有美好的一天)
 Let me help you(让我帮你)
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p></p>
-</div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
