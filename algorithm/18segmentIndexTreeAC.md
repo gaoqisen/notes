@@ -1,5 +1,5 @@
 ---
-title: 18-segmentAndIndexTree
+title: 18_segmentAndIndexTree
 date: 2023-07-01 21:31:12
 tags: algorithm
 categories: study

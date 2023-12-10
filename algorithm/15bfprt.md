@@ -1,5 +1,5 @@
 ---
-title: 15-bfprt
+title: 15_bfprt
 date: 2023-06-04 21:10:12
 tags: algorithm
 categories: study

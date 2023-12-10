@@ -1,5 +1,5 @@
 ---
-title: 17-morris
+title: 17_morris
 date: 2023-06-24 20:10:12
 tags: algorithm
 categories: study

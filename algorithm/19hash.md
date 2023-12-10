@@ -1,5 +1,5 @@
 ---
-title: 19-hash
+title: 19_hash
 date: 2023-07-08 21:31:12
 tags: algorithm
 categories: study

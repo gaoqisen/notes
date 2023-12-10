@@ -1,5 +1,5 @@
 ---
-title: 16-蓄水池算法
+title: 16_蓄水池算法
 date: 2023-06-20 21:10:12
 tags: algorithm
 categories: study

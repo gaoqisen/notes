@@ -26,6 +26,8 @@ sudo route -n add -host 192.168.1.0 192.168.1.0
 sudo route -v delete -net 172.0.53.1 -gateway 172.0.53.1
 // 下载brew
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+// 删除注释
+grep '^[^#|;]' 
 ```
 
 ## git
