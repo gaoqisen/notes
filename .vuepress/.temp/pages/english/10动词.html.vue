@@ -210,33 +210,66 @@ love > loved
 <span class="token comment">// 讨论个人经历</span>
 <span class="token class-name">I</span> have seen her <span class="token keyword">this</span> week<span class="token punctuation">.</span>  <span class="token comment">// 我这个星期见过她</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、过去完成-常用" tabindex="-1"><a class="header-anchor" href="#_3、过去完成-常用" aria-hidden="true">#</a> 3、过去完成(常用)</h4>
+<p>肯定：主语 + had + 动词过去分词</p>
+<p>否定： 主语 + had + 动词过去分词</p>
+<p>疑问：疑问句 + had + 主语 + 动词过去分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示发生在过去的过去，动作在过去已经完成了，对过去有影响</span>
 <span class="token class-name">I</span> had lived in <span class="token class-name">Nanjing</span> before <span class="token class-name">I</span> moved <span class="token keyword">to</span> <span class="token class-name">Kunming</span><span class="token punctuation">.</span>  <span class="token comment">// 我搬到昆明之前我住在南京</span>
 <span class="token comment">// 可以和after，as soon as，the moment that，until连用</span>
 <span class="token class-name">After</span> she got up<span class="token punctuation">,</span> <span class="token class-name">I</span> cooked breakfast<span class="token punctuation">.</span>  <span class="token comment">// 她起床后，我做了早餐		</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_4、过去完成进行" tabindex="-1"><a class="header-anchor" href="#_4、过去完成进行" aria-hidden="true">#</a> 4、过去完成进行</h4>
+<p>肯定：主语 + had been + 动词过去分词</p>
+<p>否定：主语 + had been + not 动词过去分词</p>
+<p>疑问：疑问句 + had been + 主语 + 动词过去分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去的过去，动作在过去已经完成了一部分，动作仍然要继续发生下去，对过去有影响。</span>
 <span class="token class-name">She</span> had been carrying out her plot <span class="token keyword">to</span> <span class="token namespace">be</span> the queen three months earlier<span class="token punctuation">.</span>  <span class="token comment">// 早在三个月前她就开始了自己的计划想要成为女王</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_5、过去进行" tabindex="-1"><a class="header-anchor" href="#_5、过去进行" aria-hidden="true">#</a> 5、过去进行</h4>
+<p>肯定：主语 + was/were + 动词过去分词</p>
+<p>否定： 主语 + was/were + not + 动词过去分词</p>
+<p>疑问：疑问句 + was/were + 主语 + 动词过去分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去，动作持续进行下去</span>
 <span class="token class-name">The</span> <span class="token constant">UFO</span> was flying over my head last midnight<span class="token punctuation">.</span>  <span class="token comment">// 昨天半夜不明飞行物从我头上飞过</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_6、现在完成进行" tabindex="-1"><a class="header-anchor" href="#_6、现在完成进行" aria-hidden="true">#</a> 6、现在完成进行</h4>
+<p>肯定：主语 + have been + 动词过去分词</p>
+<p>否定： 主语 + have been + not + 动词现在分词</p>
+<p>疑问：疑问词 + have been + 主语 + 动词现在分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去，动作持续下去，到现在已经完成了一部分，对现在有影响</span>
 <span class="token class-name">I</span> have been working <span class="token keyword">for</span> seven days without a rest<span class="token punctuation">.</span>  <span class="token comment">// 我已经连续七天没休息了</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_7、一般过去将来" tabindex="-1"><a class="header-anchor" href="#_7、一般过去将来" aria-hidden="true">#</a> 7、一般过去将来</h4>
+<p>肯定：主语 + would + 动词原形</p>
+<p>否定：主语 + would + not + 动词原形</p>
+<p>疑问：疑问词 + would + 主语 + 动词原形</p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 表示动作发生在过去的将来，如果是人做主语表示意愿
 I would win the match under cruel competition.  // 我在残酷的比赛中获胜
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_8、过去将来进行" tabindex="-1"><a class="header-anchor" href="#_8、过去将来进行" aria-hidden="true">#</a> 8、过去将来进行</h4>
+<p>肯定：主语 + would be + 动词现在分词</p>
+<p>否定： 主语 + would be + not + 动词现在分词</p>
+<p>疑问： 疑问词 + would be + 主语 + 动词现在分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去的将来，动作一直持续下去</span>
 <span class="token class-name">When</span> <span class="token class-name">I</span> was young<span class="token punctuation">,</span> dad said <span class="token class-name">I</span> would be fighting <span class="token keyword">for</span> my future <span class="token number">20</span> years later<span class="token punctuation">.</span> <span class="token comment">// 在我小的时候，我爸跟我说20年后，我要为自己未来而奋斗</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_9、过去将来完成进行" tabindex="-1"><a class="header-anchor" href="#_9、过去将来完成进行" aria-hidden="true">#</a> 9、过去将来完成进行</h4>
+<p>肯定：主语 + would have been + 动词现在分词</p>
+<p>否定： 主语 + would have been + not + 动词现在分词</p>
+<p>疑问：疑问词 + would have been + 主语 + 动词现在分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去的将来之前，动作已经在过去将来完成了一部分，持续到过去将来继续进行，对过去将来这个时间点有影响。</span>
 <span class="token class-name">Up</span> <span class="token keyword">to</span> <span class="token namespace">the</span> time<span class="token punctuation">,</span> he would have been translating those books<span class="token punctuation">.</span>  <span class="token comment">// 到那时候，他已经在翻译那些书了</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_10、过去将来完成" tabindex="-1"><a class="header-anchor" href="#_10、过去将来完成" aria-hidden="true">#</a> 10、过去将来完成</h4>
+<p>肯定：主语 + would have + 动词过去分词</p>
+<p>否定： 主语 + would have + not + 动词过去分词</p>
+<p>疑问：疑问词 + would have + 主语 + 动词过去分词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去的将来之前，动作已经在过去将来完成了，多过去将来这个时间点有影响</span>
 <span class="token class-name">I</span> guessed you would have told her something<span class="token punctuation">.</span>  <span class="token comment">// 我猜你会告诉她一些事情</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、动词语态" tabindex="-1"><a class="header-anchor" href="#四、动词语态" aria-hidden="true">#</a> 四、动词语态</h2>
-<h2 id="五、非谓语动词" tabindex="-1"><a class="header-anchor" href="#五、非谓语动词" aria-hidden="true">#</a> 五、非谓语动词</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 1、主语语态（中文习惯）：主语是动作执行者，某人某物做什么
+I give you a car.  // 我给你一辆车
+
+// 2、被动语态（英文习惯）：主语是动作承受者，某人某物被做了什么
+You are given a car by me.  // 你被我给了一辆车
+
+// 3、主动句改被动句
+	// a. 把主动句的宾语改成被动句的主语
+	// b. 123
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、非谓语动词" tabindex="-1"><a class="header-anchor" href="#五、非谓语动词" aria-hidden="true">#</a> 五、非谓语动词</h2>
 </div></template>
 
 
