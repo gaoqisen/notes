@@ -260,16 +260,106 @@ I would win the match under cruel competition.  // 我在残酷的比赛中获�
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去的将来之前，动作已经在过去将来完成了，多过去将来这个时间点有影响</span>
 <span class="token class-name">I</span> guessed you would have told her something<span class="token punctuation">.</span>  <span class="token comment">// 我猜你会告诉她一些事情</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、动词语态" tabindex="-1"><a class="header-anchor" href="#四、动词语态" aria-hidden="true">#</a> 四、动词语态</h2>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 1、主语语态（中文习惯）：主语是动作执行者，某人某物做什么
+<h3 id="_4-1-分类" tabindex="-1"><a class="header-anchor" href="#_4-1-分类" aria-hidden="true">#</a> 4.1 分类</h3>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 1、主动语态（中文习惯）：主语是动作执行者，某人某物做什么
 I give you a car.  // 我给你一辆车
 
 // 2、被动语态（英文习惯）：主语是动作承受者，某人某物被做了什么
 You are given a car by me.  // 你被我给了一辆车
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-2-主动句改被动句" tabindex="-1"><a class="header-anchor" href="#_4-2-主动句改被动句" aria-hidden="true">#</a> 4.2 主动句改被动句</h3>
+<p>步骤：</p>
+<ol>
+<li>把主动句的宾语改成被动句的主语</li>
+<li>把主动句的谓语动词改成 被动句谓语动词be+过去分词，并且人称和单复数要随着新主语变化，时态保持不变</li>
+<li>把主动句的前面加by，放在谓语后面，变化人称宾格。如果看前面就知道是谁被谁做了什么，或者上下文交代是谁，可以省略by加主语</li>
+<li>其他句子成分保持不变</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">My</span> mother sweeps the floor every day morning<span class="token punctuation">.</span>  <span class="token comment">// 我妈每天早上扫这地</span>
+<span class="token class-name">The</span> floor is sweeps by my mother every day morning<span class="token punctuation">.</span>  <span class="token comment">// 这地每天被我妈扫</span>
 
-// 3、主动句改被动句
-	// a. 把主动句的宾语改成被动句的主语
-	// b. 123
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、非谓语动词" tabindex="-1"><a class="header-anchor" href="#五、非谓语动词" aria-hidden="true">#</a> 五、非谓语动词</h2>
+<span class="token class-name">I</span> bought some books<span class="token punctuation">.</span>  <span class="token comment">// 我买了一些书</span>
+<span class="token class-name">Some</span> books were <span class="token function">bought</span><span class="token punctuation">(</span>by me<span class="token punctuation">)</span><span class="token punctuation">.</span>  <span class="token comment">// 一些书被我买了</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>常用的被动语态形式</p>
+<p><img src="https://gaoqisen.github.io/GraphBed/202312/20231220224336.png" alt=""></p>
+<h3 id="_4-3-其他" tabindex="-1"><a class="header-anchor" href="#_4-3-其他" aria-hidden="true">#</a> 4.3 其他</h3>
+<p>双宾的被动语态</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">He</span> gave her some money<span class="token punctuation">.</span> <span class="token comment">// 他给了她一些钱</span>
+
+<span class="token comment">// 把间接宾语改成被动语态的主语，直接宾语留在原位</span>
+<span class="token class-name">She</span> gave her some money<span class="token punctuation">.</span> <span class="token comment">// 她被(他)给了一些钱</span>
+
+<span class="token comment">// 把直接宾语改成被动语态，间接宾语前面加to或for</span>
+<span class="token class-name">Some</span> money was given <span class="token keyword">to</span> <span class="token namespace">her</span><span class="token punctuation">(</span>by him<span class="token punctuation">)</span><span class="token punctuation">.</span>  一些钱被（他）给了她
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>宾补的被动语态</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">We</span> made him manager<span class="token punctuation">.</span> <span class="token comment">// 我们选他做经理</span>
+
+<span class="token comment">// 主动语态的宾语改成主语，宾补在被动语态中做主语的宾补</span>
+<span class="token class-name">He</span> was made <span class="token function">manager</span><span class="token punctuation">(</span>by us<span class="token punctuation">)</span><span class="token punctuation">.</span> <span class="token comment">// 他被（我们）选做经理</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>动词短语的被动语态</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">We</span> must take good care of the trees<span class="token punctuation">.</span>  <span class="token comment">// 我们必须好好照顾这些书</span>
+
+<span class="token comment">// 动词短语当成一个动词，变动词部分过去分词，其他的不变任何东西</span>
+<span class="token class-name">The</span> trees must be taken good care <span class="token function">of</span><span class="token punctuation">(</span>by us<span class="token punctuation">)</span><span class="token punctuation">.</span>  <span class="token comment">// 这些树必须被（我们）好好照顾</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>什么时候用被动语态</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、不知道动作执行者是谁的情况</span>
+<span class="token class-name">This</span> diamond was stolen yesterday<span class="token punctuation">.</span> <span class="token comment">// 这钻石昨天被偷了</span>
+
+<span class="token comment">// 2、强调动作承受者的情况</span>
+<span class="token class-name">Peter</span> was also grown in thin country<span class="token punctuation">.</span>  <span class="token comment">// 皮特也是在这个国家长大的</span>
+
+<span class="token comment">// 3、说客观事实</span>
+<span class="token class-name">The</span> iPhone was created by <span class="token class-name">Steven</span> <span class="token class-name">Jobs</span><span class="token punctuation">.</span>  <span class="token comment">// iphone是由史蒂芬.乔布斯创造的</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、非谓语动词" tabindex="-1"><a class="header-anchor" href="#五、非谓语动词" aria-hidden="true">#</a> 五、非谓语动词</h2>
+<p>不做谓语的动词（英语句子中只有一个动词）</p>
+<h3 id="_5-1-分类" tabindex="-1"><a class="header-anchor" href="#_5-1-分类" aria-hidden="true">#</a> 5.1 分类</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、不定式</span>
+<span class="token class-name">The</span> teacher told us <span class="token keyword">to</span> <span class="token keyword">do</span> the homwork<span class="token punctuation">.</span> <span class="token comment">// 老师叫我们做家庭作业</span>
+
+<span class="token comment">// 2、动名词</span>
+<span class="token class-name">I</span> like swimming<span class="token punctuation">.</span> <span class="token comment">// 我喜欢游泳</span>
+
+<span class="token comment">// 3、现在分词</span>
+<span class="token class-name">He</span> sat there and reading a newspater<span class="token punctuation">.</span>  <span class="token comment">// 他坐在那看着报纸</span>
+
+<span class="token comment">// 4、过去分词</span>
+<span class="token class-name">We</span> heard about polluted air information<span class="token punctuation">.</span>  <span class="token comment">// 我们听到了空气被污染的信息</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-2-不定式" tabindex="-1"><a class="header-anchor" href="#_5-2-不定式" aria-hidden="true">#</a> 5.2 不定式</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 大多是都是to + 动词不定式</span>
+<span class="token class-name">I</span> like <span class="token keyword">to</span> <span class="token namespace">clean<span class="token punctuation">.</span></span> <span class="token comment">// 我喜欢打扫卫生</span>
+
+<span class="token comment">// 有些没有to动词不定式</span>
+<span class="token class-name">I</span> and <span class="token keyword">do</span> it<span class="token punctuation">.</span>  <span class="token comment">// 我能做到</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>什么时候不加to</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、跟助动词can、could、might、should、will、may、must、ought to、shall</span>
+<span class="token class-name">I</span> can <span class="token keyword">do</span> it<span class="token punctuation">.</span>  <span class="token comment">// 我能做到</span>
+  
+<span class="token comment">// 2、跟感官动词see、watch、observe、hear、listen to、feel等</span>
+<span class="token class-name">I</span> saw him enter the house<span class="token punctuation">.</span> <span class="token comment">// 我看见他进入了房间</span>
+  
+<span class="token comment">// 3、跟实意动词let、make、have、keep、help</span>
+<span class="token class-name">Let</span> me <span class="token keyword">try</span> it<span class="token punctuation">.</span>  <span class="token comment">// 让我试试</span>
+ 
+<span class="token comment">// 4、跟why（not）</span>
+<span class="token class-name">Why</span> not go out <span class="token keyword">for</span> a walk on a sunny day<span class="token operator">?</span>  <span class="token comment">// 为什么不在阳光明媚的日子出去散步呢？</span>
+  
+<span class="token comment">// 5、跟know一起.若know为现在式，不定式限于to be，这时候to不能省略</span>
+<span class="token class-name">We</span> have never known him tell a lie<span class="token punctuation">.</span>  <span class="token comment">// 我从未见过他说谎</span>
+
+<span class="token comment">// 6、介词except、but</span>
+<span class="token class-name">She</span> tries everything except cook<span class="token punctuation">.</span>  <span class="token comment">// 除了做饭其他任何事情她都做</span>
+ 
+<span class="token comment">// 7、主语部分带do，不定式做表语省略to</span>
+<span class="token class-name">All</span> you <span class="token keyword">do</span> now is complete the form<span class="token punctuation">.</span>  <span class="token comment">// 你现在要做的就是填好表格</span>
+  
+<span class="token comment">// 8、当两个或多个作用相同的不定式并列时，第一个不定式前用to，其他不定式前to可省略</span>
+<span class="token class-name">He</span> told me <span class="token keyword">to</span> <span class="token namespace">stay</span> there and wait <span class="token keyword">for</span> him<span class="token punctuation">.</span> <span class="token comment">// 他告诉我让我呆在哪儿等他</span>
+  
+<span class="token comment">// 9、当实意动词、感官动词用于被动语态是，要补上在主动语态中省略的to  </span>
+<span class="token class-name">She</span> was made <span class="token keyword">to</span> <span class="token namespace">feel</span> happy by the great news<span class="token punctuation">.</span>  <span class="token comment">// 这个好消息使他感到高兴</span>
+<span class="token class-name">The</span> woman was seen <span class="token keyword">to</span> <span class="token namespace">enter</span> a bank<span class="token punctuation">.</span>  <span class="token comment">// 有人看见这个女人进了一家银行  </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-3-动名词" tabindex="-1"><a class="header-anchor" href="#_5-3-动名词" aria-hidden="true">#</a> 5.3 动名词</h3>
+<h3 id="_5-4-过去分词" tabindex="-1"><a class="header-anchor" href="#_5-4-过去分词" aria-hidden="true">#</a> 5.4 过去分词</h3>
+<h3 id="_5-5-非谓语做独立主格结构" tabindex="-1"><a class="header-anchor" href="#_5-5-非谓语做独立主格结构" aria-hidden="true">#</a> 5.5 非谓语做独立主格结构</h3>
 </div></template>
 
 
