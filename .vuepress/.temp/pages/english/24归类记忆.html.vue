@@ -1,92 +1,4 @@
-<template><div><h2 id="一、数字" tabindex="-1"><a class="header-anchor" href="#一、数字" aria-hidden="true">#</a> 一、数字</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>21: twenty-one, 第21: the twenty-first</p>
-</blockquote>
-<h2 id="二、星期和月份" tabindex="-1"><a class="header-anchor" href="#二、星期和月份" aria-hidden="true">#</a> 二、星期和月份</h2>
+<template><div><h2 id="一、星期和月份" tabindex="-1"><a class="header-anchor" href="#一、星期和月份" aria-hidden="true">#</a> 一、星期和月份</h2>
 <table>
 <thead>
 <tr>
@@ -149,7 +61,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="三、词性记忆" tabindex="-1"><a class="header-anchor" href="#三、词性记忆" aria-hidden="true">#</a> 三、词性记忆</h2>
+<h2 id="二、词性记忆" tabindex="-1"><a class="header-anchor" href="#二、词性记忆" aria-hidden="true">#</a> 二、词性记忆</h2>
 <blockquote>
 <p>名词  &gt; 形容词 &gt; 动词  &gt; 副词(频度) &gt; 场所 &gt; 句子</p>
 </blockquote>
@@ -244,7 +156,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="四、颜色" tabindex="-1"><a class="header-anchor" href="#四、颜色" aria-hidden="true">#</a> 四、颜色</h2>
+<h2 id="三、颜色" tabindex="-1"><a class="header-anchor" href="#三、颜色" aria-hidden="true">#</a> 三、颜色</h2>
 <p><img src="https://gaoqisen.github.io/GraphBed/201812/20181231180752.png" alt="颜色"></p>
 <table>
 <thead>
@@ -266,7 +178,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="五、身体" tabindex="-1"><a class="header-anchor" href="#五、身体" aria-hidden="true">#</a> 五、身体</h2>
+<h2 id="四、身体" tabindex="-1"><a class="header-anchor" href="#四、身体" aria-hidden="true">#</a> 四、身体</h2>
 <p><img src="https://gaoqisen.github.io/GraphBed/201812/20181231180141.png" alt="身体"></p>
 <table>
 <thead>
