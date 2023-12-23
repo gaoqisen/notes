@@ -354,10 +354,12 @@ You are given a car by me.  // 你被我给了一辆车
 <span class="token comment">// 8、当两个或多个作用相同的不定式并列时，第一个不定式前用to，其他不定式前to可省略</span>
 <span class="token class-name">He</span> told me <span class="token keyword">to</span> <span class="token namespace">stay</span> there and wait <span class="token keyword">for</span> him<span class="token punctuation">.</span> <span class="token comment">// 他告诉我让我呆在哪儿等他</span>
   
-<span class="token comment">// 9、当实意动词、感官动词用于被动语态是，要补上在主动语态中省略的to  </span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>什么时候不能省to</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 当实意动词、感官动词用于被动语态是，要补上在主动语态中省略的to  </span>
 <span class="token class-name">She</span> was made <span class="token keyword">to</span> <span class="token namespace">feel</span> happy by the great news<span class="token punctuation">.</span>  <span class="token comment">// 这个好消息使他感到高兴</span>
 <span class="token class-name">The</span> woman was seen <span class="token keyword">to</span> <span class="token namespace">enter</span> a bank<span class="token punctuation">.</span>  <span class="token comment">// 有人看见这个女人进了一家银行  </span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>时态和语态</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>时态和语态</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231221231414.png" alt=""></p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般主动</span>
 <span class="token class-name">I</span> learn <span class="token keyword">to</span> <span class="token namespace">play</span> badminton<span class="token punctuation">.</span> <span class="token comment">// 我学打羽毛球</span>
@@ -381,6 +383,7 @@ You are given a car by me.  // 你被我给了一辆车
 <span class="token class-name">I</span> think <span class="token keyword">to</span> <span class="token namespace">learn</span> a <span class="token keyword">new</span> language difficult<span class="token punctuation">.</span> <span class="token comment">// 我认为学习一门新语言很困难</span>
 <span class="token comment">// it形式宾语</span>
 <span class="token class-name">I</span> think it difficult <span class="token keyword">to</span> <span class="token namespace">learn</span> a <span class="token keyword">new</span> language<span class="token punctuation">.</span> <span class="token comment">// 我认为学习一门新语言很困难</span>
+  
 <span class="token comment">// 表语</span>
 <span class="token class-name">His</span> wish is <span class="token keyword">to</span> <span class="token namespace">be</span> a scientist<span class="token punctuation">.</span> <span class="token comment">// 他希望可以成为科学家</span>
 <span class="token comment">// 定语</span>
@@ -389,9 +392,10 @@ You are given a car by me.  // 你被我给了一辆车
 <span class="token class-name">They</span> went <span class="token keyword">to</span> <span class="token namespace">see</span> their aunt<span class="token punctuation">.</span> <span class="token comment">// 他们要去看他们的姑妈</span>
 <span class="token comment">// 宾补</span>
 <span class="token class-name">The</span> teacher told us <span class="token keyword">to</span> <span class="token keyword">do</span> homework<span class="token punctuation">.</span>  <span class="token comment">// 老师叫我们做作业</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-3-动名词" tabindex="-1"><a class="header-anchor" href="#_5-3-动名词" aria-hidden="true">#</a> 5.3 动名词</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-3-动名词" tabindex="-1"><a class="header-anchor" href="#_5-3-动名词" aria-hidden="true">#</a> 5.3 动名词</h3>
+<p>动词加ing变名词如：</p>
+<p>I like swimming. （我喜欢游泳）</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231221231839.png" alt=""></p>
-<p>动词加ing变名词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般主动</span>
 <span class="token class-name">I</span> like playing babminton<span class="token punctuation">.</span> <span class="token comment">// 我喜欢打羽毛球</span>
 <span class="token comment">// 一般被动</span>
@@ -401,12 +405,73 @@ You are given a car by me.  // 你被我给了一辆车
 <span class="token comment">// 完成被动</span>
 <span class="token class-name">The</span> cat likes having been petted by me<span class="token punctuation">.</span> <span class="token comment">// 这猫喜欢被我宠爱</span>
 
-<span class="token class-name">I</span> like swimming<span class="token punctuation">.</span> <span class="token comment">// 我喜欢游泳</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>动名词做句子成分</p>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 主语
 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-4-过去分词" tabindex="-1"><a class="header-anchor" href="#_5-4-过去分词" aria-hidden="true">#</a> 5.4 过去分词</h3>
-<h3 id="_5-5-非谓语做独立主格结构" tabindex="-1"><a class="header-anchor" href="#_5-5-非谓语做独立主格结构" aria-hidden="true">#</a> 5.5 非谓语做独立主格结构</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>动名词做句子成分（和名词一样）</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 主语</span>
+<span class="token class-name">Learning</span> a foreign language is difficult<span class="token punctuation">.</span> <span class="token comment">// 学一门外语很难</span>
+<span class="token comment">// 宾语</span>
+<span class="token class-name">I</span> enjoy dancing<span class="token punctuation">.</span> <span class="token comment">// 我喜欢跳舞</span>
+<span class="token comment">// 表语</span>
+<span class="token class-name">His</span> job is driving a bus<span class="token punctuation">.</span> <span class="token comment">// 他的工作是开公交</span>
+<span class="token comment">// 定语</span>
+<span class="token class-name">This</span> is swimming poll<span class="token punctuation">.</span> <span class="token comment">// 这是一个游泳池</span>
+<span class="token comment">// 宾补</span>
+<span class="token class-name">I</span> call <span class="token keyword">this</span> robbing <span class="token class-name">Peter</span> <span class="token keyword">to</span> <span class="token namespace">pay</span> <span class="token class-name">Paul</span><span class="token punctuation">.</span> <span class="token comment">// 我称这为拆东墙补西墙</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-4-现在分词" tabindex="-1"><a class="header-anchor" href="#_5-4-现在分词" aria-hidden="true">#</a> 5.4 现在分词</h3>
+<p>动词加ing做现在分词（有正在进行的感觉）
+He is dancing. （他正在跳舞）</p>
+<p><img src="https://gaoqisen.github.io/GraphBed/202312/20231223092039.png" alt=""></p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、一般主动</span>
+<span class="token class-name">He</span> is playing babminton<span class="token punctuation">.</span> <span class="token comment">// 他正在打羽毛球</span>
+<span class="token comment">// 2、一般被动</span>
+<span class="token class-name">The</span> cat likes being petted by me<span class="token punctuation">.</span> <span class="token comment">// 这猫喜欢被我宠爱着</span>
+<span class="token comment">// 3、完成主动</span>
+<span class="token class-name">He</span> is having played babminton<span class="token punctuation">.</span> <span class="token comment">// 他打过羽毛球</span>
+<span class="token comment">// 4、完成被动</span>
+<span class="token class-name">The</span> cat likes having been petted by me<span class="token punctuation">.</span> <span class="token comment">// 这猫喜欢被我宠爱		</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>现在分词在句子中的成份</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、表语</span>
+<span class="token class-name">The</span> story is interesting<span class="token punctuation">.</span> <span class="token comment">// 这个故事有趣</span>
+<span class="token comment">// 2、定语</span>
+<span class="token class-name">The</span> area being studied may be rich in coal<span class="token punctuation">.</span> <span class="token comment">// 这个正在被研究的地方可能有煤</span>
+<span class="token comment">// 3、状语</span>
+<span class="token class-name">The</span> sat have and reading a book<span class="token punctuation">.</span> <span class="token comment">//他坐在那看着书</span>
+<span class="token comment">// 4、宾补</span>
+<span class="token class-name">He</span> saw the thief stealing some money from the bank<span class="token punctuation">.</span> <span class="token comment">// 他看小偷正在从银行里偷钱</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>现在分词和动名词的区分：看意思是否正在进行和看句子成分</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 现在分词：状语、表语、定语、宾补</span>
+a swimming boy<span class="token punctuation">.</span> <span class="token comment">// 正在游泳的男孩</span>
+<span class="token class-name">He</span> sat here and reading a book<span class="token punctuation">.</span> <span class="token comment">// 他坐在那看着书</span>
+<span class="token comment">// 动名词：主语、宾语、表语、定语、宾补</span>
+a swimming suit<span class="token punctuation">.</span> <span class="token comment">// 泳衣</span>
+<span class="token class-name">Learing</span> a foreigh language is difficult<span class="token punctuation">.</span> <span class="token comment">// 学一门外语很难</span>
+<span class="token class-name">I</span> enjoy dancing<span class="token punctuation">.</span> <span class="token comment">// 我喜欢舞蹈</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-5-过去分词" tabindex="-1"><a class="header-anchor" href="#_5-5-过去分词" aria-hidden="true">#</a> 5.5 过去分词</h3>
+<p>动词加ed构成过去分词：一般都是被...</p>
+<p>在句子中的成份：表语、定语、状语、宾补</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表语</span>
+<span class="token class-name">He</span> is interested in the news<span class="token punctuation">.</span> <span class="token comment">// 他对这消息感兴趣</span>
+<span class="token comment">// 定语</span>
+<span class="token class-name">The</span> polluted river<span class="token punctuation">.</span> <span class="token comment">// 被污染的河</span>
+<span class="token comment">// 状语</span>
+<span class="token class-name">Given</span> more time<span class="token punctuation">,</span> <span class="token class-name">I</span> can <span class="token keyword">do</span> my project better<span class="token punctuation">.</span> <span class="token comment">// 我在被多给点时间，我的项目会做的更好</span>
+<span class="token comment">// 宾补</span>
+<span class="token class-name">I</span> found my car stolen<span class="token punctuation">.</span> <span class="token comment">// 我发现我车被偷了</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-5-非谓语做独立主格结构" tabindex="-1"><a class="header-anchor" href="#_5-5-非谓语做独立主格结构" aria-hidden="true">#</a> 5.5 非谓语做独立主格结构</h3>
+<p>前部分是名词或代词，后部分是非谓语动词（动名词、不定式、现在分词、过去分词）、形容词、副词、名词、介词短语，前后两部分具有逻辑关系，修饰整个句子</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">Lots</span> of homework <span class="token keyword">to</span> <span class="token keyword">do</span><span class="token punctuation">,</span> <span class="token class-name">I</span> havn <span class="token keyword">to</span> <span class="token namespace">stay</span> home all day<span class="token punctuation">.</span>  <span class="token comment">// 有很多作业，我只能整天待在家</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>不定式的独立主格结构</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 不定式构成的独立主格结构往往表示还未发生的行为或状态在句中常作原因状语或者条件状语</span>
+<span class="token class-name">So</span> many children <span class="token keyword">to</span> <span class="token namespace">look</span> after<span class="token punctuation">,</span> the mothers has <span class="token keyword">to</span> <span class="token namespace">quit</span> her job<span class="token punctuation">.</span> <span class="token comment">// 有太多孩子需要照看，这位母亲只能辞职了</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>现在分词的独立主格结构</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般做状语，逻辑主语必须是主句的主语。如果不一致用现在分词独立主格结构常作时间、方式、伴随、原因、条件状语</span>
+<span class="token class-name">He</span> sat here<span class="token punctuation">,</span> reading a book<span class="token punctuation">.</span> <span class="token comment">// 他坐在那看着书(reading)</span>
+<span class="token class-name">The</span> sun is rising<span class="token punctuation">,</span> <span class="token class-name">He</span> sat here reading a book<span class="token punctuation">.</span> <span class="token comment">// 太阳正在升起，他坐这看着书(rising)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>过去分词的独立主格结构</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般做状语，常作时间、伴随、原因、条件状语</span>
+<span class="token class-name">The</span> task completed<span class="token punctuation">,</span> we had a global traveling<span class="token punctuation">.</span> <span class="token comment">// 任务完成后，我们进行了环球旅行</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>时态和语态总结</p>
+<p><img src="https://gaoqisen.github.io/GraphBed/202312/20231223100258.png" alt=""></p>
 </div></template>
 
 
