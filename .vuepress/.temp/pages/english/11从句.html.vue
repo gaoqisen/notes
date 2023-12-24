@@ -256,10 +256,42 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 
 <span class="token class-name">The</span> teacher raised his voice on purpose that the students in the back could hear more clearly<span class="token punctuation">.</span>  <span class="token comment">// 为了让后面的学生听得更清楚，老师有意地提高了他的声音</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-5-结果" tabindex="-1"><a class="header-anchor" href="#_3-5-结果" aria-hidden="true">#</a> 3.5 结果</h3>
-<h3 id="_3-6-条件" tabindex="-1"><a class="header-anchor" href="#_3-6-条件" aria-hidden="true">#</a> 3.6 条件</h3>
-<h3 id="_3-7-让步" tabindex="-1"><a class="header-anchor" href="#_3-7-让步" aria-hidden="true">#</a> 3.7 让步</h3>
-<h3 id="_3-8-比较" tabindex="-1"><a class="header-anchor" href="#_3-8-比较" aria-hidden="true">#</a> 3.8 比较</h3>
-<h3 id="_3-9-方式" tabindex="-1"><a class="header-anchor" href="#_3-9-方式" aria-hidden="true">#</a> 3.9 方式</h3>
-</div></template>
+<p>常用引导词：so...that,  such...that</p>
+<p>特殊引导词: such that(这样), to the degree(在某程度上), to the extend that(在某种程度上), to such a degree that(达到这样的程度)</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">It</span> is such a good chance that we must not miss it<span class="token punctuation">.</span> <span class="token comment">// 这是一个好机会，千万不要错过它</span>
+
+<span class="token class-name">To</span> such a degree was he excited that he could not sleep last night<span class="token punctuation">.</span>  <span class="token comment">// 他激动到这个程度，以至于他昨晚睡不着</span>
+
+<span class="token class-name">This</span> news is exciting<span class="token punctuation">,</span> so that he jumped up<span class="token punctuation">.</span> <span class="token comment">// 这个消息太令人激动了，以至于他跳了起来</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-6-条件" tabindex="-1"><a class="header-anchor" href="#_3-6-条件" aria-hidden="true">#</a> 3.6 条件</h3>
+<p>常见引导词：if，unless</p>
+<p>特殊引导词：as/so long as， only if， providing/provided that，  suppose that， in case that， on condition that</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">We</span>'ll start out project <span class="token keyword">if</span> the president agrees<span class="token punctuation">.</span>  <span class="token comment">// 如果总统同意，我们将开始这个项目</span>
+
+<span class="token class-name">You</span> will certainly succeed so <span class="token keyword">long</span> as you keep on trying<span class="token punctuation">.</span> <span class="token comment">// 只要你继续努力，你一定会成功的</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-7-让步" tabindex="-1"><a class="header-anchor" href="#_3-7-让步" aria-hidden="true">#</a> 3.7 让步</h3>
+<p>常见引导词：though(虽然), although(尽管), even if(即使), even though(即使)</p>
+<p>特殊引导词：as(必须倒装)，while(一般句首)，no matter... (不论)，in spite of the fact that(尽管事实是), whatever(无论)，whoever(无论谁),  wherever(无论在哪里)， however(不管怎样), whichever(无论哪个)</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">The</span> old man always enjoys swimming even though the weather is rough<span class="token punctuation">.</span> <span class="token comment">// 这个老人喜欢游泳，即使天气很恶劣</span>
+
+<span class="token class-name">No</span> matter how hard he tried<span class="token punctuation">,</span> she could not change her mind<span class="token punctuation">.</span>  <span class="token comment">// 不论他如何努力，她都不会改变她的主意</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-8-比较" tabindex="-1"><a class="header-anchor" href="#_3-8-比较" aria-hidden="true">#</a> 3.8 比较</h3>
+<p>常见引导词：as（同级比较），that（不同程度的比较）</p>
+<p>特殊疑问词：the more ... the more...(越来越)， just as ...(与...同样)，so...(所以)， a is to b what/as x is to y()，no...more than(不超过), not a so much as b</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">The</span> house is three times 'as big as' ours<span class="token punctuation">.</span> <span class="token comment">// 这房子是我们的三倍大</span>
+
+'<span class="token class-name">The</span> more' you exercise<span class="token punctuation">,</span> the healthier you will be<span class="token punctuation">.</span>  <span class="token comment">// 你运动的越多，你就越健康 </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-9-方式" tabindex="-1"><a class="header-anchor" href="#_3-9-方式" aria-hidden="true">#</a> 3.9 方式</h3>
+<p>常见引导词：as, as if, how</p>
+<p>特殊引导词：the way</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">She</span> behaved <span class="token char">'as if'</span> she were the boss<span class="token punctuation">.</span> <span class="token comment">// 她表现得好像她是老板</span>
+
+<span class="token class-name">We</span> teach our children 'the way' our parents have taught us<span class="token punctuation">.</span> <span class="token comment">// 我们用父母教导我们的方式教导我们的孩子</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-10-省略情况" tabindex="-1"><a class="header-anchor" href="#_3-10-省略情况" aria-hidden="true">#</a> 3.10 省略情况</h3>
+<p>主句和从句的主语一致时，或者从句主句是it从句谓语动词是be动词 可以省略主语和be动词</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">When</span><span class="token punctuation">(</span>the museum is<span class="token punctuation">)</span> completed<span class="token punctuation">,</span> the museum will be <span class="token keyword">open</span> <span class="token keyword">to</span> <span class="token namespace">the</span> <span class="token keyword">public</span> next year<span class="token punctuation">.</span> <span class="token comment">// 当博物馆完成，该博物馆将于明年向公众开放</span>
+
+<span class="token class-name">He</span> will go th the seaside <span class="token keyword">for</span> his holiday <span class="token keyword">if</span><span class="token punctuation">(</span>it is<span class="token punctuation">)</span> possible<span class="token punctuation">.</span> <span class="token comment">// 如果可能，他将去海边度假的话</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
