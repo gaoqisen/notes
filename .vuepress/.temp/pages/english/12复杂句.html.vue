@@ -60,8 +60,48 @@ Were</span> <span class="token class-name">I</span> you<span class="token punctu
 <span class="token comment">// 7、表达祝愿的一些句子</span>
 <span class="token class-name">May</span> you succeed<span class="token punctuation">.</span> <span class="token comment">// 祝你成功</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、强调句" tabindex="-1"><a class="header-anchor" href="#二、强调句" aria-hidden="true">#</a> 二、强调句</h2>
-<h2 id="三、虚拟语气" tabindex="-1"><a class="header-anchor" href="#三、虚拟语气" aria-hidden="true">#</a> 三、虚拟语气</h2>
-<h2 id="四、插入语" tabindex="-1"><a class="header-anchor" href="#四、插入语" aria-hidden="true">#</a> 四、插入语</h2>
+<p>强调说明句子里的某个部分，表达情感意愿</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">It</span> was he that helped me yesterday<span class="token punctuation">.</span> <span class="token comment">// 昨天是他帮了我	</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>强调句句型: It + is/was + 被强调部分 + that/who/whom/which + 其余部分</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">Peter</span> lost his cell phone in the mall yesterday<span class="token punctuation">.</span>  <span class="token comment">// 昨天皮特在商场把手机丢了</span>
+<span class="token class-name">It</span> was <span class="token char">'Peter'</span> that lost cell phone in the mall <span class="token class-name"><span class="token namespace">yesterday<span class="token punctuation">.</span></span> 
+It</span> was 'his cell phone' that <span class="token class-name">Peter</span> lost in the mall <span class="token class-name"><span class="token namespace">yesterday<span class="token punctuation">.</span></span> 
+It</span> was '<span class="token keyword">int</span> the mall' that <span class="token class-name">Peter</span> lost his call phone <span class="token class-name"><span class="token namespace">yesterday<span class="token punctuation">.</span></span>
+It</span> was 'yesterday' that <span class="token class-name">Peter</span> lost his cell phone in the mall<span class="token punctuation">.</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般疑问句：is/was it + 被强调部分 + that/who/whom + 其余部分?</span>
+<span class="token class-name">Was</span> it <span class="token char">'Peter'</span> who lost cell phone in the mall yesterday<span class="token operator">?</span>  <span class="token comment">// 昨天在商场丢手机的是皮特吗</span>
+
+<span class="token comment">// 特殊疑问句: 疑问词 + is/was it + that/who/whom + 其余部分？</span>
+<span class="token char">'Where'</span> was it that  '<span class="token class-name">Peter</span> lost his cell phone yesterday'<span class="token operator">?</span> <span class="token comment">//皮特昨天在哪里丢了他的手机？</span>
+  
+<span class="token comment">// 助动词do/does/did强调谓语动词</span>
+<span class="token class-name">I</span> <span class="token char">'do'</span> agree <span class="token keyword">with</span> <span class="token namespace">you<span class="token punctuation">.</span></span> <span class="token comment">// 我同意你</span>
+<span class="token class-name">I</span> <span class="token char">'did'</span> work hard <span class="token keyword">this</span> year<span class="token punctuation">.</span>  <span class="token comment">// 今年我确实很努力</span>
+  
+<span class="token comment">// 强调句和主语从句的区别，去掉it be that看句子是否完整</span>
+强调句： <span class="token char">'It was'</span> <span class="token class-name">Pater</span> <span class="token char">'that'</span> lost cell phone in the mall yesterday<span class="token punctuation">.</span> 
+主语从句： <span class="token char">'It is'</span> certain <span class="token char">'that'</span> he weil win the match<span class="token punctuation">.</span> <span class="token comment">// 他肯定会赢得这场比赛</span>
+  
+<span class="token comment">// 强调句和定语从句的区别， 看引导词，强调句翻译不出'的'字</span>
+强调句： <span class="token class-name">It</span> was in the mall <span class="token char">'that'</span> he lost his cell phone<span class="token punctuation">.</span>
+定语从句：  <span class="token class-name">It</span> was in the mall <span class="token char">'where'</span> he lost his cell phone<span class="token punctuation">.</span> 
+  
+<span class="token comment">// 强调句和状语从句的区别，看引导词，状语从句是两句话</span>
+强调句： <span class="token class-name">It</span> was in the morning <span class="token char">'that'</span> he woke up<span class="token punctuation">.</span> 
+状语从句： <span class="token class-name">It</span> was in the morning <span class="token char">'when'</span> he woke up<span class="token punctuation">.</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、虚拟语气" tabindex="-1"><a class="header-anchor" href="#三、虚拟语气" aria-hidden="true">#</a> 三、虚拟语气</h2>
+<p>真实条件：可能发生的用主将从现</p>
+<p>虚拟条件：不可能发生的假设用虚拟语气</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">If</span> it rains tomorrow<span class="token punctuation">,</span> <span class="token class-name">I</span> will stay at home<span class="token punctuation">.</span> <span class="token comment">// 如果明天下雨，我会待在家里</span>
+<span class="token class-name">If</span> it should rain every day<span class="token punctuation">,</span> <span class="token class-name">I</span> could be mad<span class="token punctuation">.</span> <span class="token comment">// 如果每天都下雨，我可能会疯掉</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://gaoqisen.github.io/GraphBed/202312/20231225231824.png" alt=""></p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 从句对现在虚拟
+If I were you, I would marry him without any hesitation. // 如果我是你，我会毫不犹豫的嫁给他
+// 从句对过去虚拟
+
+// 从句对将来虚拟
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、插入语" tabindex="-1"><a class="header-anchor" href="#四、插入语" aria-hidden="true">#</a> 四、插入语</h2>
 <h2 id="五、双否" tabindex="-1"><a class="header-anchor" href="#五、双否" aria-hidden="true">#</a> 五、双否</h2>
 </div></template>
 
