@@ -1,58 +1,6 @@
 <template><div><p>按照词性依次学习语法的索引</p>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>1、基本框架
-2、简单句
-	陈述句
-	疑问句
-	感叹句
-	祈使句
-3、数词
-	基数词
-	序数词
-4、冠词
-	定冠词
-	不定冠词
-	零冠词
-5、名词
-	分类（专业与普通、可数与不可数、抽象与具体）
-	单复数变化
-	名词所有格
-	名词主谓一致
-6、代词
-	人称代词、物主代词、反身代词、指示代词、
-	疑问代词、不定代词、相互代词、关系代词、连接代词
-7、介词
-	作用
-	分类
-	常用
-	对比
-8、形容词
-	分类
-	顺序
-	用法
-	比较级
-	易混
-9、副词
-	分类
-	结构
-	用法
-	易混
-10、动词
-	分类
-	形态
-	时态
-	语态
-	非谓语动词
-11、从句
-	名词性从句
-	定语从句
-	状语从句
-12、复杂句
-	倒装句
-	强调句 
-	虚拟语气
-	插入语
-	双否
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="一、词性-10种" tabindex="-1"><a class="header-anchor" href="#一、词性-10种" aria-hidden="true">#</a> 一、词性(10种)</h3>
+<p><img src="https://gaoqisen.github.io/GraphBed/202312/20231227230332.png" alt=""></p>
+<h3 id="一、词性-10种" tabindex="-1"><a class="header-anchor" href="#一、词性-10种" aria-hidden="true">#</a> 一、词性(10种)</h3>
 <p>重点：名词、形容词、动词、副词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 名词（Noun）: 用来表示人、物、地方、概念等的名称 </span>
 dog（狗）、book（书）、<span class="token class-name">London</span>（伦敦）、happiness（幸福）                            
