@@ -67,46 +67,6 @@ export const pagesComponents = {
   "v-8def0bbe": defineAsyncComponent(() => import(/* webpackChunkName: "v-8def0bbe" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysqlBase.html.vue")),
   // path: /database/oracle.html
   "v-7641cc00": defineAsyncComponent(() => import(/* webpackChunkName: "v-7641cc00" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/oracle.html.vue")),
-  // path: /english/01%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6.html
-  "v-1bd8c6c2": defineAsyncComponent(() => import(/* webpackChunkName: "v-1bd8c6c2" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/01基本框架.html.vue")),
-  // path: /english/02%E7%AE%80%E5%8D%95%E5%8F%A5.html
-  "v-c100979c": defineAsyncComponent(() => import(/* webpackChunkName: "v-c100979c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/02简单句.html.vue")),
-  // path: /english/03%E6%95%B0%E8%AF%8D.html
-  "v-a3923b32": defineAsyncComponent(() => import(/* webpackChunkName: "v-a3923b32" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/03数词.html.vue")),
-  // path: /english/04%E5%86%A0%E8%AF%8D.html
-  "v-9a15c378": defineAsyncComponent(() => import(/* webpackChunkName: "v-9a15c378" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/04冠词.html.vue")),
-  // path: /english/05%E5%90%8D%E8%AF%8D.html
-  "v-0f8d7b32": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f8d7b32" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/05名词.html.vue")),
-  // path: /english/06%E4%BB%A3%E8%AF%8D.html
-  "v-29201f7c": defineAsyncComponent(() => import(/* webpackChunkName: "v-29201f7c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/06代词.html.vue")),
-  // path: /english/07%E4%BB%8B%E8%AF%8D.html
-  "v-3d2bec19": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d2bec19" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/07介词.html.vue")),
-  // path: /english/08%E5%BD%A2%E5%AE%B9%E8%AF%8D.html
-  "v-26b2dc5e": defineAsyncComponent(() => import(/* webpackChunkName: "v-26b2dc5e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/08形容词.html.vue")),
-  // path: /english/09%E5%89%AF%E8%AF%8D.html
-  "v-b4e49edc": defineAsyncComponent(() => import(/* webpackChunkName: "v-b4e49edc" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/09副词.html.vue")),
-  // path: /english/10%E5%8A%A8%E8%AF%8D.html
-  "v-ef818db4": defineAsyncComponent(() => import(/* webpackChunkName: "v-ef818db4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/10动词.html.vue")),
-  // path: /english/11%E4%BB%8E%E5%8F%A5.html
-  "v-088acf32": defineAsyncComponent(() => import(/* webpackChunkName: "v-088acf32" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/11从句.html.vue")),
-  // path: /english/12%E5%A4%8D%E6%9D%82%E5%8F%A5.html
-  "v-afbb2f64": defineAsyncComponent(() => import(/* webpackChunkName: "v-afbb2f64" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/12复杂句.html.vue")),
-  // path: /english/21%E5%90%8C%E4%B9%89%E8%AF%8D.html
-  "v-0f4d9f06": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f4d9f06" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/21同义词.html.vue")),
-  // path: /english/22%E9%9F%B3%E6%A0%87.html
-  "v-182f3bf8": defineAsyncComponent(() => import(/* webpackChunkName: "v-182f3bf8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/22音标.html.vue")),
-  // path: /english/23%E5%8F%A5%E5%AD%90.html
-  "v-c63a415c": defineAsyncComponent(() => import(/* webpackChunkName: "v-c63a415c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/23句子.html.vue")),
-  // path: /english/24%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
-  "v-493ce376": defineAsyncComponent(() => import(/* webpackChunkName: "v-493ce376" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/24归类记忆.html.vue")),
-  // path: /life/MyAndYou.html
-  "v-54a2568b": defineAsyncComponent(() => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.vue")),
-  // path: /life/chengdu.html
-  "v-b1cb566e": defineAsyncComponent(() => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.vue")),
-  // path: /life/phrase.html
-  "v-28b77fb4": defineAsyncComponent(() => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.vue")),
-  // path: /life/target.html
-  "v-357d744e": defineAsyncComponent(() => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.vue")),
   // path: /java/annotation.html
   "v-30d19996": defineAsyncComponent(() => import(/* webpackChunkName: "v-30d19996" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/annotation.html.vue")),
   // path: /java/classloader.html
@@ -147,6 +107,46 @@ export const pagesComponents = {
   "v-ec0ffcf0": defineAsyncComponent(() => import(/* webpackChunkName: "v-ec0ffcf0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webJsonToken.html.vue")),
   // path: /java/webcenter.html
   "v-500fd9c4": defineAsyncComponent(() => import(/* webpackChunkName: "v-500fd9c4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webcenter.html.vue")),
+  // path: /life/MyAndYou.html
+  "v-54a2568b": defineAsyncComponent(() => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.vue")),
+  // path: /life/chengdu.html
+  "v-b1cb566e": defineAsyncComponent(() => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.vue")),
+  // path: /life/phrase.html
+  "v-28b77fb4": defineAsyncComponent(() => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.vue")),
+  // path: /life/target.html
+  "v-357d744e": defineAsyncComponent(() => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.vue")),
+  // path: /english/01%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6.html
+  "v-1bd8c6c2": defineAsyncComponent(() => import(/* webpackChunkName: "v-1bd8c6c2" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/01基本框架.html.vue")),
+  // path: /english/02%E7%AE%80%E5%8D%95%E5%8F%A5.html
+  "v-c100979c": defineAsyncComponent(() => import(/* webpackChunkName: "v-c100979c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/02简单句.html.vue")),
+  // path: /english/03%E6%95%B0%E8%AF%8D.html
+  "v-a3923b32": defineAsyncComponent(() => import(/* webpackChunkName: "v-a3923b32" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/03数词.html.vue")),
+  // path: /english/04%E5%86%A0%E8%AF%8D.html
+  "v-9a15c378": defineAsyncComponent(() => import(/* webpackChunkName: "v-9a15c378" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/04冠词.html.vue")),
+  // path: /english/05%E5%90%8D%E8%AF%8D.html
+  "v-0f8d7b32": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f8d7b32" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/05名词.html.vue")),
+  // path: /english/06%E4%BB%A3%E8%AF%8D.html
+  "v-29201f7c": defineAsyncComponent(() => import(/* webpackChunkName: "v-29201f7c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/06代词.html.vue")),
+  // path: /english/07%E4%BB%8B%E8%AF%8D.html
+  "v-3d2bec19": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d2bec19" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/07介词.html.vue")),
+  // path: /english/08%E5%BD%A2%E5%AE%B9%E8%AF%8D.html
+  "v-26b2dc5e": defineAsyncComponent(() => import(/* webpackChunkName: "v-26b2dc5e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/08形容词.html.vue")),
+  // path: /english/09%E5%89%AF%E8%AF%8D.html
+  "v-b4e49edc": defineAsyncComponent(() => import(/* webpackChunkName: "v-b4e49edc" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/09副词.html.vue")),
+  // path: /english/10%E5%8A%A8%E8%AF%8D.html
+  "v-ef818db4": defineAsyncComponent(() => import(/* webpackChunkName: "v-ef818db4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/10动词.html.vue")),
+  // path: /english/11%E4%BB%8E%E5%8F%A5.html
+  "v-088acf32": defineAsyncComponent(() => import(/* webpackChunkName: "v-088acf32" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/11从句.html.vue")),
+  // path: /english/12%E5%A4%8D%E6%9D%82%E5%8F%A5.html
+  "v-afbb2f64": defineAsyncComponent(() => import(/* webpackChunkName: "v-afbb2f64" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/12复杂句.html.vue")),
+  // path: /english/21%E5%90%8C%E4%B9%89%E8%AF%8D.html
+  "v-0f4d9f06": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f4d9f06" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/21同义词.html.vue")),
+  // path: /english/22%E9%9F%B3%E6%A0%87.html
+  "v-182f3bf8": defineAsyncComponent(() => import(/* webpackChunkName: "v-182f3bf8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/22音标.html.vue")),
+  // path: /english/23%E5%8F%A5%E5%AD%90.html
+  "v-c63a415c": defineAsyncComponent(() => import(/* webpackChunkName: "v-c63a415c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/23句子.html.vue")),
+  // path: /english/24%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
+  "v-493ce376": defineAsyncComponent(() => import(/* webpackChunkName: "v-493ce376" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/24归类记忆.html.vue")),
   // path: /linux/command.html
   "v-8a42673c": defineAsyncComponent(() => import(/* webpackChunkName: "v-8a42673c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/command.html.vue")),
   // path: /linux/curl.html
@@ -311,12 +311,12 @@ export const pagesComponents = {
   "v-145c230d": defineAsyncComponent(() => import(/* webpackChunkName: "v-145c230d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/index.html.vue")),
   // path: /database/
   "v-2e25198a": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.vue")),
-  // path: /english/
-  "v-43539db8": defineAsyncComponent(() => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.vue")),
-  // path: /life/
-  "v-14e6315a": defineAsyncComponent(() => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.vue")),
   // path: /java/
   "v-14c69af4": defineAsyncComponent(() => import(/* webpackChunkName: "v-14c69af4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/index.html.vue")),
+  // path: /life/
+  "v-14e6315a": defineAsyncComponent(() => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.vue")),
+  // path: /english/
+  "v-43539db8": defineAsyncComponent(() => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.vue")),
   // path: /linux/
   "v-f0383c18": defineAsyncComponent(() => import(/* webpackChunkName: "v-f0383c18" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/index.html.vue")),
   // path: /mca/
