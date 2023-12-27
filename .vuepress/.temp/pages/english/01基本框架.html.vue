@@ -25,7 +25,30 @@ wow（哇）、oh（哦）、alas（唉）
 one（一）、first（第一）、ten（十）                                                                
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-1-词性归类" tabindex="-1"><a class="header-anchor" href="#_1-1-词性归类" aria-hidden="true">#</a> 1.1 词性归类</h3>
 <h4 id="_1、重点词-实词" tabindex="-1"><a class="header-anchor" href="#_1、重点词-实词" aria-hidden="true">#</a> 1、重点词(实词)</h4>
-<table>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
+名词(n): 表示人或者事物的名称
+分类: 可数和不可数
+*/</span>
+toy 玩具，head 头
+
+<span class="token doc-comment comment">/**
+副词adv: 表示行为或状态特征的词
+分类:  方式、地点、时间
+*/</span>
+quickly、slowly
+
+<span class="token doc-comment comment">/**
+形容词adj: 用来修饰名词、表示人或事物的特征
+分类: 性质、数量、大小、年龄
+*/</span>
+litte 小的、big 大的
+
+<span class="token doc-comment comment">/**
+动词v: 表示动作或状态
+分类: 及物动词、不及物、连系、情态
+*/</span>
+look 看，know 认识
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
 <thead>
 <tr>
 <th style="text-align:left">名称</th>
@@ -44,7 +67,7 @@ one（一）、first（第一）、ten（十）
 <tr>
 <td style="text-align:left">副词adv</td>
 <td style="text-align:left">表示行为或状态特征的词</td>
-<td style="text-align:left">方式、地点、时间</td>
+<td style="text-align:left"></td>
 <td style="text-align:left">quickly、slowly</td>
 </tr>
 <tr>
