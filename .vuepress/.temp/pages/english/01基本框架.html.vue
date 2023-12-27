@@ -65,10 +65,10 @@ one（一）、first（第一）、ten（十）
 <table>
 <thead>
 <tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">分类</th>
-<th style="text-align:left">常见</th>
+<th style="text-align:left">__<strong>名称</strong></th>
+<th style="text-align:left"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>描述</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>_______________________________________________________________</th>
+<th style="text-align:left">分类_________________________________________________________________________________________</th>
+<th style="text-align:left">常见________________________________</th>
 </tr>
 </thead>
 <tbody>
