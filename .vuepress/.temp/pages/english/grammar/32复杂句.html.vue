@@ -189,9 +189,9 @@ I prefer to go tomorrow afternoon, 'at 6 pm'.  // 我打算明天下午去，在
 <span class="token comment">// not un(unlike/unusual/unable等否定前缀)</span>
 <span class="token class-name">My</span> devision thinking is not unlike common<span class="token punctuation">.</span> <span class="token comment">// 我的决思维不像是一般人</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>怎么写</p>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 大家很高兴
-Everybody was happy. 
-Nobody was unhappy. 
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 大家很高兴</span>
+<span class="token class-name">Everybody</span> was <span class="token class-name"><span class="token namespace">happy<span class="token punctuation">.</span></span> 
+Nobody</span> was unhappy<span class="token punctuation">.</span> 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>万能双否句型</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// No one could deny the fact that…没人能否认</span>
 <span class="token class-name">No</span> one could deny the fact that everybody was happy<span class="token punctuation">.</span> <span class="token comment">// 没有人能否认大家都很高兴</span>
