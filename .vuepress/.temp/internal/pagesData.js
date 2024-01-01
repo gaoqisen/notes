@@ -97,14 +97,6 @@ export const pagesData = {
   "v-c63a415c": () => import(/* webpackChunkName: "v-c63a415c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/23句子.html.js").then(({ data }) => data),
   // path: /english/24%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
   "v-493ce376": () => import(/* webpackChunkName: "v-493ce376" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/24归类记忆.html.js").then(({ data }) => data),
-  // path: /life/MyAndYou.html
-  "v-54a2568b": () => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.js").then(({ data }) => data),
-  // path: /life/chengdu.html
-  "v-b1cb566e": () => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.js").then(({ data }) => data),
-  // path: /life/phrase.html
-  "v-28b77fb4": () => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.js").then(({ data }) => data),
-  // path: /life/target.html
-  "v-357d744e": () => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.js").then(({ data }) => data),
   // path: /java/annotation.html
   "v-30d19996": () => import(/* webpackChunkName: "v-30d19996" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/annotation.html.js").then(({ data }) => data),
   // path: /java/classloader.html
@@ -145,6 +137,14 @@ export const pagesData = {
   "v-ec0ffcf0": () => import(/* webpackChunkName: "v-ec0ffcf0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webJsonToken.html.js").then(({ data }) => data),
   // path: /java/webcenter.html
   "v-500fd9c4": () => import(/* webpackChunkName: "v-500fd9c4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webcenter.html.js").then(({ data }) => data),
+  // path: /life/MyAndYou.html
+  "v-54a2568b": () => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.js").then(({ data }) => data),
+  // path: /life/chengdu.html
+  "v-b1cb566e": () => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.js").then(({ data }) => data),
+  // path: /life/phrase.html
+  "v-28b77fb4": () => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.js").then(({ data }) => data),
+  // path: /life/target.html
+  "v-357d744e": () => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.js").then(({ data }) => data),
   // path: /linux/command.html
   "v-8a42673c": () => import(/* webpackChunkName: "v-8a42673c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/command.html.js").then(({ data }) => data),
   // path: /linux/curl.html
@@ -311,10 +311,10 @@ export const pagesData = {
   "v-2e25198a": () => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.js").then(({ data }) => data),
   // path: /english/
   "v-43539db8": () => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.js").then(({ data }) => data),
-  // path: /life/
-  "v-14e6315a": () => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.js").then(({ data }) => data),
   // path: /java/
   "v-14c69af4": () => import(/* webpackChunkName: "v-14c69af4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/index.html.js").then(({ data }) => data),
+  // path: /life/
+  "v-14e6315a": () => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.js").then(({ data }) => data),
   // path: /linux/
   "v-f0383c18": () => import(/* webpackChunkName: "v-f0383c18" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/index.html.js").then(({ data }) => data),
   // path: /mca/

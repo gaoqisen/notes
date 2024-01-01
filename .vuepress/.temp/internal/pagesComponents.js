@@ -99,14 +99,6 @@ export const pagesComponents = {
   "v-c63a415c": defineAsyncComponent(() => import(/* webpackChunkName: "v-c63a415c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/23句子.html.vue")),
   // path: /english/24%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
   "v-493ce376": defineAsyncComponent(() => import(/* webpackChunkName: "v-493ce376" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/24归类记忆.html.vue")),
-  // path: /life/MyAndYou.html
-  "v-54a2568b": defineAsyncComponent(() => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.vue")),
-  // path: /life/chengdu.html
-  "v-b1cb566e": defineAsyncComponent(() => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.vue")),
-  // path: /life/phrase.html
-  "v-28b77fb4": defineAsyncComponent(() => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.vue")),
-  // path: /life/target.html
-  "v-357d744e": defineAsyncComponent(() => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.vue")),
   // path: /java/annotation.html
   "v-30d19996": defineAsyncComponent(() => import(/* webpackChunkName: "v-30d19996" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/annotation.html.vue")),
   // path: /java/classloader.html
@@ -147,6 +139,14 @@ export const pagesComponents = {
   "v-ec0ffcf0": defineAsyncComponent(() => import(/* webpackChunkName: "v-ec0ffcf0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webJsonToken.html.vue")),
   // path: /java/webcenter.html
   "v-500fd9c4": defineAsyncComponent(() => import(/* webpackChunkName: "v-500fd9c4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webcenter.html.vue")),
+  // path: /life/MyAndYou.html
+  "v-54a2568b": defineAsyncComponent(() => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.vue")),
+  // path: /life/chengdu.html
+  "v-b1cb566e": defineAsyncComponent(() => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.vue")),
+  // path: /life/phrase.html
+  "v-28b77fb4": defineAsyncComponent(() => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.vue")),
+  // path: /life/target.html
+  "v-357d744e": defineAsyncComponent(() => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.vue")),
   // path: /linux/command.html
   "v-8a42673c": defineAsyncComponent(() => import(/* webpackChunkName: "v-8a42673c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/command.html.vue")),
   // path: /linux/curl.html
@@ -313,10 +313,10 @@ export const pagesComponents = {
   "v-2e25198a": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.vue")),
   // path: /english/
   "v-43539db8": defineAsyncComponent(() => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.vue")),
-  // path: /life/
-  "v-14e6315a": defineAsyncComponent(() => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.vue")),
   // path: /java/
   "v-14c69af4": defineAsyncComponent(() => import(/* webpackChunkName: "v-14c69af4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/index.html.vue")),
+  // path: /life/
+  "v-14e6315a": defineAsyncComponent(() => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.vue")),
   // path: /linux/
   "v-f0383c18": defineAsyncComponent(() => import(/* webpackChunkName: "v-f0383c18" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/index.html.vue")),
   // path: /mca/
