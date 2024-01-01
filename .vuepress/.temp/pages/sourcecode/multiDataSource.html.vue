@@ -1082,13 +1082,13 @@
 <span class="token header"><span class="token header-name keyword">dataSourceNo</span><span class="token punctuation">:</span> <span class="token header-value">123456</span></span>
 <span class="token application-json">
 <span class="token punctuation">{</span>
-  <span class="token property">"username"</span><span class="token operator">:</span> <span class="token string">"root"</span><span class="token punctuation">,</span>
-  <span class="token property">"password"</span><span class="token operator">:</span> <span class="token string">"123456"</span><span class="token punctuation">,</span>
-  <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"jdbc:mysql://localhost:3306/test?characterEncoding=utf8&amp;useSSL=false"</span><span class="token punctuation">,</span>
-  <span class="token property">"dataSourceNo"</span><span class="token operator">:</span> <span class="token string">"666"</span><span class="token punctuation">,</span>
-  <span class="token property">"driverClassName"</span><span class="token operator">:</span> <span class="token string">"com.mysql.jdbc.Driver"</span><span class="token punctuation">,</span>
-  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"1"</span><span class="token punctuation">,</span>
-  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"qerq"</span>
+  <span class="token string-property property">"username"</span><span class="token operator">:</span> <span class="token string">"root"</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"password"</span><span class="token operator">:</span> <span class="token string">"123456"</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"url"</span><span class="token operator">:</span> <span class="token string">"jdbc:mysql://localhost:3306/test?characterEncoding=utf8&amp;useSSL=false"</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"dataSourceNo"</span><span class="token operator">:</span> <span class="token string">"666"</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"driverClassName"</span><span class="token operator">:</span> <span class="token string">"com.mysql.jdbc.Driver"</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"status"</span><span class="token operator">:</span> <span class="token string">"1"</span><span class="token punctuation">,</span>
+  <span class="token string-property property">"name"</span><span class="token operator">:</span> <span class="token string">"qerq"</span>
 <span class="token punctuation">}</span>
 </span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、总结" tabindex="-1"><a class="header-anchor" href="#四、总结" aria-hidden="true">#</a> 四、总结</h2>
 <p>首先在springBoot启动的时候先通过DataSourceConfig去初始化了SqlSessionFactory、DataSource、动态数据源bean。</p>

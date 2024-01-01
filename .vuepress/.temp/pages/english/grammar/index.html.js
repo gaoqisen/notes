@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-612219c0\",\"path\":\"/english/grammar/\",\"title\":\"Grammar\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Grammar\",\"article\":false,\"feed\":false,\"sitemap\":false},\"headers\":[],\"git\":{},\"readingTime\":{\"minutes\":0.03,\"words\":9},\"filePathRelative\":null}")

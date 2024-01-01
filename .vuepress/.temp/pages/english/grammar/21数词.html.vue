@@ -1,0 +1,140 @@
+<template><div><h2 id="一、基数词" tabindex="-1"><a class="header-anchor" href="#一、基数词" aria-hidden="true">#</a> 一、基数词</h2>
+<h3 id="_1-1-规律" tabindex="-1"><a class="header-anchor" href="#_1-1-规律" aria-hidden="true">#</a> 1.1 规律</h3>
+<p>英文没有万字，按照三位数字划分。中文是四位</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>中文划分规律 10,0000,0000
+英文划分规律 1,000,000,000
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://gaoqisen.github.io/GraphBed/202312/20231210133843.png" alt="数字"></p>
+<p>1、从右往左，每三位加一个逗号，倒数第一个逗号之前是thousand，倒数第二个逗号之前是million，倒数第三个逗号之前是billion，倒数第四个逗号之前是trillion</p>
+<p>2、逗号之间的百位和十位要加and，数字隔零要加and</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 个位数</span>
+<span class="token operator">--</span> 零	一	二	三	四	五	六	七	八	九
+zero	one	two	three	four	five	six	seven	eight	nine
+
+<span class="token comment">// 十位数 </span>
+<span class="token operator">--</span> 无规律：<span class="token number">10</span>～<span class="token number">13</span>
+ten	eleven	twelve	thirteen	
+<span class="token operator">--</span> 有规律：<span class="token number">14</span><span class="token operator">~</span><span class="token number">19</span>都是个位数后面加teen
+fourteen fifteen	sixteen	seventeen	eighteen	nineteen
+
+<span class="token comment">// 20以上：十位+个位</span>
+twenty one（<span class="token number">21</span>），ninety nine（<span class="token number">99</span>）
+
+<span class="token comment">// 100～999</span>
+one <span class="token function">hundred</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one hundred and <span class="token function">one</span><span class="token punctuation">(</span><span class="token number">101</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nine hundred and ninety<span class="token operator">-</span><span class="token function">nine</span><span class="token punctuation">(</span><span class="token number">999</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 1,000~9,999</span>
+one <span class="token function">thousand</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one thousand and <span class="token function">one</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one thousand and <span class="token function">twenty</span><span class="token punctuation">(</span><span class="token number">1020</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nine thousand nine hundred and ninety<span class="token operator">-</span><span class="token function">nine</span><span class="token punctuation">(</span><span class="token number">9999</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 10,000~10,999</span>
+ten <span class="token function">thousand</span><span class="token punctuation">(</span><span class="token number">1</span>W<span class="token punctuation">)</span><span class="token punctuation">,</span> ten thousand and <span class="token function">neo</span><span class="token punctuation">(</span><span class="token number">10001</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ten thousand and <span class="token function">twenty</span><span class="token punctuation">(</span><span class="token number">10020</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ten thousand and two <span class="token function">hundred</span><span class="token punctuation">(</span><span class="token number">10200</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ten thousand nine hundred and ninety<span class="token operator">-</span><span class="token function">nine</span><span class="token punctuation">(</span><span class="token number">10999</span><span class="token punctuation">)</span> 
+
+<span class="token comment">// 一万一千到九万九千九百九十九(11,000~99,999)</span>
+eleven <span class="token function">thousand</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> eleven thousand and <span class="token function">one</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">001</span><span class="token punctuation">)</span><span class="token punctuation">,</span> eleven thousand and <span class="token function">twenty</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">020</span><span class="token punctuation">)</span><span class="token punctuation">,</span> eleven thousand and <span class="token function">twenty</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ninety nine thousand nine hundred and ninety<span class="token operator">-</span><span class="token function">nine</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">,</span><span class="token number">999</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 十万到九十九万九千九百九十九（100,000~999,999）</span>
+one hundred <span class="token function">thousand</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one hundred thousand and <span class="token function">one</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">001</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one hundred thousand and <span class="token function">twenty</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">020</span><span class="token punctuation">)</span><span class="token punctuation">,</span>one hundred thousand and two <span class="token function">hundred</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>one hundred and two thousand and <span class="token function">one</span><span class="token punctuation">(</span><span class="token number">102</span><span class="token punctuation">,</span><span class="token number">001</span><span class="token punctuation">)</span><span class="token punctuation">,</span>nine hundred and ninety<span class="token operator">-</span>nine thousand nine hundred and ninety<span class="token operator">-</span>nine <span class="token punctuation">(</span><span class="token number">999</span><span class="token punctuation">,</span><span class="token number">999</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 一百万到九千九百九十九万九千九百九十九（1,000,000~99,999,999）</span>
+one <span class="token function">million</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one million and <span class="token function">one</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">,</span><span class="token number">001</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one million and one <span class="token function">thousand</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">001</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> one million and ten <span class="token function">thousand</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">010</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">Ninety</span><span class="token operator">-</span>nine million nine hundred and ninety<span class="token operator">-</span>nine thousand nine hundred and ninety<span class="token operator">-</span><span class="token function">nine</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">,</span><span class="token number">999</span><span class="token punctuation">,</span><span class="token number">999</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 一亿到十亿以及更多（100,000,000~1,000,000,000~∞）</span>
+one hundred <span class="token function">million</span><span class="token punctuation">(</span><span class="token number">1</span>亿<span class="token punctuation">)</span>， one hundred million and <span class="token function">one</span><span class="token punctuation">(</span>一亿零一<span class="token punctuation">)</span>，one hundred million and one <span class="token function">thousand</span><span class="token punctuation">(</span>一亿零一千<span class="token punctuation">)</span>，one hundred and one <span class="token function">million</span><span class="token punctuation">(</span>一亿零壹佰万<span class="token punctuation">)</span>，one <span class="token function">billion</span><span class="token punctuation">(</span>十亿<span class="token punctuation">)</span>，<span class="token class-name">Thirty</span><span class="token operator">-</span>one billion twenty million nine hundred thousand eight hundred and eighty<span class="token operator">-</span>eight（三百一十亿零两千九十万零八百八十八（<span class="token number">31</span><span class="token punctuation">,</span><span class="token number">020</span><span class="token punctuation">,</span><span class="token number">900</span><span class="token punctuation">,</span><span class="token number">888</span>））
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-2-特点" tabindex="-1"><a class="header-anchor" href="#_1-2-特点" aria-hidden="true">#</a> 1.2 特点</h3>
+<h4 id="_1、作数词" tabindex="-1"><a class="header-anchor" href="#_1、作数词" aria-hidden="true">#</a> 1、作数词</h4>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 作数词时候，前面可以加数词，后面不能加s</span>
+two thousand，three thousands（错）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、数词作名词用" tabindex="-1"><a class="header-anchor" href="#_2、数词作名词用" aria-hidden="true">#</a> 2、数词作名词用</h4>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 如果数词用作名词时候，意思是好几…的时候，前面可以加some、many、several这种词或者加数词，后面可以加of</span>
+hundreds of（好几百）five hundreds of（五百左右）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、其他" tabindex="-1"><a class="header-anchor" href="#_3、其他" aria-hidden="true">#</a> 3、其他</h4>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、年龄</span>
+<span class="token class-name">I</span>’m twenty <span class="token punctuation">(</span>我<span class="token number">20</span>岁<span class="token punctuation">)</span>
+
+<span class="token comment">// 2、编号</span>
+<span class="token class-name">Room</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token class-name">Room</span> one <span class="token number">0</span> one <span class="token punctuation">(</span><span class="token number">101</span>房间<span class="token punctuation">)</span>
+<span class="token class-name">Bus</span> <span class="token class-name">No</span><span class="token number">.10</span><span class="token operator">=</span><span class="token class-name">Bus</span> <span class="token class-name">Number</span> <span class="token function">ten</span><span class="token punctuation">(</span><span class="token number">10</span>路公交车<span class="token punctuation">)</span>
+
+<span class="token comment">// 3、年代</span>
+<span class="token number">1940</span>'s <span class="token operator">=</span> nineteen forty'<span class="token function">s</span><span class="token punctuation">(</span><span class="token number">20</span>世纪<span class="token number">40</span>年代<span class="token punctuation">)</span>
+
+<span class="token comment">// 4、年份</span>
+<span class="token number">2008</span><span class="token operator">=</span>two thousand and eight
+<span class="token number">1949</span><span class="token operator">=</span>nineteen forty<span class="token operator">-</span>nine
+<span class="token number">2019.9</span><span class="token number">.10</span><span class="token operator">=</span><span class="token class-name">Sep</span><span class="token number">.10</span>th<span class="token punctuation">.</span><span class="token number">2019</span><span class="token operator">=</span><span class="token class-name">September</span><span class="token punctuation">.</span>tenth<span class="token punctuation">.</span>twenty nineteen
+
+<span class="token comment">// 5、电话直接读数字，北美电话 区号（3位）+用户号（7位）</span>
+<span class="token number">647</span><span class="token operator">-</span><span class="token number">300</span><span class="token operator">-</span><span class="token number">2516</span><span class="token operator">=</span>six four seven<span class="token operator">-</span>three <span class="token keyword">double</span> o<span class="token operator">-</span>two five one six
+
+<span class="token comment">// 6、价格（经常省略dollars和cents）</span>
+nine thirty<span class="token operator">=</span> nine dollars and thirty cents <span class="token punctuation">(</span><span class="token number">9.30</span>$<span class="token punctuation">)</span>
+ninety<span class="token operator">-</span>nine ninety<span class="token operator">-</span>eight<span class="token operator">=</span> ninety<span class="token operator">-</span>nine dollars and ninety<span class="token operator">-</span>eight cents <span class="token punctuation">(</span><span class="token number">99.98</span>$<span class="token punctuation">)</span>
+
+<span class="token comment">// 7、小数（经常省略zero，或者读为o）</span>
+<span class="token number">0.5</span><span class="token operator">=</span>（zero）point five <span class="token punctuation">(</span>零点五<span class="token punctuation">)</span>
+<span class="token number">0.05</span><span class="token operator">=</span>（zero）point o five <span class="token punctuation">(</span>零点零五<span class="token punctuation">)</span>
+
+<span class="token comment">// 8、两个一样的数，三个一样的数</span>
+<span class="token number">007</span><span class="token operator">=</span><span class="token keyword">double</span> o seven （零零七）
+boeing <span class="token number">777</span><span class="token operator">=</span>boeing triple seven （波音<span class="token number">777</span>）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_4、时间" tabindex="-1"><a class="header-anchor" href="#_4、时间" aria-hidden="true">#</a> 4、时间</h4>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示时刻（中国人描述时间习惯精确到个位分钟，外国人描述时间习惯精确到十位分钟，几分钟一般省略）</span>
+<span class="token number">6</span>：<span class="token number">00</span><span class="token operator">=</span>six o’clock<span class="token operator">=</span>six on the dot（<span class="token number">6</span>点整）
+<span class="token number">6</span>：<span class="token number">05</span><span class="token operator">=</span>six o five<span class="token operator">=</span>five past six（<span class="token number">6</span>点<span class="token number">05</span>分，<span class="token number">6</span>点过<span class="token number">5</span>分）
+<span class="token number">6</span>：<span class="token number">15</span><span class="token operator">=</span>six fifteen<span class="token operator">=</span>a quarter past six（<span class="token number">6</span>点<span class="token number">15</span>分，<span class="token number">6</span>点过一刻）
+<span class="token number">6</span>：<span class="token number">30</span><span class="token operator">=</span>six thirty<span class="token operator">=</span>half past six（<span class="token number">6</span>点<span class="token number">30</span>分，<span class="token number">6</span>点半）
+<span class="token number">6</span>：<span class="token number">45</span><span class="token operator">=</span>six forty<span class="token operator">-</span>five<span class="token operator">=</span>a quarter <span class="token keyword">to</span>（till） seven（<span class="token number">6</span>点<span class="token number">45</span>分，<span class="token number">7</span>点差一刻）
+<span class="token number">6</span>：<span class="token number">55</span><span class="token operator">=</span>six fifty<span class="token operator">-</span>five<span class="token operator">=</span>five <span class="token keyword">to</span>（till） seven（<span class="token number">6</span>点<span class="token number">55</span>分，<span class="token number">7</span>点差<span class="token number">5</span>分）
+
+<span class="token comment">// 时区：time zones        上午：ante meridiem=a.m.        下午：post meridiem=p.m.</span>
+
+<span class="token number">24</span>小时制<span class="token operator">=</span><span class="token number">24</span><span class="token operator">-</span>hour clock<span class="token operator">=</span>military time（北美不太使用<span class="token number">24</span>小时制，都是说<span class="token number">12</span>小时制加am和pm）
+<span class="token number">21</span>：<span class="token number">00</span><span class="token operator">=</span>twenty one hours
+<span class="token number">21</span>：<span class="token number">20</span><span class="token operator">=</span>twenty one twenty
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、序数词" tabindex="-1"><a class="header-anchor" href="#二、序数词" aria-hidden="true">#</a> 二、序数词</h2>
+<h4 id="_2-1-规律" tabindex="-1"><a class="header-anchor" href="#_2-1-规律" aria-hidden="true">#</a> 2.1 规律</h4>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 个位数：第几（第零到第九）</span>
+zeroth	first	second	third	fourth	fifth	sixth	seventh	eighth	ninth
+
+<span class="token comment">// 个位数规律（0～9）</span>
+<span class="token operator">--</span> 无规律
+first（第一）、second（第二），third（第三）、fifth（第五）、ninth（第九）
+<span class="token operator">--</span> 有规律：基数词后面加th
+zeroth（第零），fourth（第四），sixth（第六），seventh（第七），eighth（第八）
+
+<span class="token comment">// 十位数规律（10～19）</span>
+<span class="token operator">--</span> 无规律
+<span class="token function">twelfth</span><span class="token punctuation">(</span>第十二<span class="token punctuation">)</span>
+<span class="token operator">--</span> 有规律：基数词后面加th
+tenth（第十），eleventh（第十一），thirteenth（第十三），fourteenth（第十四），fifteenth（第十五），sixteenth（第十六），seventeenth（第十七），eighteenth（第十八），nineteenth（第十九）
+
+<span class="token comment">// 第十几，第二十到第九十：把基数词结尾的y变为i在加eth</span>
+<span class="token function">twentieth</span><span class="token punctuation">(</span>第二十<span class="token punctuation">)</span>，thirtieth（第三十），fortieth（第四十），fiftieth（第五十），sixtieth（第六十），seventieth（第七十），eightieth（第八十），ninetieth（第九十）
+
+<span class="token comment">// 第二十以上，第几十几： 十位用基数词，各位going序数词</span>
+twenty first（第二十一），ninety ninth（第九十九）
+
+<span class="token comment">// 第一百及以上： 第整数的后面加th，否则保留基数词只变个位数</span>
+one hundredth（第一百）	one thousandth（第一千）	one millionth（第一百万）	one billionth（第十亿）one billion fifty million and thirty first（第十亿五千万零三十一<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">050</span><span class="token punctuation">,</span><span class="token number">000</span><span class="token punctuation">,</span><span class="token number">031</span>st<span class="token punctuation">)</span>）
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2-2-特点" tabindex="-1"><a class="header-anchor" href="#_2-2-特点" aria-hidden="true">#</a> 2.2 特点</h4>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 使用序数词时，一般前面要加定冠词the</span>
+<span class="token class-name">I</span>'m in the second <span class="token function">room</span><span class="token punctuation">(</span>我在第二个房间<span class="token punctuation">)</span>
+
+<span class="token comment">// 表示时间日期</span>
+<span class="token class-name">The</span> first of <span class="token class-name">September</span> <span class="token operator">=</span> <span class="token class-name">Sep</span> <span class="token number">1</span> <span class="token function">st</span><span class="token punctuation">(</span>九月一日<span class="token punctuation">)</span>
+
+<span class="token comment">// 表示楼层</span>
+<span class="token class-name">The</span> first <span class="token function">floor</span><span class="token punctuation">(</span>一楼<span class="token punctuation">)</span>
+说法	三楼（<span class="token constant">G3</span>）	    二楼（<span class="token constant">G2</span>）	   一楼（<span class="token constant">G1</span>）	    地下一层（<span class="token constant">B1</span>）	  地下二层（<span class="token constant">B2</span>）	   地下三层（<span class="token constant">B3</span>）
+英式	<span class="token class-name">Second</span> floor	<span class="token class-name">First</span> floor	  <span class="token class-name">Ground</span> floor	<span class="token class-name">First</span> basement	<span class="token class-name">Second</span> basement	 <span class="token class-name">Third</span> basement
+美式	<span class="token class-name">Third</span> floor	  <span class="token class-name">Second</span> floor	<span class="token class-name">First</span> floor	  <span class="token class-name">First</span> basement	<span class="token class-name">Second</span> basement	 <span class="token class-name">Third</span> basement
+
+<span class="token comment">// 序数词表示几分之几，分子大于一，分母有复数形式</span>
+one third <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">,</span>    two thirds <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">/</span><span class="token number">3</span>
+
+<span class="token comment">// 序数词前面加a/an表示再一，序数词前面加the表示顺序</span>
+<span class="token class-name">We</span> read the book a third <span class="token function">times</span><span class="token punctuation">(</span>我们读了三变这本书<span class="token punctuation">)</span>
+<span class="token class-name">The</span> second door of the room is <span class="token function">closed</span><span class="token punctuation">(</span>房间的第二扇门时关的<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+
