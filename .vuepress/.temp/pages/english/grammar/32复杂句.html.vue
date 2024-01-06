@@ -1,4 +1,5 @@
-<template><div><h2 id="一、倒装句" tabindex="-1"><a class="header-anchor" href="#一、倒装句" aria-hidden="true">#</a> 一、倒装句</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106223859.png" alt=""></p>
+<h2 id="一、倒装句" tabindex="-1"><a class="header-anchor" href="#一、倒装句" aria-hidden="true">#</a> 一、倒装句</h2>
 <p>中文：我有事走先</p>
 <p>为什么用倒装句：表示强调、 句法结构需要</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>impossible is nothing<span class="token punctuation">.</span> <span class="token comment">// 没有不可能</span>
@@ -90,6 +91,11 @@ It</span> was 'yesterday' that <span class="token class-name">Peter</span> lost 
 强调句： <span class="token class-name">It</span> was in the morning <span class="token char">'that'</span> he woke up<span class="token punctuation">.</span> 
 状语从句： <span class="token class-name">It</span> was in the morning <span class="token char">'when'</span> he woke up<span class="token punctuation">.</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、虚拟语气" tabindex="-1"><a class="header-anchor" href="#三、虚拟语气" aria-hidden="true">#</a> 三、虚拟语气</h2>
+<p>虚拟语气是一种语法结构，用于表示假设、愿望、建议等不真实或假设的情况。在英语中，虚拟语气通常通过虚拟条件句和虚拟表达式来表达。</p>
+<p>虚拟条件句通常由&quot;if&quot;引导，后面跟着一个动词的过去时（常称为虚拟语气的过去时），表示与过去或现在事实相反的情况。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 这个句子表示的是一个与现实相反的假设，即我并不富有，所以也无法环游世界。</span>
+<span class="token class-name">If</span> <span class="token class-name">I</span> were rich<span class="token punctuation">,</span> <span class="token class-name">I</span> would travel around the world<span class="token punctuation">.</span>  <span class="token comment">// 如果我有钱，我就会环游世界。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>虚拟表达式可以用来表达愿望、建议和建议等情况。例如：&quot;I wish I were taller.&quot;（我希望我能更高一些。）这个例子中，使用了虚拟语气&quot;were&quot;来表达一个不可能实现的愿望。</p>
 <p>真实条件：可能发生的用主将从现</p>
 <p>虚拟条件：不可能发生的假设用虚拟语气</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">If</span> it rains tomorrow<span class="token punctuation">,</span> <span class="token class-name">I</span> will stay at home<span class="token punctuation">.</span> <span class="token comment">// 如果明天下雨，我会待在家里</span>

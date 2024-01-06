@@ -1,4 +1,5 @@
-<template><div><h2 id="一、陈述句" tabindex="-1"><a class="header-anchor" href="#一、陈述句" aria-hidden="true">#</a> 一、陈述句</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106211431.png" alt=""></p>
+<h2 id="一、陈述句" tabindex="-1"><a class="header-anchor" href="#一、陈述句" aria-hidden="true">#</a> 一、陈述句</h2>
 <h3 id="_1-1-两种形式" tabindex="-1"><a class="header-anchor" href="#_1-1-两种形式" aria-hidden="true">#</a> 1.1 两种形式</h3>
 <table>
 <thead>
@@ -52,6 +53,8 @@ be动词：各种各样的是例如am, is, are等.
 <span class="token comment">// 反义疑问句: </span>
 <span class="token class-name">You</span> love me<span class="token punctuation">,</span> <span class="token class-name">Don</span>'t you<span class="token operator">?</span><span class="token punctuation">(</span>你爱我是吗？<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-1-一般疑问句" tabindex="-1"><a class="header-anchor" href="#_2-1-一般疑问句" aria-hidden="true">#</a> 2.1 一般疑问句</h3>
+<p>一般疑问句（Yes/No Questions）：用来询问事实、情况或真实性，有时需要肯定或否定的回答。这类句子使用助动词或情态动词来构成疑问。</p>
+<p>例如，&quot;Are you coming?&quot;、&quot;Do you like chocolate?&quot;、&quot;Can you swim?&quot;</p>
 <h4 id="_2-1-1、陈述句变一般疑问句" tabindex="-1"><a class="header-anchor" href="#_2-1-1、陈述句变一般疑问句" aria-hidden="true">#</a> 2.1.1、陈述句变一般疑问句</h4>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 陈述句                       一般疑问句                   回答</span>
 
@@ -61,7 +64,7 @@ be动词：各种各样的是例如am, is, are等.
 <span class="token comment">// 2、提前助动词(do、have、shall)：主+谓+(宾)  变为 助动词 + 主 + 动词原形 + 其他</span>
 <span class="token class-name">You</span> `have` got light bulbs    `<span class="token class-name">Have</span>` you got light bulbs  <span class="token class-name">Yes</span><span class="token punctuation">,</span><span class="token class-name">I</span> have<span class="token operator">/</span><span class="token class-name">No</span><span class="token punctuation">,</span><span class="token class-name">I</span> haven't
 
-<span class="token comment">// 提前情态动词(can、may、will): 主+情态动词+动词原形+其他 变为 情态动词+主+动词原形+其他</span>
+<span class="token comment">// 3、提前情态动词(can、may、will): 主+情态动词+动词原形+其他 变为 情态动词+主+动词原形+其他</span>
 <span class="token class-name">You</span> `can` play footboll       `can` you play football     <span class="token class-name">Yes</span><span class="token punctuation">,</span><span class="token class-name">I</span> can<span class="token operator">/</span><span class="token class-name">No</span><span class="token punctuation">,</span> <span class="token class-name">Ican</span>'t
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2-1-2、补充知识" tabindex="-1"><a class="header-anchor" href="#_2-1-2、补充知识" aria-hidden="true">#</a> 2.1.2、补充知识</h4>
 <h5 id="_2-1-1-人称代词基础版" tabindex="-1"><a class="header-anchor" href="#_2-1-1-人称代词基础版" aria-hidden="true">#</a> 2.1.1 人称代词基础版</h5>
@@ -165,6 +168,8 @@ be动词：各种各样的是例如am, is, are等.
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 名词性物主代词 ＝  形容词物主代词 ＋ 名词
 // 形容词物主代词 ＝  形容词
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-2-特殊疑问句" tabindex="-1"><a class="header-anchor" href="#_2-2-特殊疑问句" aria-hidden="true">#</a> 2.2 特殊疑问句</h3>
+<p>特殊疑问句（Wh-Questions）：用于询问特定信息，通常开始于疑问词（如what, where, when, why, who, whom, whose, which, how）。</p>
+<p>例如，“Where are you going?&quot;、&quot;What is your name?&quot;、&quot;How did you do that?&quot;</p>
 <p>不可以用yes或no回答，对句子中的某个句子成分提问，用特殊疑问词开头。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">What</span> is your name<span class="token operator">?</span>  <span class="token comment">// 你叫什么名字？</span>
 <span class="token class-name">Where</span> <span class="token keyword">do</span> you live in<span class="token operator">?</span>  <span class="token comment">// 你住在那里？</span>
@@ -183,10 +188,14 @@ be动词：各种各样的是例如am, is, are等.
 <span class="token class-name">How</span> much<span class="token operator">/</span>many 多少：<span class="token class-name">How</span> much longer？（有多远？）
 <span class="token class-name">Which</span> 提问选择：<span class="token class-name">Which</span> is your choice？（你选哪个？）
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-3-选择疑问句" tabindex="-1"><a class="header-anchor" href="#_2-3-选择疑问句" aria-hidden="true">#</a> 2.3 选择疑问句</h3>
+<p>选择疑问句（Choice Questions）：用于提供两种或更多选项，让对方做出选择。这种疑问句通常以 or 结尾。</p>
+<p>例如，“Would you like tea or coffee?&quot;、&quot;Do you want to go to the movies or stay home?&quot;</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 不可以用yes或no回答，句子用or连接。提出两个以上的内容供选择</span>
 问：<span class="token class-name">Do</span> you like <span class="token keyword">to</span> <span class="token namespace">play</span> football or basketball<span class="token operator">?</span> 你喜欢提球还是打篮球
 答<span class="token operator">:</span> <span class="token class-name">I</span> like <span class="token keyword">to</span> <span class="token namespace">play</span> football <span class="token operator">/</span> <span class="token class-name">I</span> like <span class="token keyword">to</span> <span class="token namespace">play</span> basketball 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-4-反义疑问句" tabindex="-1"><a class="header-anchor" href="#_2-4-反义疑问句" aria-hidden="true">#</a> 2.4 反义疑问句</h3>
+<p>反义疑问句（Tag Questions）：一个简短的附加问句，用来确认前面所说的内容或询问对方是否同意。通常与前面的陈述句相反，一部分是肯定的，一部分是否定的。</p>
+<p>例如，“You like this movie, don't you?&quot;、&quot;She is not coming, is she?&quot;</p>
 <p>可以用yes，no回答。 前肯后否，前否后肯。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 陈述句部分是肯定，疑问句部分用否定句</span>
 <span class="token class-name">He</span> is your teacher<span class="token punctuation">,</span> isn‘t he？<span class="token punctuation">(</span>他是你的老师，不是吗？<span class="token punctuation">)</span>
@@ -225,6 +234,7 @@ be动词：各种各样的是例如am, is, are等.
 <span class="token comment">// 引导的宾语从句，反义疑问句与从句主语，主谓一致，用肯定提问</span>
 <span class="token class-name">I</span> don’t imagine he has got it<span class="token punctuation">,</span> has he<span class="token operator">?</span><span class="token punctuation">(</span>我没有想过他有它，他有吗？<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、感叹句" tabindex="-1"><a class="header-anchor" href="#三、感叹句" aria-hidden="true">#</a> 三、感叹句</h2>
+<p>感叹句通常用于表达强烈的情感、情感或评价。它们可以是由感叹词引导的句子，也可以是陈述或疑问句加上感叹号</p>
 <h4 id="_1、what感叹句" tabindex="-1"><a class="header-anchor" href="#_1、what感叹句" aria-hidden="true">#</a> 1、What感叹句</h4>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// what+a、an+形容词+可数名词单数+主语+谓语</span>
 <span class="token class-name">What</span> a beautiful photo it is<span class="token operator">!</span><span class="token punctuation">(</span>这照片它多美啊！<span class="token punctuation">)</span>

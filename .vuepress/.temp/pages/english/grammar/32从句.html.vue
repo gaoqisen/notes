@@ -1,6 +1,10 @@
-<template><div><h2 id="一、名词性从句" tabindex="-1"><a class="header-anchor" href="#一、名词性从句" aria-hidden="true">#</a> 一、名词性从句</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106222846.png" alt=""></p>
+<h2 id="一、名词性从句" tabindex="-1"><a class="header-anchor" href="#一、名词性从句" aria-hidden="true">#</a> 一、名词性从句</h2>
 <p>用一个句子代替句子里面的一个名词。分为主语从句、宾语从句、表语从句、同位语从句</p>
 <h3 id="_1-1-主语" tabindex="-1"><a class="header-anchor" href="#_1-1-主语" aria-hidden="true">#</a> 1.1 主语</h3>
+<p>主语从句在句子中充当主语的角色，用来引出一个动作或状态的主题。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">What</span> he said doesn‘t matter<span class="token punctuation">.</span> <span class="token comment">// 他说的话无关紧要。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="_1、引导词" tabindex="-1"><a class="header-anchor" href="#_1、引导词" aria-hidden="true">#</a> 1、引导词</h4>
 <p>需要加连词作为引导词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 连词</span>
 <span class="token function">that</span><span class="token punctuation">(</span>那<span class="token punctuation">)</span>、<span class="token function">whether</span><span class="token punctuation">(</span>是否<span class="token punctuation">)</span>
@@ -8,7 +12,7 @@
 <span class="token class-name">Who</span><span class="token punctuation">,</span> <span class="token function">whoever</span><span class="token punctuation">(</span>任何人<span class="token punctuation">)</span><span class="token punctuation">,</span>whom<span class="token punctuation">,</span> whose<span class="token punctuation">,</span> what<span class="token punctuation">,</span> whatever<span class="token punctuation">,</span>which<span class="token punctuation">,</span>whichever
 <span class="token comment">// 副词</span>
 when， where<span class="token punctuation">,</span> how<span class="token punctuation">,</span> why<span class="token punctuation">,</span> whenever<span class="token punctuation">,</span>wherever<span class="token punctuation">,</span>however	
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>注意点：</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、注意点" tabindex="-1"><a class="header-anchor" href="#_2、注意点" aria-hidden="true">#</a> 2、注意点</h4>
 <p>1、经常用形式主语it放主语位置，真的主语后置</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 他赢得这场比赛是肯定的</span>
 <span class="token class-name">That</span> he will win the match is certain<span class="token punctuation">.</span>
@@ -36,8 +40,10 @@ when， where<span class="token punctuation">,</span> how<span class="token punc
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>5、时态不受主句影响</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">It</span> is <span class="token keyword">to</span> <span class="token namespace">join</span> a gun club that he will grow<span class="token operator">-</span>up<span class="token punctuation">.</span>  <span class="token comment">// 他长大了要参加一个枪械俱乐部</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_1-2-宾语" tabindex="-1"><a class="header-anchor" href="#_1-2-宾语" aria-hidden="true">#</a> 1.2 宾语</h3>
-<p>用一个句子代替句子里一个名词做句子宾语</p>
-<p>1、宾语从句引导词</p>
+<p>宾语从句在句子中作为动词的宾语，被动词所作用。</p>
+<p>例如：&quot;I know where he lives.&quot;（我知道他住在哪里。）</p>
+<h4 id="_1、引导词-1" tabindex="-1"><a class="header-anchor" href="#_1、引导词-1" aria-hidden="true">#</a> 1、引导词</h4>
+<p>宾语从句引导词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 连词</span>
 that <span class="token char">'常可以忽略'</span><span class="token punctuation">,</span> whether<span class="token punctuation">,</span> <span class="token keyword">if</span>
 <span class="token comment">// 代词</span>
@@ -47,7 +53,8 @@ when<span class="token punctuation">,</span> where<span class="token punctuation
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当主语是一般现在时或一般将来时的时候，从句可以是任何时态</p>
 <p>当主语是一般过去时的时候，从句时态必须是过去时范围内的时态</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231223165303.png" alt=""></p>
-<p>2、宾语从句的种类</p>
+<h4 id="_2、注意点-1" tabindex="-1"><a class="header-anchor" href="#_2、注意点-1" aria-hidden="true">#</a> 2、注意点</h4>
+<p>1、宾语从句的种类</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、动词的宾语从句</span>
 <span class="token class-name">Tell</span> your son that playing game too much is bad <span class="token keyword">for</span> his eyes<span class="token punctuation">.</span>  <span class="token comment">// 告诉你儿子玩太多游戏对他眼睛不好</span>
 
@@ -56,17 +63,17 @@ when<span class="token punctuation">,</span> where<span class="token punctuation
 
 <span class="token comment">// 3、形容词的宾语从句</span>
 <span class="token class-name">I</span> am sure that he will come soon<span class="token punctuation">.</span> <span class="token comment">// 我确信他很快就会来了</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>3、it做形势宾语</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2、it做形势宾语</p>
 <p>动词find、feel、consider、make、believe、think等后面有宾补的时候要用it做形式宾语，将that宾语从句后置</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">I</span> find it interesting that talking <span class="token keyword">to</span> <span class="token namespace">you<span class="token punctuation">.</span></span> <span class="token comment">// 我觉得和你谈话很有意思</span>
 
 <span class="token class-name">I</span> think it best that you should stay here<span class="token punctuation">.</span> <span class="token comment">// 我认为你最好住这</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>4、宾语从句是否转移</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>3、宾语从句是否转移</p>
 <p>think、believe、imagine、suppose、guess等否定时，会转移到从句上</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">I</span> don't believe that the carr is good<span class="token punctuation">.</span> <span class="token comment">// 我相信这车不好</span>
 
 <span class="token class-name">I</span> don't think that he will come back now<span class="token punctuation">.</span> <span class="token comment">// 我认为他现在不会回来</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>5、that不能省略</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>4、that不能省略</p>
 <p>都不省也可以，不会错</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、当主句谓语动词带两个或以上的宾语从句时，可以省略第一个that，其他的从句that不能省</span>
 <span class="token class-name">I</span> realize you are a hero and that everybody accepts  your leadership<span class="token punctuation">.</span> <span class="token comment">// 我意识到你是个英雄，每个人都接受你的领导</span>
@@ -87,14 +94,17 @@ when<span class="token punctuation">,</span> where<span class="token punctuation
 <span class="token comment">// 9、宾语从句的前面或后面紧跟一个状语时</span>
 <span class="token class-name">He</span> suddenly caught sight of the boy and realized at once that he had seen him before<span class="token punctuation">.</span>  <span class="token comment">// 他突然发现了这个男孩，立刻意识到自己曾经见过他</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-3-表语" tabindex="-1"><a class="header-anchor" href="#_1-3-表语" aria-hidden="true">#</a> 1.3 表语</h3>
-<p>用一个句子代替句子里的一个名词，做句子表语</p>
+<p>表语从句在句子中作为表语，用来说明主语的身份、特征、状态等。</p>
+<p>例如：&quot;The important thing is that we all do our best.&quot;（重要的是我们都尽力而为。）</p>
+<h4 id="_1、引导词-2" tabindex="-1"><a class="header-anchor" href="#_1、引导词-2" aria-hidden="true">#</a> 1、引导词</h4>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 连词</span>
 that、whether、as <span class="token keyword">if</span>、as though
 <span class="token comment">// 代词</span>
 who、whose、whom、what、which
 <span class="token comment">// 副词</span>
 when、where、how、why、because
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>1、种类</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、注意点-2" tabindex="-1"><a class="header-anchor" href="#_2、注意点-2" aria-hidden="true">#</a> 2、注意点</h4>
+<p>1、种类</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、that引导</span>
 <span class="token class-name">The</span> reason was that he was late <span class="token keyword">for</span> school<span class="token punctuation">.</span> <span class="token comment">// 原因是他上学迟到了</span>
 <span class="token comment">// 2、whether、as、as if引导</span>
@@ -114,14 +124,17 @@ when、where、how、why、because
 <span class="token class-name">The</span> question is <span class="token keyword">if</span> they will be able <span class="token keyword">to</span> <span class="token namespace">help</span> us<span class="token punctuation">.</span> <span class="token punctuation">(</span>错<span class="token punctuation">)</span>
 <span class="token class-name">The</span> question is whether they will be able <span class="token keyword">to</span> <span class="token namespace">help</span> us<span class="token punctuation">.</span> <span class="token punctuation">(</span>对<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-4-同位语" tabindex="-1"><a class="header-anchor" href="#_1-4-同位语" aria-hidden="true">#</a> 1.4 同位语</h3>
-<p>放在名词的后面解释名词</p>
+<p>同位语从句与名词同位，用来进一步解释、说明名词所表示的内容。</p>
+<p>例如：&quot;The news that he won the prize pleased us all.&quot;（他获奖的消息让我们所有人都很高兴。）</p>
+<h4 id="_1、引导词-3" tabindex="-1"><a class="header-anchor" href="#_1、引导词-3" aria-hidden="true">#</a> 1、引导词</h4>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 连词</span>
 <span class="token function">that</span><span class="token punctuation">(</span>不能省略<span class="token punctuation">)</span><span class="token punctuation">,</span> whether
 <span class="token comment">// 代词</span>
 what<span class="token punctuation">,</span> who<span class="token punctuation">,</span> whom<span class="token punctuation">,</span> whose<span class="token punctuation">,</span> which
 <span class="token comment">// 副词</span>
 when<span class="token punctuation">,</span> where<span class="token punctuation">,</span> how<span class="token punctuation">,</span> why
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>1、结构</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、注意点-3" tabindex="-1"><a class="header-anchor" href="#_2、注意点-3" aria-hidden="true">#</a> 2、注意点</h4>
+<p>1、结构</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、主语 + 同位语从句 + 其他</span>
 <span class="token class-name">The</span> news that he will come here is real<span class="token punctuation">.</span> <span class="token comment">// 他要来这里的消息是真的</span>
 <span class="token comment">// 2、主语 + 同位语从句</span>
@@ -141,7 +154,11 @@ when<span class="token punctuation">,</span> where<span class="token punctuation
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>how、whether，that可以引导同位语从句，不能引导定语从句
 that引导同位语从句时不能省略，引导定语从句经常省略
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、定语从句" tabindex="-1"><a class="header-anchor" href="#二、定语从句" aria-hidden="true">#</a> 二、定语从句</h2>
-<p>或者叫形容词性从句。 就是用一个句子代替句子中的定语，修饰先行词。 （定语就是修饰前面的名词或者代词）</p>
+<p>用来修饰一个名词或代词，对其进行详细的描述或限定。这个名词或代词被定语从句所修饰。定语从句通常由关系词引导，如who, whom, whose, which, that等。定语从句可以出现在句子中的不同位置，包括名词的前面或后面，这取决于所修饰的名词的位置。</p>
+<p>定语从句的作用是进一步说明或限定名词，并可以在句子中起到形容词的作用。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 这里，定语从句 "that I bought yesterday" 修饰名词 "book"，进一步说明了买的具体时间，并起到了形容词的作用。</span>
+<span class="token class-name">The</span> book that <span class="token class-name">I</span> bought yesterday is very interesting<span class="token punctuation">.</span> <span class="token comment">// 我昨天买的书非常有趣。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>或者叫形容词性从句,就是用一个句子代替句子中的定语，修饰先行词。 （定语就是修饰前面的名词或者代词）</p>
 <p>先行词（名词/代词）：关系词前面的部分</p>
 <p>定语从句：先行词 + 关系词 + 从句</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">He</span> is 'the man' <span class="token operator">+</span> that <span class="token operator">+</span> '<span class="token class-name">I</span> saw yesterday'<span class="token punctuation">.</span>  <span class="token comment">// 他就是我昨天见的那个人</span>
@@ -225,7 +242,11 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 <span class="token comment">// 非限定定语从句</span>
 <span class="token class-name">I</span> have a car<span class="token punctuation">,</span> which is a sport car<span class="token punctuation">.</span> <span class="token comment">// 我有一辆车，它是一辆跑车</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、状语从句" tabindex="-1"><a class="header-anchor" href="#三、状语从句" aria-hidden="true">#</a> 三、状语从句</h2>
-<p>相当于副词</p>
+<p>状语从句是一个从句，它用来修饰、说明主句中的动作或状态。状语从句可以在一个句子中充当时间、地点、原因、条件、目的、方式等不同的状语成分。通常状语从句由连词引导，例如when, while, if, since, because, although, as等。</p>
+<p>状语从句和主句之间通常存在逻辑上的因果或逻辑关系，从而对主句中的动作或状态进行补充或解释。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 这里，“when I arrive”是一个时间状语从句，说明了"call"动作发生的时间。</span>
+<span class="token class-name">I</span> will call you when <span class="token class-name">I</span> arrive<span class="token punctuation">.</span>  <span class="token comment">// 我到了会给你打电话。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>状语从句在句子中的位置灵活，可以出现在主句之前、之后甚至中间。在写作中，状语从句的正确使用可以丰富句子结构，使语言表达更加准确和丰富。相当于副词</p>
 <h3 id="_3-1-时间" tabindex="-1"><a class="header-anchor" href="#_3-1-时间" aria-hidden="true">#</a> 3.1 时间</h3>
 <p>常见引导词：when、as、while、as soon as、before、after、since、not until、until/till</p>
 <p>特殊引导词：the minute, the moment, the second, every time, the day, the instant, immediately, directly, no sooner than, hardly when, scarcely when, as soon as</p>
