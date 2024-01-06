@@ -1,4 +1,8 @@
-<template><div><h2 id="一、定冠词" tabindex="-1"><a class="header-anchor" href="#一、定冠词" aria-hidden="true">#</a> 一、定冠词</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106163303.png" alt=""></p>
+<p>定冠词用来特指已知的人或事物，而不定冠词用来泛指某类人或事物。理解和正确使用定冠词和不定冠词是学习英语语法和准确表达的重要组成部分</p>
+<h2 id="一、定冠词" tabindex="-1"><a class="header-anchor" href="#一、定冠词" aria-hidden="true">#</a> 一、定冠词</h2>
+<p>定冠词“the”用来特指特定的人或事物，或者表达已知的概念。它可以用在单数或复数名词前，也可以用在可数名词或不可数名词前。</p>
+<p>用法示例：the book（这本书，特指某本已知的书）、the United States（美国，特指这个国家）、the sky（天空，表示我们都知道的那片天空）</p>
 <p>表示这个，特指某个名词，后面跟单数/复数名词，不可数名词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表述上文提到过的人和物</span>
 <span class="token class-name">This</span> car is popular<span class="token punctuation">,</span> but the car isn't <span class="token function">cheap</span><span class="token punctuation">(</span>这车很热门，但是这车不便宜<span class="token punctuation">)</span>
@@ -32,6 +36,8 @@
 </li>
 </ol>
 <h2 id="二、不定冠词" tabindex="-1"><a class="header-anchor" href="#二、不定冠词" aria-hidden="true">#</a> 二、不定冠词</h2>
+<p>不定冠词“a”用在辅音开头的词前（如a book），而不定冠词“an”用在元音开头的词前（如an apple）。不定冠词用来泛指某类人或事物，而非特指一个特定的人或事物。</p>
+<p>用法示例：a cat（一只猫，表示说话人并不特指哪一只猫）、an idea（一个想法，表示并不特指某个具体的想法）</p>
 <p>泛指人和物，表示一个，后面加单数可数名词。英语中有两个：辅音发音前面加a，元音发音前加an</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 第一次提到的人和物</span>
 <span class="token class-name">It</span>'s a <span class="token function">cat</span><span class="token punctuation">(</span>这是一只猫<span class="token punctuation">)</span>

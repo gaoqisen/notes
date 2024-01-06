@@ -1,4 +1,5 @@
-<template><div><h2 id="一、注意事项" tabindex="-1"><a class="header-anchor" href="#一、注意事项" aria-hidden="true">#</a> 一、注意事项</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106144410.png" alt=""></p>
+<h2 id="一、注意事项" tabindex="-1"><a class="header-anchor" href="#一、注意事项" aria-hidden="true">#</a> 一、注意事项</h2>
 <table>
 <thead>
 <tr>
@@ -32,8 +33,8 @@
 </table>
 <h2 id="二、分类" tabindex="-1"><a class="header-anchor" href="#二、分类" aria-hidden="true">#</a> 二、分类</h2>
 <h3 id="_2-1、是否专业" tabindex="-1"><a class="header-anchor" href="#_2-1、是否专业" aria-hidden="true">#</a> 2.1、是否专业</h3>
-<p>从是否专业分为专业名词和普通名词</p>
-<p>专业名词：指特定的人、地点、事物的名词</p>
+<p>从是否专业分为专业名词和普通名词，通过区分专业名词和普通名词，人们可以更准确地描述和指代不同类型的事物和概念，有助于语言的清晰表达和沟通。</p>
+<p>专业名词(Proper Nouns）：是用来表示某个特定人、地点、机构、公司、组织、品牌等具体个体的名词。专业名词通常以大写字母开头例如：Tom, London, Microsoft等。专业名词通常是用来明确特定的人或地点，具有唯一性。在句子中，专业名词一般不需要加冠词，因为它们已经足够明确。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 专有名词（大多数是不可数名词，在某些情况下可以复数使用，或者转换为普通名词，单数/复数使用）：人名、地名、国家、组织、单位、大型活动、著名事件等（首字母大写、如果缩写全部字母大写）</span>
 人名：<span class="token class-name">Jack</span>        单位：<span class="token class-name">Department</span> of <span class="token class-name">Education</span>
 地名：<span class="token class-name">Beijing</span>     大型活动：<span class="token class-name">Midi</span> <span class="token class-name">Festival</span>
@@ -45,18 +46,22 @@
 <span class="token class-name">Millions</span> of <span class="token class-name">Lei</span> <span class="token class-name">Fengs</span> have emerged in <span class="token class-name">China</span><span class="token punctuation">.</span> <span class="token comment">// 中国出现了数百万的活雷锋</span>
   
 <span class="token class-name">Hey</span><span class="token punctuation">,</span> <span class="token class-name">Tom</span><span class="token punctuation">,</span> have a <span class="token class-name">Mrs<span class="token punctuation">.</span>Carl</span> is waiting <span class="token keyword">for</span> you<span class="token punctuation">.</span> <span class="token comment">// 嘿，汤姆，有一位卡尔夫人正在等你</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>普通名词： 专业名词以外的名词，指一类人、地点、事物中的任何一个名词</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>普通名词： （Common Nouns）指的是一般的人、事、物或抽象概念。它们通常用来泛指某类人或事物，例如：dog, cat, book, city等。普通名词一般用来代表非特定的人或物，并且通常需要与冠词（the, a, an）或其他限定词连用，以表示特指或泛指。普通名词可以根据单数和复数形式，以及可数性和不可数性来进行分类。</p>
 <h3 id="_2-2、是否可数" tabindex="-1"><a class="header-anchor" href="#_2-2、是否可数" aria-hidden="true">#</a> 2.2、是否可数</h3>
-<p>将名词分为可数名词和不可数名词</p>
+<p>将名词分为可数名词和不可数名词，区分可数名词和不可数名词有助于正确使用冠词、数词和量词以及正确构建句子。这两种类型的名词在句子中的使用方式不同，需要根据具体情况进行正确的选择和搭配</p>
+<p>可数名词（countable nouns）：是指能够被数和计数的名词，可以有单数和复数形式，可以使用不定冠词（a, an）和数词（two, three, etc.）进行修饰。举例来说，可数名词包括“cat”（猫），&quot;dog&quot;（狗）和&quot;book&quot;（书），它们可以用数词或不定冠词与复数形式连用，如：“two cats”（两只猫）、 “a book”（一本书）</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 可数名词：单数复数都可以，可以加数词计算</span>
 apple<span class="token punctuation">,</span> egg<span class="token punctuation">,</span> boy<span class="token punctuation">,</span> tree<span class="token punctuation">,</span> family<span class="token punctuation">,</span> <span class="token keyword">class</span><span class="token punctuation">,</span> police<span class="token punctuation">,</span> team等
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 不可数名词： 只能单数，不可以加数词计算</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>不可数名词（uncountable nouns）则是指不能被数和计数的名词，表示不可分割的物质、抽象概念或集合概念，无法用于复数形式，也不能与不定冠词（a, an）一起使用。常见的不可数名词包括“water”（水）、“furniture”（家具）和“advice”（建议）。不可数名词通常可以用量词或数量短语来修饰，比如“a cup of water”（一杯水）、“some advice”（一些建议）</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 不可数名词： 只能单数，不可以加数词计算</span>
 water<span class="token punctuation">,</span> fire<span class="token punctuation">,</span> time<span class="token punctuation">,</span> hope<span class="token punctuation">,</span> <span class="token function">knowledge</span><span class="token punctuation">(</span>知识<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">intelligence</span><span class="token punctuation">(</span>智力<span class="token punctuation">)</span>等
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-3、是否抽象" tabindex="-1"><a class="header-anchor" href="#_2-3、是否抽象" aria-hidden="true">#</a> 2.3、是否抽象</h3>
-<p>按照名词的抽象分为抽象名词和具体名词</p>
+<p>按照名词的抽象分为抽象名词和具体名词，抽象名词和具体名词的区别在于它们所代表的概念或实物的性质。抽象名词是用来表达情感、观念和抽象概念，而具体名词则用来表示具体的人、事、物或生物。这个区别在英语中很重要，因为它可以影响到如何正确使用冠词、形容词以及如何理解句子的含义。</p>
+<p>抽象名词（Abstract Nouns）指的是表示抽象概念、情感、品质或状态的名词。这些名词是无法通过感官来直接感知或观察的，而是代表一种思想或概念，例如：“love”（爱）、“happiness”（幸福）、“freedom”（自由）和“justice”（正义）等。抽象名词通常是无法以物理方式直接看到、闻到、听到或触摸到的事物，而是通过思维、感觉或情感来理解和体验。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 具体名词：看得见摸得着，可数不可数都有</span>
 man<span class="token punctuation">,</span> beijing<span class="token punctuation">,</span> book<span class="token punctuation">,</span> car<span class="token punctuation">,</span> water<span class="token punctuation">,</span> fire等
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 抽象名词：无形的各种事物，大多数是不可数。指一群人、动物、或事物作为一个整体的名词</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>具体名词（Concrete Nouns）则是指可以通过感官来直接感知或观察的名词，代表具体的人、事物、动物或物体，例如：“apple”（苹果）、“desk”（书桌）、“dog”（狗）和“car”（汽车）等。这些名词是可以通过看、摸、闻或其它感官来感知，是具有实体和形体的物体或生物。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 抽象名词：无形的各种事物，大多数是不可数。指一群人、动物、或事物作为一个整体的名词</span>
 time<span class="token punctuation">,</span> hope<span class="token punctuation">,</span> knowledge<span class="token punctuation">,</span> love<span class="token punctuation">,</span> anger等
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、单复数变化" tabindex="-1"><a class="header-anchor" href="#三、单复数变化" aria-hidden="true">#</a> 三、单复数变化</h2>
 <blockquote>
@@ -265,9 +270,7 @@ stand by <span class="token operator">-</span> stand bys （待命）
 </tbody>
 </table>
 <h2 id="四、名词所有格" tabindex="-1"><a class="header-anchor" href="#四、名词所有格" aria-hidden="true">#</a> 四、名词所有格</h2>
-<blockquote>
-<p>的</p>
-</blockquote>
+<p>名词所有格表示某个名词所拥有的东西。通常情况下，名词所有格通过在名词后面加上撇号（'s）来构成</p>
 <p>1、's  中英语序一样</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 单数名词/复数名词非s结尾，后加’s，单数名词s结尾，后加’s</span>
 <span class="token class-name">Jack</span>’s（杰克的）
@@ -330,6 +333,7 @@ stand by <span class="token operator">-</span> stand bys （待命）
 </tbody>
 </table>
 <h2 id="五、名词主谓一致" tabindex="-1"><a class="header-anchor" href="#五、名词主谓一致" aria-hidden="true">#</a> 五、名词主谓一致</h2>
+<p>名词主谓一致指的是主语和谓语在人称和数上保持一致。也就是说，当主语是单数时，谓语动词使用单数形式；当主语是复数时，谓语动词使用复数形式。这个规则适用于陈述句、疑问句和否定句。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、主语的单复数要与谓语的单复数保证一致</span>
 <span class="token class-name">I</span><span class="token punctuation">(</span>单<span class="token punctuation">)</span> <span class="token function">am</span><span class="token punctuation">(</span>单数<span class="token punctuation">)</span> student <span class="token punctuation">(</span>我是学生<span class="token punctuation">)</span>
 <span class="token class-name">They</span> are <span class="token function">students</span><span class="token punctuation">(</span>他们是学生<span class="token punctuation">)</span>

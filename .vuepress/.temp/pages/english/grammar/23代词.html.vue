@@ -1,15 +1,19 @@
-<template><div><h2 id="一、人称代词" tabindex="-1"><a class="header-anchor" href="#一、人称代词" aria-hidden="true">#</a> 一、人称代词</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106170534.png" alt=""></p>
+<p>代词可以使用来代替不同的名词，以避免重复使用特定的名词，提高语言表达的流畅性和清晰度</p>
+<h2 id="一、人称代词" tabindex="-1"><a class="header-anchor" href="#一、人称代词" aria-hidden="true">#</a> 一、人称代词</h2>
+<p>用来表示人或事物的代词</p>
 <h3 id="_1-1-主格" tabindex="-1"><a class="header-anchor" href="#_1-1-主格" aria-hidden="true">#</a> 1.1 主格</h3>
-<p>在句子里做主语或者表语</p>
+<p>在句子里做主语或者表语：I, you, he, she, it, we, they</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">They</span> are students<span class="token comment">// 他们是学生</span>
 <span class="token class-name">It</span> is you <span class="token comment">// 它是你</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-2-宾格" tabindex="-1"><a class="header-anchor" href="#_1-2-宾格" aria-hidden="true">#</a> 1.2 宾格</h3>
-<p>做及物动词或者介词之后的宾语</p>
+<p>做及物动词或者介词之后的宾语：me, you, him, her, it, us, them</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">I</span> tell her my name <span class="token comment">// 我告诉她我的名字</span>
 <span class="token class-name">I</span> should apologize <span class="token keyword">to</span> <span class="token namespace">her</span> <span class="token comment">// 我应该向她道歉</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-3-其他" tabindex="-1"><a class="header-anchor" href="#_1-3-其他" aria-hidden="true">#</a> 1.3 其他</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-3-所有格" tabindex="-1"><a class="header-anchor" href="#_1-3-所有格" aria-hidden="true">#</a> 1.3 所有格</h3>
+<p>my/mine, your/yours, his, her/hers, its, our/ours, their/theirs</p>
 <p>1、使用顺序</p>
-<p>第二人称（你） &gt; 第三人称（他）&gt; 第一人称（我）</p>
+<p>第二人称（你) &gt; 第三人称（他)&gt; 第一人称（我)</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">You</span> and he <span class="token comment">// 你和他</span>
 <span class="token class-name">He</span> an me <span class="token comment">// 他和我</span>
 <span class="token class-name">You</span> and he and me are all students <span class="token comment">// 你和他还有我都是学生</span>
@@ -35,7 +39,8 @@
 <span class="token comment">// 做形式宾语</span>
 <span class="token class-name">I</span> realized it tough <span class="token keyword">to</span> <span class="token namespace">learn</span> ski <span class="token function">well</span><span class="token punctuation">(</span>我意识到学好滑雪很难<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、物主代词" tabindex="-1"><a class="header-anchor" href="#二、物主代词" aria-hidden="true">#</a> 二、物主代词</h2>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 形容词性物主代词，做名词的修饰（的），后面加名词</span>
+<p>用来表示所有关系的代词</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 形容词性物主代词，做名词的修饰（的)，后面加名词</span>
 <span class="token class-name">She</span> is my aunt <span class="token comment">// 她是我的姑妈</span>
 <span class="token class-name">They</span> are their cars <span class="token comment">// 他们是他们的车</span>
   
@@ -47,7 +52,7 @@
 <span class="token class-name">He</span> is a friend of mine <span class="token comment">// 他是我的朋友</span>
 <span class="token class-name">An</span> old friend of mine <span class="token comment">// 一个我的老朋友</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、反身代词" tabindex="-1"><a class="header-anchor" href="#三、反身代词" aria-hidden="true">#</a> 三、反身代词</h2>
-<p>表示什么...自己</p>
+<p>动作的施与受都是同一个人或物的代词，表示什么...自己</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 做宾语，指一个动作反馈到动作发出者身上</span>
 <span class="token class-name">Stop</span><span class="token operator">!</span> <span class="token class-name">You</span> might burn yourself  <span class="token comment">// 停，你可能会烧到自己</span>
 <span class="token comment">// 做同位语，表示强调，解释说明，强调名词或者代词</span>
@@ -57,9 +62,12 @@
 <p>说明近处远处、上下文的人或物</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231211233017.png" alt=""></p>
 <h2 id="五、疑问代词" tabindex="-1"><a class="header-anchor" href="#五、疑问代词" aria-hidden="true">#</a> 五、疑问代词</h2>
+<p>疑问代词（Interrogative Pronouns)：疑问代词用于构建疑问句，通常用来提问某样东西或某个人。</p>
+<p>常见的疑问代词包括 who谁,what什么,which哪个,whom谁,whose谁的</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 用来提出问题的代词，不分单复数，有修饰的名词决定</span>
 what<span class="token punctuation">,</span> who<span class="token punctuation">,</span> whose<span class="token punctuation">,</span> whom<span class="token punctuation">,</span> which<span class="token punctuation">,</span> whatever<span class="token punctuation">,</span> whichever <span class="token punctuation">,</span>whoever<span class="token punctuation">,</span> whomever
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="六、不定代词" tabindex="-1"><a class="header-anchor" href="#六、不定代词" aria-hidden="true">#</a> 六、不定代词</h2>
+<p>用来指代不确定的人或事物的代词，包括some, any, all, none, both, one, each, every等</p>
 <p>代替或者修饰不确定的人或物，可以做主语宾语表语定语状语</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、 some 和 any的区别， 都可以修饰可数名词和不可数名词</span>
 <span class="token comment">// some肯定句：表示几个、一些、某个</span>
@@ -140,18 +148,24 @@ no<span class="token operator">-</span>开头的用在否定句中
 <span class="token comment">// 12、few和a few和little和a little的区别</span>
 <span class="token comment">// few/a few跟可数名词连用，或者代指可数事物</span>
 <span class="token comment">// litter/a little跟不可数名词连用，或者指代不可数事物</span>
-<span class="token comment">// 否定表达： few（很少几个），little（少到几乎没有）</span>
+<span class="token comment">// 否定表达： few(很少几个)，little（少到几乎没有)</span>
 <span class="token class-name">I</span> have few <span class="token function">apples</span><span class="token punctuation">(</span>我苹果很少<span class="token punctuation">)</span>
 <span class="token class-name">I</span> have little <span class="token function">water</span><span class="token punctuation">(</span>我水很少<span class="token punctuation">)</span>  
-<span class="token comment">// 肯定表达：a few（有几个），a little（有一些）</span>
+<span class="token comment">// 肯定表达：a few（有几个)，a little（有一些)</span>
 <span class="token class-name">I</span> have a few <span class="token function">apples</span><span class="token punctuation">(</span>我有几个苹果<span class="token punctuation">)</span>
 <span class="token class-name">I</span> have a little <span class="token function">water</span><span class="token punctuation">(</span>我有一点水<span class="token punctuation">)</span>  
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="七、相互代词" tabindex="-1"><a class="header-anchor" href="#七、相互代词" aria-hidden="true">#</a> 七、相互代词</h2>
+<p>相互代词（Reciprocal pronouns）用来表示相互关系的人或事物，通常用于描述两个或多个人之间的相互行为或关系。</p>
+<p>英语中的相互代词包括&quot;each other&quot;和&quot;one another&quot;。</p>
+<p>例如：They love each other.（他们彼此相爱。）在这个句子中，&quot;each other&quot;表示彼此之间的相互关系。</p>
 <p>表示相互关系的代词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">You</span> can test each other <span class="token comment">// 你可以互相考验对方</span>
 
 <span class="token class-name">We</span>'re still attracted <span class="token keyword">to</span> <span class="token namespace">one</span> another  <span class="token comment">// 我们依然喜欢彼此</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="八、关系代词" tabindex="-1"><a class="header-anchor" href="#八、关系代词" aria-hidden="true">#</a> 八、关系代词</h2>
+<p>关系代词（Reflexive Pronouns）：关系代词主要用于表示在行为上返回主体本身，通常在动词或介词后使用。</p>
+<p>英语的关系代词包括&quot;myself&quot;, &quot;yourself&quot;, &quot;himself&quot;, &quot;herself&quot;, &quot;itself&quot;, &quot;ourselves&quot;, &quot;yourselves&quot;, &quot;themselves&quot;。</p>
+<p>例如：&quot;She hurt herself during the game.&quot;（她在比赛中受伤了。）</p>
 <p>用来引导定语从句的代词，充当定语从句成分</p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>who指人：在定语从句作主语
 whom指人：在定语从句作宾语
@@ -160,8 +174,15 @@ that指人：相当于who和whom
 that指物：相当于which
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在定语从句作主语或者宾语</p>
 <h2 id="九、连接代词" tabindex="-1"><a class="header-anchor" href="#九、连接代词" aria-hidden="true">#</a> 九、连接代词</h2>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 从引导名词性从句（主语从句，宾语从句，表语从句）</span>
-what（什么），who（谁），which（哪个），whose（谁的）等等
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+<p>连接代词（Conjunctive or Subordinating Conjunctions）：连接代词用于连接两个句子或连接从句和主句，以及表达时间、原因、条件、结果等关系。</p>
+<p>常见的连接代词包括 &quot;after&quot;, &quot;although&quot;, &quot;because&quot;, &quot;if&quot;, &quot;since&quot;, &quot;while&quot;, &quot;until&quot; 等。</p>
+<p>例如：&quot;I will go to the party after I finish my homework.&quot;（我完成作业后会去参加派对。）</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 从引导名词性从句（主语从句，宾语从句，表语从句)</span>
+what（什么<span class="token punctuation">)</span>，who（谁<span class="token punctuation">)</span>，which（哪个<span class="token punctuation">)</span>，whose（谁的<span class="token punctuation">)</span>等等
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="十、相对代词" tabindex="-1"><a class="header-anchor" href="#十、相对代词" aria-hidden="true">#</a> 十、相对代词</h2>
+<p>相对代词（Relative Pronouns）：相对代词用于引导定语从句，修饰名词或代词，并且在主句和从句之间建立关系。</p>
+<p>常见的相对代词包括 &quot;who&quot;, &quot;whom&quot;, &quot;whose&quot;, &quot;which&quot; 和 &quot;that&quot;。</p>
+<p>例如：&quot;The book that I bought is very interesting.&quot;（我买的那本书非常有趣。）</p>
+</div></template>
 
 

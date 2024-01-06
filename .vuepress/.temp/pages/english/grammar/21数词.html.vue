@@ -1,4 +1,5 @@
-<template><div><h2 id="一、基数词" tabindex="-1"><a class="header-anchor" href="#一、基数词" aria-hidden="true">#</a> 一、基数词</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106162232.png" alt=""></p>
+<h2 id="一、基数词" tabindex="-1"><a class="header-anchor" href="#一、基数词" aria-hidden="true">#</a> 一、基数词</h2>
 <h3 id="_1-1-规律" tabindex="-1"><a class="header-anchor" href="#_1-1-规律" aria-hidden="true">#</a> 1.1 规律</h3>
 <p>英文没有万字，按照三位数字划分。中文是四位</p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>中文划分规律 10,0000,0000
@@ -110,7 +111,7 @@ tenth（第十），eleventh（第十一），thirteenth（第十三），fourte
 <span class="token comment">// 第十几，第二十到第九十：把基数词结尾的y变为i在加eth</span>
 <span class="token function">twentieth</span><span class="token punctuation">(</span>第二十<span class="token punctuation">)</span>，thirtieth（第三十），fortieth（第四十），fiftieth（第五十），sixtieth（第六十），seventieth（第七十），eightieth（第八十），ninetieth（第九十）
 
-<span class="token comment">// 第二十以上，第几十几： 十位用基数词，各位going序数词</span>
+<span class="token comment">// 第二十以上，第几十几： 十位用基数词，各位用序数词</span>
 twenty first（第二十一），ninety ninth（第九十九）
 
 <span class="token comment">// 第一百及以上： 第整数的后面加th，否则保留基数词只变个位数</span>

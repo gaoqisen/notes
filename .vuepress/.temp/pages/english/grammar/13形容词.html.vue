@@ -1,4 +1,5 @@
-<template><div><h2 id="一、分类" tabindex="-1"><a class="header-anchor" href="#一、分类" aria-hidden="true">#</a> 一、分类</h2>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106150502.png" alt=""></p>
+<h2 id="一、分类" tabindex="-1"><a class="header-anchor" href="#一、分类" aria-hidden="true">#</a> 一、分类</h2>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 属性：表示人和物具有的属性，可以加very</span>
 beautiful<span class="token operator">:</span> very beautiful
 <span class="token comment">// 类别：表示事物的类别, 不可以加very</span>
