@@ -1,8 +1,10 @@
-<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240101184245.png" alt=""></p>
+<template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106105754.png" alt=""></p>
 <h2 id="一、动词分类" tabindex="-1"><a class="header-anchor" href="#一、动词分类" aria-hidden="true">#</a> 一、动词分类</h2>
 <h3 id="_1-1-能做谓语" tabindex="-1"><a class="header-anchor" href="#_1-1-能做谓语" aria-hidden="true">#</a> 1.1 能做谓语</h3>
 <h4 id="_1、实意动词" tabindex="-1"><a class="header-anchor" href="#_1、实意动词" aria-hidden="true">#</a> 1、实意动词</h4>
-<p>表示动作或过程的动词，可以单独构成谓语（也就是可以独立表达谓语意义的动词）</p>
+<p>实义动词（Lexical Verbs）是指在句子中传达实际意义或动作的动词。也被称为实义动词或主要动词。实义动词用于描述动作、状态或事件，例如&quot;run&quot;（跑）、&quot;eat&quot;（吃）、&quot;sleep&quot;（睡觉）或&quot;study&quot;（学习）等。这些动词通常是句子中的主要动词，可以单独构成谓语，表达行为、状态或事件。</p>
+<p>实义动词是英语句子中最基本的动词类型，与之相对的是助动词（auxiliary verbs）和系动词（linking verbs）。助动词用于构成时态和语态，而系动词用于连接主语和表语。实义动词是构成句子谓语的核心动词，承担了最直接的含义传递作用。</p>
+<p>句子传达实际意义的词。表示动作或过程的动词，可以单独构成谓语（也就是可以独立表达谓语意义的动词）</p>
 <p>walk、eat、make、go、sleep、run、jump等</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 及物动词(涉及其他物体的动词)：后面加宾语。需要宾语才能构成完整句子</span>
 <span class="token class-name">I</span> hate you<span class="token punctuation">.</span> <span class="token comment">// 我讨厌你</span>
@@ -16,7 +18,9 @@
 <span class="token class-name">I</span> stop<span class="token punctuation">.</span> <span class="token comment">// 我停下</span>
 <span class="token class-name">I</span> stop working<span class="token punctuation">.</span> <span class="token comment">// 我停下工作</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、系动词" tabindex="-1"><a class="header-anchor" href="#_2、系动词" aria-hidden="true">#</a> 2、系动词</h4>
-<p>表示状态或存在，不能单独构成谓语，需要搭配表语才能完整表达谓语意义</p>
+<p>系动词（Linking Verbs），又称联系动词，是指用来连接主语和表语的动词。系动词本身没有表示动作的含义，而是用来描述或指示主语的状态、性质、感觉或位置。英语中常见的系动词包括 &quot;be&quot;（是）、&quot;seem&quot;（似乎）、&quot;appear&quot;（表现出）、&quot;become&quot;（变成）、&quot;feel&quot;（感觉）、&quot;look&quot;（看起来）、&quot;sound&quot;（听起来）、&quot;taste&quot;（尝起来）、&quot;smell&quot;（闻起来）等。</p>
+<p>系动词在句子中起着连接主语和表语的作用，表达主语的状态或特征，并不直接表达动作。例如，在句子 &quot;He is a doctor.&quot; 中，系动词 &quot;is&quot; 连接了主语 &quot;He&quot; 和表语 &quot;a doctor&quot;，表达了主语的身份或职业。系动词在构成句子时通常与主语和表语一起使用，帮助传达主语的状态或特征，而不是表示具体的动作。</p>
+<p>表示状态或存在，不能单独构成谓语，本身没有表示动作的意思，需要搭配表语才能完整表达谓语意义</p>
 <p>is、are、look、be、seem、become、appear等</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// be动词</span>
 am，is，are
@@ -27,7 +31,9 @@ get，become，turn，<span class="token function">grow</span><span class="token
 <span class="token comment">// 保持动词</span>
 keep，<span class="token function">stay</span><span class="token punctuation">(</span>保持<span class="token punctuation">)</span>，<span class="token function">remain</span><span class="token punctuation">(</span>留下<span class="token punctuation">)</span>，<span class="token function">rest</span><span class="token punctuation">(</span>休息<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、静态动词" tabindex="-1"><a class="header-anchor" href="#_3、静态动词" aria-hidden="true">#</a> 3、静态动词</h4>
-<p>表示一种状态或持续的状态，通常不能单独构成表语，需要搭配补语才能完整表达谓语意义。</p>
+<p>静态动词（Stative Verbs）是指表示状态、感觉、认知、归属等静态概念的动词。这些动词一般不描述具体的行为或动作，而是用来描述主语的状态或特征。常见的静态动词包括 &quot;be&quot;（是）、&quot;have&quot;（有）、&quot;belong&quot;（属于）、&quot;like&quot;（喜欢）、&quot;understand&quot;（理解）、&quot;know&quot;（知道）、&quot;love&quot;（爱）、&quot;want&quot;（想要）、&quot;see&quot;（看见）、&quot;hear&quot;（听见）等</p>
+<p>静态动词通常不用于进行时态（progressive tense），而是用于一般现在时、一般过去时等非进行时态。这是因为静态动词所表示的状态通常是稳定的，不会发生瞬时变化。例如，“She knows the answer”的含义是“她知道答案”，而不是“她正在知道答案”。在进行时态中，可能会使用表示状态改变的动词，如“变化”、“变得”，而不是在静态动词上直接使用进行时态。</p>
+<p>表示状态、感觉、认知、归属等静态概念的词，通常不能单独构成表语，需要搭配补语才能完整表达谓语意义。</p>
 <p>own、cost、consist、like、love、hate、want、need等</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 拥有</span>
 have，own，want，<span class="token function">contain</span><span class="token punctuation">(</span>包含<span class="token punctuation">)</span>
@@ -36,6 +42,7 @@ love，hate，want，need
 <span class="token comment">// 思想</span>
 know，think，understand，believe
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_4、动词短语" tabindex="-1"><a class="header-anchor" href="#_4、动词短语" aria-hidden="true">#</a> 4、动词短语</h4>
+<p>动词短语（Phrasal Verbs）是由一个动词和一个或多个副词或介词构成的固定搭配，具有特定的意义。动词短语由基本动词加上副词或介词构成，有时还可以加上宾语或其他成分。动词短语的意义往往不能从动词和副词、介词的字面意思中直接推断出来，需要单独地学习、理解和记忆</p>
 <p>come out（出来），depend on（取决于）， pay off（偿还）</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>动词<span class="token operator">+</span>about：think about <span class="token comment">// 思考</span>
 动词<span class="token operator">+</span>away：pass away <span class="token comment">// 过去</span>
@@ -56,6 +63,7 @@ know，think，understand，believe
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1-2-不能做谓语" tabindex="-1"><a class="header-anchor" href="#_1-2-不能做谓语" aria-hidden="true">#</a> 1.2 不能做谓语</h3>
 <p>需要加动词一起可以做谓语</p>
 <h4 id="_1、助动词" tabindex="-1"><a class="header-anchor" href="#_1、助动词" aria-hidden="true">#</a> 1、助动词</h4>
+<p>助动词在不同的语法结构中发挥不同的作用，帮助构成各种句型，丰富了英语的表达方式。</p>
 <p>have，do，shall，will，should，can等。协助主要动词构成谓语的词，没有实际意思，不能单独用。帮助实义动词构成复合时态、语态、语气的动词。代表词have，do，be（不翻译意思就是助动词）</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// have做助动词：构成完成时表示拥有、经历或完成。</span>
 <span class="token class-name">I</span> have trned off the light<span class="token punctuation">.</span>  <span class="token comment">// 我已经把灯关了</span>
@@ -97,10 +105,12 @@ have <span class="token keyword">to</span><span class="token punctuation">.</spa
 had better<span class="token punctuation">.</span>  <span class="token comment">// 最好</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、动词形态" tabindex="-1"><a class="header-anchor" href="#二、动词形态" aria-hidden="true">#</a> 二、动词形态</h2>
 <h3 id="_2-1-动词原形" tabindex="-1"><a class="header-anchor" href="#_2-1-动词原形" aria-hidden="true">#</a> 2.1 动词原形</h3>
+<p>动词的原形指的是动词的最基本形式，通常用作词典中的词条。在英语中，动词的原形就是动词的最基本的形式，不受主语单复数和时态的影响，也不带有任何时态的标记。</p>
+<p>例如，&quot;to be&quot;的原形是 &quot;be&quot;， &quot;to go&quot;的原形是 &quot;go&quot;， &quot;to eat&quot;的原形是 &quot;eat&quot;，等等。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、与助动词或情态动词一起构成谓语</span>
-<span class="token class-name">Do</span> you like <span class="token class-name">English</span><span class="token operator">?</span>  <span class="token comment">// 你喜欢英语吗？</span>
+<span class="token class-name">Do</span> you <span class="token char">'like'</span> <span class="token class-name">English</span><span class="token operator">?</span>  <span class="token comment">// 你喜欢英语吗？</span>
 <span class="token comment">// 2、祈使句的谓语动词</span>
-<span class="token class-name">Don</span>'t move<span class="token punctuation">.</span>  <span class="token comment">// 别动</span>
+<span class="token class-name">Don</span>‘t <span class="token char">'move'</span><span class="token punctuation">.</span>  <span class="token comment">// 别动</span>
 <span class="token comment">// 3、感官动词的宾语和宾补构成逻辑上的主谓关系，表示动作的最后结果或全过程时，作宾补的动词</span>
 <span class="token class-name">I</span> heard a coin drop<span class="token punctuation">.</span>  <span class="token comment">// 我听到了一个硬币掉了下</span>
 <span class="token comment">// 4、实意动词后的宾语与作宾补的动词构成逻辑上的主谓关系</span>
@@ -118,10 +128,13 @@ had better<span class="token punctuation">.</span>  <span class="token comment">
 <span class="token comment">// 10、在一定固定的句型中，如had better（最好），would rather（宁愿），would rather...that...(宁愿...而不)等</span>
 <span class="token class-name">You</span> had better have a good rest<span class="token punctuation">.</span>  <span class="token comment">// 你最好好好休息一下</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-2-第三人称单数" tabindex="-1"><a class="header-anchor" href="#_2-2-第三人称单数" aria-hidden="true">#</a> 2.2 第三人称单数</h3>
+<p>动词的第三人称单数形式通常是在动词原形（动词词组的基本形式）后加上 &quot;-s&quot; 或 &quot;-es&quot;。这种变化通常发生在主语是第三人称单数时（即he, she, it等）。</p>
+<p>例如，对于动词&quot;to talk&quot;，在第三人称单数时形式变为 &quot;talks&quot;，如：She talks to her friends every day. （她每天和她的朋友们交谈。）</p>
+<p>再比如，对于动词&quot;to go&quot;，在第三人称单数时形式变为 &quot;goes&quot;，如：The cat goes outside every night. （猫每天晚上都出去。）</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般现在时，主语为第三人称单数（人称代词he，she，it、单个人名、地名、单数可数名词、不可数名词），谓语要用第三人称单数</span>
 <span class="token class-name">It</span> is looks like a cat<span class="token punctuation">.</span>  <span class="token comment">// 它看起来像只猫</span>
 <span class="token class-name">Being</span> is in <span class="token class-name">China</span><span class="token punctuation">.</span>  <span class="token comment">// 北京在中国</span>
-<span class="token class-name">The</span> cat is <span class="token class-name">Lucy</span>'s<span class="token punctuation">.</span>  <span class="token comment">// 这猫是路西的</span>
+<span class="token class-name">The</span> cat is <span class="token class-name">Lucy</span>‘s<span class="token punctuation">.</span>  <span class="token comment">// 这猫是路西的</span>
 <span class="token class-name">The</span> water is very cold<span class="token punctuation">.</span> <span class="token comment">//这水很冷</span>
 
 <span class="token comment">// 动词变第三人称单数的规律</span>
@@ -134,6 +147,7 @@ watch <span class="token operator">></span> watches
 <span class="token comment">// 不规则变化</span>
 have <span class="token operator">></span> has<span class="token punctuation">,</span>  be <span class="token operator">></span> is
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-3-动名词和现在分词" tabindex="-1"><a class="header-anchor" href="#_2-3-动名词和现在分词" aria-hidden="true">#</a> 2.3 动名词和现在分词</h3>
+<p>动词的一种形容词形式，以-ing结尾，在句子中通常表示一个正在进行的动作或状态。现在分词也可以用来构成进行时态</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 动名词起着名词的功能，常在句子中充当主语、定语、表语等成分,现在分词来构成进行时态，与助动词be搭配构成句子的谓语，现在分词在句中还可以充当定语、表语和状语</span>
 <span class="token comment">// 词尾+ing</span>
 play <span class="token operator">></span> playing
@@ -144,12 +158,13 @@ tie <span class="token operator">></span> tying
 <span class="token comment">// 辅音加元音加辅音双写辅音加ing</span>
 beg <span class="token operator">></span> begging	
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-4-过去式和过去分词" tabindex="-1"><a class="header-anchor" href="#_2-4-过去式和过去分词" aria-hidden="true">#</a> 2.4 过去式和过去分词</h3>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 过去时单独做谓语，表示过去某个时间发生动作。  过去分词是动词的非谓语形式，表示被动或者完成
-// 加ed
-play > played
-// e结尾加d
-love > loved
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217214106.png" alt=""></p>
+<p>是动词的一种形容词形式，它可以是不规则的，也可以是加上-ed结尾的规则形式。过去分词通常用来构成完成时态或被动语态。例如，在句子 &quot;She has written a book.&quot;（她已经写了一本书。）中，&quot;written&quot;是&quot;write&quot;的过去分词，用来构成完成时态。</p>
+<p>过去时单独做谓语，表示过去某个时间发生动作。  过去分词是动词的非谓语形式，表示被动或者完成</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 加ed</span>
+play <span class="token operator">></span> played
+<span class="token comment">// e结尾加d</span>
+love <span class="token operator">></span> loved
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217214106.png" alt=""></p>
 <h2 id="三、动词时态" tabindex="-1"><a class="header-anchor" href="#三、动词时态" aria-hidden="true">#</a> 三、动词时态</h2>
 <p>经典时态: 蓝色是常用时态</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217214302.png" alt=""></p>
@@ -157,6 +172,7 @@ love > loved
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217214450.png" alt=""></p>
 <h3 id="_3-1-现在时" tabindex="-1"><a class="header-anchor" href="#_3-1-现在时" aria-hidden="true">#</a> 3.1 现在时</h3>
 <h4 id="_1、一般现在时-常用" tabindex="-1"><a class="header-anchor" href="#_1、一般现在时-常用" aria-hidden="true">#</a> 1、一般现在时(常用)</h4>
+<p>一般现在时（Simple Present Tense）用来表示习惯性行为、普遍真理、科学事实、现在的情况或状态，以及一些客观存在的事实。动词在一般现在时下一般不受主语的人称或单复数的影响，它们的形式是一样的。一般现在时的动词形式为动词的原形（即动词的基本形式）</p>
 <p>肯定：主语为第三人称单数，动词第三人称单数，其他动词用原形</p>
 <p>否定：主语 + do/does + not + 谓语动词原形</p>
 <p>疑问：疑问词 + do/does + 主语 + 谓语动词原形</p>
@@ -174,6 +190,7 @@ love > loved
 <span class="token comment">// 6、一般现在时表示将来，主句位将来时态或者表示将来意思时，时间/条件状语从句要用一般现在时表示将来</span>
 <span class="token class-name">I</span> will tell him the news when he comes back<span class="token punctuation">.</span>  <span class="token comment">// 他回来的时候，我将告诉他这个消息	</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、现在进行时-常用" tabindex="-1"><a class="header-anchor" href="#_2、现在进行时-常用" aria-hidden="true">#</a> 2、现在进行时(常用)</h4>
+<p>现在进行时（Present Continuous Tense）用来表示现在正在进行的动作或瞬间决定的未来安排。现在进行时通常由动词“to be”（am, is, are）和动词的现在分词构成</p>
 <p>肯定：主语 + be动词 + 动词现在分词</p>
 <p>否定：主语 + be动词 + not + 动词现在分词</p>
 <p>疑问：疑问词 + be动词 + 主语 + 动词现在分词</p>
@@ -193,6 +210,7 @@ love > loved
 <span class="token class-name">My</span> dad is taking me <span class="token keyword">to</span> <span class="token keyword">class</span> tomorrow<span class="token punctuation">.</span>  <span class="token comment">// 我爸明天要带我去上课</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-2-将来时" tabindex="-1"><a class="header-anchor" href="#_3-2-将来时" aria-hidden="true">#</a> 3.2 将来时</h3>
 <h4 id="_1、一般将来时-常用" tabindex="-1"><a class="header-anchor" href="#_1、一般将来时-常用" aria-hidden="true">#</a> 1、一般将来时(常用)</h4>
+<p>一般将来时（Simple Future Tense）用来表示将来会发生的动作或事件，或者表达计划、打算或意图。一般将来时通常由助动词“will”或“shall”（对第一人称单数和复数形式使用“shall”）和动词的原形构成</p>
 <p>肯定：主语 + will + 动词原形</p>
 <p>否定：主语 + will + not + 动词原形</p>
 <p>疑问：疑问词 + will + 主语 + 动词原形</p>
@@ -218,12 +236,14 @@ love > loved
 <span class="token class-name">I</span> will have reached <span class="token class-name">Beijing</span><span class="token punctuation">.</span> <span class="token comment">// 我将抵达北京</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-3-过去时" tabindex="-1"><a class="header-anchor" href="#_3-3-过去时" aria-hidden="true">#</a> 3.3 过去时</h3>
 <h4 id="_1、一般过去-常用" tabindex="-1"><a class="header-anchor" href="#_1、一般过去-常用" aria-hidden="true">#</a> 1、一般过去(常用)</h4>
+<p>一般过去时（Simple Past Tense）用于表示发生在过去的动作或状态。一般过去时通常由动词的过去式构成</p>
 <p>肯定：主语 + 动词过去分词</p>
 <p>否定：主语 + did + not = 动词原形</p>
 <p>疑问：疑问词 + did + 主语 + 动词原形</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 表示动作发生在过去，动作延续不延续不知道</span>
 <span class="token class-name">I</span> learned <span class="token class-name">English</span><span class="token punctuation">.</span>  <span class="token comment">// 我学了英语</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、现在完成-常用" tabindex="-1"><a class="header-anchor" href="#_2、现在完成-常用" aria-hidden="true">#</a> 2、现在完成(常用)</h4>
+<p>在英语中，现在完成时（Present Perfect Tense）用来描述已经发生的事情对现在产生的影响或者对现在的状态产生影响。现在完成时通常由助动词“have”或“has”和动词的过去分词构成</p>
 <p>肯定：主语 + have/has + 动词过去分词</p>
 <p>否定：主语 + have/has + not + 动词过去分词</p>
 <p>疑问：疑问词 + have/has + 主语 + 动词过去分词</p>
@@ -236,6 +256,7 @@ love > loved
 <span class="token comment">// 讨论个人经历</span>
 <span class="token class-name">I</span> have seen her <span class="token keyword">this</span> week<span class="token punctuation">.</span>  <span class="token comment">// 我这个星期见过她</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、过去完成-常用" tabindex="-1"><a class="header-anchor" href="#_3、过去完成-常用" aria-hidden="true">#</a> 3、过去完成(常用)</h4>
+<p>在过去完成时（Past Perfect Tense）中，动作发生在过去，但在另一个过去的时间点之前完成。 这个时态用于强调在过去某个时间点之前已经发生的动作或事件</p>
 <p>肯定：主语 + had + 动词过去分词</p>
 <p>否定： 主语 + had + 动词过去分词</p>
 <p>疑问：疑问句 + had + 主语 + 动词过去分词</p>
@@ -287,30 +308,41 @@ I would win the match under cruel competition.  // 我在残酷的比赛中获�
 <span class="token class-name">I</span> guessed you would have told her something<span class="token punctuation">.</span>  <span class="token comment">// 我猜你会告诉她一些事情</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="四、动词语态" tabindex="-1"><a class="header-anchor" href="#四、动词语态" aria-hidden="true">#</a> 四、动词语态</h2>
 <h3 id="_4-1-主动语态" tabindex="-1"><a class="header-anchor" href="#_4-1-主动语态" aria-hidden="true">#</a> 4.1 主动语态</h3>
+<p>动词的主动语态（active voice）表示主语是动作的执行者。在主动语态中，主语执行动作，而宾语接受动作。通常，主动语态的句子结构为主语 + 动词 + 宾语</p>
 <p>主语是动作执行者，某人某物做什么</p>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、（中文习惯）：</span>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">//（中文习惯）：</span>
 <span class="token class-name">I</span> give you a car<span class="token punctuation">.</span>  <span class="token comment">// 我给你一辆车</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-2-被动语态" tabindex="-1"><a class="header-anchor" href="#_4-2-被动语态" aria-hidden="true">#</a> 4.2 被动语态</h3>
+<span class="token comment">// 在这个句子中，“cat”（猫）执行了动作“chased”（追逐），宾语是“mouse”（老鼠）  </span>
+<span class="token class-name">The</span> cat chased the mouse<span class="token punctuation">.</span><span class="token comment">// 猫追逐老鼠</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-2-被动语态" tabindex="-1"><a class="header-anchor" href="#_4-2-被动语态" aria-hidden="true">#</a> 4.2 被动语态</h3>
+<p>动词的被动语态（passive voice）表示主语是动作的接受者或者承受者，而不是动作的执行者。在被动语态中，宾语成为句子的主语，而主语则成为动作的承受者。通常，被动语态的句子结构为宾语 + 动词（to be 的适当形式）+ 过去分词 + 由短语动作执行者构成的介词短语</p>
 <p>主语是动作承受者，某人某物被做了什么</p>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 2、被动语态（英文习惯）：</span>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 被动语态（英文习惯）：</span>
 <span class="token class-name">You</span> are given a car by me<span class="token punctuation">.</span>  <span class="token comment">// 你被我给了一辆车</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>常用的被动语态形式</p>
+<span class="token comment">// 在这个句子中，“mouse”（老鼠）成为了动作的接受者，而“was chased”（被追）是被动语态中的动词形式。</span>
+<span class="token class-name">The</span> mouse was chased by the cat<span class="token punctuation">.</span><span class="token comment">// 老鼠被猫追逐。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>常用的被动语态形式</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231220224336.png" alt=""></p>
-<h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a> </h3>
+<p>在被动语态中，强调的重点通常是动作的承受者，而不是动作的执行者。被动语态也可以用来避免提及动作的执行者或者强调动作的结果而非执行者。</p>
+<p>总之，在被动语态中，动作的承受者成为了句子的重点，而动作的执行者通常不会被提及。被动语态在英语中被广泛应用，尤其在学术、科技和新闻报道中。</p>
 <h3 id="_4-3-主动句改被动句" tabindex="-1"><a class="header-anchor" href="#_4-3-主动句改被动句" aria-hidden="true">#</a> 4.3 主动句改被动句</h3>
 <p>步骤：</p>
 <ol>
-<li>把主动句的宾语改成被动句的主语</li>
-<li>把主动句的谓语动词改成 被动句谓语动词be+过去分词，并且人称和单复数要随着新主语变化，时态保持不变</li>
-<li>把主动句的前面加by，放在谓语后面，变化人称宾格。如果看前面就知道是谁被谁做了什么，或者上下文交代是谁，可以省略by加主语</li>
-<li>其他句子成分保持不变</li>
+<li>确定宾语和主语：首先确定主动语态句子中的主语和宾语，然后确定哪个是动作的执行者，哪个是动作的承受者。</li>
+<li>将宾语变为主语：在被动语态中，主语应该变为宾语，宾语变为主语。</li>
+<li>使用适当的被动语态形式：在被动语态中，动词要用 &quot;to be&quot; 的适当形式加上过去分词。根据时态和人称的不同使用 am/is/are/was/were 等形式。</li>
+<li>（可选）表明动作的执行者：如果需要表明动作的执行者，可以在句子中添加介词短语来表示动作的执行者。</li>
 </ol>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">My</span> mother sweeps the floor every day morning<span class="token punctuation">.</span>  <span class="token comment">// 我妈每天早上扫这地</span>
 <span class="token class-name">The</span> floor is sweeps by my mother every day morning<span class="token punctuation">.</span>  <span class="token comment">// 这地每天被我妈扫</span>
 
 <span class="token class-name">I</span> bought some books<span class="token punctuation">.</span>  <span class="token comment">// 我买了一些书</span>
 <span class="token class-name">Some</span> books were <span class="token function">bought</span><span class="token punctuation">(</span>by me<span class="token punctuation">)</span><span class="token punctuation">.</span>  <span class="token comment">// 一些书被我买了</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-3-使用场景" tabindex="-1"><a class="header-anchor" href="#_4-3-使用场景" aria-hidden="true">#</a> 4.3 使用场景</h3>
+
+<span class="token comment">// 在这个例子中，“cat” 和 “mouse” 在主动语态中分别是主语和宾语。在变成被动语态时，“mouse” 成为了主语，而“was chased”则表示动作的执行者。  </span>
+主动语态：<span class="token class-name">The</span> cat chased the mouse<span class="token punctuation">.</span> <span class="token comment">// 猫追逐老鼠</span>
+被动语态：<span class="token class-name">The</span> mouse was chased by the cat<span class="token punctuation">.</span><span class="token comment">// 老鼠被猫追逐</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4-3-使用场景" tabindex="-1"><a class="header-anchor" href="#_4-3-使用场景" aria-hidden="true">#</a> 4.3 使用场景</h3>
 <p>双宾的被态</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">He</span> gave her some money<span class="token punctuation">.</span> <span class="token comment">// 他给了她一些钱</span>
 
@@ -341,6 +373,7 @@ I would win the match under cruel competition.  // 我在残酷的比赛中获�
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、非谓语动词" tabindex="-1"><a class="header-anchor" href="#五、非谓语动词" aria-hidden="true">#</a> 五、非谓语动词</h2>
 <p>不做谓语的动词（英语句子中只有一个动词）</p>
 <h3 id="_5-1-不定式" tabindex="-1"><a class="header-anchor" href="#_5-1-不定式" aria-hidden="true">#</a> 5.1 不定式</h3>
+<p>不定式（infinitive）是动词的一种形式，由“to”加上动词的原形组成，例如“to go”、“to eat”等。不定式在句子中可以充当名词、形容词或副词，具有一些特定的语法功能。</p>
 <p>The teacher told us to do the homwork.  (老师叫我们做家庭作业)</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 大多是都是to + 动词不定式</span>
 <span class="token class-name">I</span> like <span class="token keyword">to</span> <span class="token namespace">clean<span class="token punctuation">.</span></span> <span class="token comment">// 我喜欢打扫卫生</span>
@@ -411,7 +444,7 @@ I would win the match under cruel competition.  // 我在残酷的比赛中获�
 <span class="token comment">// 宾补</span>
 <span class="token class-name">The</span> teacher told us <span class="token keyword">to</span> <span class="token keyword">do</span> homework<span class="token punctuation">.</span>  <span class="token comment">// 老师叫我们做作业</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-2-动名词" tabindex="-1"><a class="header-anchor" href="#_5-2-动名词" aria-hidden="true">#</a> 5.2 动名词</h3>
-<p>I like swimming. (我喜欢游泳)</p>
+<p>动名词（gerund）是一种特殊形式的动词，它以-ing结尾，并且在句子中充当名词的角色。动名词可以表示动作或状态，并且可以用于多种语法结构中</p>
 <p>动词加ing变名词如：</p>
 <p>I like swimming. （我喜欢游泳）</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231221231839.png" alt=""></p>
@@ -479,6 +512,7 @@ a swimming suit<span class="token punctuation">.</span> <span class="token comme
 <span class="token comment">// 宾补</span>
 <span class="token class-name">I</span> found my car stolen<span class="token punctuation">.</span> <span class="token comment">// 我发现我车被偷了</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-5-非谓语做独立主格结构" tabindex="-1"><a class="header-anchor" href="#_5-5-非谓语做独立主格结构" aria-hidden="true">#</a> 5.5 非谓语做独立主格结构</h3>
+<p>非谓语动词（non-finite verb）可以独立地作为主语、宾语、或者表语，构成独立主格结构（absolute construction）。独立主格结构是一种结构紧凑、简洁的表达方式，常常用于强调某一动作或状态的同时和主要的句子平行存在。</p>
 <p>前部分是名词或代词，后部分是非谓语动词（动名词、不定式、现在分词、过去分词）、形容词、副词、名词、介词短语，前后两部分具有逻辑关系，修饰整个句子</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">Lots</span> of homework <span class="token keyword">to</span> <span class="token keyword">do</span><span class="token punctuation">,</span> <span class="token class-name">I</span> havn <span class="token keyword">to</span> <span class="token namespace">stay</span> home all day<span class="token punctuation">.</span>  <span class="token comment">// 有很多作业，我只能整天待在家</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>不定式的独立主格结构</p>
