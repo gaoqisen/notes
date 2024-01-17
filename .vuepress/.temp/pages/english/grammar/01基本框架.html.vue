@@ -2,10 +2,10 @@
 <h2 id="一、词性-10种" tabindex="-1"><a class="header-anchor" href="#一、词性-10种" aria-hidden="true">#</a> 一、词性(10种)</h2>
 <h3 id="_1、实词-重点4个" tabindex="-1"><a class="header-anchor" href="#_1、实词-重点4个" aria-hidden="true">#</a> 1、实词(重点4个)</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
-动词v: 表示动作或状态，动作或者状态的词
+动词v: 表示动作或者状态的词
 分类: 及物动词、不及物、连系、情态
 */</span>
-<span class="token function">touch</span><span class="token punctuation">(</span>触摸<span class="token punctuation">)</span>、look <span class="token punctuation">(</span>看<span class="token punctuation">)</span>、know <span class="token punctuation">(</span>认识<span class="token punctuation">)</span>，run（跑）、eat（吃）、sleep（睡觉）
+touch、look、know，run、eat、sleep
   
 <span class="token doc-comment comment">/**
 名词（Noun）: 用来表示人、物、地方、概念等的名称 
@@ -13,19 +13,19 @@
   1. 可数名词(countable noun,c): 有单数变复数的变化[apple > apples]
   2. 不可数名词(uncountable noun,u): 没有变化形式。
 */</span>
-dog 狗、book 书、<span class="token class-name">London</span> 伦敦、happiness 幸福、toy 玩具 head 头 hat 帽子  policeman 警察  nurse 护士  nose 鼻子  fish 树  bed 床  cow 奶牛  mouth 嘴  ear 耳朵 eye 眼睛  face 脸 
+dog、book、<span class="token class-name">London</span>、happiness、toy<span class="token punctuation">,</span> head<span class="token punctuation">,</span> hat<span class="token punctuation">,</span> policeman<span class="token punctuation">,</span> nurse<span class="token punctuation">,</span>nose<span class="token punctuation">,</span>fish<span class="token punctuation">,</span> bed<span class="token punctuation">,</span> cow<span class="token punctuation">,</span> mouth<span class="token punctuation">,</span> ear<span class="token punctuation">,</span> eye<span class="token punctuation">,</span> face
 
 <span class="token doc-comment comment">/**
 形容词（Adjective）: 用来修饰名词、表示人或事物的特征，放在名词前面修饰名词
 分类: 性质、数量、大小、年龄
 */</span>
-beautiful（美丽的）、happy（快乐的）、big（大的）、run（跑）、eat（吃）、sleep（睡觉），litte 小的、big 大的、fat 肥胖的，thin 瘦的，big 大的
+beautiful、happy、big、run、eat、sleep，litte、fat，thin
 
 <span class="token doc-comment comment">/**
 副词（Adverb）：修饰动词、形容词、其他副词或整个句子，表示时间、地点、方式、程度等 
 分类:  方式、地点、时间
 */</span>
-quickly（快速地）、very（非常）、here（这里）  
+quickly、very、here  
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2、虚词-重点3个" tabindex="-1"><a class="header-anchor" href="#_2、虚词-重点3个" aria-hidden="true">#</a> 2、虚词(重点3个)</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
  介词（Preposition）：用来表示位置、方向、时间、方式等关系 
@@ -73,7 +73,9 @@ oh、hello、hi、yeah，wow（哇）、oh（哦）、alas（唉）
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 这个高大的  男孩  经常    去   大         动物园。</span>
 如：'<span class="token class-name">The</span> tall<span class="token char">' boy '</span>often<span class="token char">' go '</span><span class="token keyword">to</span> <span class="token namespace">the</span> big' zoo<span class="token punctuation">.</span>   
    <span class="token punctuation">(</span>定语<span class="token punctuation">)</span>      主语 <span class="token punctuation">(</span>状语<span class="token punctuation">)</span>  谓语 <span class="token punctuation">(</span>定语<span class="token punctuation">)</span>      宾语 <span class="token punctuation">(</span>状语<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1、主谓宾-3个" tabindex="-1"><a class="header-anchor" href="#_1、主谓宾-3个" aria-hidden="true">#</a> 1、主谓宾(3个)</h3>
+  
+<span class="token class-name">I</span><span class="token char">'主语'</span> have<span class="token char">'助动词'</span> turned<span class="token char">'动词'</span> off<span class="token char">'副词'</span> the light<span class="token char">'名词'</span><span class="token punctuation">.</span>   <span class="token comment">// 我已经把灯关了</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_1、主谓宾-3个" tabindex="-1"><a class="header-anchor" href="#_1、主谓宾-3个" aria-hidden="true">#</a> 1、主谓宾(3个)</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
 主语 (Subject)（句子最主要的）: 句子中执行或承受动作的核心，通常是一个名词、代词或名词短语 
 充当者：名词、代词、数词、短语

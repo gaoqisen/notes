@@ -2,13 +2,13 @@
 <h2 id="一、动词分类" tabindex="-1"><a class="header-anchor" href="#一、动词分类" aria-hidden="true">#</a> 一、动词分类</h2>
 <h3 id="_1-1-能做谓语" tabindex="-1"><a class="header-anchor" href="#_1-1-能做谓语" aria-hidden="true">#</a> 1.1 能做谓语</h3>
 <h4 id="_1、实意动词" tabindex="-1"><a class="header-anchor" href="#_1、实意动词" aria-hidden="true">#</a> 1、实意动词</h4>
-<p>实义动词（Lexical Verbs）是指在句子中传达实际意义或动作的动词。也被称为实义动词或主要动词。实义动词用于描述动作、状态或事件，例如&quot;run&quot;（跑）、&quot;eat&quot;（吃）、&quot;sleep&quot;（睡觉）或&quot;study&quot;（学习）等。这些动词通常是句子中的主要动词，可以单独构成谓语，表达行为、状态或事件。</p>
+<p>实义动词（Lexical Verbs）是指在句子中传达实际意义或动作的动词。也被称为实义动词或主要动词。实义动词用于描述动作、状态或事件，例如&quot;run&quot;、&quot;eat&quot;、&quot;sleep&quot;或&quot;study&quot;等。这些动词通常是句子中的主要动词，可以单独构成谓语，表达行为、状态或事件。</p>
 <p>实义动词是英语句子中最基本的动词类型，与之相对的是助动词（auxiliary verbs）和系动词（linking verbs）。助动词用于构成时态和语态，而系动词用于连接主语和表语。实义动词是构成句子谓语的核心动词，承担了最直接的含义传递作用。</p>
 <p>句子传达实际意义的词。表示动作或过程的动词，可以单独构成谓语（也就是可以独立表达谓语意义的动词）</p>
 <p>walk、eat、make、go、sleep、run、jump等</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 及物动词(涉及其他物体的动词)：后面加宾语。需要宾语才能构成完整句子</span>
 <span class="token class-name">I</span> hate you<span class="token punctuation">.</span> <span class="token comment">// 我讨厌你</span>
-<span class="token class-name">I</span> eat an apply<span class="token punctuation">.</span> <span class="token comment">// eat需要一个宾语表示吃什么</span>
+<span class="token class-name">I</span> eat an apple<span class="token punctuation">.</span> <span class="token comment">// eat需要一个宾语表示吃什么</span>
   
 <span class="token comment">// 不及物动词（不涉及其他物体的动词）：后面不加宾语。不需要宾语也能构成完整句子</span>
 <span class="token class-name">I</span> fly<span class="token punctuation">.</span> <span class="token comment">// 我飞</span>
@@ -31,7 +31,7 @@ get，become，turn，<span class="token function">grow</span><span class="token
 <span class="token comment">// 保持动词</span>
 keep，<span class="token function">stay</span><span class="token punctuation">(</span>保持<span class="token punctuation">)</span>，<span class="token function">remain</span><span class="token punctuation">(</span>留下<span class="token punctuation">)</span>，<span class="token function">rest</span><span class="token punctuation">(</span>休息<span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、静态动词" tabindex="-1"><a class="header-anchor" href="#_3、静态动词" aria-hidden="true">#</a> 3、静态动词</h4>
-<p>静态动词（Stative Verbs）是指表示状态、感觉、认知、归属等静态概念的动词。这些动词一般不描述具体的行为或动作，而是用来描述主语的状态或特征。常见的静态动词包括 &quot;be&quot;（是）、&quot;have&quot;（有）、&quot;belong&quot;（属于）、&quot;like&quot;（喜欢）、&quot;understand&quot;（理解）、&quot;know&quot;（知道）、&quot;love&quot;（爱）、&quot;want&quot;（想要）、&quot;see&quot;（看见）、&quot;hear&quot;（听见）等</p>
+<p>静态动词（Stative Verbs）是指表示状态、感觉、认知、归属等静态概念的动词。这些动词一般不描述具体的行为或动作，而是用来描述主语的状态或特征。常见的静态动词包括 &quot;be&quot;、&quot;have&quot;、&quot;belong&quot;、&quot;like&quot;、&quot;understand&quot;、&quot;know&quot;、&quot;love&quot;，&quot;want&quot;、&quot;see&quot;、&quot;hear&quot;等</p>
 <p>静态动词通常不用于进行时态（progressive tense），而是用于一般现在时、一般过去时等非进行时态。这是因为静态动词所表示的状态通常是稳定的，不会发生瞬时变化。例如，“She knows the answer”的含义是“她知道答案”，而不是“她正在知道答案”。在进行时态中，可能会使用表示状态改变的动词，如“变化”、“变得”，而不是在静态动词上直接使用进行时态。</p>
 <p>表示状态、感觉、认知、归属等静态概念的词，通常不能单独构成表语，需要搭配补语才能完整表达谓语意义。</p>
 <p>own、cost、consist、like、love、hate、want、need等</p>
@@ -66,10 +66,10 @@ know，think，understand，believe
 <p>助动词在不同的语法结构中发挥不同的作用，帮助构成各种句型，丰富了英语的表达方式。</p>
 <p>have，do，shall，will，should，can等。协助主要动词构成谓语的词，没有实际意思，不能单独用。帮助实义动词构成复合时态、语态、语气的动词。代表词have，do，be（不翻译意思就是助动词）</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// have做助动词：构成完成时表示拥有、经历或完成。</span>
-<span class="token class-name">I</span> have trned off the light<span class="token punctuation">.</span>  <span class="token comment">// 我已经把灯关了</span>
+<span class="token class-name">I</span> have turned off the light<span class="token punctuation">.</span>  <span class="token comment">// 我已经把灯关了</span>
 <span class="token class-name">I</span> have a car<span class="token punctuation">.</span> <span class="token comment">// 我有一辆车</span>
 <span class="token class-name">She</span> has been a <span class="token class-name">China</span><span class="token punctuation">.</span> <span class="token comment">// 她去过中国</span>
-<span class="token class-name">I</span> have finished the project<span class="token punctuation">.</span> <span class="token comment">// 我们已经完成了这个项目</span>
+<span class="token class-name">I</span> have finished the project<span class="token punctuation">.</span> <span class="token comment">// 我已经完成了这个项目</span>
   
 <span class="token comment">// do做助动词：构成疑问句、否定句、强调句</span>
 <span class="token class-name">Do</span> you have kids<span class="token operator">?</span>  <span class="token comment">// 你有孩子吗</span>

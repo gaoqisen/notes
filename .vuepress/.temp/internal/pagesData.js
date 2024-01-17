@@ -251,10 +251,6 @@ export const pagesData = {
   "v-1da1b0d0": () => import(/* webpackChunkName: "v-1da1b0d0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/train.html.js").then(({ data }) => data),
   // path: /study/work_20221011.html
   "v-5ed355cd": () => import(/* webpackChunkName: "v-5ed355cd" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/work_20221011.html.js").then(({ data }) => data),
-  // path: /web/jqueryForm.html
-  "v-2614a543": () => import(/* webpackChunkName: "v-2614a543" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/jqueryForm.html.js").then(({ data }) => data),
-  // path: /web/vueBase.html
-  "v-81285cd4": () => import(/* webpackChunkName: "v-81285cd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/vueBase.html.js").then(({ data }) => data),
   // path: /tool/docker.html
   "v-6538ac8a": () => import(/* webpackChunkName: "v-6538ac8a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/docker.html.js").then(({ data }) => data),
   // path: /tool/dockerRsync.html
@@ -269,6 +265,20 @@ export const pagesData = {
   "v-4029f9b0": () => import(/* webpackChunkName: "v-4029f9b0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/regex.html.js").then(({ data }) => data),
   // path: /tool/springCloud.html
   "v-7a59fbef": () => import(/* webpackChunkName: "v-7a59fbef" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/springCloud.html.js").then(({ data }) => data),
+  // path: /web/jqueryForm.html
+  "v-2614a543": () => import(/* webpackChunkName: "v-2614a543" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/jqueryForm.html.js").then(({ data }) => data),
+  // path: /web/vueBase.html
+  "v-81285cd4": () => import(/* webpackChunkName: "v-81285cd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/vueBase.html.js").then(({ data }) => data),
+  // path: /english/word/01%E5%90%8C%E4%B9%89%E8%AF%8D.html
+  "v-2a210b7d": () => import(/* webpackChunkName: "v-2a210b7d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/01同义词.html.js").then(({ data }) => data),
+  // path: /english/word/02%E9%9F%B3%E6%A0%87.html
+  "v-4f549da1": () => import(/* webpackChunkName: "v-4f549da1" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/02音标.html.js").then(({ data }) => data),
+  // path: /english/word/03%E5%8F%A5%E5%AD%90.html
+  "v-57ef7e0a": () => import(/* webpackChunkName: "v-57ef7e0a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/03句子.html.js").then(({ data }) => data),
+  // path: /english/word/04%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
+  "v-35a68cdf": () => import(/* webpackChunkName: "v-35a68cdf" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/04归类记忆.html.js").then(({ data }) => data),
+  // path: /english/word/05%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%86.html
+  "v-e645ae74": () => import(/* webpackChunkName: "v-e645ae74" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/05词伙记忆.html.js").then(({ data }) => data),
   // path: /english/grammar/01%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6.html
   "v-9bc01392": () => import(/* webpackChunkName: "v-9bc01392" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/01基本框架.html.js").then(({ data }) => data),
   // path: /english/grammar/11%E5%8A%A8%E8%AF%8D.html
@@ -293,14 +303,6 @@ export const pagesData = {
   "v-bd765e40": () => import(/* webpackChunkName: "v-bd765e40" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/32从句.html.js").then(({ data }) => data),
   // path: /english/grammar/32%E5%A4%8D%E6%9D%82%E5%8F%A5.html
   "v-b1142818": () => import(/* webpackChunkName: "v-b1142818" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/32复杂句.html.js").then(({ data }) => data),
-  // path: /english/word/01%E5%90%8C%E4%B9%89%E8%AF%8D.html
-  "v-2a210b7d": () => import(/* webpackChunkName: "v-2a210b7d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/01同义词.html.js").then(({ data }) => data),
-  // path: /english/word/02%E9%9F%B3%E6%A0%87.html
-  "v-4f549da1": () => import(/* webpackChunkName: "v-4f549da1" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/02音标.html.js").then(({ data }) => data),
-  // path: /english/word/03%E5%8F%A5%E5%AD%90.html
-  "v-57ef7e0a": () => import(/* webpackChunkName: "v-57ef7e0a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/03句子.html.js").then(({ data }) => data),
-  // path: /english/word/04%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
-  "v-35a68cdf": () => import(/* webpackChunkName: "v-35a68cdf" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/04归类记忆.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /algorithm/
@@ -329,14 +331,14 @@ export const pagesData = {
   "v-2dde280e": () => import(/* webpackChunkName: "v-2dde280e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/sourcecode/index.html.js").then(({ data }) => data),
   // path: /study/
   "v-d7188082": () => import(/* webpackChunkName: "v-d7188082" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/index.html.js").then(({ data }) => data),
-  // path: /web/
-  "v-744e6dd4": () => import(/* webpackChunkName: "v-744e6dd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/index.html.js").then(({ data }) => data),
   // path: /tool/
   "v-1559ca3e": () => import(/* webpackChunkName: "v-1559ca3e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/index.html.js").then(({ data }) => data),
-  // path: /english/grammar/
-  "v-612219c0": () => import(/* webpackChunkName: "v-612219c0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/index.html.js").then(({ data }) => data),
-  // path: /english/
-  "v-43539db8": () => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.js").then(({ data }) => data),
+  // path: /web/
+  "v-744e6dd4": () => import(/* webpackChunkName: "v-744e6dd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/index.html.js").then(({ data }) => data),
   // path: /english/word/
   "v-02234fad": () => import(/* webpackChunkName: "v-02234fad" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/index.html.js").then(({ data }) => data),
+  // path: /english/
+  "v-43539db8": () => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.js").then(({ data }) => data),
+  // path: /english/grammar/
+  "v-612219c0": () => import(/* webpackChunkName: "v-612219c0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/index.html.js").then(({ data }) => data),
 }
