@@ -2,7 +2,7 @@
 <table>
 <thead>
 <tr>
-<th>前--------------------------------------------------缀</th>
+<th>前------------------------------------------------缀</th>
 <th>易----------------------混</th>
 </tr>
 </thead>
@@ -239,7 +239,7 @@
 </thead>
 <tbody>
 <tr>
-<td>make<code v-pre>制作、制造</code></td>
+<td>make<code v-pre>制作、制造，使</code></td>
 <td>maid<code v-pre>女仆</code></td>
 </tr>
 <tr>
@@ -291,7 +291,11 @@ a man<span class="token char">'主语'</span> can be destroyed<span class="token
 </tr>
 <tr>
 <td>defame<code v-pre>诽谤</code></td>
+<td>definite<code v-pre>明确的</code></td>
+</tr>
+<tr>
 <td></td>
+<td>definitely<code v-pre>肯定的</code></td>
 </tr>
 </tbody>
 </table>
@@ -394,6 +398,56 @@ have been <span class="token keyword">to</span> <span class="token class-name">P
 <tr>
 <td>wither<code v-pre>凋谢、枯萎</code></td>
 <td>wrath<code v-pre>愤怒</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="十、that那" tabindex="-1"><a class="header-anchor" href="#十、that那" aria-hidden="true">#</a> 十、that那</h3>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>that<code v-pre>那个</code></td>
+<td>those<code v-pre>那些</code></td>
+</tr>
+<tr>
+<td>this<code v-pre>这个</code></td>
+<td>these<code v-pre>这些</code></td>
+</tr>
+<tr>
+<td>what<code v-pre>什么</code></td>
+<td>which<code v-pre>哪个</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="十一、carry携带" tabindex="-1"><a class="header-anchor" href="#十一、carry携带" aria-hidden="true">#</a> 十一、carry携带</h3>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carry<code v-pre>携带、搬运</code></td>
+<td>array<code v-pre>数组</code></td>
+</tr>
+<tr>
+<td>carry on<code v-pre>坚持、继续</code></td>
+<td>curry<code v-pre>咖喱</code></td>
+</tr>
+<tr>
+<td>carrier<code v-pre>搬运工</code></td>
+<td>care<code v-pre>担心、关心</code></td>
+</tr>
+<tr>
+<td>carrot<code v-pre>胡萝卜</code></td>
+<td>carriage<code v-pre>四轮马车</code></td>
 </tr>
 </tbody>
 </table>
