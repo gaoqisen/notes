@@ -1,5 +1,81 @@
 <template><div><p>在线跟读地址：https://en-yinbiao.xiao84.com/yinbiaofayin/</p>
 <h2 id="一、音标介绍" tabindex="-1"><a class="header-anchor" href="#一、音标介绍" aria-hidden="true">#</a> 一、音标介绍</h2>
+<p>元音</p>
+<table>
+<thead>
+<tr>
+<th>短元音</th>
+<th>例--子</th>
+<th>长元音</th>
+<th>例------子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/ʌ/</td>
+<td>strut</td>
+<td>/ɑː/</td>
+<td>father</td>
+</tr>
+<tr>
+<td>/ɒ/</td>
+<td>top</td>
+<td>/ɔː/</td>
+<td>thought</td>
+</tr>
+<tr>
+<td>/ə/</td>
+<td>alive</td>
+<td>/ɜː/</td>
+<td>bird</td>
+</tr>
+<tr>
+<td>/ɪ/</td>
+<td>kit</td>
+<td>/iː/</td>
+<td>fleece</td>
+</tr>
+<tr>
+<td>/ʊ/</td>
+<td>foot</td>
+<td>/uː/</td>
+<td>goose</td>
+</tr>
+<tr>
+<td>/e/</td>
+<td>dress</td>
+<td>/æ/</td>
+<td>cat</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>元音</th>
+<th>例子</th>
+<th>元音</th>
+<th>例子</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/aɪ/ price</td>
+<td>/ɔɪ/choice</td>
+<td>/eɪ/face</td>
+<td>/ɪə/near</td>
+<td>/ʊə/cure</td>
+</tr>
+<tr>
+<td>/aʊ/mouth</td>
+<td>/əu/</td>
+<td>/ɛə/ /eə/</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><img src="https://gaoqisen.github.io/GraphBed/201812/20181202213648.png" alt="音标"></p>
 <h3 id="_1-1-元音" tabindex="-1"><a class="header-anchor" href="#_1-1-元音" aria-hidden="true">#</a> 1.1 元音</h3>
 <p>是产生于声带振动时，口腔呈现较开放状态，通气无阻碍的音素。在英语中，元音通常由不同的口腔形状产生，而且它们通常是单独构成一个音节的核心。字母除了辅音之外还有另一个读法的音标。</p>
@@ -184,16 +260,6 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>公司年度目标 ..</li>
-<li>为了达成目标，人事部需要付出的努力...</li>
-<li>痛点，遇到了那些问题。风险点</li>
-<li>人事部门现在的情况 1.... 2... 3...</li>
-<li>人事部门现在的诉求  1.... 2... 3...</li>
-<li>怎么解决这些问题</li>
-<li>年度达到的具体目标。 1.... 2... 3...</li>
-<li>为了达成年度目标的季度目标。 然后细化下去</li>
-</ol>
 </div></template>
 
 
