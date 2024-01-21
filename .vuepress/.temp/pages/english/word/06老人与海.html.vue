@@ -1,12 +1,6 @@
 <template><div><h2 id="第一段" tabindex="-1"><a class="header-anchor" href="#第一段" aria-hidden="true">#</a> 第一段</h2>
 <h3 id="_1、第一句" tabindex="-1"><a class="header-anchor" href="#_1、第一句" aria-hidden="true">#</a> 1、第一句</h3>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
-句子结构很简单，是一个复合句。我们可以将其分成两个主要部分：
-"He was an old man who fished alone in a skiff in the gulf stream." 这部分是描述主语 "he" 的身份和动作的部分。句中包含了一个关系从句 "who fished alone in a skiff in the gulf stream"，修饰名词 "man"。
-"He had gone eighty-four days now without taking a fish." 这部分是描述动作 "he" 的状态的部分。句中包含了一个完成进行时的动词短语 "had gone"，修饰了时间段 "eighty-four days"，而现在完成进行时 "without taking a fish" 表示了动作 "he" 连续进行但没有结果的状态。
-*/</span>
-he was an old man who fished alone in a skiff in the gulf stream and he had gone eighty<span class="token operator">-</span>four days now without taking a fish  <span class="token comment">// 他是一个在墨西哥湾暖流中孤独捕鱼的老人，他已经连续八十四天没有捕到鱼了。</span>
-  
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>
   
 <span class="token comment">// was表示过去时，is表示当前时态。 </span>
 <span class="token class-name">He</span><span class="token char">'主语'</span> was<span class="token char">'系动词'</span> an old man<span class="token char">'表语'</span><span class="token punctuation">.</span>  <span class="token comment">// 他是一个老人</span>
@@ -39,7 +33,15 @@ now without taking a fish<span class="token punctuation">.</span>    <span class
 <span class="token comment">// 主语（获取完成时）              状语从句用来修饰主句的动作，使用了without连词来表示动作的缺乏或没有                </span>
    he had gone eighty<span class="token operator">-</span>four days now without taking a fish<span class="token punctuation">.</span>   <span class="token comment">// 他已经联系84天没有捕到鱼了</span>
  
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2、第二句" tabindex="-1"><a class="header-anchor" href="#_2、第二句" aria-hidden="true">#</a> 2、第二句</h3>
+<span class="token doc-comment comment">/**
+句子结构很简单，是一个复合句。我们可以将其分成两个主要部分：
+"He was an old man who fished alone in a skiff in the gulf stream." 这部分是描述主语 "he" 的身份和动作的部分。句中包含了一个关系从句 "who fished alone in a skiff in the gulf stream"，修饰名词 "man"。
+"He had gone eighty-four days now without taking a fish." 这部分是描述动作 "he" 的状态的部分。句中包含了一个完成进行时的动词短语 "had gone"，修饰了时间段 "eighty-four days"，而现在完成进行时 "without taking a fish" 表示了动作 "he" 连续进行但没有结果的状态。
+had gone: 已经
+*/</span>
+he was an old man who fished alone in a skiff in the gulf stream and he had gone eighty<span class="token operator">-</span>four days now without taking a fish  <span class="token comment">// 他是一个在墨西哥湾暖流中孤独捕鱼的老人，他已经连续八十四天没有捕到鱼了。</span>
+    
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2、第二句" tabindex="-1"><a class="header-anchor" href="#_2、第二句" aria-hidden="true">#</a> 2、第二句</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// had been with him 叙述某人在过去一段时间内一直和某人在一起</span>
 <span class="token class-name">In</span> the first forty days a boy had been <span class="token keyword">with</span> <span class="token namespace">him<span class="token punctuation">.</span></span>  <span class="token comment">// 在最初四十天的时候，有一个男孩和他在一起</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3、第四句" tabindex="-1"><a class="header-anchor" href="#_3、第四句" aria-hidden="true">#</a> 3、第四句</h3>
@@ -47,7 +49,7 @@ now without taking a fish<span class="token punctuation">.</span>    <span class
 <span class="token class-name">But</span> forty days without a fish <span class="token comment">// 但是四十天没有一条鱼</span>
 
 <span class="token comment">// ‘s所有格</span>
-the boy's parents had told him<span class="token punctuation">.</span>  <span class="token comment">// 男孩的父母告诉他</span>
+the boy‘s parents had told him<span class="token punctuation">.</span>  <span class="token comment">// 男孩的父母告诉他</span>
 
 <span class="token comment">// 这句话的意思是老人现在明显地并且最终地陷入了"salao"状态。"Salao"是一个西班牙词，用来形容长时间的不幸或不幸运。因此，在这个句子中，“definitely” 表明了状态是相当确定的，而“finally” 表示这种状态是不可逆转的，进一步强调了老人的不幸状态。</span>
 the old man was now definitely an <span class="token keyword">finally</span> salao<span class="token punctuation">.</span> <span class="token comment">// 这个老人现在肯定是最终“衰神”了。  </span>
@@ -65,22 +67,22 @@ in another boat which caught three good fish the first week<span class="token pu
 <span class="token comment">// has goes是过去完成时，表示在过去的某个时间点或事件之前已完成的动作  </span>
 which is the worst form of unluckly<span class="token punctuation">,</span> and the boy had gone at their orders in another boat which caught three good fish the first week<span class="token punctuation">.</span>  <span class="token comment">// 真是倒霉透顶，男孩在他们的指示下乘坐另一艘船在第一周就捕获了三条好鱼</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5、第六句" tabindex="-1"><a class="header-anchor" href="#_5、第六句" aria-hidden="true">#</a> 5、第六句</h3>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>/**
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
 主语：it
 动词短语 make the ... sad: 让...难过
 不定式短语: to see the old man come in each day with his skiff empty 作为宾补
 	to see为不定式形式
 	the old man come in each day with his skiff empty为不定式的宾语
-*/
-It make the boy sad to see the old man come in each day with his skiff empty // 看见这个老人每天划着空船回来 男孩感到很难过 
+*/</span>
+<span class="token class-name">It</span> make the boy sad <span class="token keyword">to</span> <span class="token namespace">see</span> the old man come in each day <span class="token keyword">with</span> <span class="token namespace">his</span> skiff empty <span class="token comment">// 看见这个老人每天划着空船回来 男孩感到很难过 </span>
 
-/**
+<span class="token doc-comment comment">/**
 复杂的并列句：
 主句：he always went down to help him carry
 第一个并列句：the coiled around or the gaff and harpoon
 第二个并列句：the sail that fuled around the mast
-*/
-he always went down to help him carry either the coiled around or the gaff and harpoon and the sail that was fuled around the mast.  // 他一直想要下去帮他搬盘成圈的线或鱼钩和鱼叉，以及缠绕在桅杆上的帆
+*/</span>
+he always went down <span class="token keyword">to</span> <span class="token namespace">help</span> him carry either the coiled around or the gaff and harpoon and the sail that was fuled around the mast<span class="token punctuation">.</span>  <span class="token comment">// 他一直想要下去帮他搬盘成圈的线或鱼钩和鱼叉，以及缠绕在桅杆上的帆</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_6、第七句" tabindex="-1"><a class="header-anchor" href="#_6、第七句" aria-hidden="true">#</a> 6、第七句</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token doc-comment comment">/**
 主语：the sail

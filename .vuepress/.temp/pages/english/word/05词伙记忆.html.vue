@@ -372,7 +372,7 @@ have been <span class="token keyword">to</span> <span class="token class-name">P
 </thead>
 <tbody>
 <tr>
-<td>with<code v-pre>与</code></td>
+<td>with<code v-pre>与...一起</code></td>
 <td>width<code v-pre>宽度</code></td>
 </tr>
 <tr>
@@ -448,6 +448,25 @@ have been <span class="token keyword">to</span> <span class="token class-name">P
 <tr>
 <td>carrot<code v-pre>胡萝卜</code></td>
 <td>carriage<code v-pre>四轮马车</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="十二、mast" tabindex="-1"><a class="header-anchor" href="#十二、mast" aria-hidden="true">#</a> 十二、mast</h3>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mast<code v-pre>桅杆</code></td>
+<td></td>
+</tr>
+<tr>
+<td>master<code v-pre>主、雇主</code></td>
+<td></td>
 </tr>
 </tbody>
 </table>
