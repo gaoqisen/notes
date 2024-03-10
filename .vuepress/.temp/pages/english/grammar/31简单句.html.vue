@@ -23,27 +23,45 @@
 <h3 id="_1-2-五种句型" tabindex="-1"><a class="header-anchor" href="#_1-2-五种句型" aria-hidden="true">#</a> 1.2 五种句型</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、主+谓(不及物动词才能组成主谓结构)</span>
 <span class="token class-name">I</span> run <span class="token punctuation">(</span>我跑<span class="token punctuation">)</span>
-
+<span class="token class-name">I</span> <span class="token function">hit</span><span class="token punctuation">(</span>我打<span class="token punctuation">)</span>
+<span class="token class-name">I</span> found  
+  
+  
 <span class="token comment">// 2、主+谓+宾</span>
 <span class="token class-name">I</span> love you 
+<span class="token class-name">I</span> hit iron man（我打钢铁侠）  
+<span class="token class-name">I</span> found the book
+<span class="token class-name">I</span> will drink weater<span class="token punctuation">.</span>   <span class="token comment">// 表示未来</span>
+<span class="token class-name">We</span> <span class="token operator">|</span> are introduced <span class="token keyword">to</span> <span class="token operator">|</span> the <span class="token class-name"><span class="token namespace">narrator<span class="token punctuation">.</span></span>     
+I</span> <span class="token operator">|</span> am <span class="token operator">|</span> going <span class="token keyword">to</span> <span class="token namespace">drink</span> water<span class="token punctuation">.</span> <span class="token comment">// 主+系+不定式短语结构  </span>
+his <span class="token operator">|</span> ideas <span class="token operator">|</span> about grown<span class="token operator">-</span><span class="token class-name"><span class="token namespace">ups<span class="token punctuation">.</span></span>   
 
-<span class="token comment">// 主谓宾和主系表的区分：I an开头的就是主系表</span>
+I</span> <span class="token operator">|</span> saw <span class="token operator">|</span> a magnificent picture <span class="token operator">|</span> in a book<span class="token punctuation">.</span>   <span class="token comment">// 主+谓+宾+介词短语结构 </span>
+ 
+  
+<span class="token comment">// 主谓宾和主系表的区分：I an开头的就是主系表(我是...)</span>
 
 <span class="token comment">/* 3、主+系(be动词+感官动词)+表(句子中间的谓语动词，如果是系动词后面就是表语)
 be动词：各种各样的是例如am, is, are等. 
 感官动词：看、听、闻、尝、感觉、变得、似乎、保持、证明
 */</span>
 <span class="token class-name">I</span> an iron <span class="token class-name">Man</span><span class="token punctuation">(</span><span class="token operator">|</span> 我是钢铁侠<span class="token punctuation">)</span>
-
-<span class="token comment">// 4、主+谓+双宾(直接宾语+间接宾语)</span>
+<span class="token class-name">The</span> book is mine  
+<span class="token class-name">I</span> was six years old<span class="token punctuation">.</span>   <span class="token comment">// 过去用was，限制用am</span>
+  
+<span class="token comment">// 4、主+谓+双宾(直接宾语+间接宾语)： 一个句子中有两个宾语，一个直接宾语和一个间接宾语</span>
 <span class="token comment">// 双宾：谓语(动词)后面的两个东西，都是动作对象（例如：我给你钱，你+钱就是双宾）</span>
 <span class="token class-name">I</span> give you mony <span class="token punctuation">(</span>我给你钱<span class="token punctuation">)</span>
+<span class="token class-name">I</span> give iron man mony 
+<span class="token class-name">I</span> found the localtion of the book<span class="token punctuation">.</span> 
+  
 
 <span class="token comment">// 双宾判断技巧：两个宾语都可以做主语就是双宾，否则就是宾补。双宾例子：我给(你+钱) = (你)被我给了(钱) = (钱)被我给了(你)</span>
 
-<span class="token comment">// 5、主+谓+宾补</span>
-<span class="token class-name">I</span> ordered hamburger their lunch <span class="token punctuation">(</span>他们的午餐他们点了汉堡<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、疑问句" tabindex="-1"><a class="header-anchor" href="#二、疑问句" aria-hidden="true">#</a> 二、疑问句</h2>
+<span class="token comment">// 5、主+谓+宾+宾补：指一个句子中的宾语后面有一个补语来对宾语进行补充、说明或者描述</span>
+<span class="token class-name">They</span> ordered hamburger their lunch <span class="token punctuation">(</span>他们的午餐他们点了汉堡<span class="token punctuation">)</span>
+<span class="token class-name">I</span> found the book interesting<span class="token punctuation">.</span>    
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、疑问句" tabindex="-1"><a class="header-anchor" href="#二、疑问句" aria-hidden="true">#</a> 二、疑问句</h2>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 一般疑问句: </span>
 <span class="token class-name">Do</span> you love me<span class="token operator">?</span><span class="token punctuation">(</span>你爱我吗？<span class="token punctuation">)</span>
 <span class="token comment">// 特殊疑问句: </span>

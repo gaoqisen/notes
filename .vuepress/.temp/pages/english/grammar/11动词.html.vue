@@ -30,7 +30,11 @@ am，is，are
 get，become，turn，<span class="token function">grow</span><span class="token punctuation">(</span>长大<span class="token punctuation">)</span>
 <span class="token comment">// 保持动词</span>
 keep，<span class="token function">stay</span><span class="token punctuation">(</span>保持<span class="token punctuation">)</span>，<span class="token function">remain</span><span class="token punctuation">(</span>留下<span class="token punctuation">)</span>，<span class="token function">rest</span><span class="token punctuation">(</span>休息<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、静态动词" tabindex="-1"><a class="header-anchor" href="#_3、静态动词" aria-hidden="true">#</a> 3、静态动词</h4>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// “Was”是过去时态的系动词，用于表示过去的状态或情况。</span>
+“<span class="token class-name">He</span> was happy yesterday<span class="token punctuation">.</span>”（他昨天很高兴。）
+<span class="token comment">// 需要注意的是，“Is”和“was”也可以用于进行时态，表示正在进行的动作。</span>
+“<span class="token class-name">He</span> is studying<span class="token punctuation">.</span>”（他正在学习。）“<span class="token class-name">He</span> was studying at <span class="token keyword">this</span> time yesterday<span class="token punctuation">.</span>”（他昨天这个时候正在学习。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3、静态动词" tabindex="-1"><a class="header-anchor" href="#_3、静态动词" aria-hidden="true">#</a> 3、静态动词</h4>
 <p>静态动词（Stative Verbs）是指表示状态、感觉、认知、归属等静态概念的动词。这些动词一般不描述具体的行为或动作，而是用来描述主语的状态或特征。常见的静态动词包括 &quot;be&quot;、&quot;have&quot;、&quot;belong&quot;、&quot;like&quot;、&quot;understand&quot;、&quot;know&quot;、&quot;love&quot;，&quot;want&quot;、&quot;see&quot;、&quot;hear&quot;等</p>
 <p>静态动词通常不用于进行时态（progressive tense），而是用于一般现在时、一般过去时等非进行时态。这是因为静态动词所表示的状态通常是稳定的，不会发生瞬时变化。例如，“She knows the answer”的含义是“她知道答案”，而不是“她正在知道答案”。在进行时态中，可能会使用表示状态改变的动词，如“变化”、“变得”，而不是在静态动词上直接使用进行时态。</p>
 <p>表示状态、感觉、认知、归属等静态概念的词，通常不能单独构成表语，需要搭配补语才能完整表达谓语意义。</p>
@@ -71,6 +75,7 @@ know，think，understand，believe
 <span class="token class-name">She</span> has been a <span class="token class-name">China</span><span class="token punctuation">.</span> <span class="token comment">// 她去过中国</span>
 <span class="token class-name">I</span> have finished the project<span class="token punctuation">.</span> <span class="token comment">// 我已经完成了这个项目</span>
   
+  
 <span class="token comment">// do做助动词：构成疑问句、否定句、强调句</span>
 <span class="token class-name">Do</span> you have kids<span class="token operator">?</span>  <span class="token comment">// 你有孩子吗</span>
 <span class="token class-name">I</span> <span class="token keyword">do</span> not know<span class="token punctuation">.</span> <span class="token comment">// 我不知道</span>
@@ -82,7 +87,17 @@ know，think，understand，believe
 <span class="token class-name">I</span> am a teacher<span class="token punctuation">.</span> <span class="token comment">// 我是老师</span>
 <span class="token class-name">She</span> is happy<span class="token punctuation">.</span><span class="token comment">// 她很开心</span>
 <span class="token class-name">The</span> book is on the table<span class="token punctuation">.</span><span class="token comment">// 书在桌子上 </span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、情态动词" tabindex="-1"><a class="header-anchor" href="#_2、情态动词" aria-hidden="true">#</a> 2、情态动词</h4>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// “Have”是原型动词，用于第一人称、第二人称和第三人称复数形式的现在完成时。</span>
+“I have seen the movie.”（我已经看过这部电影。）
+<span class="token comment">// “Has”是“have”的第三人称单数形式，用于第三人称单数形式的现在完成时。</span>
+“He has seen the movie.”（他已经看过这部电影。）
+<span class="token comment">// “Had”是过去式助动词，用于表示过去完成时。</span>
+“I had seen the movie before.”（我以前看过这部电影。）
+
+<span class="token comment">// 需要注意的是，“Have”和“has”也可以用作实义动词，表示“拥有”或“具有”的意思。例</span>
+“I have a car.”（我有一辆车。）
+“She has a beautiful voice.”（她有一副美妙的嗓音。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、情态动词" tabindex="-1"><a class="header-anchor" href="#_2、情态动词" aria-hidden="true">#</a> 2、情态动词</h4>
 <p>有含义，要和动词原形一起构成谓语（can，may，must，need等），用来表达说话人对动作或状态的态度或看法的一种动词，如可以、应该、可能、必须等。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// can/could表示推测、允许、能力</span>
 <span class="token class-name">You</span> can imagine the story is bad<span class="token punctuation">.</span> <span class="token comment">// 你可以想象这个故事很不好</span>
@@ -527,6 +542,21 @@ a swimming suit<span class="token punctuation">.</span> <span class="token comme
 <span class="token class-name">The</span> task completed<span class="token punctuation">,</span> we had a global traveling<span class="token punctuation">.</span> <span class="token comment">// 任务完成后，我们进行了环球旅行</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>时态和语态总结</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231223100258.png" alt=""></p>
-</div></template>
+<h2 id="六、常见动词" tabindex="-1"><a class="header-anchor" href="#六、常见动词" aria-hidden="true">#</a> 六、常见动词</h2>
+<h3 id="make" tabindex="-1"><a class="header-anchor" href="#make" aria-hidden="true">#</a> make</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">to</span> <span class="token namespace">create</span> or prepare sth by combining materials or putting parts together<span class="token punctuation">.</span>  <span class="token comment">// 去创建或准备某事通过结合材料或将部件组装在一起</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 创建、制造或生产某物：</span>
+“make a cake”（制作蛋糕）、“make a dress”（制作连衣裙）、“make a car”（制造汽车）等。
+<span class="token comment">// 使某人或某事成为某种状态：</span>
+make someone happy”（使某人快乐）、“make something better”（使某物更好）等。
+<span class="token comment">// 组成或形成某物：</span>
+“make a team”（组成团队）、“make a decision”（做出决定）等。
+<span class="token comment">// 获得或赚取某物：</span>
+“make money”（赚钱）、“make a profit”（获得利润）等。
+<span class="token comment">// 引起或导致某事发生</span>
+“make a mistake”（犯错误）、“make a noise”（发出噪音）等。
+<span class="token comment">// 做某事或执行某项任务：</span>
+“make a plan”（制定计划）、“make a speech”（发表演讲）等。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

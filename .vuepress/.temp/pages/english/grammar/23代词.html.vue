@@ -61,7 +61,13 @@
 <h2 id="四、指示代词" tabindex="-1"><a class="header-anchor" href="#四、指示代词" aria-hidden="true">#</a> 四、指示代词</h2>
 <p>说明近处远处、上下文的人或物</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231211233017.png" alt=""></p>
-<h2 id="五、疑问代词" tabindex="-1"><a class="header-anchor" href="#五、疑问代词" aria-hidden="true">#</a> 五、疑问代词</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>there // 副词：在那里
+
+these // 哲这些
+those // 那些
+this  // 这个
+that  // 那个
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、疑问代词" tabindex="-1"><a class="header-anchor" href="#五、疑问代词" aria-hidden="true">#</a> 五、疑问代词</h2>
 <p>疑问代词（Interrogative Pronouns)：疑问代词用于构建疑问句，通常用来提问某样东西或某个人。</p>
 <p>常见的疑问代词包括 who谁,what什么,which哪个,whom谁,whose谁的</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 用来提出问题的代词，不分单复数，有修饰的名词决定</span>
@@ -183,6 +189,23 @@ what（什么<span class="token punctuation">)</span>，who（谁<span class="to
 <p>相对代词（Relative Pronouns）：相对代词用于引导定语从句，修饰名词或代词，并且在主句和从句之间建立关系。</p>
 <p>常见的相对代词包括 &quot;who&quot;, &quot;whom&quot;, &quot;whose&quot;, &quot;which&quot; 和 &quot;that&quot;。</p>
 <p>例如：&quot;The book that I bought is very interesting.&quot;（我买的那本书非常有趣。）</p>
-</div></template>
+<h2 id="十一、其他常用" tabindex="-1"><a class="header-anchor" href="#十一、其他常用" aria-hidden="true">#</a> 十一、其他常用</h2>
+<h4 id="any" tabindex="-1"><a class="header-anchor" href="#any" aria-hidden="true">#</a> any</h4>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// 表示“任何”，可以用于否定句和疑问句中。</span>
+There isn't any water in the bottle.（瓶子里没有水。）Do you have any questions?（你有什么问题吗？）
+<span class="token comment">// 表示“一些”，可以用于肯定句中。</span>
+I have some books<span class="token punctuation">,</span> but I don't have any money.（我有一些书，但我没有钱。）
+<span class="token comment">// 用于条件句中，表示“任何”。</span>
+If you have any problems<span class="token punctuation">,</span> please let me know.（如果你有任何问题，请告诉我。）
+<span class="token comment">// 与 other 连用，表示“其他任何”。</span>
+Any other questions?（还有其他问题吗？）
+<span class="token comment">// 用于比较级和最高级前，表示“任何”。</span>
+She is taller than any other girl in her class.（她比她班上任何其他女孩都高。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>anyone: 任何人
+anything：任何事物
+anywhere：任何地方
+anyhow：无论如何
+any more： 再也不
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
