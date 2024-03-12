@@ -137,6 +137,22 @@ bd = BigDecimal.valueOf(bd.doubleValue());
 System.out.println(bd.scale());
 ```
 
+### 2.4 将指定数据放到第一位
+
+```java
+    private static void specifyChannelFirst(List<PrivilegeChannelInfoDto> list, String channelCode) {
+        list.sort((a, b) -> {
+            if (a.getChannelCode().equals(channelCode)) {
+                return -1;
+            } else if (b.getChannelCode().equals(channelCode)) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+    }
+```
+
 ## 三、一些命令
 
 ```shell
