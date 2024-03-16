@@ -12,7 +12,7 @@ used as the past tense of may when reporting what sb has said<span class="token 
 <tbody>
 <tr>
 <td>might<code v-pre>也许、可能</code></td>
-<td>could<code v-pre>可能、可以</code></td>
+<td>could<code v-pre>可能、可以</code>  cold<code v-pre>冷的</code></td>
 <td>migraine<code v-pre>偏头痛</code></td>
 </tr>
 <tr>
@@ -271,6 +271,11 @@ from one end or side of sth to the other. <span class="token comment">// 从一�
 <td></td>
 <td>throw<code v-pre>扔、抛</code></td>
 </tr>
+<tr>
+<td></td>
+<td></td>
+<td>bought(buy的过去式)</td>
+</tr>
 </tbody>
 </table>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// “By means of”通常用于描述通过某种手段或方法来实现某个目标。</span>
@@ -435,8 +440,732 @@ She went away for a weekend to relax.
 They have a distant relationship<span class="token punctuation">,</span> but they still care about each other.
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_8、asteroid" tabindex="-1"><a class="header-anchor" href="#_8、asteroid" aria-hidden="true">#</a> 8、asteroid</h3>
 <p>小行星</p>
-<h3 id="_9、astronomer" tabindex="-1"><a class="header-anchor" href="#_9、astronomer" aria-hidden="true">#</a> 9、astronomer</h3>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aster<code v-pre>紫菀、星状体</code></td>
+<td>meteorite<code v-pre>陨石</code></td>
+<td>astroid<code v-pre>几何学中的椭圆形</code></td>
+</tr>
+<tr>
+<td>asterisk<code v-pre>星号</code></td>
+<td>comet<code v-pre>彗星</code></td>
+<td>android<code v-pre>机器人</code></td>
+</tr>
+<tr>
+<td>astern<code v-pre>在床尾、向船尾</code></td>
+<td>planetoid<code v-pre>小行星</code></td>
+<td>steroid<code v-pre>类固醇</code></td>
+</tr>
+<tr>
+<td>asteroid<code v-pre>小行星</code></td>
+<td>minor planet<code v-pre>小行星</code></td>
+<td>astronaut<code v-pre>宇航员</code></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// asteroid：指在太阳系中绕太阳运行的小行星，通常比行星小得多。</span>
+Asteroids are small<span class="token punctuation">,</span> rocky objects that orbit the sun.
+<span class="token comment">// meteorite：指坠落到地球表面的陨石，通常是小行星或彗星的碎片。</span>
+A meteorite hit the earth in Russia.
+<span class="token comment">// comet：指太阳系中的彗星，通常由冰和尘埃组成，具有长长的尾巴。</span>
+Comets are celestial objects that orbit the sun.
+<span class="token comment">// planetoid：指在太阳系中绕太阳运行的小行星，通常比行星小得多，但比彗星大。</span>
+Planetoids are small<span class="token punctuation">,</span> rocky objects that orbit the sun.
+<span class="token comment">// minor planet：指在太阳系中绕太阳运行的小行星，通常比行星小得多，但比彗星大。</span>
+Minor planets are small<span class="token punctuation">,</span> rocky objects that orbit the sun.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_9、astronomer" tabindex="-1"><a class="header-anchor" href="#_9、astronomer" aria-hidden="true">#</a> 9、astronomer</h3>
 <p>天文学家</p>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code>astro
+connected with the stars or outer space。 <span class="token comment">// 与星星或外太空相连的</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>astro<code v-pre>星、天体、外层空间、宇宙空间</code></td>
+<td>Astrometry<code v-pre>天体测量</code></td>
+<td>astir<code v-pre>忙碌的、活跃的</code></td>
+</tr>
+<tr>
+<td>astrolabe<code v-pre>星盘（古代用来测量天体高度）</code></td>
+<td>Astrosphere<code v-pre>星际空间</code></td>
+<td>astra<code v-pre>名字</code></td>
+</tr>
+<tr>
+<td>astrology<code v-pre>占星术、占星学</code>  ology<code v-pre>学问</code></td>
+<td>Astrocyte<code v-pre>星形胶质细胞</code></td>
+<td></td>
+</tr>
+<tr>
+<td>astronaut<code v-pre>宇航员、航天员</code> naut<code v-pre>海上的</code></td>
+<td>Astroturf<code v-pre>一种人造草皮</code></td>
+<td></td>
+</tr>
+<tr>
+<td>astrologer<code v-pre>占星家</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>astronomer<code v-pre>天文学家</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>astronomical<code v-pre>天文的、极其巨大的</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>astronomy<code v-pre>天文学</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>astrophysics<code v-pre>天体物理</code> physics<code v-pre>物理</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10、perhaps" tabindex="-1"><a class="header-anchor" href="#_10、perhaps" aria-hidden="true">#</a> 10、perhaps</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>making an opinion sound less definite<span class="token punctuation">.</span>  <span class="token comment">// 使观点听起来不那么明确</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>perhaps<code v-pre>可能、大概、也许</code></td>
+<td>maybe<code v-pre>也许、大概</code></td>
+<td>perplex<code v-pre>使困惑</code></td>
+</tr>
+<tr>
+<td></td>
+<td>possibly<code v-pre>可能、或许</code></td>
+<td>perjury<code v-pre>伪证</code></td>
+</tr>
+<tr>
+<td></td>
+<td>potentially<code v-pre>可能的、潜在的</code></td>
+<td>perfect<code v-pre>完美的、完全的</code></td>
+</tr>
+<tr>
+<td></td>
+<td>conceivably<code v-pre>想象得到的</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// "Perhaps" 用于表示询问或明确提出可能性，有时也与礼貌和委婉有关。</span>
+<span class="token class-name">Perhaps</span> we should consider other options<span class="token punctuation">.</span>（也许我们应该考虑其他选择。）
+<span class="token comment">// "Maybe" 在日常口语和书面语中都很常见，用于表达可能会发生的事情或事实。</span>
+<span class="token class-name">Maybe</span> <span class="token class-name">I</span>'ll come <span class="token keyword">to</span> <span class="token namespace">the</span> party<span class="token punctuation">,</span> but <span class="token class-name">I</span>'m not sure yet<span class="token punctuation">.</span>（也许我会来参加派对，但我还不确定。）
+<span class="token comment">// "Possibly" 表示一种不确定的可能性。它比 "maybe" 更强调可能性。</span>
+<span class="token class-name">They</span> could possibly be late due <span class="token keyword">to</span> <span class="token namespace">the</span> traffic<span class="token punctuation">.</span>（他们可能因为交通堵塞而迟到。）
+<span class="token comment">// "Potentially" 侧重于讨论可能发生的未来事件或情况，通常与某种潜在的结果相关联。</span>
+<span class="token class-name">The</span> <span class="token keyword">new</span> laws could potentially lead <span class="token keyword">to</span> <span class="token namespace">significant</span> changes in the industry<span class="token punctuation">.</span>（新法律有可能会导致行业产生重大变化。）
+<span class="token comment">// "Conceivably" 意味着根据某些可能的情况或假设，某事在理论上是可以想象或构想得到的。</span>
+<span class="token class-name">Conceivably</span><span class="token punctuation">,</span> the project could be completed ahead of schedule <span class="token keyword">if</span> everything goes as planned<span class="token punctuation">.</span>（在假设一切按计划进行的情况下，这个项目理论上可以提前完成。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_11、wall" tabindex="-1"><a class="header-anchor" href="#_11、wall" aria-hidden="true">#</a> 11、wall</h3>
+<p>城墙、围墙、隔墙</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 一个长的垂直固体结构，石头制作，转或混凝土，挡板，分开或保护一个土地面积
+a long vertical solid structure, made of stone, brick or concrete, that surrounds,divides or protects an area of land. 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wallaby<code v-pre>沙袋鼠</code></td>
+<td>barrier<code v-pre>屏障</code></td>
+<td>well<code v-pre>顺利的、健康的、水井</code></td>
+</tr>
+<tr>
+<td>wallah<code v-pre>从事...工作的人</code>  <code v-pre>办公室人员</code></td>
+<td>partition<code v-pre>隔断、分区</code></td>
+<td>will<code v-pre>将要</code></td>
+</tr>
+<tr>
+<td>wall anchor<code v-pre>墙栓</code></td>
+<td>divider<code v-pre>分隔物</code></td>
+<td>wail<code v-pre>哀号</code></td>
+</tr>
+<tr>
+<td>wallchart<code v-pre>挂图</code> chart<code v-pre>图表</code></td>
+<td>enclosure<code v-pre>围场、围墙</code></td>
+<td></td>
+</tr>
+<tr>
+<td>wallcovering<code v-pre>壁纸、墙布</code> covering<code v-pre>覆盖</code></td>
+<td>boundary<code v-pre>边界</code></td>
+<td></td>
+</tr>
+<tr>
+<td>wallet<code v-pre>钱包、皮夹、塑料夹</code></td>
+<td>panel<code v-pre>面板</code></td>
+<td></td>
+</tr>
+<tr>
+<td>wallflower<code v-pre>桂竹香、壁花</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>walling<code v-pre>砌墙的材料、砌墙</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wallmounted<code v-pre>壁灯</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wallop<code v-pre>痛打、猛击、彻底击败</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>walloping<code v-pre>大败、惨败</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wallow<code v-pre>打滚、翻滚、沉湎</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wall painting<code v-pre>壁画</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wallpaper<code v-pre>壁纸</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wall plug<code v-pre>墙上插座</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wall street<code v-pre>华尔街、墙街</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wall tent<code v-pre>屋式帐篷</code> tent<code v-pre>帐篷</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wall-to-wall<code v-pre>铺满地毯、连续的、无处不在的</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>wally<code v-pre>傻瓜、笨蛋、白痴</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Wall (墙) - 用于围绕建筑物或其他结构的立体结构。</span>
+The wall of the ancient castle was made of thick stone blocks. <span class="token comment">// 古堡的墙是由厚实的石块构建而成</span>
+<span class="token comment">// Barrier (屏障) - 指任何可以阻碍通过或进入的东西。</span>
+The barrier was put in place to prevent access to the restricted area. <span class="token comment">// 屏障被设置在限制区域的入口处，以阻止人员进入。</span>
+<span class="token comment">// Partition (隔断，分隔) - 是分隔空间或房间的结构。</span>
+The office was divided into cubicles by temporary partitions.  <span class="token comment">// 办公室通过临时隔断被划分成小隔间。</span>
+<span class="token comment">// Divider (分隔物) - 类似于 partition，用来分隔空间的结构或设备。</span>
+The folding screen acted as a divider<span class="token punctuation">,</span> separating the living room from the dining area.  <span class="token comment">// 隔板起到了隔断作用，将起居室和餐厅隔开了</span>
+<span class="token comment">// Enclosure (围墙，围栏) - 用来包围或限制区域的结构。</span>
+The wildlife park had large enclosures for the animals to roam freely. <span class="token comment">// 野生动物园内有大型的圈养区，供动物自由活动。</span>
+<span class="token comment">// Boundary (边界) - 指两个不同区域之间的分界线。</span>
+A fence marked the boundary between the two neighboring properties.  <span class="token comment">// 围栏标志着两处相邻的房产之间的边界。</span>
+<span class="token comment">// Panel (面板) - 指包含在框架中的板状结构。</span>
+The ceiling was covered with wooden panels to give the room a warm appearance.  <span class="token comment">// 天花板覆盖着木质面板，使房间显得温暖舒适。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_12、discipline" tabindex="-1"><a class="header-anchor" href="#_12、discipline" aria-hidden="true">#</a> 12、discipline</h3>
+<table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>disciple<code v-pre>门徒、信徒、追随者</code></td>
+<td>regulation<code v-pre>规定</code></td>
+<td>Disseminate<code v-pre>传播、散播</code></td>
+</tr>
+<tr>
+<td>discipline<code v-pre>noun纪律、风纪、行为准则、自制力、 verb训练、引导</code></td>
+<td>control<code v-pre>控制</code></td>
+<td>Discompose<code v-pre>使不安、使烦乱</code></td>
+</tr>
+<tr>
+<td>disciplinarian<code v-pre>严格纪律信奉者</code></td>
+<td>training<code v-pre>培训、训练</code></td>
+<td>Disassemble<code v-pre>拆卸、分解</code></td>
+</tr>
+<tr>
+<td>disciplinary<code v-pre>有关纪律的、执行纪律的</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Discipline (纪律）：可用于描述对行为或规则的严格遵守，通常用于军队、学校、家庭等环境。</span>
+The military requires a high level of discipline. <span class="token comment">// 军队需要高度的纪律。</span>
+<span class="token comment">// Regulation (规定）：通常用于形容官方设置的规则、条例，以及对特定活动、行为的指导原则。</span>
+The new regulations require employees to wear a mask in the office. <span class="token comment">// 新规定要求员工在办公室必须戴口罩。</span>
+<span class="token comment">// Control (控制）：用于描述管理、引导、或限制事物，以以维持秩序，确保行为或活动符合特定标准或目的。</span>
+Traffic control is important to prevent accidents.  <span class="token comment">// 交通控制对于预防事故非常重要。</span>
+<span class="token comment">// Training (培训）：通常用于描述接受指导或教育的过程，以发展或提高技能、知识和能力。</span>
+New employees receive training on company policies and procedures.  <span class="token comment">// 新员工接受公司政策和流程的培训。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_13、when" tabindex="-1"><a class="header-anchor" href="#_13、when" aria-hidden="true">#</a> 13、when</h3>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>adv: 什么时候、何时。在那时、其时。当时、当场
+pron: 什么时候、何时
+conj: 在...时候，当...时
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>when<code v-pre>什么时候</code></td>
+<td>the time of<code v-pre>在...的时候</code></td>
+<td>where<code v-pre>在那里</code></td>
+</tr>
+<tr>
+<td>whence<code v-pre>从何处、从那里</code></td>
+<td>then<code v-pre>在那时、当时</code></td>
+<td>while<code v-pre>尽管、虽然、当...的时候</code></td>
+</tr>
+<tr>
+<td>whenever<code v-pre>无论何时、在任何...的时候</code></td>
+<td>during<code v-pre>在...期间、当...的时候</code></td>
+<td>wheeler<code v-pre>车夫</code></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// when: 通常用于引导时间状语从句，表示某事发生的时候。</span>
+was sleeping when the phone rang.  <span class="token comment">// 电话响时我正在睡觉</span>
+<span class="token comment">// the time of: 表示某事发生的具体时间。</span>
+I was born in the time of war.  <span class="token comment">// 我出生在战争年代</span>
+<span class="token comment">// then:表示在先前提到的时间点或情况下。</span>
+I was at school and then I went to the store.  <span class="token comment">// 我当时在学习，之后我去了商店</span>
+<span class="token comment">// during: 用于表示某事发生的时间段或期间。</span>
+I read a book during my lunch break. <span class="token comment">// 我在午休时间读了一本书</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_14、own" tabindex="-1"><a class="header-anchor" href="#_14、own" aria-hidden="true">#</a> 14、own</h3>
+<p>自己的、本人的。自己做的</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>uesd to emphasize that sth belongs to or is connected with sb. // 用于强调某事属于或与某人有关系
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>own<code v-pre>自己的、拥有</code></td>
+<td>possess<code v-pre>拥有、占有</code></td>
+<td>owe<code v-pre>欠款、负债</code></td>
+</tr>
+<tr>
+<td>own brand<code v-pre>自有品牌</code> brand<code v-pre>品牌</code></td>
+<td>have<code v-pre>拥有、有</code></td>
+<td>owt<code v-pre>任何事物、任何东西</code></td>
+</tr>
+<tr>
+<td>owner<code v-pre>物主、所有权人</code></td>
+<td>admit<code v-pre>承认、认错、准许</code></td>
+<td>ow<code v-pre>疼痛、哎哟</code></td>
+</tr>
+<tr>
+<td>owner occupied<code v-pre>业主自住</code></td>
+<td>belong<code v-pre>属于、附属</code></td>
+<td>owl<code v-pre>猫头鹰</code></td>
+</tr>
+<tr>
+<td>owner occupier<code v-pre>所有者占领人</code></td>
+<td>hold<code v-pre>持有、抓住、把握</code></td>
+<td></td>
+</tr>
+<tr>
+<td>ownership<code v-pre>所有权</code> ship<code v-pre>船</code></td>
+<td>control<code v-pre>控制</code></td>
+<td></td>
+</tr>
+<tr>
+<td>own goal<code v-pre>乌龙球、帮倒忙的事</code></td>
+<td>keep<code v-pre>保持、留在</code></td>
+<td></td>
+</tr>
+<tr>
+<td>own label<code v-pre>自己的标签、自有品牌</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Own：指完全的拥有权，通常与个人财产相关。</span>
+He owns a big house.（他拥有一栋大房子。）
+<span class="token comment">// Possess：较正式的词汇，也表示拥有，可用于物质和抽象概念。</span>
+She possesses a rare talent.（她拥有一种难得的才能。）
+<span class="token comment">// Have：最通用的词汇，用于各种情境下表示拥有。</span>
+I have a cat.（我有一只猫。）
+<span class="token comment">// Admit：表示承认或接受某种情况或事实。</span>
+She admitted her mistake.（她承认了她的错误。）
+<span class="token comment">// Belong：指属于某人或某物。</span>
+This book belongs to me.（这本书是我的。）
+<span class="token comment">// Hold：表示保有或拥有，也可以表示举行或举办。</span>
+The bank holds my mortgage.（银行持有我的抵押贷款。）
+<span class="token comment">// Control：表示控制或管理某物。</span>
+He controls the company.（他控制着这家公司。）
+<span class="token comment">// Keep：表示保持或保管某物。</span>
+I keep my money in the bank.（我把钱存在银行里。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_15、toilet" tabindex="-1"><a class="header-anchor" href="#_15、toilet" aria-hidden="true">#</a> 15、toilet</h3>
+<p>坐便器、抽水马桶</p>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// 一个连着管子的大碗，当你排掉你体内的废物时，可以坐着或站着</span>
+a large bowl attached to a pipe that you sit on or stand over when you get rid of waste matter from your body
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>toil<code v-pre>苦干、辛勤劳作</code></td>
+<td>bathroom</td>
+<td>toils<code v-pre>牢笼、罗网</code></td>
+</tr>
+<tr>
+<td>toilet<code v-pre>坐便器、抽水马桶</code></td>
+<td>lavatory</td>
+<td>tod<code v-pre>单独、独自</code></td>
+</tr>
+<tr>
+<td>toilet bag<code v-pre>化妆包</code></td>
+<td>loo</td>
+<td>toe<code v-pre>脚趾</code></td>
+</tr>
+<tr>
+<td>toilet paper<code v-pre>卫生纸</code></td>
+<td>restroom</td>
+<td>tog<code v-pre>衣服、服装</code></td>
+</tr>
+<tr>
+<td>toiletries<code v-pre>化妆品、洗漱用品</code> tries<code v-pre>尝试</code></td>
+<td>women's room|men's room</td>
+<td>toing<code v-pre>来回运动、来来往往</code></td>
+</tr>
+<tr>
+<td>toilet roll<code v-pre>卫生纸卷</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>toilet soap<code v-pre>香皂</code>soap<code v-pre>肥皂</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>toilet train<code v-pre>训练幼儿上厕所</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>toilet water<code v-pre>花露水</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Toilet：最常用的术语，可以指洗手间或者马桶。</span>
+I need to use the toilet.（我需要上厕所。）
+<span class="token comment">// Bathroom：在北美通常用来指代放有马桶和浴缸的洗手间。</span>
+The bathroom is down the hall.（厕所在走廊尽头。）
+<span class="token comment">// Lavatory：通常指的是公共场y所的厕所，比如在机场或者火车站。</span>
+The airport lavatory was clean and well-maintained.（机场的洗手间很干净，维护得也很好。）
+<span class="token comment">// Loo：在英国口语中常用，比较随意和非正式。</span>
+Excuse me<span class="token punctuation">,</span> where is the loo?（对不起，请问厕所在哪？）
+<span class="token comment">// Restroom：在美国比较常见，用于商业场所或公共场所。</span>
+You can find the restroom at the end of the hallway.（你可以在走廊尽头找到洗手间。）
+<span class="token comment">// Women‘s room：用于指代供女性使用的洗手间。</span>
+There‘s a long line for the women’s room.（女洗手间排了很长的队。）
+<span class="token comment">// Men's room：用于指代供男性使用的洗手间。</span>
+The men’s room is out of order.（男洗手间坏了。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_16、attend" tabindex="-1"><a class="header-anchor" href="#_16、attend" aria-hidden="true">#</a> 16、attend</h3>
+<p>参加</p>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// 出席某一事件</span>
+to be present at an event
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attend<code v-pre>出席、参加、注意、专心</code></td>
+<td>participate<code v-pre> 参加、参与</code></td>
+<td>intent<code v-pre>意图、目的</code></td>
+</tr>
+<tr>
+<td>attendance<code v-pre>出席、上学、到场</code></td>
+<td>join<code v-pre>加入</code></td>
+<td>attest<code v-pre>证实、是...的证据</code></td>
+</tr>
+<tr>
+<td>be in attendance<code v-pre>出席特别活动</code></td>
+<td>be present<code v-pre>出席</code></td>
+<td>attic<code v-pre>阁楼、楼顶</code></td>
+</tr>
+<tr>
+<td>take attendance<code v-pre>点名</code></td>
+<td>take part<code v-pre>参与</code></td>
+<td>attar<code v-pre>精油、玫瑰油</code></td>
+</tr>
+<tr>
+<td>attendance allowance<code v-pre>护理津贴</code></td>
+<td>be in attendance<code v-pre>在场</code></td>
+<td>attempt<code v-pre>企图、尝试、试图</code></td>
+</tr>
+<tr>
+<td>attendant<code v-pre>服务员、侍者</code></td>
+<td>show up<code v-pre>出现</code></td>
+<td>attemped<code v-pre>未遂的、强奸/谋杀/抢劫未遂</code></td>
+</tr>
+<tr>
+<td>attendee<code v-pre>出席者、在场者</code></td>
+<td>witness<code v-pre>见证、目睹</code></td>
+<td></td>
+</tr>
+<tr>
+<td>attender<code v-pre>主席者</code></td>
+<td>be there<code v-pre>在场</code></td>
+<td></td>
+</tr>
+<tr>
+<td>attention<code v-pre>注意、专心、留心、注意力</code></td>
+<td>be on hand<code v-pre>在场</code></td>
+<td></td>
+</tr>
+<tr>
+<td>attentive<code v-pre>注意的、专项的、留心的</code></td>
+<td>attend to<code v-pre>照顾、照料</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Attend: 出席，参加</span>
+<span class="token comment">// 用于描述参加正式或非正式的活动、会议、课程等。</span>
+She attended the conference on climate change.（她参加了气候变化会议。）
+<span class="token comment">// Join: 加入</span>
+<span class="token comment">// 用于加入组织、团体、队伍等。</span>
+He joined the local volunteer group.（他加入了当地的志愿者团体。）
+<span class="token comment">// Be present: 出席</span>
+<span class="token comment">// 可以用来表示一个人真正地在某个地方或某个情境中</span>
+All employees should be present at the staff meeting.（所有员工都应该出席员工会议。）
+<span class="token comment">// Take part: 参与</span>
+<span class="token comment">// 强调参与活动、事务、项目等。</span>
+I will take part in the charity run next weekend.（我下周将参加慈善长跑。）
+<span class="token comment">// Be in attendance: 出席</span>
+<span class="token comment">// 强调在某个场合或事件中有出席者。</span>
+Many dignitaries were in attendance at the royal wedding.（很多显要人士出席了皇室婚礼。）
+<span class="token comment">// Show up: 出现</span>
+<span class="token comment">// 口语用法，表示出现在某地或事件上。</span>
+I was surprised that she didn't show up at the party.（我很惊讶她没出现在派对上。）
+<span class="token comment">// Witness: 目睹</span>
+<span class="token comment">// 描述亲眼看到某事发生。</span>
+I witnessed a beautiful sunrise this morning.（我今天早上目睹了美丽的日出。）
+<span class="token comment">// Be there: 在场</span>
+<span class="token comment">// 表示实际出席或参与某个事件或情况。</span>
+I will be there to support you during the competition.（我会在那里支持你参加比赛。）
+<span class="token comment">// Be on hand: 在场</span>
+<span class="token comment">// 表示有资格或能力提供帮助或支持。</span>
+Paramedics are always on hand at major events.（急救人员总是在重大事件现场待命。）
+<span class="token comment">// Attend to: 注意，照顾</span>
+<span class="token comment">// 表示关注或处理某人或某事。</span>
+The receptionist will attend to your needs as soon as possible.（接待员会尽快处理你的需求。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_17、planet" tabindex="-1"><a class="header-anchor" href="#_17、planet" aria-hidden="true">#</a> 17、planet</h3>
+<p>行星（planet Earth地球，planet Venus金星、planet Mars火星）</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 太空中围绕一颗恒星(如太阳)运行并接受其光线的大型圆形物体
+a large round object in space that moves around a star(such as the sun) an receives light from it
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plane飞机</td>
+<td>world<code v-pre>世界、地球</code></td>
+<td>plant<code v-pre>植物</code></td>
+</tr>
+<tr>
+<td>planeload<code v-pre>飞机载客量</code></td>
+<td>ort<code v-pre>天体、球体</code></td>
+<td>plane<code v-pre>飞机</code></td>
+</tr>
+<tr>
+<td>planet<code v-pre>行星</code></td>
+<td>globe<code v-pre>地球</code></td>
+<td>plan<code v-pre>计划</code></td>
+</tr>
+<tr>
+<td>planetarium<code v-pre>天文馆</code></td>
+<td>sphere<code v-pre>球体</code></td>
+<td>planned<code v-pre>计划的</code></td>
+</tr>
+<tr>
+<td>planetary<code v-pre>行星的</code></td>
+<td>exoplanet<code v-pre>外行星</code></td>
+<td>plankton<code v-pre>浮游生物</code></td>
+</tr>
+<tr>
+<td>plane tree<code v-pre>悬铃木</code></td>
+<td>celestial body<code v-pre>天体</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Planet (行星):指代绕太阳运行的天体，比如地球、火星、木星等。</span>
+地球是我们所居住的行星。 (The Earth is the planet we live on.)
+<span class="token comment">// World (世界，地球)可以指地球，也可以指整个宇宙或者某个特定的社会、领域或环境。</span>
+她是一个致力于改善世界的人。 (She is someone who is dedicated to making the world a better place.)
+<span class="token comment">// Orb (天体，球体)通常用来形容天体或球体，也可以表示球状物。</span>
+太阳是我们的恒星，而地球则是围绕太阳运转的天体。 (The Sun is our star<span class="token punctuation">,</span> and the Earth is the orb that revolves around it.)
+<span class="token comment">// Globe (地球)通常指地球，也可以是地球的一个缩微模型。</span>
+在地球上有各种不同的文化和传统。 (There are various different cultures and traditions on the globe.)
+<span class="token comment">// Sphere (球体)除了表示球体之外，也可引申为某个特定领域或范围。</span>
+他在艺术领域有着广泛的知识。 (He has extensive knowledge in the sphere of art.)
+<span class="token comment">// Exoplanet指绕不是太阳的恒星运行的行星，也可以称为外星球。</span>
+科学家已经发现了许多绕其他恒星运行的外行星。 (Scientists have discovered many exoplanets orbiting other stars.)
+<span class="token comment">// Celestial body 指天空中的任何天体，包括行星、卫星、恒星等。</span>
+我们可以在夜晚的天空中看到许多不同的天体。 (We can see many different celestial bodies in the night sky.)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_18、greatest" tabindex="-1"><a class="header-anchor" href="#_18、greatest" aria-hidden="true">#</a> 18、greatest</h3>
+<p>great大的、巨大的、数量大的、众多的、美妙的、极好的</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>通常表示该单词的最高级形式，即表示某一事物在该特征上是最高的。 例如： Fast（快） - Fastest（最快的）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>great  ape<code v-pre>猩猩科动物</code> ape<code v-pre>猿</code></td>
+<td>cool<code v-pre>令人倾佩的、时髦、漂亮</code></td>
+<td>green<code v-pre>绿色</code></td>
+</tr>
+<tr>
+<td>great auk<code v-pre>大海雀</code> auk<code v-pre>海雀</code></td>
+<td>fantastic<code v-pre>极好的、了不起的、非常愉快的</code></td>
+<td>greet<code v-pre>欢迎、迎接、问侯</code></td>
+</tr>
+<tr>
+<td>great britain<code v-pre>不大列颠</code></td>
+<td>fabulous<code v-pre>极好的、绝妙的</code></td>
+<td>grate<code v-pre>壁炉、擦碎</code></td>
+</tr>
+<tr>
+<td>great coat<code v-pre>厚长大衣</code></td>
+<td>terrific<code v-pre>了不起的、绝妙的</code></td>
+<td>greed<code v-pre>贪婪、贪欲</code></td>
+</tr>
+<tr>
+<td>great dane<code v-pre>丹麦大狗</code></td>
+<td>brilliant<code v-pre>极好的、绝妙的</code></td>
+<td>grant<code v-pre>授予、给予、承认</code></td>
+</tr>
+<tr>
+<td>greatly<code v-pre>非常、很、大大地</code></td>
+<td>awesome<code v-pre>极好的、令人惊叹的</code></td>
+<td></td>
+</tr>
+<tr>
+<td>great white shark<code v-pre>大白鲨</code> shark<code v-pre>鲨鱼</code></td>
+<td>very good<code v-pre>美妙的</code>非正式用语</td>
+<td></td>
+</tr>
+<tr>
+<td>greatest<code v-pre>最大的、最伟大的</code></td>
+<td>pleasant<code v-pre>令人愉快的</code> 非正式用语</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>enjoyable<code v-pre>令人愉快的</code>非正式用语</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Great (伟大的)可用来描述重要、杰出、卓越的事物或人，作为一种赞美。较于"good"，"great" 更侧重于强调某人或某物的卓越性。</span>
+她是一位伟大的领袖。 (She is a great leader.)
+<span class="token comment">// Cool (酷的)通常用来表示某物或某人很时髦、有魅力，或者值得称赞。与"good" 相比，"cool" 更侧重于形容某个事物或某个人的个性或外表的独特和迷人之处。</span>
+你的新发型看起来很酷。 (Your new hairstyle looks really cool.)
+<span class="token comment">// Fantastic (极好的)用来描述事物或人非常出色、令人印象深刻。与"good" 相比，"fantastic" 更用于强调某事物或某人的非凡之处。</span>
+他的演讲真是太棒了！(His speech was fantastic!)
+<span class="token comment">// Fabulous (绝妙的)用来赞美某事物或某人非常出色、令人满意。"Fabulous" 更侧重于描述某事物的非凡或优秀的程度。</span>
+这顿晚餐太棒了，太美味了！(The dinner was fabulous<span class="token punctuation">,</span> so delicious!)
+<span class="token comment">// Terrific (太棒了)用来表示某事物或某人非常好、令人印象深刻。与"good" 相比，"terrific" 更侧重于强调某事物的令人满意的特点。</span>
+这部电影真是太棒了，太激动人心了！(The movie was terrific<span class="token punctuation">,</span> really exciting!)
+<span class="token comment">// Brilliant (出色的)可以用来形容某人的才华或某事物的卓越表现。与"good"相比，"brilliant" 更侧重于形容某人或某事物的杰出之处。</span>
+他的演出真是太精彩了！(His performance was absolutely brilliant!)
+<span class="token comment">// Awesome (令人敬畏的)用来形容某事物或某人非常令人印象深刻或令人满意。相对于"good"，"awesome" 更强调某事物的令人赞叹的程度。</span>
+这场音乐会太棒了，太震撼了！(The concert was awesome<span class="token punctuation">,</span> so amazing!)
+<span class="token comment">// Very Good (非常好)直接表达事物或人的好的程度，用于正式场合或较为正式的语境。与其他词汇相比，"very good" 作为更为正式的表达方式，侧重于说明某人或某物的出色程度。</span>
+这次考试我取得了非常好的成绩。(I got a very good result in the exam.)
+<span class="token comment">// Pleasant (愉快的)用来描述事物或环境令人感到愉快和舒适的。"Pleasant" 可能更偏向于形容环境或气氛的愉悦程度，相对较为温和。</span>
+这里的气氛真是宜人。(The atmosphere here is very pleasant.)
+<span class="token comment">// Enjoyable (令人愉快的)描述某事物或活动使人感到快乐和愉悦。与其他词汇相比，"enjoyable" 更倾向于描述给人带来愉悦感受的事物或活动。</span>
+我们度过了一个非常愉快、有趣的晚上。(We had a very enjoyable and fun evening.)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_19、regularly" tabindex="-1"><a class="header-anchor" href="#_19、regularly" aria-hidden="true">#</a> 19、regularly</h3>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>regular: 有规律的、规则的
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_20、distinguished" tabindex="-1"><a class="header-anchor" href="#_20、distinguished" aria-hidden="true">#</a> 20、distinguished</h3>
 </div></template>
 
 

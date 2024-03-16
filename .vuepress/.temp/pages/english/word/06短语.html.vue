@@ -66,6 +66,20 @@ The plant is known as the <span class="token string">"Miracle Tree"</span> becau
 <span class="token class-name">Grown</span><span class="token operator">-</span>ups are like that<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>  <span class="token comment">// 成人都是这样的</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="make-out" tabindex="-1"><a class="header-anchor" href="#make-out" aria-hidden="true">#</a> make out</h3>
 <p>辨认出</p>
-<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code></code></pre><div class="line-numbers" aria-hidden="true"></div></div></div></template>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// 辨认出、理解或看清楚：指难以辨认或理解某事物。</span>
+I can just make out the words on the sign in the distance.
+It‘s hard to make out what she’s saying from this distance.
+<span class="token comment">// 热吻或亲密接触：通常用于形容两人进行热吻或亲密接触。</span>
+They were making out on the park bench.
+<span class="token comment">// 填写或开具（支票、标签等）：指填写或开具文件或票据。</span>
+Please make out a check to the charity organization.
+She made out the shipping label and attached it to the package.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="later-on" tabindex="-1"><a class="header-anchor" href="#later-on" aria-hidden="true">#</a> later on</h3>
+<p>随后</p>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Later on" 是一个常见的短语，用来表示在未来某个时间或在接下来的某个时刻。它通常用于对某个事件或行动的时间进行安排或安排未来计划。例如：</span>
+We can discuss the details later on. <span class="token comment">// 我们可以以后再讨论详情。</span>
+I‘ll finish this task<span class="token punctuation">,</span> and later on<span class="token punctuation">,</span> I’ll join the meeting. <span class="token comment">// 我会完成这项任务，然后随后参加会议。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="just-so" tabindex="-1"><a class="header-anchor" href="#just-so" aria-hidden="true">#</a> just so</h3>
+</div></template>
 
 

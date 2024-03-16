@@ -1,4 +1,4 @@
-```
+```java
 @Slf4j
 @Component
 public class AsyncManager {

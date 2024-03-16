@@ -1,4 +1,4 @@
-```
+```java
 public class HttpUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(HttpUtils.class);
 
