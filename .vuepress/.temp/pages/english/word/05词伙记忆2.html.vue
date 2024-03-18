@@ -178,19 +178,19 @@ thing that you do often and almost without thinking, especially sth that is hard
 </tbody>
 </table>
 <div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// Habit：通常指的是个人的习惯，强调某种行为已经成为一个人的常规行为。</span>
-<span class="token comment">// 使用场景：描述一个人的日常习惯、行为模式或长期养成的习惯。</span>
+<span class="token comment">// ：描述一个人的日常习惯、行为模式或长期养成的习惯。</span>
 He has a habit of reading before going to bed.（他有睡前阅读的习惯。）
 <span class="token comment">// Custom：通常指的是社会、文化或群体的习俗、风俗或传统习惯。</span>
-<span class="token comment">// 使用场景：描述某个地区、民族或群体的文化习俗、传统或社会行为规范。</span>
+<span class="token comment">// ：描述某个地区、民族或群体的文化习俗、传统或社会行为规范。</span>
 In some cultures<span class="token punctuation">,</span> it is a custom to remove shoes before entering a home.（在某些文化中，进入家中之前要脱鞋，这是一种习俗。）
 <span class="token comment">// Practice：强调通过反复的练习或实践来提高技能、能力或达到某种目标。</span>
-<span class="token comment">// 使用场景：描述一个人在学习、工作或生活中为了提高技能、能力或达到某种目标而进行的反复练习。</span>
+<span class="token comment">// ：描述一个人在学习、工作或生活中为了提高技能、能力或达到某种目标而进行的反复练习。</span>
 She practices playing the piano every day to improve her skills.（她每天练习弹钢琴以提高技能。）
 <span class="token comment">// Routine：指的是一系列固定的、例行的、常规的活动或程序。</span>
-<span class="token comment">// 使用场景：描述日常生活中的固定程序、工作流程或活动安排。</span>
+<span class="token comment">// ：描述日常生活中的固定程序、工作流程或活动安排。</span>
 He follows a daily routine of exercise and healthy eating.（他遵循每天锻炼和健康饮食的例行程序。）
 <span class="token comment">// Tradition：强调某种行为、信仰或价值观在历史上长期传承下来，具有一定的文化、宗教或社会意义。</span>
-<span class="token comment">// 使用场景：描述某个地区、民族或群体的传统节日、习俗、文化遗产或价值观念。</span>
+<span class="token comment">// ：描述某个地区、民族或群体的传统节日、习俗、文化遗产或价值观念。</span>
 On Thanksgiving<span class="token punctuation">,</span> Americans have a tradition of gathering with family and friends to celebrate.（在感恩节，美国人有与家人和朋友团聚庆祝的传统。）
 <span class="token comment">// Hobby 指的是个人爱好或消遣活动，是一种自愿从事的、非职业性的活动。</span>
 “Reading is my hobby.”（阅读是我的爱好。）
@@ -421,22 +421,22 @@ from one end or side of sth to the other. <span class="token comment">// 从一�
 </tbody>
 </table>
 <div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// far：指距离或时间上的远，通常用于描述物理距离或时间上的差距，如“far away”（遥远），“far in the future”（遥远的未来）。</span>
-使用场景：描述距离或时间上的远。
+：描述距离或时间上的远。
 The sun is far away from the earth.
 <span class="token comment">// remote：强调远离或难以到达的程度，通常用于描述地理位置或情感上的遥远，如“remote island”（偏远的岛屿），“remote control”（遥控器）。</span>
-使用场景：描述地理位置或情感上的遥远。
+：描述地理位置或情感上的遥远。
 She feels very remote from her family.
 <span class="token comment">// wireless：指无需通过电线或电缆进行传输的技术，通常用于描述电子设备或通信技术，如“wireless network”（无线网络），“wireless phone”（无线电话）。</span>
-使用场景：描述电子设备或通信技术。
+：描述电子设备或通信技术。
 He uses a wireless mouse and keyboard to work on his computer.
 <span class="token comment">// long-distance：强调长距离的性质，通常用于描述通信或运输方式，如“long-distance call”（长途电话），“long-distance running”（长跑）。</span>
-使用场景：描述通信或运输方式。
+：描述通信或运输方式。
 We had a long-distance phone call with our friends in Australia.
 <span class="token comment">// away：指离开或远离某个地方或物体，通常用于描述位置或方向，如“away from home”（离家），“go away”（走开）。</span>
-使用场景：描述位置或方向。
+：描述位置或方向。
 She went away for a weekend to relax.
 <span class="token comment">// distant：强调距离上的遥远或关系上的疏远，通常用于描述人或事物之间的距离或关系，如“distant relative”（远房亲戚），“distant memory”（遥远的记忆）。</span>
-使用场景：描述人或事物之间的距离或关系。
+：描述人或事物之间的距离或关系。
 They have a distant relationship<span class="token punctuation">,</span> but they still care about each other.
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_8、asteroid" tabindex="-1"><a class="header-anchor" href="#_8、asteroid" aria-hidden="true">#</a> 8、asteroid</h3>
 <p>小行星</p>
@@ -1165,7 +1165,150 @@ a large round object in space that moves around a star(such as the sun) an recei
 我们度过了一个非常愉快、有趣的晚上。(We had a very enjoyable and fun evening.)
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_19、regularly" tabindex="-1"><a class="header-anchor" href="#_19、regularly" aria-hidden="true">#</a> 19、regularly</h3>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>regular: 有规律的、规则的
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_20、distinguished" tabindex="-1"><a class="header-anchor" href="#_20、distinguished" aria-hidden="true">#</a> 20、distinguished</h3>
-</div></template>
+following a pattern especially with the same time and space in between each thing and the next。
+遵循一种模式，特别是每件事和下件事之间有相同的时间和空间
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>regularity<code v-pre>规律性、经常性</code></td>
+<td>frequently<code v-pre>经常、频繁</code></td>
+<td>regally<code v-pre>皇家的</code></td>
+</tr>
+<tr>
+<td>regularize<code v-pre>使合法化、使正式存在</code></td>
+<td>habitually<code v-pre>习惯性的、日常的</code></td>
+<td>regulate<code v-pre>调整、控制</code></td>
+</tr>
+<tr>
+<td>regularly<code v-pre>有规律的、间隙均匀的、定期的</code></td>
+<td>consistently<code v-pre>一贯的</code></td>
+<td>regretfully<code v-pre>遗憾的、失望的</code></td>
+</tr>
+<tr>
+<td>regulate<code v-pre>约束、控制、管理</code></td>
+<td>routinely<code v-pre>常规的、例行公事的</code></td>
+<td>lrregular<code v-pre>不规则的、不整齐的</code></td>
+</tr>
+<tr>
+<td>regulation<code v-pre>章程、规章制度</code></td>
+<td>often<code v-pre>经常、时常</code></td>
+<td>lrregularly<code v-pre>不规则地，不定期地</code></td>
+</tr>
+<tr>
+<td>regulator<code v-pre>监管者、监管机构</code></td>
+<td>repeatedly<code v-pre>反复、再三</code></td>
+<td></td>
+</tr>
+<tr>
+<td>regulatory<code v-pre>具有监管权的、监管的</code></td>
+<td>recurrently<code v-pre>循环的</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// regularly - 意味着按照一个固定的时间表或模式进行。这表示某件事以一种有规律的方式发生或完成。</span>
+She goes to the gym regularly. (她经常去健身房。)
+<span class="token comment">// frequently - 意味着发生或发生间隔很短。这强调的是事件的高频率。</span>
+He frequently checks his email. (他频繁地查看电子邮件。)
+<span class="token comment">// habitually - 意味着以一种习惯性的方式发生。这表示某种行为成为一种习惯。</span>
+She habitually arrives late to work. (她习惯性地迟到上班。)
+<span class="token comment">// consistently - 意味着行为或结果是持续且稳定的。这表示某个行为或者结果具有一贯性。</span>
+He consistently performs well in his exams. (他考试成绩持续稳定优秀。)
+<span class="token comment">// routinely - 意味着按照日常的例行程序进行。这表示某项任务按基本的程序或规定进行。</span>
+She routinely begins her day with a cup of coffee. (她每天例行地以一杯咖啡开始一天。)
+<span class="token comment">// often - 意味着“时常”，表示某事发生得比平均水平更频繁。</span>
+He often goes for a run in the morning. (他经常在早晨去慢跑。)
+<span class="token comment">// repeatedly - 意味着一再地，表示某事发生多次，可能是连续的或经常性的。</span>
+The dog barked repeatedly at the mailman. (那只狗一再地对着送报人叫。)
+<span class="token comment">// recurrently - 意味着反复地或周期性地发生。强调某事以循环或重复的方式发生。</span>
+She has a recurrently bad cough. (她反复咳嗽。)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_20、distinguished" tabindex="-1"><a class="header-anchor" href="#_20、distinguished" aria-hidden="true">#</a> 20、distinguished</h3>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code>distinguish<span class="token operator">:</span> 区分、辨别、分清
+<span class="token comment">// 辨认出两个人或两件事的不同</span>
+to recognize the difference between two people or things. 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th>前缀</th>
+<th>近义词</th>
+<th>易混</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distinct<code v-pre>清楚的、明白的、明显的</code></td>
+<td>differentiate<code v-pre>区别、使不同</code></td>
+<td>extension<code v-pre>扩大、延长</code></td>
+</tr>
+<tr>
+<td>distinction<code v-pre>差别、区别、对比</code></td>
+<td>discriminate<code v-pre>区分、区别对待</code></td>
+<td>distinguishable<code v-pre>可辨别的</code></td>
+</tr>
+<tr>
+<td>distinguish<code v-pre>区分、辨别、分清</code></td>
+<td>different<code v-pre>分别的、与众不同的</code></td>
+<td>extinguish<code v-pre>熄灭、消灭</code></td>
+</tr>
+<tr>
+<td>distinguished<code v-pre>卓越的、杰出的、高贵的</code></td>
+<td>identify<code v-pre>身份、明确</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>separate <code v-pre>分离、单独的</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>contrast<code v-pre>对比、差异</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>discern<code v-pre>看出、察觉、了解</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>recognize<code v-pre>认识、辨别出</code></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>characterize<code v-pre>描述、刻画</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// Distinguished (显赫的，卓越的)：通常用于描述有声望、杰出或卓越的人或事物。也可以表示个人在某方面取得了杰出的成就。</span>
+<span class="token class-name">He</span> is a distinguished professor at the university<span class="token punctuation">.</span> <span class="token punctuation">(</span>他是该大学的杰出教授。<span class="token punctuation">)</span>
+<span class="token comment">// Differentiate (区分，区别)：表示辨别或区分不同的事物，以及理解它们之间的差异。</span>
+<span class="token class-name">It</span>'s important <span class="token keyword">to</span> <span class="token namespace">differentiate</span> between the two species<span class="token punctuation">.</span> <span class="token punctuation">(</span>区分这两种物种很重要。<span class="token punctuation">)</span>
+<span class="token comment">// Discriminate (歧视，区别对待)：具有贬义，表示不公正地对待某个人或群体，或者歧视某个特定的事物。</span>
+<span class="token class-name">It</span>'s wrong <span class="token keyword">to</span> <span class="token namespace">discriminate</span> against people based on their race<span class="token punctuation">.</span> <span class="token punctuation">(</span>以种族为由对人进行歧视是错误的。<span class="token punctuation">)</span>
+<span class="token comment">// Different (不同的，不同之处)：用来描述事物之间的差异，比较两个或多个事物之间的不同之处。</span>
+<span class="token class-name">They</span> have different opinions on <span class="token keyword">this</span> matter<span class="token punctuation">.</span> <span class="token punctuation">(</span>他们对这件事有不同的看法。<span class="token punctuation">)</span>
+<span class="token comment">// Identify (识别，辨认)：指出或确定某个人或事物的身份或特征，或者辨认出特定的人或事物。</span>
+<span class="token class-name">I</span> can easily identify her by her distinctive red hair<span class="token punctuation">.</span> <span class="token punctuation">(</span>我可以很容易地通过她那与众不同的红发辨认出她。<span class="token punctuation">)</span>
+<span class="token comment">// Separate (分开，区分)：表示将两个或多个事物分开，或者辨认出它们之间的差异。</span>
+<span class="token class-name">Please</span> separate the recyclables from the regular trash<span class="token punctuation">.</span> <span class="token punctuation">(</span>请将可回收物与普通垃圾分开。<span class="token punctuation">)</span>
+<span class="token comment">// Contrast (对比，对照)：用于描述对两个或多个事物进行对比，强调它们之间的差异。</span>
+<span class="token class-name">The</span> colors of the two paintings contrast sharply <span class="token keyword">with</span> <span class="token namespace">each</span> other<span class="token punctuation">.</span> <span class="token punctuation">(</span>这两幅画的颜色形成鲜明的对比。<span class="token punctuation">)</span>
+<span class="token comment">// Discern (辨别，识别)：指出能够敏锐地察觉或辨别细微的差别或特征。</span>
+<span class="token class-name">It</span> was difficult <span class="token keyword">to</span> <span class="token namespace">discern</span> the details in the dark room<span class="token punctuation">.</span> <span class="token punctuation">(</span>在昏暗的房间里很难辨认出细节。<span class="token punctuation">)</span>
+<span class="token comment">// Recognize (认可，承认)：表示承认或者确认某人或某事的存在，或者承认某事物的价值、重要性等。</span>
+<span class="token class-name">She</span> was <span class="token keyword">finally</span> recognized <span class="token keyword">for</span> her contributions <span class="token keyword">to</span> <span class="token namespace">the</span> field<span class="token punctuation">.</span> <span class="token punctuation">(</span>她最终因为对该领域的贡献而得到了认可。<span class="token punctuation">)</span>
+<span class="token comment">// Characterize (描绘，刻画)：用于描述某人或某事物的特征或特点，一般用来表达某事物的本质或典型特征。</span>
+<span class="token class-name">His</span> reckless behavior characterizes him as a risk<span class="token operator">-</span>taker<span class="token punctuation">.</span> <span class="token punctuation">(</span>他鲁莽的行为表明他是一个爱冒险的人。<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

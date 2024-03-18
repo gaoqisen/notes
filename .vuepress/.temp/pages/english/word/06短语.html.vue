@@ -80,6 +80,22 @@ She made out the shipping label and attached it to the package.
 We can discuss the details later on. <span class="token comment">// 我们可以以后再讨论详情。</span>
 I‘ll finish this task<span class="token punctuation">,</span> and later on<span class="token punctuation">,</span> I’ll join the meeting. <span class="token comment">// 我会完成这项任务，然后随后参加会议。</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="just-so" tabindex="-1"><a class="header-anchor" href="#just-so" aria-hidden="true">#</a> just so</h3>
-</div></template>
+<p>就这样</p>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// "just so"的中文意思是“恰到好处”或“正是如此”。在口语中，它通常用来表示对别人的陈述或行为的确认，或者表示事情发生的方式或情况没有改变，仍然保持原样。</span>
+
+<span class="token comment">// 他总是把东西放得整整齐齐，就是这样。</span>
+He always keeps everything organized just so.
+<span class="token comment">// 你们要在下一个街道左转。 就这样，我会在下一个街道左转。</span>
+You need to turn left on the next street.  Just so<span class="token punctuation">,</span> I‘ll turn at the next street.
+<span class="token comment">//"just so"也有另外一个意思，即按照出自英国作家鲁道夫·基普林所著《Just So Stories》（《童话故事》）一书，称为“童话故事”的意思。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="go-on-hand-in-hand" tabindex="-1"><a class="header-anchor" href="#go-on-hand-in-hand" aria-hidden="true">#</a> go on hand in hand</h3>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token comment">// 表示两个或两者之间的密切关联、密不可分，或者共同前进、共同发展。它通常用来形容两个事物、两个行为或两个人之间关系密切，一同前进或者相互支持。</span>
+
+<span class="token comment">// 这个短语可以用在不同的语境中，比如：</span>
+In a successful marriage<span class="token punctuation">,</span> love and respect go on hand in hand.
+Economic growth and environmental protection should go on hand in hand.
+Hard work and determination go on hand in hand in achieving success.
+<span class="token comment">// 这个习语常常用来表达两种事物之间的密切联系，彼此之间不可分割，或者一同共同发展。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
