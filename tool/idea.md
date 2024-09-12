@@ -7,6 +7,23 @@ keywords: idea java
 description: 学习ideaDebug调试技巧
 ---
 
+## 常用插件
+
+- easyYapi: 文档同步工具
+- dubboTest：dubbo接口invoke调用
+- generate All Getter And Setter: 生成get set方法
+- GitToolBox: 查看每一行的提交记录
+- Grep Console: 控制台日志颜色调整
+- Json Parser: json数据格式化
+- MyBatisX: xml文件来回切换
+- ObjectHelper：类与类之间的转换方法生成
+- PlanUML Integration: UML画图
+- RestfulTool: 快捷建搜索rest接口
+- Translation：翻译插件
+- Database：自带的数据库工具
+- Remote Host：自带的远程连接工具SFTP
+- HttpClient: 自带的Http请求工具
+
 ## 快捷键
 
 ```
