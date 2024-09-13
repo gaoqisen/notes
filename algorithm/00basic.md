@@ -35,10 +35,12 @@ description: 一些algorithm学习，后期自己努力的方向。
     for(int i=0; i<3; i++) {
     	System.out.println(i);
     }
-    // O(n2)
+    // O(n^2)
     int[] arr = [1,2,3];
     for(int i=0; i<3; i++) {
-    	System.out.println(arr[i]);
+    	for(int j; j < 3; j++) {
+        System.out.println(arr[j]);
+      }
     }
     ```
 
