@@ -18,7 +18,7 @@ description: 学习ideaDebug调试技巧
 - MyBatisX: xml文件来回切换
 - ObjectHelper：类与类之间的转换方法生成
 - PlanUML Integration: UML画图
-- RestfulTool: 快捷建搜索rest接口
+- RestfulTool: 快捷建搜索rest接口.新版本idea endPoints已支持
 - Translation：翻译插件
 - Database：自带的数据库工具
 - Remote Host：自带的远程连接工具SFTP
