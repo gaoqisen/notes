@@ -87,6 +87,225 @@ PageTemplateHelper.init((start, end) -> {
 });
 ```
 
+### 1.4 分表任务执行助手
+
+配置
+```
+@Slf4j
+@Component
+public class SlaveDbConfig implements InitializingBean {
+    
+    public final static Map<String, SqlSessionFactory> SLAVE_DS_FACTORY_MAP = Maps.newHashMap();
+    
+    @Autowired
+    private AbstractDataSourceAdapter abstractDataSourceAdapter;
+    
+    @Autowired
+    private SpringBootShardingRuleConfigurationProperties shardingRule;
+    
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        initSlaveDsFactoryMap();
+    }
+
+    private void initSlaveDsFactoryMap() {
+        log.info("init slave SqlSessionFactory begin");
+        // 通过配置文件获取从库配置名
+        List<String> slaveDsNames = getSlaveDsNames(shardingRule);
+        // 获取所有数据库连接配置
+        final Map<String, DataSource> dataSourceMap = abstractDataSourceAdapter.getDataSourceMap();
+        Set<Entry<String, DataSource>> entries = dataSourceMap.entrySet();
+        for (Entry<String, DataSource> entry : entries) {
+            final String dsName = entry.getKey();
+            // 从库配置不为空，并且不在从库里则不处理
+            if (CollectionUtils.isNotEmpty(slaveDsNames)) {
+                if (!slaveDsNames.contains(dsName)) {
+                    continue;
+                }
+            }
+            SqlSessionFactoryBean sqlSessionFactoryBean = getSqlSessionFactoryBean(entry);
+            try {
+                SLAVE_DS_FACTORY_MAP.put(dsName, sqlSessionFactoryBean.getObject());
+            } catch (Exception e) {
+                log.error("init slave SqlSessionFactory exception, dsName={}", dsName, e);
+            }
+            log.info("init slave SqlSessionFactory ok {}", dsName);
+        }
+        log.info("init slave SqlSessionFactory end");
+    }
+    
+    private SqlSessionFactoryBean getSqlSessionFactoryBean(Entry<String, DataSource> entry) {
+        final DataSource dataSource = entry.getValue();
+        // 必须为每个数据源创建不同的SqlSessionFactory,不能移到for循环外
+        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+        sqlSessionFactoryBean.setDataSource(dataSource);
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        sqlSessionFactoryBean.setConfigLocation(resolver.getResource("classpath:/META-INF/mybatis/mybatis-config.xml"));
+        // 添加xml路径
+        Resource[] resources = new Resource[]{resolver.getResource("classpath:/sql/CreditApplyMapper.xml"),
+                resolver.getResource("classpath:/sql/TestMapper.xml")};
+        sqlSessionFactoryBean.setMapperLocations(resources);
+        return sqlSessionFactoryBean;
+    }
+    
+    /**
+     * 获取所有从库的 ds name
+     */
+    private List<String> getSlaveDsNames(SpringBootShardingRuleConfigurationProperties shardingRule) {
+        List<String> slaveDsNames = new ArrayList<>();
+        if (null == shardingRule) {
+            return slaveDsNames;
+        }
+        Map<String, YamlMasterSlaveRuleConfiguration> masterSlaveRules = shardingRule.getMasterSlaveRules();
+        if (MapUtils.isEmpty(masterSlaveRules)) {
+            return slaveDsNames;
+        }
+        Set<Entry<String, YamlMasterSlaveRuleConfiguration>> entries = masterSlaveRules.entrySet();
+        for (Entry<String, YamlMasterSlaveRuleConfiguration> entry : entries) {
+            final YamlMasterSlaveRuleConfiguration yamlMasterSlaveRuleConfiguration = entry.getValue();
+            slaveDsNames.addAll(yamlMasterSlaveRuleConfiguration.getSlaveDataSourceNames());
+        }
+        return slaveDsNames;
+    }
+}
+
+```
+
+模板
+
+```
+@Slf4j
+public abstract class BatchTaskSplitHandleTemplate<T> {
+    private final Map<String, SqlSessionFactory> factoryMap;
+
+    /**
+     * 分表数量
+     */
+    private final int tableNum;
+
+    private Class<T> type;
+
+    public BatchTaskSplitHandleTemplate() {
+        this.factoryMap = SlaveDbConfig.SLAVE_DS_FACTORY_MAP;
+        this.tableNum = 128;
+
+        Type superClass = this.getClass().getGenericSuperclass();
+        if(superClass instanceof ParameterizedType) {
+            ParameterizedType parameterizedType = (ParameterizedType) superClass;
+            Type[] actualTypeArguments = parameterizedType.getActualTypeArguments();
+            if(actualTypeArguments.length > 0) {
+                this.type = (Class<T>)actualTypeArguments[0];
+            }
+        }
+    }
+
+    /**
+     * 执行任务
+     *
+     * @param begin 开始时间
+     * @param end 结束时间
+     * @param database 数据库名
+     * @param batchNum 批次处理数量
+     */
+    public void executeTake(Date begin, Date end, String database, Integer batchNum){
+        final Set<Map.Entry<String, SqlSessionFactory>> entries = factoryMap.entrySet();
+        T dynamicMapper;
+        SqlSessionFactory sqlSessionFactory;
+        for (Map.Entry<String, SqlSessionFactory> entry : entries) {
+            final String dsName = entry.getKey();
+            if (StringUtils.isNotBlank(database) && !StringUtils.equals(database, dsName)) {
+                continue;
+            }
+            sqlSessionFactory = factoryMap.get(dsName);
+            if (Objects.isNull(sqlSessionFactory)) {
+                log.info("执行任务 break:{}", dsName);
+                continue;
+            }
+            dynamicMapper = SqlSessionManager.newInstance(sqlSessionFactory).getMapper(type);
+            Long maxId = 0L;
+            for (Integer tableIndex = 0; tableIndex < tableNum; tableIndex++) {
+                while (true) {
+                    log.info("datasource={} tableIndex={} maxId={} begin", dsName, tableIndex, maxId);
+                    Long id = businessHandle(batchNum, tableIndex, maxId, dynamicMapper, begin, end);
+                    maxId = Objects.isNull(id) ? 0L : id;
+                    if (maxId == 0) {
+                        log.info("datasource={} tableIndex={} end", dsName, tableIndex);
+                        break;
+                    }
+                    log.info("datasource={} tableIndex={} maxId={} processing", dsName, tableIndex, maxId);
+                }
+            }
+        }
+    }
+
+    /**
+     * 业务处理抽象方法
+     *
+     * @param batchNum 限制数量
+     * @param tableIndex 表索引
+     * @param maxId 当前处理最大业务ID
+     * @param mapper 表mapper
+     * @param begin 开始时间
+     * @param end 结束时间
+     * @return 下一次处理的业务ID
+     */
+    public abstract Long businessHandle(Integer batchNum, Integer tableIndex, Long maxId, T mapper, Date begin, Date end);
+
+}
+```
+
+使用样例
+```
+
+<select id="selectByTableIndexAndExample" parameterType="map"
+        resultMap="com.oppo.finance.pandora.admin.dao.mysql.mapper.TestMapper.BaseResultMap">
+    select
+        *
+    from loan_apply_${tableIndex} limit ${example.startIndex} , ${example.pageSize}
+</select>
+
+
+@Slf4j
+@Component
+public class DemoService extends BatchTaskSplitHandleTemplate<TestExpandMapper> {
+
+
+    @Override
+    public Long businessHandle(Integer batchNum, Integer tableIndex, Long maxId,
+                               TestExpandMapper mapper, Date begin, Date end) {
+        DzTestExample example = new DzTestExample();
+        example.createCriteria()
+                .andIdGreaterThan(maxId)
+                .andCreateTimeBetween(begin, end);
+        example.limit(0, batchNum);
+        example.setOrderByClause("id ASC");
+        List<Test> TestList = mapper.selectByTableIndexAndExample(tableIndex, example);
+        if (CollectionUtils.isEmpty(TestList)) {
+            return 0L;
+        }
+
+
+        return TestList.stream().max(Comparator.comparing(Test::getId)).orElse(new Test()).getId();
+    }
+}
+
+
+public class DemoServiceTest extends BaseTest {
+    
+    @Autowired
+    private DemoService demoService;
+    
+    @Test
+    public void test() {
+        DateTime now = DateTime.now();
+        Date yesterday = now.minusDays(50).toDate();
+        Date today = now.toDate();
+        demoService.executeTake(yesterday, today, "database",100);
+    }
+}
+```
+
+
 ## 二、字符处理
 
 ### 2.1 字符替换
