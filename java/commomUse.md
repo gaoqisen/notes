@@ -140,7 +140,7 @@ System.out.println(bd.scale());
 ### 2.4 将指定数据放到第一位
 
 ```java
-    private static void specifyChannelFirst(List<PrivilegeChannelInfoDto> list, String channelCode) {
+    private static void specifyChannelFirst(List<InfoDto> list, String channelCode) {
         list.sort((a, b) -> {
             if (a.getChannelCode().equals(channelCode)) {
                 return -1;
@@ -151,6 +151,20 @@ System.out.println(bd.scale());
             }
         });
     }
+```
+
+### 2.5 一些技巧
+```
+1、分库分表场景，定时任务需要扫数据：获取从库的所有数据源（table_1, table_2...）,遍历数据源用id + limit查询并处理数据（limit 0, 10; limit 10, 10）
+2、测试环境不够，本地环境启动联调方案：
+ - 每个服务添加route-tag（local，test1，test2等）
+ - http接口header传递route-tag=local
+ - 网关根据header=local路由到对应服务
+ - dubbo接口根据route-tag路由：服务提供者将标签写到zookeeper，消费者调用时根据标签过滤提供者进行路由，没找到路由到就降级使用没有tag的路由
+ - rocketMq根据route-tag路由：tag方式、不同环境使用不同topic（SendMessageHook改写topic）、不同环境不同集群、同一个topci不同的ConsumerGroup、自定义AllocateMessageQueueStrategy实现灰度队列和正式队列的区分(将灰度label标记在灰度实例的ClientID中，并在分配队列时，将每个Broker的指定比例的前N个队列用于所有灰度消费者来进行分配)
+ https://github.com/apache/rocketmq/issues/3265
+
+
 ```
 
 ## 三、一些命令
