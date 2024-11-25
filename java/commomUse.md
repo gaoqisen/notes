@@ -90,7 +90,7 @@ PageTemplateHelper.init((start, end) -> {
 ### 1.4 分表任务执行助手
 
 配置
-```
+```java
 @Slf4j
 @Component
 public class SlaveDbConfig implements InitializingBean {
@@ -173,7 +173,7 @@ public class SlaveDbConfig implements InitializingBean {
 
 模板
 
-```
+```java
 @Slf4j
 public abstract class BatchTaskSplitHandleTemplate<T> {
     private final Map<String, SqlSessionFactory> factoryMap;
@@ -255,7 +255,7 @@ public abstract class BatchTaskSplitHandleTemplate<T> {
 ```
 
 使用样例
-```
+```java
 
 <select id="selectByTableIndexAndExample" parameterType="map"
         resultMap="com.oppo.finance.pandora.admin.dao.mysql.mapper.TestMapper.BaseResultMap">
