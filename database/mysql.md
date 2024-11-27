@@ -56,7 +56,7 @@ MHA
 
 半同步
 
-![半同步](https://gaoqisen.github.io/GraphBed/202411/20241127232950.png)
+![半同步](https://gaoqisen.github.io/GraphBed/202411/20241127233636.png)
 
 MHA+半同步
 

@@ -147,7 +147,7 @@
 <p>MHA</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202411/20241127232950.png" alt="MHA"></p>
 <p>半同步</p>
-<p><img src="https://gaoqisen.github.io/GraphBed/202411/20241127232950.png" alt="半同步"></p>
+<p><img src="https://gaoqisen.github.io/GraphBed/202411/20241127233636.png" alt="半同步"></p>
 <p>MHA+半同步</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202411/20241127234122.png" alt=""></p>
 <p>MGR</p>
