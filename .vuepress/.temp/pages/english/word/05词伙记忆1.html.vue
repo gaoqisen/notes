@@ -796,7 +796,7 @@ have been <span class="token keyword">to</span> <span class="token class-name">P
 <thead>
 <tr>
 <th>前缀</th>
-<th>前缀</th>
+<th>易混</th>
 </tr>
 </thead>
 <tbody>
@@ -822,7 +822,23 @@ have been <span class="token keyword">to</span> <span class="token class-name">P
 </tr>
 <tr>
 <td>through-other-eyes<code v-pre>通过别人的眼睛看</code></td>
+<td>caught(catch的过去分词)</td>
+</tr>
+<tr>
 <td></td>
+<td>brought（带来了）</td>
+</tr>
+<tr>
+<td></td>
+<td>bought<code v-pre>买了</code></td>
+</tr>
+<tr>
+<td>enough<code v-pre>足够</code></td>
+<td>though<code v-pre>虽然、可是、然而</code></td>
+</tr>
+<tr>
+<td>cough<code v-pre>咳嗽</code></td>
+<td>thought<code v-pre>认为、想法</code></td>
 </tr>
 </tbody>
 </table>

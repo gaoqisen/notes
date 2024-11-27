@@ -45,7 +45,7 @@ I</span> <span class="token operator">|</span> saw <span class="token operator">
 be动词：各种各样的是例如am, is, are等. 
 感官动词：看、听、闻、尝、感觉、变得、似乎、保持、证明
 */</span>
-<span class="token class-name">I</span> an iron <span class="token class-name">Man</span><span class="token punctuation">(</span><span class="token operator">|</span> 我是钢铁侠<span class="token punctuation">)</span>
+<span class="token class-name">I</span> am iron <span class="token class-name">Man</span><span class="token punctuation">(</span><span class="token operator">|</span> 我是钢铁侠<span class="token punctuation">)</span>
 <span class="token class-name">The</span> book is mine  
 <span class="token class-name">I</span> was six years old<span class="token punctuation">.</span>   <span class="token comment">// 过去用was，限制用am</span>
   

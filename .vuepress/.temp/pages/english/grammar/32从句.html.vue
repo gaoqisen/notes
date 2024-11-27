@@ -1,4 +1,5 @@
 <template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106222846.png" alt=""></p>
+<p>根据从句语法功能的不同可分为：主语从句、宾语从句、表语从句、同位语从句、定语从句和状语从句6类。</p>
 <h2 id="一、名词性从句" tabindex="-1"><a class="header-anchor" href="#一、名词性从句" aria-hidden="true">#</a> 一、名词性从句</h2>
 <p>用一个句子代替句子里面的一个名词。分为主语从句、宾语从句、表语从句、同位语从句</p>
 <h3 id="_1-1-主语" tabindex="-1"><a class="header-anchor" href="#_1-1-主语" aria-hidden="true">#</a> 1.1 主语</h3>
@@ -15,9 +16,9 @@ when， where<span class="token punctuation">,</span> how<span class="token punc
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2、注意点" tabindex="-1"><a class="header-anchor" href="#_2、注意点" aria-hidden="true">#</a> 2、注意点</h4>
 <p>1、经常用形式主语it放主语位置，真的主语后置</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 他赢得这场比赛是肯定的</span>
-<span class="token class-name">That</span> he will win the match is certain<span class="token punctuation">.</span>
+<span class="token class-name">That</span> he will win the match 'is certain'<span class="token punctuation">.</span>
 <span class="token comment">// 他一定会赢得这场比赛的</span>
-<span class="token class-name">It</span> is certain that he will win the match<span class="token punctuation">.</span>
+'<span class="token class-name">It</span> is certain' that he will win the match<span class="token punctuation">.</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2、一定不能放句首的情况</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// if/whether引导的主语从句</span>
 <span class="token class-name">It</span> is uncertain whether<span class="token operator">/</span><span class="token keyword">if</span> he will come <span class="token keyword">this</span> evening<span class="token punctuation">.</span>  <span class="token comment">// 不确定他今晚是否会来</span>
@@ -153,7 +154,8 @@ when<span class="token punctuation">,</span> where<span class="token punctuation
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>引导词的区别</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>how、whether，that可以引导同位语从句，不能引导定语从句
 that引导同位语从句时不能省略，引导定语从句经常省略
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、定语从句" tabindex="-1"><a class="header-anchor" href="#二、定语从句" aria-hidden="true">#</a> 二、定语从句</h2>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="二、形容词性从句" tabindex="-1"><a class="header-anchor" href="#二、形容词性从句" aria-hidden="true">#</a> 二、形容词性从句</h2>
+<h3 id="定语从句" tabindex="-1"><a class="header-anchor" href="#定语从句" aria-hidden="true">#</a> 定语从句</h3>
 <p>用来修饰一个名词或代词，对其进行详细的描述或限定。这个名词或代词被定语从句所修饰。定语从句通常由关系词引导，如who, whom, whose, which, that等。定语从句可以出现在句子中的不同位置，包括名词的前面或后面，这取决于所修饰的名词的位置。</p>
 <p>定语从句的作用是进一步说明或限定名词，并可以在句子中起到形容词的作用。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 这里，定语从句 "that I bought yesterday" 修饰名词 "book"，进一步说明了买的具体时间，并起到了形容词的作用。</span>
@@ -162,7 +164,7 @@ that引导同位语从句时不能省略，引导定语从句经常省略
 <p>先行词（名词/代词）：关系词前面的部分</p>
 <p>定语从句：先行词 + 关系词 + 从句</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">He</span> is 'the man' <span class="token operator">+</span> that <span class="token operator">+</span> '<span class="token class-name">I</span> saw yesterday'<span class="token punctuation">.</span>  <span class="token comment">// 他就是我昨天见的那个人</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_2-1-关系" tabindex="-1"><a class="header-anchor" href="#_2-1-关系" aria-hidden="true">#</a> 2.1 关系</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="_2-1-关系" tabindex="-1"><a class="header-anchor" href="#_2-1-关系" aria-hidden="true">#</a> 2.1 关系</h4>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 修饰人</span>
 who<span class="token punctuation">,</span> whose<span class="token punctuation">,</span> whom<span class="token punctuation">,</span> that<span class="token punctuation">.</span>  
 <span class="token comment">// 修饰物</span>
@@ -211,7 +213,7 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 <span class="token class-name">The</span> reason <span class="token keyword">for</span> which she was moved <span class="token keyword">to</span> <span class="token class-name">China</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>关系词修饰总结</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231223215228.png" alt=""></p>
-<h3 id="_2-2-注意点" tabindex="-1"><a class="header-anchor" href="#_2-2-注意点" aria-hidden="true">#</a> 2.2 注意点</h3>
+<h4 id="_2-2-注意点" tabindex="-1"><a class="header-anchor" href="#_2-2-注意点" aria-hidden="true">#</a> 2.2 注意点</h4>
 <p>1、只能用that的定语从句</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 1、先行词是everything, anything, nobody, nothing等代词，先行词被every,any,all,some,little等代词修饰</span>
 <span class="token class-name">You</span> have everything that you could ever need<span class="token punctuation">.</span>  <span class="token comment">// 你有你所能需要的一切</span>
@@ -241,13 +243,14 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 <span class="token class-name">Peter</span> was the only person who is a policeman<span class="token punctuation">.</span> <span class="token comment">// 皮特是唯一的警察</span>
 <span class="token comment">// 非限定定语从句</span>
 <span class="token class-name">I</span> have a car<span class="token punctuation">,</span> which is a sport car<span class="token punctuation">.</span> <span class="token comment">// 我有一辆车，它是一辆跑车</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、状语从句" tabindex="-1"><a class="header-anchor" href="#三、状语从句" aria-hidden="true">#</a> 三、状语从句</h2>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="三、副词性从句" tabindex="-1"><a class="header-anchor" href="#三、副词性从句" aria-hidden="true">#</a> 三、副词性从句</h2>
+<h3 id="状语从句" tabindex="-1"><a class="header-anchor" href="#状语从句" aria-hidden="true">#</a> 状语从句</h3>
 <p>状语从句是一个从句，它用来修饰、说明主句中的动作或状态。状语从句可以在一个句子中充当时间、地点、原因、条件、目的、方式等不同的状语成分。通常状语从句由连词引导，例如when, while, if, since, because, although, as等。</p>
 <p>状语从句和主句之间通常存在逻辑上的因果或逻辑关系，从而对主句中的动作或状态进行补充或解释。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 这里，“when I arrive”是一个时间状语从句，说明了"call"动作发生的时间。</span>
 <span class="token class-name">I</span> will call you when <span class="token class-name">I</span> arrive<span class="token punctuation">.</span>  <span class="token comment">// 我到了会给你打电话。</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>状语从句在句子中的位置灵活，可以出现在主句之前、之后甚至中间。在写作中，状语从句的正确使用可以丰富句子结构，使语言表达更加准确和丰富。相当于副词</p>
-<h3 id="_3-1-时间" tabindex="-1"><a class="header-anchor" href="#_3-1-时间" aria-hidden="true">#</a> 3.1 时间</h3>
+<h4 id="_3-1-时间" tabindex="-1"><a class="header-anchor" href="#_3-1-时间" aria-hidden="true">#</a> 3.1 时间</h4>
 <p>常见引导词：when、as、while、as soon as、before、after、since、not until、until/till</p>
 <p>特殊引导词：the minute, the moment, the second, every time, the day, the instant, immediately, directly, no sooner than, hardly when, scarcely when, as soon as</p>
 <p>用no sooner... than,  hardly...when, scarcely...when引导从句部分倒装</p>
@@ -256,7 +259,7 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 '<span class="token class-name">Every</span> time' <span class="token class-name">I</span> listen <span class="token keyword">to</span> <span class="token namespace">your</span> advice<span class="token punctuation">,</span> <span class="token class-name">I</span> get into trouble<span class="token punctuation">.</span> <span class="token comment">// 每当我听取你的建议时，我就会惹上麻烦</span>
 
 <span class="token char">'While'</span> john was watching <span class="token constant">TV</span><span class="token punctuation">,</span> his wife was cooking<span class="token punctuation">.</span>  <span class="token comment">// 当约翰看电视时，他的妻子正在做饭</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-2-地点" tabindex="-1"><a class="header-anchor" href="#_3-2-地点" aria-hidden="true">#</a> 3.2 地点</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-2-地点" tabindex="-1"><a class="header-anchor" href="#_3-2-地点" aria-hidden="true">#</a> 3.2 地点</h4>
 <p>常见引导词：where</p>
 <p>特殊引导词：wherever，anywhere，everywhere</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token char">'Wher'</span>e there is no rain<span class="token punctuation">,</span> farming is difficult or impossible<span class="token punctuation">.</span> <span class="token comment">// 在没有雨水的地方，耕作时困难的或根本不可能的</span>
@@ -264,19 +267,19 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 <span class="token class-name">They</span> were good persons<span class="token punctuation">,</span> <span class="token char">'Where'</span> they went<span class="token punctuation">,</span>there they were warmly welcomed<span class="token punctuation">.</span>  <span class="token comment">// 他们都是好人，因此他们走到哪里受到热烈欢迎</span>
 
 <span class="token class-name">You</span> should have put the book where you found it<span class="token punctuation">.</span>  <span class="token comment">// 你应该把书放回原来的地方</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-3-原因" tabindex="-1"><a class="header-anchor" href="#_3-3-原因" aria-hidden="true">#</a> 3.3 原因</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-3-原因" tabindex="-1"><a class="header-anchor" href="#_3-3-原因" aria-hidden="true">#</a> 3.3 原因</h4>
 <p>常见引导词：because、since、as</p>
 <p>特殊疑问词：seeing that、now、that、in that、considering（考虑）</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">My</span> friends dislike me 'because' <span class="token class-name">I</span> an handsome and successful<span class="token punctuation">.</span>  <span class="token comment">// 我的朋友都不喜欢我，因为我又英俊又成功</span>
 
 <span class="token class-name">Now</span> that everybody has come<span class="token punctuation">,</span> let is begin our conference<span class="token punctuation">.</span>  <span class="token comment">// 既然每个人都到了，让我们开始会议吧</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-4-目的" tabindex="-1"><a class="header-anchor" href="#_3-4-目的" aria-hidden="true">#</a> 3.4 目的</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-4-目的" tabindex="-1"><a class="header-anchor" href="#_3-4-目的" aria-hidden="true">#</a> 3.4 目的</h4>
 <p>常见引导词：so that、in order that（为了达到某个目的或结果）</p>
 <p>特殊引导词：lest、in case、for fear that、in the hope that(我希望)</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">The</span> boss asked the secretary <span class="token keyword">to</span> <span class="token namespace">hurry</span> up <span class="token keyword">with</span> <span class="token namespace">the</span> letters so that he could sign them<span class="token punctuation">.</span>  <span class="token comment">// 老板要求秘书赶快写信件以便他能在上面签字</span>
 
 <span class="token class-name">The</span> teacher raised his voice on purpose that the students in the back could hear more clearly<span class="token punctuation">.</span>  <span class="token comment">// 为了让后面的学生听得更清楚，老师有意地提高了他的声音</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-5-结果" tabindex="-1"><a class="header-anchor" href="#_3-5-结果" aria-hidden="true">#</a> 3.5 结果</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-5-结果" tabindex="-1"><a class="header-anchor" href="#_3-5-结果" aria-hidden="true">#</a> 3.5 结果</h4>
 <p>常用引导词：so...that,  such...that</p>
 <p>特殊引导词: such that(这样), to the degree(在某程度上), to the extend that(在某种程度上), to such a degree that(达到这样的程度)</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">It</span> is such a good chance that we must not miss it<span class="token punctuation">.</span> <span class="token comment">// 这是一个好机会，千万不要错过它</span>
@@ -284,31 +287,31 @@ China</span> is the country where <span class="token class-name">I</span> was bo
 <span class="token class-name">To</span> such a degree was he excited that he could not sleep last night<span class="token punctuation">.</span>  <span class="token comment">// 他激动到这个程度，以至于他昨晚睡不着</span>
 
 <span class="token class-name">This</span> news is exciting<span class="token punctuation">,</span> so that he jumped up<span class="token punctuation">.</span> <span class="token comment">// 这个消息太令人激动了，以至于他跳了起来</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-6-条件" tabindex="-1"><a class="header-anchor" href="#_3-6-条件" aria-hidden="true">#</a> 3.6 条件</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-6-条件" tabindex="-1"><a class="header-anchor" href="#_3-6-条件" aria-hidden="true">#</a> 3.6 条件</h4>
 <p>常见引导词：if，unless</p>
 <p>特殊引导词：as/so long as， only if， providing/provided that，  suppose that， in case that， on condition that</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">We</span>'ll start out project <span class="token keyword">if</span> the president agrees<span class="token punctuation">.</span>  <span class="token comment">// 如果总统同意，我们将开始这个项目</span>
 
 <span class="token class-name">You</span> will certainly succeed so <span class="token keyword">long</span> as you keep on trying<span class="token punctuation">.</span> <span class="token comment">// 只要你继续努力，你一定会成功的</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-7-让步" tabindex="-1"><a class="header-anchor" href="#_3-7-让步" aria-hidden="true">#</a> 3.7 让步</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-7-让步" tabindex="-1"><a class="header-anchor" href="#_3-7-让步" aria-hidden="true">#</a> 3.7 让步</h4>
 <p>常见引导词：though(虽然), although(尽管), even if(即使), even though(即使)</p>
 <p>特殊引导词：as(必须倒装)，while(一般句首)，no matter... (不论)，in spite of the fact that(尽管事实是), whatever(无论)，whoever(无论谁),  wherever(无论在哪里)， however(不管怎样), whichever(无论哪个)</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">The</span> old man always enjoys swimming even though the weather is rough<span class="token punctuation">.</span> <span class="token comment">// 这个老人喜欢游泳，即使天气很恶劣</span>
 
 <span class="token class-name">No</span> matter how hard he tried<span class="token punctuation">,</span> she could not change her mind<span class="token punctuation">.</span>  <span class="token comment">// 不论他如何努力，她都不会改变她的主意</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-8-比较" tabindex="-1"><a class="header-anchor" href="#_3-8-比较" aria-hidden="true">#</a> 3.8 比较</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-8-比较" tabindex="-1"><a class="header-anchor" href="#_3-8-比较" aria-hidden="true">#</a> 3.8 比较</h4>
 <p>常见引导词：as（同级比较），that（不同程度的比较）</p>
 <p>特殊疑问词：the more ... the more...(越来越)， just as ...(与...同样)，so...(所以)， a is to b what/as x is to y()，no...more than(不超过), not a so much as b</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">The</span> house is three times 'as big as' ours<span class="token punctuation">.</span> <span class="token comment">// 这房子是我们的三倍大</span>
 
 '<span class="token class-name">The</span> more' you exercise<span class="token punctuation">,</span> the healthier you will be<span class="token punctuation">.</span>  <span class="token comment">// 你运动的越多，你就越健康 </span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-9-方式" tabindex="-1"><a class="header-anchor" href="#_3-9-方式" aria-hidden="true">#</a> 3.9 方式</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-9-方式" tabindex="-1"><a class="header-anchor" href="#_3-9-方式" aria-hidden="true">#</a> 3.9 方式</h4>
 <p>常见引导词：as, as if, how</p>
 <p>特殊引导词：the way</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">She</span> behaved <span class="token char">'as if'</span> she were the boss<span class="token punctuation">.</span> <span class="token comment">// 她表现得好像她是老板</span>
 
 <span class="token class-name">We</span> teach our children 'the way' our parents have taught us<span class="token punctuation">.</span> <span class="token comment">// 我们用父母教导我们的方式教导我们的孩子</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-10-省略情况" tabindex="-1"><a class="header-anchor" href="#_3-10-省略情况" aria-hidden="true">#</a> 3.10 省略情况</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-10-省略情况" tabindex="-1"><a class="header-anchor" href="#_3-10-省略情况" aria-hidden="true">#</a> 3.10 省略情况</h4>
 <p>主句和从句的主语一致时，或者从句主句是it从句谓语动词是be动词 可以省略主语和be动词</p>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">When</span><span class="token punctuation">(</span>the museum is<span class="token punctuation">)</span> completed<span class="token punctuation">,</span> the museum will be <span class="token keyword">open</span> <span class="token keyword">to</span> <span class="token namespace">the</span> <span class="token keyword">public</span> next year<span class="token punctuation">.</span> <span class="token comment">// 当博物馆完成，该博物馆将于明年向公众开放</span>
 

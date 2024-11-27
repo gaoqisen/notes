@@ -1,5 +1,5 @@
 <template><div><p><img src="https://gaoqisen.github.io/GraphBed/202401/20240106155908.png" alt=""></p>
-<h2 id="、分类" tabindex="-1"><a class="header-anchor" href="#、分类" aria-hidden="true">#</a> 、分类</h2>
+<h2 id="一、分类" tabindex="-1"><a class="header-anchor" href="#一、分类" aria-hidden="true">#</a> 一、分类</h2>
 <p>1、时间副词：表示时间或频率</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217111620.png" alt=""></p>
 <p>2、地点副词</p>

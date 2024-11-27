@@ -1309,6 +1309,25 @@ to recognize the difference between two people or things.
 <span class="token class-name">She</span> was <span class="token keyword">finally</span> recognized <span class="token keyword">for</span> her contributions <span class="token keyword">to</span> <span class="token namespace">the</span> field<span class="token punctuation">.</span> <span class="token punctuation">(</span>她最终因为对该领域的贡献而得到了认可。<span class="token punctuation">)</span>
 <span class="token comment">// Characterize (描绘，刻画)：用于描述某人或某事物的特征或特点，一般用来表达某事物的本质或典型特征。</span>
 <span class="token class-name">His</span> reckless behavior characterizes him as a risk<span class="token operator">-</span>taker<span class="token punctuation">.</span> <span class="token punctuation">(</span>他鲁莽的行为表明他是一个爱冒险的人。<span class="token punctuation">)</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_21-fact" tabindex="-1"><a class="header-anchor" href="#_21-fact" aria-hidden="true">#</a> 21 fact</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token string">"Fact"</span> 和 <span class="token string">"truth"</span> 都是指描述事实或现实的概念，但它们在使用上略有不同。
+
+<span class="token comment">// "Fact" 通常用于描述被认为是真实的、可以验证的事实或情况。这些事实可能是基于观察、研究或经验，是具体的、可证实的数据或信息。</span>
+<span class="token string">"The fact that the earth revolves around the sun has been scientifically proven"</span>（地球绕着太阳转的事实已经被科学证实）。
+
+<span class="token comment">// "Truth" 则更加侧重于所描述的事物符合客观现实，而并非是虚构或主观看法。"Truth" 涉及到事物的真实性或确凿性，通常也涉及到更加抽象或哲学的概念。</span>
+<span class="token string">"It is important to always tell the truth"</span>（始终说实话是很重要的）。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_22-talk" tabindex="-1"><a class="header-anchor" href="#_22-talk" aria-hidden="true">#</a> 22 talk</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token string">"Talk,"</span> <span class="token string">"tell,"</span> 和 <span class="token string">"speak"</span> 都是描述口头交流的动词，但它们在使用上略有不同。
+
+<span class="token string">"Talk"</span> 通常指的是一种广泛的口头交流方式，可能是一种随意的、非正式的交谈
+<span class="token comment">// 例如："We talked about our plans for the weekend"（我们谈论了周末的计划）。</span>
+
+<span class="token comment">// "Tell" 侧重于传达信息或故事给某人，通常涉及把信息告诉别人。</span>
+<span class="token string">"Can you tell me what happened?"</span>（你能告诉我发生了什么事吗？）。
+
+<span class="token comment">// "Speak" 则更多指的是掌握一种语言进行口头表达的能力，也可以指以某种特定的方式用语言交流.</span>
+<span class="token string">"She speaks fluent Spanish"</span>（她讲一口流利的西班牙语）。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

@@ -96,6 +96,71 @@ In a successful marriage<span class="token punctuation">,</span> love and respec
 Economic growth and environmental protection should go on hand in hand.
 Hard work and determination go on hand in hand in achieving success.
 <span class="token comment">// 这个习语常常用来表达两种事物之间的密切联系，彼此之间不可分割，或者一同共同发展。</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="to-be" tabindex="-1"><a class="header-anchor" href="#to-be" aria-hidden="true">#</a> to be</h3>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token string">"To be"</span>是英文中最常用的动词之一，用来表示存在、状态、性质或身份等概念。它是英语中最基本、最重要的动词之一，在各种时态中都有重要的用法。
+
+<span class="token string">"To be"</span> 的时态和人称变化如下：
+
+<span class="token comment">// 现在时：</span>
+<span class="token class-name">I</span> am
+<span class="token class-name">You</span> are
+<span class="token class-name">He</span><span class="token operator">/</span><span class="token class-name">She</span><span class="token operator">/</span><span class="token class-name">It</span> is
+<span class="token class-name">We</span> are
+<span class="token class-name">They</span> are
+<span class="token comment">// 过去时：</span>
+<span class="token class-name">I</span> was
+<span class="token class-name">You</span> were
+<span class="token class-name">He</span><span class="token operator">/</span><span class="token class-name">She</span><span class="token operator">/</span><span class="token class-name">It</span> was
+<span class="token class-name">We</span> were
+<span class="token class-name">They</span> were
+<span class="token comment">// 将来时：</span>
+<span class="token class-name">I</span> will be
+<span class="token class-name">You</span> will be
+<span class="token class-name">He</span><span class="token operator">/</span><span class="token class-name">She</span><span class="token operator">/</span><span class="token class-name">It</span> will be
+<span class="token class-name">We</span> will be
+<span class="token class-name">They</span> will be
+  
+<span class="token comment">// "To be" 在句子中的用法有以下几种：</span>
+描述身份或特征：例如，<span class="token string">"I am a teacher."</span>（我是一名老师。）
+表示位置：例如，<span class="token string">"The book is on the table."</span>（书在桌子上。）
+表示临时状态：例如，<span class="token string">"She is sick."</span>（她病了。）
+作为助动词构成进行时态：例如，<span class="token string">"They are playing soccer."</span>（他们正在踢足球。）
+作为被动语态的主要动词之一：例如，<span class="token string">"The food was eaten."</span>（食物被吃掉了。）
+<span class="token string">"To be"</span> 也有一些特殊的形式，比如 <span class="token string">"am not"</span>、 <span class="token string">"isn't"</span>、 <span class="token string">"aren't"</span> 等，这些形式用于否定句或缩略句中。
+
+<span class="token comment">// "to be" 是一个不带人称和时态变化的不定式形式，通常在以下情况下直接使用：</span>
+当它作为其他动词的定语或补语时，例如：
+<span class="token class-name">It</span> is important <span class="token keyword">to</span> <span class="token namespace">be</span> on time<span class="token punctuation">.</span>（准时很重要。）
+<span class="token class-name">Her</span> dream is <span class="token keyword">to</span> <span class="token namespace">be</span> a doctor<span class="token punctuation">.</span>（她的梦想是成为一名医生。）
+当它在某些情况下作为句子的主语或补语时，例如：
+<span class="token class-name">To</span> be or not <span class="token keyword">to</span> <span class="token namespace">be</span><span class="token punctuation">,</span> that is the question<span class="token punctuation">.</span>（生存还是毁灭，这是个问题。）
+<span class="token class-name">His</span> main goal is <span class="token keyword">to</span> <span class="token namespace">be</span> happy<span class="token punctuation">.</span>（他的主要目标就是快乐。）
+当它在被动语态中作为主要动词时，例如：
+<span class="token class-name">The</span> car needs <span class="token keyword">to</span> <span class="token namespace">be</span> fixed<span class="token punctuation">.</span>（这辆车需要修理。）
+<span class="token class-name">The</span> decision is <span class="token keyword">to</span> <span class="token namespace">be</span> made by the committee<span class="token punctuation">.</span>（这个决定将由委员会来做出。）
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>to be here  // 在这里
+
+I don't like to be here. // 我不喜欢在这里
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="all-the-day" tabindex="-1"><a class="header-anchor" href="#all-the-day" aria-hidden="true">#</a> all the day</h3>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>名词短语：每一天
+
+I don't want to do here every day. 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="as-as" tabindex="-1"><a class="header-anchor" href="#as-as" aria-hidden="true">#</a> as...as...</h2>
+<p>一样</p>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code>形容词的比较：
+<span class="token string">"as + 形容词 + as + 名词/代词"</span>
+例如：<span class="token string">"He is as tall as his brother."</span>（他和他的兄弟一样高。）
+
+副词的比较：
+<span class="token string">"as + 副词 + as"</span>
+例如：<span class="token string">"She sings as beautifully as a professional."</span>（她唱得像专业歌手一样动听。）
+
+动词的比较：
+<span class="token string">"as + 动词 + as"</span>
+例如：<span class="token string">"He runs as fast as a cheetah."</span>（他跑得像一只猎豹一样快。）
+
+需要注意的是，在这种比较结构中，<span class="token string">"as"</span> 是一个连词，后面接形容词、副词或动词，用来表示相等或相似的程度。其中第一个 <span class="token string">"as"</span> 后面的词通常是形容词或副词，第二个 <span class="token string">"as"</span> 后面的词通常是名词、代词或动词。这个结构可以用来进行肯定的比较，也可以用来进行否定的比较，只需要在第一个 <span class="token string">"as"</span> 后面加上 <span class="token string">"not"</span>。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

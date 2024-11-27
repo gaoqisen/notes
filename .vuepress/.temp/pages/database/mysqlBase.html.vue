@@ -122,6 +122,7 @@ mysql&gt; explain select * from servers;
 </li>
 <li>
 <p>type: 数据访问/读取操作类型(<strong>从上到下，性能从差到好</strong>)</p>
+<p><code v-pre>const</code>（通过唯一索引或者主键直接定位一条记录）、<code v-pre>eq_ref</code>（对于前面表中的每一行，在当前表中通过唯一索引查找一行匹配数据）、<code v-pre>ref</code>（通过普通索引查找数据，可能返回多条匹配记录）、<code v-pre>range</code>（对索引进行范围查询，如使用<code v-pre>BETWEEN</code>、<code v-pre>&gt;</code>、<code v-pre>&lt;</code>等操作符）、<code v-pre>index</code>（全索引扫描，遍历整个索引来查找匹配数据）、<code v-pre>ALL</code>（全表扫描，性能最差，需要遍历整个表来查找数据）</p>
 <table>
 <thead>
 <tr>

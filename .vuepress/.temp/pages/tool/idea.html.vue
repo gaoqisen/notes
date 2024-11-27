@@ -1,4 +1,21 @@
-<template><div><h2 id="快捷键" tabindex="-1"><a class="header-anchor" href="#快捷键" aria-hidden="true">#</a> 快捷键</h2>
+<template><div><h2 id="常用插件" tabindex="-1"><a class="header-anchor" href="#常用插件" aria-hidden="true">#</a> 常用插件</h2>
+<ul>
+<li>easyYapi: 文档同步工具</li>
+<li>dubboTest：dubbo接口invoke调用</li>
+<li>generate All Getter And Setter: 生成get set方法</li>
+<li>GitToolBox: 查看每一行的提交记录</li>
+<li>Grep Console: 控制台日志颜色调整</li>
+<li>Json Parser: json数据格式化</li>
+<li>MyBatisX: xml文件来回切换</li>
+<li>ObjectHelper：类与类之间的转换方法生成</li>
+<li>PlanUML Integration: UML画图</li>
+<li>RestfulTool: 快捷建搜索rest接口.新版本idea endPoints已支持</li>
+<li>Translation：翻译插件</li>
+<li>Database：自带的数据库工具</li>
+<li>Remote Host：自带的远程连接工具SFTP</li>
+<li>HttpClient: 自带的Http请求工具</li>
+</ul>
+<h2 id="快捷键" tabindex="-1"><a class="header-anchor" href="#快捷键" aria-hidden="true">#</a> 快捷键</h2>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>// 多行选中
 Column Selection Mode
 // 修改所有变量名
