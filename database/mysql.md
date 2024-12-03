@@ -225,6 +225,22 @@ private static boolean visibility(UndoLog undoLog, ReadView readView) {
 
 这样 mysql 就用了事务的隔离级别解决了多线程并发读写冲突的问题。
 
+| 事物级别         | 脏读 | 不可重复读 | 幻读 |                |
+| ---------------- | ---- | ---------- | ---- | -------------- |
+| read uncommitted | True | True       | True | 会读取回滚数据 |
+| read committed   |      | True       | True | mvcc快照读最新 |
+| repeatable read  |      |            | True | mvcc复用快照读 |
+| serialize        |      |            |      | 加锁           |
+
+Oracle默认隔离级别为read committed， Msql默认为repeatable read。有时候会将隔离级别改为read committed，即可以出现不可重复读和幻读，这样在事务中就可以获取最新的数据。
+
+```mysql
+## 查询数据库当前默认隔离级别
+SELECT @@transaction_isolation;
+```
+
+
+
 ## 五、查询语句优化
 
 索引

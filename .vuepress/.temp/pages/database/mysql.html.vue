@@ -275,7 +275,51 @@
 <span class="token punctuation">}</span>
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这样 mysql 就用了事务的隔离级别解决了多线程并发读写冲突的问题。</p>
-<h2 id="五、查询语句优化" tabindex="-1"><a class="header-anchor" href="#五、查询语句优化" aria-hidden="true">#</a> 五、查询语句优化</h2>
+<table>
+<thead>
+<tr>
+<th>事物级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>read uncommitted</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>会读取回滚数据</td>
+</tr>
+<tr>
+<td>read committed</td>
+<td></td>
+<td>True</td>
+<td>True</td>
+<td>mvcc快照读最新</td>
+</tr>
+<tr>
+<td>repeatable read</td>
+<td></td>
+<td></td>
+<td>True</td>
+<td>mvcc复用快照读</td>
+</tr>
+<tr>
+<td>serialize</td>
+<td></td>
+<td></td>
+<td></td>
+<td>加锁</td>
+</tr>
+</tbody>
+</table>
+<p>Oracle默认隔离级别为read committed， Msql默认为repeatable read。有时候会将隔离级别改为read committed，即可以出现不可重复读和幻读，这样在事务中就可以获取最新的数据。</p>
+<div class="language-mysql line-numbers-mode" data-ext="mysql"><pre v-pre class="language-mysql"><code>## 查询数据库当前默认隔离级别
+SELECT @@transaction_isolation;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、查询语句优化" tabindex="-1"><a class="header-anchor" href="#五、查询语句优化" aria-hidden="true">#</a> 五、查询语句优化</h2>
 <p>索引</p>
 <p>索引失效</p>
 <p>执行计划</p>
