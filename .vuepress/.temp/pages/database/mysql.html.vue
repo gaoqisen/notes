@@ -320,10 +320,13 @@
 <div class="language-mysql line-numbers-mode" data-ext="mysql"><pre v-pre class="language-mysql"><code>## 查询数据库当前默认隔离级别
 SELECT @@transaction_isolation;
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、查询语句优化" tabindex="-1"><a class="header-anchor" href="#五、查询语句优化" aria-hidden="true">#</a> 五、查询语句优化</h2>
-<p>索引</p>
-<p>索引失效</p>
-<p>执行计划</p>
-<p>成本计算</p>
+<p>数据记录的数据量级增多后，如果是挨个查询的效率就很低了。这时候为了快速查找，就像一本书的目录一样会给数据建立索引。索引建立之后就能快速的定位数据。Mysql 的索引是使用的B+Tree 实现的，普通节点记录索引数据，叶子节点记录具体的数据。</p>
+<p>Mysql 中如果定义了主键，就会把主键作为默认的聚簇索引，聚簇索引的叶子节点就记录了所有的数据。在创建普通索引的时候是按照创建的字段进行索引的，索引的指针是指向聚簇索引的位置。如果普通索引查询的字段不是普通索引的字段（覆盖索引）这时候就需要进行回表操作，也就是先通过普通索引找到聚簇索引的值，在通过聚簇索引找到具体的数据。</p>
+<p>那么优化查询语句的时候，就需要从建立合适的索引+查询语句使用索引的方向去优化。</p>
+<h3 id="_5-1-选择合适的索引" tabindex="-1"><a class="header-anchor" href="#_5-1-选择合适的索引" aria-hidden="true">#</a> 5.1 选择合适的索引</h3>
+<h3 id="_5-2-避免索引失效" tabindex="-1"><a class="header-anchor" href="#_5-2-避免索引失效" aria-hidden="true">#</a> 5.2  避免索引失效</h3>
+<h3 id="_5-3-执行计划" tabindex="-1"><a class="header-anchor" href="#_5-3-执行计划" aria-hidden="true">#</a> 5.3 执行计划</h3>
+<h3 id="_5-4-成本计算" tabindex="-1"><a class="header-anchor" href="#_5-4-成本计算" aria-hidden="true">#</a> 5.4 成本计算</h3>
 </div></template>
 
 
