@@ -316,7 +316,7 @@
 </tr>
 </tbody>
 </table>
-<p>Oracle默认隔离级别为read committed， Msql默认为repeatable read。有时候会将隔离级别改为read committed，即可以出现不可重复读和幻读，这样在事务中就可以获取最新的数据。</p>
+<p>Oracle默认隔离级别为read committed， Msql默认为repeatable read。生产会将隔离级别改为read committed，即可以出现不可重复读和幻读，这样在事务中就可以获取最新的数据。</p>
 <div class="language-mysql line-numbers-mode" data-ext="mysql"><pre v-pre class="language-mysql"><code>## 查询数据库当前默认隔离级别
 SELECT @@transaction_isolation;
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、查询语句优化" tabindex="-1"><a class="header-anchor" href="#五、查询语句优化" aria-hidden="true">#</a> 五、查询语句优化</h2>
@@ -346,9 +346,293 @@ SELECT @@transaction_isolation;
 <li>哈希索引：查询效率极高，不支持范围查询、排序和分组, 一般用 redis 缓存实现</li>
 <li>全文索引：检索博客里面的文本数据时，一般用的是 Elasticsearch</li>
 </ul>
-<p>5.2  避免索引失效</p>
-<h3 id="_5-3-执行计划" tabindex="-1"><a class="header-anchor" href="#_5-3-执行计划" aria-hidden="true">#</a> 5.3 执行计划</h3>
+<h3 id="_5-2-避免索引失效" tabindex="-1"><a class="header-anchor" href="#_5-2-避免索引失效" aria-hidden="true">#</a> 5.2  避免索引失效</h3>
+<ol>
+<li>避免在索引列上进行计算、函数操作</li>
+</ol>
+<ul>
+<li>
+<p><strong>原理</strong>：对索引列使用函数或进行计算时，MySQL 无法直接使用索引快速定位数据，因为索引是基于原始列值构建的，函数或计算会改变索引列的原有值，使索引失效。</p>
+</li>
+<li>
+<p><strong>示例及解决办法</strong></p>
+</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment">-- 原查询，索引失效</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span>created_at<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">2023</span><span class="token punctuation">;</span>
+<span class="token comment">-- 优化后，可使用索引</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> created_at <span class="token operator">>=</span> <span class="token string">'2023-01-01'</span> <span class="token operator">AND</span> created_at <span class="token operator">&lt;</span> <span class="token string">'2024-01-01'</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>遵循最左前缀原则</li>
+</ol>
+<ul>
+<li><strong>原理</strong>：对于复合索引（由多个列组成的索引），MySQL 会按照索引中列的顺序依次使用列进行查询匹配。如果查询条件中不包含复合索引的最左列，那么整个复合索引将无法使用。</li>
+<li>示例及解决办法</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment">-- 创建复合索引</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> idx_name_age <span class="token keyword">ON</span> users <span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 可使用索引</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'John'</span> <span class="token operator">AND</span> age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>
+<span class="token comment">-- 可使用索引，部分匹配</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'John'</span><span class="token punctuation">;</span>
+<span class="token comment">-- 索引失效，未遵循最左前缀原则</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="3">
+<li>避免使用不等于（!= 或 &lt;&gt;）、IS NULL、IS NOT NULL</li>
+</ol>
+<ul>
+<li><strong>原理</strong>：当使用不等于、IS NULL 或 IS NOT NULL 时，MySQL 无法有效利用索引进行范围扫描，可能会导致全表扫描。</li>
+<li>示例及解决办法</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment">-- 原查询，索引可能失效</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products <span class="token keyword">WHERE</span> price <span class="token operator">!=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token comment">-- 优化思路，使用范围查询代替不等于</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products <span class="token keyword">WHERE</span> price <span class="token operator">&lt;</span> <span class="token number">100</span> <span class="token operator">OR</span> price <span class="token operator">></span> <span class="token number">100</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 原查询，索引可能失效</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> email <span class="token operator">IS</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+<span class="token comment">-- 如果业务允许，可给字段设置默认值，避免使用 IS NULL 查询</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="4">
+<li>避免隐式类型转换</li>
+</ol>
+<ul>
+<li><strong>原理</strong>：当查询条件中的数据类型与索引列的数据类型不一致时，MySQL 会进行隐式类型转换，这可能会导致索引失效。</li>
+<li><strong>示例及解决办法</strong></li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment">-- 假设 id 是整数类型的索引列</span>
+<span class="token comment">-- 原查询，存在隐式类型转换，索引失效</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> id <span class="token operator">=</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+<span class="token comment">-- 优化后，使用正确的数据类型</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> id <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="5">
+<li>避免使用 OR 连接条件</li>
+</ol>
+<ul>
+<li><strong>原理</strong>：当使用 OR 连接多个条件时，如果其中一个条件不使用索引，那么整个查询可能会导致索引失效，进行全表扫描。</li>
+<li><strong>示例及解决办法</strong></li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment">-- 原查询，索引可能失效</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">OR</span> name <span class="token operator">=</span> <span class="token string">'John'</span><span class="token punctuation">;</span>
+<span class="token comment">-- 优化思路，使用 UNION ALL 代替 OR</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> id <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">UNION</span> <span class="token keyword">ALL</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'John'</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="6">
+<li>保持索引列统计信息的准确性</li>
+</ol>
+<ul>
+<li><strong>原理</strong>：MySQL 的查询优化器会根据索引列的统计信息来选择最优的查询执行计划。如果统计信息不准确，可能会导致优化器做出错误的决策，从而使索引失效。</li>
+<li><strong>解决办法</strong>：定期使用 <code v-pre>ANALYZE TABLE</code> 语句来更新表的统计信息。</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">ANALYZE</span> <span class="token keyword">TABLE</span> users<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="7">
+<li>避免在模糊查询的开头使用通配符</li>
+</ol>
+<ul>
+<li><strong>原理</strong>：当在模糊查询中使用 <code v-pre>LIKE</code> 操作符，且通配符 <code v-pre>%</code> 出现在字符串的开头时，MySQL 无法使用索引进行前缀匹配，会导致全表扫描。</li>
+<li>**示例及解决办法</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment">-- 原查询，索引失效</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products <span class="token keyword">WHERE</span> name <span class="token operator">LIKE</span> <span class="token string">'%apple%'</span><span class="token punctuation">;</span>
+<span class="token comment">-- 优化后，可使用索引</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products <span class="token keyword">WHERE</span> name <span class="token operator">LIKE</span> <span class="token string">'apple%'</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-3-执行计划" tabindex="-1"><a class="header-anchor" href="#_5-3-执行计划" aria-hidden="true">#</a> 5.3 执行计划</h3>
+<p>通常在优化查询时，我们希望 <code v-pre>type</code> 的值尽可能接近 <code v-pre>system</code>、<code v-pre>const</code>、<code v-pre>eq_ref</code> 等高效类型，避免出现 <code v-pre>ALL</code> 这种低效的全表扫描情况。</p>
+<table>
+<thead>
+<tr>
+<th>type 值</th>
+<th>含义</th>
+<th>性能说明</th>
+<th>示例及解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>system</code></td>
+<td>表中只有一行记录，这是 <code v-pre>const</code> 类型的特例，通常出现在系统表中。</td>
+<td>性能最佳，因为只需访问一行数据。</td>
+<td>例如系统表中固定行数的情况，由于行数极少，查询可以瞬间完成。</td>
+</tr>
+<tr>
+<td><code v-pre>const</code></td>
+<td>通过索引一次就找到匹配的记录，常用于 <code v-pre>PRIMARY KEY</code> 或 <code v-pre>UNIQUE</code> 索引的等值查询。</td>
+<td>性能非常好，因为直接通过索引定位到唯一行。</td>
+<td><code v-pre>SELECT * FROM users WHERE user_id = 1;</code> 若 <code v-pre>user_id</code> 是主键，MySQL 可以通过主键索引直接定位到该记录。</td>
+</tr>
+<tr>
+<td><code v-pre>eq_ref</code></td>
+<td>对于每个来自前面表的行组合，从该表中读取一行。常用于连接操作中使用 <code v-pre>PRIMARY KEY</code> 或 <code v-pre>UNIQUE</code> 索引。</td>
+<td>性能较好，在连接查询中能高效匹配。</td>
+<td><code v-pre>sql&lt;br&gt;SELECT * FROM orders&lt;br&gt;JOIN customers ON orders.customer_id = customers.customer_id&lt;br&gt;WHERE orders.order_id = 1;&lt;br&gt;</code> 若 <code v-pre>customer_id</code> 在 <code v-pre>customers</code> 表是主键，对于 <code v-pre>orders</code> 表中每一行匹配的 <code v-pre>customer_id</code>，都能从 <code v-pre>customers</code> 表中快速找到对应的一行。</td>
+</tr>
+<tr>
+<td><code v-pre>ref</code></td>
+<td>使用非唯一索引或唯一索引的前缀扫描，返回匹配某个单独值的所有行。</td>
+<td>性能不错，但可能返回多行数据。</td>
+<td><code v-pre>SELECT * FROM products WHERE category_id = 2;</code> 若 <code v-pre>category_id</code> 有非唯一索引，MySQL 会通过该索引找出所有 <code v-pre>category_id</code> 为 2 的记录。</td>
+</tr>
+<tr>
+<td><code v-pre>fulltext</code></td>
+<td>使用全文索引进行查询。</td>
+<td>适用于全文搜索场景，性能取决于全文索引的构建和数据量。</td>
+<td><code v-pre>SELECT * FROM articles WHERE MATCH(content) AGAINST('keyword' IN NATURAL LANGUAGE MODE);</code> 若 <code v-pre>content</code> 列有全文索引，可使用全文搜索查找包含指定关键字的文章。</td>
+</tr>
+<tr>
+<td><code v-pre>ref_or_null</code></td>
+<td>与 <code v-pre>ref</code> 类似，但还会搜索包含 <code v-pre>NULL</code> 值的行。</td>
+<td>性能稍逊于 <code v-pre>ref</code>，因为要额外处理 <code v-pre>NULL</code> 值。</td>
+<td><code v-pre>SELECT * FROM users WHERE email = 'test@example.com' OR email IS NULL;</code> 若 <code v-pre>email</code> 有索引，查询时会查找匹配指定邮箱和 <code v-pre>NULL</code> 值的行。</td>
+</tr>
+<tr>
+<td><code v-pre>index_merge</code></td>
+<td>使用了索引合并优化，即同时使用多个索引来满足查询条件。</td>
+<td>性能因具体情况而异，可能比单一索引查询更复杂。</td>
+<td><code v-pre>sql&lt;br&gt;SELECT * FROM products&lt;br&gt;WHERE category_id = 2 OR price &gt; 100;&lt;br&gt;</code> 若 <code v-pre>category_id</code> 和 <code v-pre>price</code> 分别有索引，MySQL 可能会合并这两个索引来执行查询。</td>
+</tr>
+<tr>
+<td><code v-pre>unique_subquery</code></td>
+<td>该类型用于 <code v-pre>IN</code> 子查询，子查询使用 <code v-pre>UNIQUE</code> 索引。</td>
+<td>性能较好，子查询能通过唯一索引高效查询。</td>
+<td><code v-pre>SELECT * FROM products WHERE product_id IN (SELECT product_id FROM product_reviews WHERE rating = 5);</code> 若 <code v-pre>product_reviews</code> 表的 <code v-pre>product_id</code> 是唯一索引，子查询会更高效。</td>
+</tr>
+<tr>
+<td><code v-pre>index_subquery</code></td>
+<td>类似于 <code v-pre>unique_subquery</code>，但子查询使用的是非唯一索引。</td>
+<td>性能不如 <code v-pre>unique_subquery</code>，因为非唯一索引可能返回多行。</td>
+<td>与 <code v-pre>unique_subquery</code> 示例类似，只是子查询中的索引是非唯一的。</td>
+</tr>
+<tr>
+<td><code v-pre>range</code></td>
+<td>只检索给定范围的行，使用索引进行范围扫描，如 <code v-pre>WHERE</code> 子句中有 <code v-pre>BETWEEN</code>、<code v-pre>&gt;</code>、<code v-pre>&lt;</code> 等操作。</td>
+<td>性能尚可，根据范围大小和数据分布而定。</td>
+<td><code v-pre>SELECT * FROM orders WHERE order_date BETWEEN '2023-01-01' AND '2023-12-31';</code> 若 <code v-pre>order_date</code> 有索引，会使用该索引进行范围扫描。</td>
+</tr>
+<tr>
+<td><code v-pre>index</code></td>
+<td>全索引扫描，扫描整个索引树。</td>
+<td>性能一般，虽然只扫描索引，但可能涉及大量索引项。</td>
+<td><code v-pre>SELECT product_name FROM products;</code> 若 <code v-pre>product_name</code> 有索引，可能会进行全索引扫描。</td>
+</tr>
+<tr>
+<td><code v-pre>ALL</code></td>
+<td>全表扫描，需要逐行扫描表中的所有数据。</td>
+<td>性能最差，尤其是对于大表，会消耗大量的时间和资源。</td>
+<td><code v-pre>SELECT * FROM large_table;</code> 没有合适的索引时，MySQL 会进行全表扫描。</td>
+</tr>
+</tbody>
+</table>
 <h3 id="_5-4-成本计算" tabindex="-1"><a class="header-anchor" href="#_5-4-成本计算" aria-hidden="true">#</a> 5.4 成本计算</h3>
+<p>在 MySQL 中，查询优化器会对不同的查询执行计划进行成本计算，从而选择成本最低的执行计划来执行查询。成本计算主要考虑两方面的成本：I/O 成本和 CPU 成本，下面详细介绍相关内容。</p>
+<p>I/O 成本：I/O 成本主要涉及磁盘 I/O 操作，也就是从磁盘读取数据页的开销。因为磁盘的读写速度远低于内存，所以 I/O 成本在整体成本中占比较大。MySQL 会根据需要读取的数据页数量来估算 I/O 成本。例如，当需要从磁盘读取大量的数据页时，I/O 成本就会很高。</p>
+<p>CPU 成本：CPU 成本是指在内存中对数据进行处理的开销，包括对数据进行排序、比较、过滤等操作。虽然 CPU 的处理速度很快，但当处理大量数据时，CPU 成本也会显著增加。</p>
+<p>成本计算相关因素：</p>
+<ol>
+<li>表的统计信息：MySQL 会收集表的统计信息，如行数、数据页数量、索引分布等。这些统计信息是成本计算的重要依据。例如，查询优化器会根据表的行数来估算需要读取的数据量，进而计算 I/O 成本。可以使用 <code v-pre>ANALYZE TABLE</code> 语句来更新表的统计信息，以确保成本计算的准确性。</li>
+</ol>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">ANALYZE</span> <span class="token keyword">TABLE</span> your_table_name<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="2">
+<li>
+<p>索引使用情况：使用索引可以减少需要读取的数据量，从而降低 I/O 成本。不同类型的索引在成本计算中的表现也不同。例如，覆盖索引可以直接从索引中获取所需的数据，避免了回表操作，从而显著降低成本；而全表扫描则需要读取表中的所有数据，成本较高。</p>
+</li>
+<li>
+<p>查询条件：查询条件的复杂度和选择性也会影响成本计算。选择性是指查询条件能够过滤掉多少数据，选择性越高，需要处理的数据量就越少，成本也就越低。例如，<code v-pre>WHERE column = 'specific_value'</code> 的选择性通常比 <code v-pre>WHERE column LIKE '%pattern%'</code> 要高，因为前者能更精确地过滤数据。</p>
+</li>
+</ol>
+<p>成本计算示例：</p>
+<p>假设我们有一个 <code v-pre>orders</code> 表，包含 <code v-pre>order_id</code>、<code v-pre>customer_id</code>、<code v-pre>order_date</code> 等列，并且在 <code v-pre>order_date</code> 列上有索引。现在执行以下查询：</p>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> order_date <span class="token operator">BETWEEN</span> <span class="token string">'2023-01-01'</span> <span class="token operator">AND</span> <span class="token string">'2023-12-31'</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查询优化器会考虑以下两种执行计划：</p>
+<ul>
+<li>使用索引扫描
+<ul>
+<li><strong>I/O 成本</strong>：通过索引定位到满足 <code v-pre>order_date</code> 范围条件的记录，只需要读取索引页和对应的少量数据页。假设索引页有 10 个，数据页有 20 个，每个数据页的 I/O 成本为 1，那么 I/O 成本大约为 10 + 20 = 30。</li>
+<li><strong>CPU 成本</strong>：对索引和数据进行过滤和比较操作，假设 CPU 成本为 10。</li>
+<li><strong>总成本</strong>：I/O 成本 + CPU 成本 = 30 + 10 = 40。</li>
+</ul>
+</li>
+<li>全表扫描
+<ul>
+<li><strong>I/O 成本</strong>：需要读取表中的所有数据页，假设表共有 100 个数据页，每个数据页的 I/O 成本为 1，那么 I/O 成本为 100。</li>
+<li><strong>CPU 成本</strong>：对所有数据进行过滤操作，假设 CPU 成本为 20。</li>
+<li><strong>总成本</strong>：I/O 成本 + CPU 成本 = 100 + 20 = 120。</li>
+</ul>
+</li>
+</ul>
+<p>在这个例子中，使用索引扫描的成本明显低于全表扫描，所以查询优化器会选择使用索引扫描的执行计划。</p>
+<p>可以通过 <code v-pre>EXPLAIN FORMAT=JSON</code> 语句查看查询的执行计划及相关成本信息。例如：</p>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">EXPLAIN</span> FORMAT<span class="token operator">=</span>JSON <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> order_date <span class="token operator">BETWEEN</span> <span class="token string">'2023-01-01'</span> <span class="token operator">AND</span> <span class="token string">'2023-12-31'</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>返回结果中会包含 <code v-pre>cost_info</code> 部分，显示了不同操作的成本估算，帮助我们分析查询的性能。</p>
+<h2 id="六、各个中间件对比" tabindex="-1"><a class="header-anchor" href="#六、各个中间件对比" aria-hidden="true">#</a> 六、各个中间件对比</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>MySQL</th>
+<th>Redis</th>
+<th>Kafka</th>
+<th>RocketMQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>防断电方案</td>
+<td><strong>redo log</strong>：InnoDB 存储引擎特有的日志机制，它记录了事务对数据页的物理修改操作。当数据库崩溃或异常关闭后，通过重放 <code v-pre>redo log</code> 可以将未持久化到磁盘的数据页修改操作重新应用，保证数据的一致性和事务的持久性。采用顺序追加写入磁盘，减少了随机 I/O 开销，提高了写入性能。</td>
+<td><strong>AOF（Append - Only File）</strong>：以文本协议格式按顺序记录 Redis 服务器的所有写操作命令。在 Redis 重启时，通过重新执行 AOF 文件中的命令来恢复数据，确保数据的持久性。AOF 持久化可以通过配置不同的同步策略来平衡性能和数据安全性。</td>
+<td><strong>Log（分区日志）</strong>：Kafka 将消息以日志的形式顺序写入磁盘的分区文件中。每个分区都是一个独立的日志文件，并且 Kafka 采用多副本机制，将日志数据复制到多个节点上。即使某个节点出现故障或断电，其他副本仍然可以提供数据，保证数据的安全性和可用性。</td>
+<td><strong>CommitLog</strong>：RocketMQ 采用 <code v-pre>CommitLog</code> 来存储消息数据，所有主题的消息都顺序写入 <code v-pre>CommitLog</code> 文件中。同时，通过 <code v-pre>ConsumeQueue</code> 作为消息消费的索引，提高消息消费的效率。<code v-pre>CommitLog</code> 结合 <code v-pre>ConsumeQueue</code> 实现了消息的高可靠持久化，即使在断电等异常情况下，也能保证消息不丢失。</td>
+</tr>
+<tr>
+<td>记录方式</td>
+<td>顺序追加到 <code v-pre>redo log</code> 文件，记录的是事务对数据页的物理修改，属于物理日志。例如，记录某一行数据被更新后，数据页的具体修改内容以及数据在磁盘中的位置信息。</td>
+<td>顺序追加到 AOF 文件，记录所有写操作命令，属于逻辑日志。如 <code v-pre>SET key value</code>、<code v-pre>INCR counter</code> 等命令，以文本形式存储，便于阅读和解析。</td>
+<td>顺序追加到分区日志文件，每个分区独立进行顺序写入。消息以键值对的形式存储，并且每个分区可以分布在不同的磁盘上，提高了并发写入和读取的性能。</td>
+<td>顺序追加到 <code v-pre>CommitLog</code> 文件，同时会为每个主题和队列生成对应的 <code v-pre>ConsumeQueue</code> 索引。消息的属性、内容等信息都会被完整记录在 <code v-pre>CommitLog</code> 中，而 <code v-pre>ConsumeQueue</code> 则记录了消息在 <code v-pre>CommitLog</code> 中的偏移量等信息，方便快速定位和消费消息。</td>
+</tr>
+<tr>
+<td>存储内容</td>
+<td>主要存储数据库中数据的增删改操作以及数据在磁盘中的位置。具体包括事务对数据页的修改信息，如插入新记录、更新已有记录、删除记录等操作对应的物理数据页变化，以及这些数据在磁盘上的存储位置，用于在恢复时准确找到并应用修改。</td>
+<td>存储所有对 Redis 数据库进行的写操作命令。涵盖了对各种数据结构（如字符串、哈希表、列表、集合、有序集合等）的操作命令，这些命令可以在 Redis 重启时重新执行，以恢复数据库的状态。</td>
+<td>存储消息的键（key）和值（value）。消息的键可以用于消息的分类和路由，值则是具体的消息内容。Kafka 还会存储一些元数据信息，如消息的偏移量、时间戳等，用于消息的管理和消费。</td>
+<td>存储消息队列相关信息、消息属性以及消息内容。消息属性包括消息的主题、标签、优先级等，消息内容则是具体的业务数据。<code v-pre>ConsumeQueue</code> 存储了消息在 <code v-pre>CommitLog</code> 中的索引信息，方便消费者快速定位和消费消息。</td>
+</tr>
+<tr>
+<td>文件太大方案</td>
+<td>采用多个固定大小（通常为 48MB）的 <code v-pre>redo log</code> 文件进行循环使用。当一个 <code v-pre>redo log</code> 文件写满后，会自动切换到下一个文件继续写入。旧的 <code v-pre>redo log</code> 文件在事务提交完成且不再需要用于恢复时会被新的日志覆盖，避免了文件无限增大的问题。</td>
+<td>一方面设置键值对的保留时间，过期的键值对会被自动删除，减少 AOF 文件中的冗余数据。另一方面，采用日志压缩技术，将多个对同一个键的操作合并为一个最终状态的操作。例如，将多次对一个计数器键的 <code v-pre>INCR</code> 操作合并为一个 <code v-pre>SET</code> 操作，从而减小 AOF 文件的大小。</td>
+<td>定期进行日志文件重写，将多个命令汇总为一个，减少文件中的冗余信息。同时，设置日志的保留时间，过期的日志文件会被自动清理，以控制日志文件的总体大小，避免占用过多的磁盘空间。</td>
+<td>设置消息的过期时间，当消息超过设定的过期时间后，会被自动删除。这样可以控制 <code v-pre>CommitLog</code> 文件的大小，同时也能保证系统中只保留有效的消息数据。</td>
+</tr>
+<tr>
+<td>恢复方式</td>
+<td>在数据库启动时，将 <code v-pre>redo log</code> 加载到内存，从上次的检查点（checkpoint）开始，通过重放 <code v-pre>redo log</code> 中记录的未完成的修改操作，将数据库状态恢复到崩溃前的一致状态。检查点记录了数据库在某个时间点的一致性状态，从检查点开始重放可以减少不必要的操作，提高恢复效率。</td>
+<td>在 Redis 启动时，将 AOF 数据加载到内存，按顺序重新执行 AOF 文件中的命令，将数据库状态恢复到断电前的状态。在重放过程中，如果遇到错误命令，Redis 会根据配置进行相应处理，如跳过错误命令或停止恢复过程。</td>
+<td>生产者将消息写入磁盘后向客户端响应，消费者从磁盘读取日志数据进行消费。在 Kafka 集群中，如果某个节点出现故障，消费者可以从其他副本节点继续读取消息，保证数据的连续性和可用性。</td>
+<td>消息写入磁盘的 <code v-pre>CommitLog</code> 后向生产者响应，消费者根据 <code v-pre>ConsumeQueue</code> 索引从 <code v-pre>CommitLog</code> 中读取消息进行消费。在 RocketMQ 集群中，当某个 Broker 节点出现故障时，通过 <code v-pre>CommitLog</code> 和 <code v-pre>ConsumeQueue</code> 的副本机制，消费者可以从其他正常节点继续消费消息，确保消息不丢失。</td>
+</tr>
+<tr>
+<td>应用场景</td>
+<td>适用于对数据一致性、事务完整性要求高的关系型数据存储场景，如电商订单系统、金融交易系统等。这些场景需要保证数据的准确和可靠，支持复杂的事务处理和 ACID 特性。</td>
+<td>适用于对读写速度要求极高、数据量相对较小的场景，如缓存数据存储、分布式锁、计数器、消息队列等。Redis 的高性能内存操作和丰富的数据结构使其能够很好地满足这些场景的需求。</td>
+<td>适用于大规模数据的实时处理和流式计算场景，如实时日志处理、实时监控数据采集等。Kafka 的高吞吐量和分布式特性使其能够处理大量的消息数据，并且支持多个消费者同时消费。</td>
+<td>适用于对消息可靠性、事务性、顺序性有严格要求的分布式事务消息、可靠消息投递、高并发消息处理场景，如电商中的分布式事务订单处理、金融系统的资金转账通知等。</td>
+</tr>
+<tr>
+<td>性能特点</td>
+<td>支持复杂的事务处理和 ACID 特性，保证数据的一致性和完整性，但写入性能相对较低，尤其是在高并发事务场景下。因为每次事务操作都需要写入 <code v-pre>redo log</code>，会有一定的磁盘 I/O 开销。</td>
+<td>读写速度极快，基于内存操作，支持多种数据结构，能应对高并发的读写请求。但数据量过大时内存占用较高，AOF 持久化会带来一定的磁盘 I/O 开销，影响写入性能，尤其是在使用 <code v-pre>always</code> 同步策略时。</td>
+<td>具有高吞吐量，能够处理大量的消息数据，适合分布式、高并发的场景。但消息的处理延迟相对较高，因为消息需要先写入磁盘，然后再由消费者读取。</td>
+<td>具有高可靠性，保证消息不丢失、不重复，支持事务消息和顺序消息。性能较高，在高并发场景下仍能保持稳定的消息处理能力，通过顺序写入 <code v-pre>CommitLog</code> 和高效的 <code v-pre>ConsumeQueue</code> 索引机制提高了读写性能。</td>
+</tr>
+<tr>
+<td>集群部署方式</td>
+<td>常见的有主从复制、读写分离集群，通过复制机制实现数据同步，提升读取性能和数据冗余备份；也可采用 Galera Cluster 等多主集群，实现多节点同时读写，提高系统的并发处理能力。</td>
+<td>Redis Cluster 集群通过分片机制将数据分布在多个节点上，实现高可用和水平扩展；哨兵模式用于监控主节点状态，在主节点故障时自动进行故障转移，保证系统的可用性。</td>
+<td>采用多节点集群，通过分区和副本机制实现高可用和负载均衡。每个分区可以分布在不同的节点上，提高数据的可靠性和读写性能，多个副本保证了数据的冗余和容错能力。</td>
+<td>NameServer 集群负责管理 Broker 节点信息和路由信息，Broker 集群负责存储和处理消息，通过多 Master 多 Slave 模式实现高可用和数据冗余。消费者可以根据 NameServer 提供的路由信息从 Broker 节点消费消息。</td>
+</tr>
+</tbody>
+</table>
 </div></template>
 
 
