@@ -13,7 +13,7 @@ description: Mysql的一些学习笔记
 
 用 AKF 理解下 mysql为了确保数据库的高可用性在处理海量数据的时是如何实现的
 
-![image-20241123234031462](/Users/gaoqisen/Library/Application Support/typora-user-images/image-20241123234031462.png)
+![image-20241123234031462](https://gaoqisen.github.io/GraphBed/202412/20241123234031462.png)
 
 X 轴：为了解决单点故障，mysql 可以用 **主从复制** 等方式进行副本扩展，这样在其中一台机器出现故障时。其他的机器也能正常提供服务
 
