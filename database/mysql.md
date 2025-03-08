@@ -174,51 +174,60 @@ Durability(持久性): 一旦事务提交数据就被永久修改，即使数据
 MVCC 最主要的就是利用 undo log 去记录回滚日志，用回滚日志里面的事务 id  加上当前事务读取的信息进行判断。具体 Mysql可见性算法伪代码如下：
 
 ```java
-// 快照读
-private static class ReadView{
-    // 当前事务ID
-    public int current_trx_id;
-    // 正在活跃的事务id（未提交的事务）
+// 快照读所需的 ReadView 类
+private static class ReadView {
+    // 创建该 ReadView 的事务 ID
+    public int creator_trx_id;
+    // 正在活跃的事务 ID 列表（未提交的事务，升序列表）
     public List<Integer> alive_list;
-    // 最小事务id
+    // 当前系统中尚未分配的下一个事务 ID，即大于 alive_list 中所有事务 ID 的最小值
     public int low_limit_id;
-    // 目前已出现的事务ID的最大值 + 1
+    // alive_list 中的最小事务 ID
     public int up_limit_id;
 }
 
-private static class UndoLog{
-    // 当前指针
+// UndoLog 类，用于存储回滚日志信息
+private static class UndoLog {
+    // 当前指针（可用于其他操作，此处保留）
     public String roll_ptr;
-    // 隐含的自增ID
+    // 隐含的自增 ID
     public int db_row_id;
-    // 事务ID
+    // 修改该行数据的事务 ID
     public int trx_id;
-    // 回滚指针
+    // 回滚指针，指向前一个版本的 UndoLog
     public UndoLog db_roll_ptr;
 }
 
-// 快照读
+// 快照读方法，用于从 UndoLog 链中查找可见的数据版本
 private static UndoLog readData(UndoLog chain, ReadView readView) {
     UndoLog current = chain;
-    while (true) {
-        if(visibility(chain, readView)) {
+    while (current != null) {
+        if (visibility(current, readView)) {
             return current;
         }
-        current = chain.db_roll_ptr;
+        // 移动到前一个版本的 UndoLog
+        current = current.db_roll_ptr;
     }
+    return null;
 }
 
+// 可见性判断方法，判断某条 UndoLog 记录对当前 ReadView 是否可见
 private static boolean visibility(UndoLog undoLog, ReadView readView) {
-    // 事务已提交或当前事务 可见
-    if(undoLog.trx_id < readView.low_limit_id || undoLog.trx_id == readView.current_trx_id) {
+    int trxId = undoLog.trx_id;
+    // 情况一：事务在 ReadView 创建前已提交
+    if (trxId < readView.up_limit_id) {
         return true;
     }
-    // 当前事务在活跃事务后查询 不可见
-    if(readView.current_trx_id > undoLog.trx_id) {
+    // 情况二：事务是当前事务自己修改的
+    if (trxId == readView.creator_trx_id) {
+        return true;
+    }
+    // 情况三：事务在 ReadView 创建后开始
+    if (trxId >= readView.low_limit_id) {
         return false;
     }
-    // 活跃事务id里面包含当前事务不可见
-    return !readView.alive_list.contains(undoLog.trx_id);
+    // 情况四：事务在 ReadView 创建时活跃，判断是否已提交
+    return !readView.alive_list.contains(trxId);
 }
 
 ```

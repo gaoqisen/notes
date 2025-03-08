@@ -271,7 +271,188 @@ love <span class="token operator">></span> loved
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217214302.png" alt=""></p>
 <p>时间轴</p>
 <p><img src="https://gaoqisen.github.io/GraphBed/202312/20231217214450.png" alt=""></p>
-<h3 id="_3-1-现在时" tabindex="-1"><a class="header-anchor" href="#_3-1-现在时" aria-hidden="true">#</a> 3.1 现在时</h3>
+<h3 id="英语时态分类例子" tabindex="-1"><a class="header-anchor" href="#英语时态分类例子" aria-hidden="true">#</a> <strong>英语时态分类例子</strong></h3>
+<p>一般时态</p>
+<table>
+<thead>
+<tr>
+<th>时态名称</th>
+<th>结构</th>
+<th>用法说明</th>
+<th>时间状语示例</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>一般现在时</strong></td>
+<td>主语 + 动词原形 / 第三人称单数</td>
+<td>表示习惯性动作、客观事实或普遍真理。</td>
+<td>always, usually, every day</td>
+<td>I eat cherries for breakfast.</td>
+</tr>
+<tr>
+<td><strong>一般过去时</strong></td>
+<td>主语 + 动词过去式</td>
+<td>描述过去发生的动作或状态，与现在无关。</td>
+<td>yesterday, last week</td>
+<td>I ate cherries yesterday.</td>
+</tr>
+<tr>
+<td><strong>一般将来时</strong></td>
+<td>主语 + will/shall + 动词原形</td>
+<td>表示将来要发生的动作或存在的状态（美式多用 will，英式常用 shall）。</td>
+<td>tomorrow, next year</td>
+<td>I will eat cherries tomorrow.</td>
+</tr>
+<tr>
+<td><strong>过去将来时</strong></td>
+<td>主语 + would/should + 动词原形</td>
+<td>从过去角度看将来要发生的动作，常用于间接引语或虚拟语气。</td>
+<td>the next day, in 2024</td>
+<td>I said I would eat cherries.</td>
+</tr>
+</tbody>
+</table>
+<p>进行时态</p>
+<table>
+<thead>
+<tr>
+<th>时态名称</th>
+<th>结构</th>
+<th>用法说明</th>
+<th>时间状语示例</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>现在进行时</strong></td>
+<td>主语 + am/is/are + 现在分词</td>
+<td>表示现在正在进行的动作，或现阶段持续的状态。</td>
+<td>now, at present</td>
+<td>I am eating cherries now.</td>
+</tr>
+<tr>
+<td><strong>过去进行时</strong></td>
+<td>主语 + was/were + 现在分词</td>
+<td>描述过去某一时刻或阶段正在进行的动作。</td>
+<td>at 8:00 last night</td>
+<td>I was eating cherries at 8:00 PM.</td>
+</tr>
+<tr>
+<td><strong>将来进行时</strong></td>
+<td>主语 + will be + 现在分词</td>
+<td>表示将来某一时刻正在进行的动作，强调计划性或自然延续性。</td>
+<td>at 9:00 tomorrow</td>
+<td>I will be eating cherries at 9:00.</td>
+</tr>
+<tr>
+<td><strong>过去将来进行时</strong></td>
+<td>主语 + would be + 现在分词</td>
+<td>从过去角度看将来某时刻正在进行的动作，常用于虚拟或假设语境。</td>
+<td>by 8:00 the next day</td>
+<td>I said I would be eating cherries.</td>
+</tr>
+</tbody>
+</table>
+<p>完成时态</p>
+<table>
+<thead>
+<tr>
+<th>时态名称</th>
+<th>结构</th>
+<th>用法说明</th>
+<th>时间状语示例</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>现在完成时</strong></td>
+<td>主语 + have/has + 过去分词</td>
+<td>表示过去动作对现在的影响，或动作从过去持续到现在。</td>
+<td>already, yet, since 2020</td>
+<td>I have eaten cherries already.</td>
+</tr>
+<tr>
+<td><strong>过去完成时</strong></td>
+<td>主语 + had + 过去分词</td>
+<td>表示在过去某时间之前已完成的动作，形成 “过去的过去”。</td>
+<td>by the end of last year</td>
+<td>I had eaten cherries by 2024.</td>
+</tr>
+<tr>
+<td><strong>将来完成时</strong></td>
+<td>主语 + will have + 过去分词</td>
+<td>表示在将来某时间之前将完成的动作。</td>
+<td>by tomorrow, in 5 years</td>
+<td>I will have eaten cherries by 9:00.</td>
+</tr>
+<tr>
+<td><strong>过去将来完成时</strong></td>
+<td>主语 + would have + 过去分词</td>
+<td>从过去角度看将来某时间前已完成的动作，常用于间接引语或虚拟语气。</td>
+<td>by the time you arrived</td>
+<td>I said I would have eaten cherries.</td>
+</tr>
+</tbody>
+</table>
+<p>完成进行时态</p>
+<table>
+<thead>
+<tr>
+<th>时态名称</th>
+<th>结构</th>
+<th>用法说明</th>
+<th>时间状语示例</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>现在完成进行时</strong></td>
+<td>主语 + have/has been + 现在分词</td>
+<td>强调动作从过去开始持续到现在，可能继续进行。</td>
+<td>for 2 hours, since morning</td>
+<td>I have been eating cherries for an hour.</td>
+</tr>
+<tr>
+<td><strong>过去完成进行时</strong></td>
+<td>主语 + had been + 现在分词</td>
+<td>表示在过去某时间之前一直持续的动作，强调延续性。</td>
+<td>before you arrived</td>
+<td>I had been eating cherries before you came.</td>
+</tr>
+<tr>
+<td><strong>将来完成进行时</strong></td>
+<td>主语 + will have been + 现在分词</td>
+<td>表示在将来某时间前将一直持续的动作，强调延续性。</td>
+<td>by the time you arrive</td>
+<td>I will have been eating cherries for two hours by then.</td>
+</tr>
+<tr>
+<td><strong>过去将来完成进行时</strong></td>
+<td>主语 + would have been + 现在分词</td>
+<td>从过去角度看将来某时间前一直持续的动作，常用于虚拟或假设语境。</td>
+<td>when you came</td>
+<td>I said I would have been eating cherries when you arrived.</td>
+</tr>
+</tbody>
+</table>
+<p>关键补充说明</p>
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>1. 时间状语选择：
+   - 一般时态：强调动作的 “时间点” 或 “规律性”。
+   - 进行时态：强调动作的 “正在进行” 或 “暂时性”。
+   - 完成时态：强调动作的 “结果” 或 “持续性”。
+   - 完成进行时态：强调动作的 “延续性” 或 “重复性”。
+2. 虚拟语气中的特殊用法：
+   - 过去将来时和过去将来完成时常用于虚拟条件句（如：*If I were you, I would eat cherries.*）。
+3. 第三人称单数规则：
+   - 一般现在时中，主语为第三人称单数（he/she/it）时，动词需加 -s/-es（如：*She eats cherries.*）。
+4. 不规则动词变化：
+   - 需注意常见动词的过去式和过去分词形式（如：*eat → ate → eaten*）。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-1-现在时" tabindex="-1"><a class="header-anchor" href="#_3-1-现在时" aria-hidden="true">#</a> 3.1 现在时</h3>
 <h4 id="_1、一般现在时-常用" tabindex="-1"><a class="header-anchor" href="#_1、一般现在时-常用" aria-hidden="true">#</a> 1、一般现在时(常用)</h4>
 <p>一般现在时（Simple Present Tense）用来表示习惯性行为、普遍真理、科学事实、现在的情况或状态，以及一些客观存在的事实。动词在一般现在时下一般不受主语的人称或单复数的影响，它们的形式是一样的。一般现在时的动词形式为动词的原形（即动词的基本形式）</p>
 <p>肯定：主语为第三人称单数，动词第三人称单数，其他动词用原形</p>

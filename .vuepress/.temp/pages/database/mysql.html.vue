@@ -1,6 +1,6 @@
 <template><div><h2 id="一、mysql的-akf-立方体" tabindex="-1"><a class="header-anchor" href="#一、mysql的-akf-立方体" aria-hidden="true">#</a> 一、Mysql的 AKF 立方体</h2>
 <p>用 AKF 理解下 mysql为了确保数据库的高可用性在处理海量数据的时是如何实现的</p>
-<p>![image-20241123234031462](/Users/gaoqisen/Library/Application Support/typora-user-images/image-20241123234031462.png)</p>
+<p><img src="https://gaoqisen.github.io/GraphBed/202412/20241123234031462.png" alt="image-20241123234031462"></p>
 <p>X 轴：为了解决单点故障，mysql 可以用 <strong>主从复制</strong> 等方式进行副本扩展，这样在其中一台机器出现故障时。其他的机器也能正常提供服务</p>
 <p>Y 轴：可以理解为数据的垂直拆分，比如当数据量太大的时候，单表的数据列太多，可以将表拆分为多张表。也可以将数据进行 <strong>分库</strong> 比如用户库、订单库等，这样可以避免单点故障用户库出现问题后订单库还是能提供服务的。</p>
 <p>Z轴: 可以理解为数据的水平拆分，比如用户库里面的用户数据太多，单表查询很慢可以进行用户 ID 的取模 <strong>分表</strong> 操作，这种分表操作就是分区的效果（100 w的数据模 10，就是将数据分为 10 份每份 10w 的数据分区）。</p>
@@ -227,54 +227,63 @@
 </table>
 <p>为了解决上面的问题，有两个方法。一个是直接加悲观锁，每次修改时都锁住这种方式性能最不好。另外一个就是乐观锁，利用版本的方式。mysql 的开发者为了提高性能于是设计了 MVCC（多并发版本控制），主要目的是为了解决多并发加锁太重的一个方式。做到读写冲突时，不加锁也不阻塞。</p>
 <p>MVCC 最主要的就是利用 undo log 去记录回滚日志，用回滚日志里面的事务 id  加上当前事务读取的信息进行判断。具体 Mysql可见性算法伪代码如下：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 快照读</span>
-<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ReadView</span><span class="token punctuation">{</span>
-    <span class="token comment">// 当前事务ID</span>
-    <span class="token keyword">public</span> <span class="token keyword">int</span> current_trx_id<span class="token punctuation">;</span>
-    <span class="token comment">// 正在活跃的事务id（未提交的事务）</span>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 快照读所需的 ReadView 类</span>
+<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ReadView</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 创建该 ReadView 的事务 ID</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> creator_trx_id<span class="token punctuation">;</span>
+    <span class="token comment">// 正在活跃的事务 ID 列表（未提交的事务，升序列表）</span>
     <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> alive_list<span class="token punctuation">;</span>
-    <span class="token comment">// 最小事务id</span>
+    <span class="token comment">// 当前系统中尚未分配的下一个事务 ID，即大于 alive_list 中所有事务 ID 的最小值</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> low_limit_id<span class="token punctuation">;</span>
-    <span class="token comment">// 目前已出现的事务ID的最大值 + 1</span>
+    <span class="token comment">// alive_list 中的最小事务 ID</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> up_limit_id<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">UndoLog</span><span class="token punctuation">{</span>
-    <span class="token comment">// 当前指针</span>
+<span class="token comment">// UndoLog 类，用于存储回滚日志信息</span>
+<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">UndoLog</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当前指针（可用于其他操作，此处保留）</span>
     <span class="token keyword">public</span> <span class="token class-name">String</span> roll_ptr<span class="token punctuation">;</span>
-    <span class="token comment">// 隐含的自增ID</span>
+    <span class="token comment">// 隐含的自增 ID</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> db_row_id<span class="token punctuation">;</span>
-    <span class="token comment">// 事务ID</span>
+    <span class="token comment">// 修改该行数据的事务 ID</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> trx_id<span class="token punctuation">;</span>
-    <span class="token comment">// 回滚指针</span>
+    <span class="token comment">// 回滚指针，指向前一个版本的 UndoLog</span>
     <span class="token keyword">public</span> <span class="token class-name">UndoLog</span> db_roll_ptr<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// 快照读</span>
+<span class="token comment">// 快照读方法，用于从 UndoLog 链中查找可见的数据版本</span>
 <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name">UndoLog</span> <span class="token function">readData</span><span class="token punctuation">(</span><span class="token class-name">UndoLog</span> chain<span class="token punctuation">,</span> <span class="token class-name">ReadView</span> readView<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">UndoLog</span> current <span class="token operator">=</span> chain<span class="token punctuation">;</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">visibility</span><span class="token punctuation">(</span>chain<span class="token punctuation">,</span> readView<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>current <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">visibility</span><span class="token punctuation">(</span>current<span class="token punctuation">,</span> readView<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">return</span> current<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
-        current <span class="token operator">=</span> chain<span class="token punctuation">.</span>db_roll_ptr<span class="token punctuation">;</span>
+        <span class="token comment">// 移动到前一个版本的 UndoLog</span>
+        current <span class="token operator">=</span> current<span class="token punctuation">.</span>db_roll_ptr<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
+<span class="token comment">// 可见性判断方法，判断某条 UndoLog 记录对当前 ReadView 是否可见</span>
 <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">visibility</span><span class="token punctuation">(</span><span class="token class-name">UndoLog</span> undoLog<span class="token punctuation">,</span> <span class="token class-name">ReadView</span> readView<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 事务已提交或当前事务 可见</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>undoLog<span class="token punctuation">.</span>trx_id <span class="token operator">&lt;</span> readView<span class="token punctuation">.</span>low_limit_id <span class="token operator">||</span> undoLog<span class="token punctuation">.</span>trx_id <span class="token operator">==</span> readView<span class="token punctuation">.</span>current_trx_id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> trxId <span class="token operator">=</span> undoLog<span class="token punctuation">.</span>trx_id<span class="token punctuation">;</span>
+    <span class="token comment">// 情况一：事务在 ReadView 创建前已提交</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>trxId <span class="token operator">&lt;</span> readView<span class="token punctuation">.</span>up_limit_id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    <span class="token comment">// 当前事务在活跃事务后查询 不可见</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>readView<span class="token punctuation">.</span>current_trx_id <span class="token operator">></span> undoLog<span class="token punctuation">.</span>trx_id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 情况二：事务是当前事务自己修改的</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>trxId <span class="token operator">==</span> readView<span class="token punctuation">.</span>creator_trx_id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 情况三：事务在 ReadView 创建后开始</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>trxId <span class="token operator">>=</span> readView<span class="token punctuation">.</span>low_limit_id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-    <span class="token comment">// 活跃事务id里面包含当前事务不可见</span>
-    <span class="token keyword">return</span> <span class="token operator">!</span>readView<span class="token punctuation">.</span>alive_list<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>undoLog<span class="token punctuation">.</span>trx_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 情况四：事务在 ReadView 创建时活跃，判断是否已提交</span>
+    <span class="token keyword">return</span> <span class="token operator">!</span>readView<span class="token punctuation">.</span>alive_list<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>trxId<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这样 mysql 就用了事务的隔离级别解决了多线程并发读写冲突的问题。</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这样 mysql 就用了事务的隔离级别解决了多线程并发读写冲突的问题。</p>
 <table>
 <thead>
 <tr>
