@@ -1,5 +1,5 @@
 ---
-title: mysql －学习笔记
+title: Mysql-基础
 date: 2019-11-05 13:10:11
 tags: mysql
 categories: database

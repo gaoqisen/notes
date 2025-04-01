@@ -573,6 +573,97 @@ SELECT @@transaction_isolation;
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">EXPLAIN</span> FORMAT<span class="token operator">=</span>JSON <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> order_date <span class="token operator">BETWEEN</span> <span class="token string">'2023-01-01'</span> <span class="token operator">AND</span> <span class="token string">'2023-12-31'</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>返回结果中会包含 <code v-pre>cost_info</code> 部分，显示了不同操作的成本估算，帮助我们分析查询的性能。</p>
 <h2 id="六、各个中间件对比" tabindex="-1"><a class="header-anchor" href="#六、各个中间件对比" aria-hidden="true">#</a> 六、各个中间件对比</h2>
+<p>核心机制对比</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th><strong>MySQL</strong></th>
+<th><strong>Redis</strong></th>
+<th><strong>Kafka</strong></th>
+<th><strong>RocketMQ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>复制方式</strong></td>
+<td>异步复制（基于 binlog）</td>
+<td>异步复制（全量 RDB + 增量命令流）</td>
+<td>同步复制（基于 ISR 机制）</td>
+<td>支持同步 / 异步复制（DLedger 架构）</td>
+</tr>
+<tr>
+<td><strong>数据一致性</strong></td>
+<td>最终一致（可能存在延迟）</td>
+<td>最终一致（异步复制）</td>
+<td>强一致（同步副本确认）</td>
+<td>强一致（同步双写）/ 最终一致（异步）</td>
+</tr>
+<tr>
+<td><strong>故障转移</strong></td>
+<td>需手动或依赖工具（如 MHA）</td>
+<td>手动切换或 Sentinel 自动切换</td>
+<td>自动选举新 Leader（ZooKeeper 协调）</td>
+<td>自动切换（DLedger + Raft 协议）</td>
+</tr>
+<tr>
+<td><strong>复制粒度</strong></td>
+<td>数据库级（所有库表）</td>
+<td>实例级（所有数据）</td>
+<td>分区级（每个分区独立复制）</td>
+<td>消息日志文件（按 Topic/Queue 隔离）</td>
+</tr>
+<tr>
+<td><strong>写性能影响</strong></td>
+<td>低（异步复制）</td>
+<td>低（异步复制）</td>
+<td>较高（同步等待 ISR）</td>
+<td>高（同步双写）/ 低（异步）</td>
+</tr>
+</tbody>
+</table>
+<p>部署模式</p>
+<table>
+<thead>
+<tr>
+<th><strong>模式</strong></th>
+<th><strong>MySQL</strong></th>
+<th><strong>Redis</strong></th>
+<th><strong>Kafka</strong></th>
+<th><strong>RocketMQ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>典型架构</strong></td>
+<td>一主多从</td>
+<td>一主多从 / 级联复制</td>
+<td>多 Broker（分区）</td>
+<td>多 Master + Slave</td>
+</tr>
+<tr>
+<td><strong>节点数量建议</strong></td>
+<td>1 主 + 1 从（最低）</td>
+<td>1 主 + 2 从（Sentinel）</td>
+<td>3 节点以上</td>
+<td>2 主 + 2 从（DLedger）</td>
+</tr>
+<tr>
+<td><strong>自动故障转移</strong></td>
+<td>需第三方工具</td>
+<td>Sentinel 支持</td>
+<td>自动（ZooKeeper）</td>
+<td>自动（DLedger）</td>
+</tr>
+<tr>
+<td><strong>读写分离</strong></td>
+<td>主写从读</td>
+<td>主写从读</td>
+<td>Leader 写，Follower 读</td>
+<td>Master 写，Slave 读</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
