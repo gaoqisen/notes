@@ -1,6 +1,26 @@
 export const pagesData = {
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /book/CodeDiligenceWay.html
+  "v-58a447c0": () => import(/* webpackChunkName: "v-58a447c0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/CodeDiligenceWay.html.js").then(({ data }) => data),
+  // path: /book/CriticalThinking.html
+  "v-e392da86": () => import(/* webpackChunkName: "v-e392da86" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/CriticalThinking.html.js").then(({ data }) => data),
+  // path: /book/EffectiveJava.html
+  "v-3ded93fd": () => import(/* webpackChunkName: "v-3ded93fd" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/EffectiveJava.html.js").then(({ data }) => data),
+  // path: /book/LearnQuestion.html
+  "v-cd0e6a88": () => import(/* webpackChunkName: "v-cd0e6a88" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/LearnQuestion.html.js").then(({ data }) => data),
+  // path: /book/TheCleanCoder.html
+  "v-73028839": () => import(/* webpackChunkName: "v-73028839" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/TheCleanCoder.html.js").then(({ data }) => data),
+  // path: /book/acmen.html
+  "v-384fdc9c": () => import(/* webpackChunkName: "v-384fdc9c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/acmen.html.js").then(({ data }) => data),
+  // path: /database/elk.html
+  "v-c850f220": () => import(/* webpackChunkName: "v-c850f220" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/elk.html.js").then(({ data }) => data),
+  // path: /database/mysql0_base.html
+  "v-0da4529c": () => import(/* webpackChunkName: "v-0da4529c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql0_base.html.js").then(({ data }) => data),
+  // path: /database/mysql1_upgrade.html
+  "v-3ff9ab92": () => import(/* webpackChunkName: "v-3ff9ab92" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql1_upgrade.html.js").then(({ data }) => data),
+  // path: /database/oracle.html
+  "v-7641cc00": () => import(/* webpackChunkName: "v-7641cc00" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/oracle.html.js").then(({ data }) => data),
   // path: /algorithm/00basic.html
   "v-34ce4b44": () => import(/* webpackChunkName: "v-34ce4b44" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/00basic.html.js").then(({ data }) => data),
   // path: /algorithm/01dataStructrue.html
@@ -43,6 +63,34 @@ export const pagesData = {
   "v-15e0146a": () => import(/* webpackChunkName: "v-15e0146a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/19hash.html.js").then(({ data }) => data),
   // path: /algorithm/20orderedList.html
   "v-720b4465": () => import(/* webpackChunkName: "v-720b4465" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/20orderedList.html.js").then(({ data }) => data),
+  // path: /life/MyAndYou.html
+  "v-54a2568b": () => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.js").then(({ data }) => data),
+  // path: /life/chengdu.html
+  "v-b1cb566e": () => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.js").then(({ data }) => data),
+  // path: /life/phrase.html
+  "v-28b77fb4": () => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.js").then(({ data }) => data),
+  // path: /life/target.html
+  "v-357d744e": () => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.js").then(({ data }) => data),
+  // path: /linux/command.html
+  "v-8a42673c": () => import(/* webpackChunkName: "v-8a42673c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/command.html.js").then(({ data }) => data),
+  // path: /linux/curl.html
+  "v-23d486b9": () => import(/* webpackChunkName: "v-23d486b9" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/curl.html.js").then(({ data }) => data),
+  // path: /linux/git.html
+  "v-9b411b8a": () => import(/* webpackChunkName: "v-9b411b8a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/git.html.js").then(({ data }) => data),
+  // path: /linux/git_rsync.html
+  "v-50f5646d": () => import(/* webpackChunkName: "v-50f5646d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/git_rsync.html.js").then(({ data }) => data),
+  // path: /linux/gtilab.html
+  "v-25736214": () => import(/* webpackChunkName: "v-25736214" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/gtilab.html.js").then(({ data }) => data),
+  // path: /linux/jenkins.html
+  "v-442e01d7": () => import(/* webpackChunkName: "v-442e01d7" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/jenkins.html.js").then(({ data }) => data),
+  // path: /linux/kubernetes.html
+  "v-255108df": () => import(/* webpackChunkName: "v-255108df" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/kubernetes.html.js").then(({ data }) => data),
+  // path: /linux/nginx.html
+  "v-0fd0231a": () => import(/* webpackChunkName: "v-0fd0231a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/nginx.html.js").then(({ data }) => data),
+  // path: /linux/vim.html
+  "v-86c1b21a": () => import(/* webpackChunkName: "v-86c1b21a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/vim.html.js").then(({ data }) => data),
+  // path: /linux/vpn.html
+  "v-309f9e59": () => import(/* webpackChunkName: "v-309f9e59" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/vpn.html.js").then(({ data }) => data),
   // path: /java/AsyncManager.html
   "v-4fa4dd54": () => import(/* webpackChunkName: "v-4fa4dd54" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/AsyncManager.html.js").then(({ data }) => data),
   // path: /java/HttpUtils.html
@@ -93,58 +141,6 @@ export const pagesData = {
   "v-56a1618c": () => import(/* webpackChunkName: "v-56a1618c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webCenter2.0.html.js").then(({ data }) => data),
   // path: /java/webJsonToken.html
   "v-ec0ffcf0": () => import(/* webpackChunkName: "v-ec0ffcf0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/webJsonToken.html.js").then(({ data }) => data),
-  // path: /life/MyAndYou.html
-  "v-54a2568b": () => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.js").then(({ data }) => data),
-  // path: /life/chengdu.html
-  "v-b1cb566e": () => import(/* webpackChunkName: "v-b1cb566e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/chengdu.html.js").then(({ data }) => data),
-  // path: /life/phrase.html
-  "v-28b77fb4": () => import(/* webpackChunkName: "v-28b77fb4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/phrase.html.js").then(({ data }) => data),
-  // path: /life/target.html
-  "v-357d744e": () => import(/* webpackChunkName: "v-357d744e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/target.html.js").then(({ data }) => data),
-  // path: /database/elasticsearch.html
-  "v-7405f692": () => import(/* webpackChunkName: "v-7405f692" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/elasticsearch.html.js").then(({ data }) => data),
-  // path: /database/elk.html
-  "v-c850f220": () => import(/* webpackChunkName: "v-c850f220" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/elk.html.js").then(({ data }) => data),
-  // path: /database/msqlStoredProcedure.html
-  "v-1d5a32f6": () => import(/* webpackChunkName: "v-1d5a32f6" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/msqlStoredProcedure.html.js").then(({ data }) => data),
-  // path: /database/mysql.html
-  "v-48187af2": () => import(/* webpackChunkName: "v-48187af2" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql.html.js").then(({ data }) => data),
-  // path: /database/mysqlBase.html
-  "v-8def0bbe": () => import(/* webpackChunkName: "v-8def0bbe" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysqlBase.html.js").then(({ data }) => data),
-  // path: /database/oracle.html
-  "v-7641cc00": () => import(/* webpackChunkName: "v-7641cc00" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/oracle.html.js").then(({ data }) => data),
-  // path: /book/CodeDiligenceWay.html
-  "v-58a447c0": () => import(/* webpackChunkName: "v-58a447c0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/CodeDiligenceWay.html.js").then(({ data }) => data),
-  // path: /book/CriticalThinking.html
-  "v-e392da86": () => import(/* webpackChunkName: "v-e392da86" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/CriticalThinking.html.js").then(({ data }) => data),
-  // path: /book/EffectiveJava.html
-  "v-3ded93fd": () => import(/* webpackChunkName: "v-3ded93fd" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/EffectiveJava.html.js").then(({ data }) => data),
-  // path: /book/LearnQuestion.html
-  "v-cd0e6a88": () => import(/* webpackChunkName: "v-cd0e6a88" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/LearnQuestion.html.js").then(({ data }) => data),
-  // path: /book/TheCleanCoder.html
-  "v-73028839": () => import(/* webpackChunkName: "v-73028839" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/TheCleanCoder.html.js").then(({ data }) => data),
-  // path: /book/acmen.html
-  "v-384fdc9c": () => import(/* webpackChunkName: "v-384fdc9c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/acmen.html.js").then(({ data }) => data),
-  // path: /linux/command.html
-  "v-8a42673c": () => import(/* webpackChunkName: "v-8a42673c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/command.html.js").then(({ data }) => data),
-  // path: /linux/curl.html
-  "v-23d486b9": () => import(/* webpackChunkName: "v-23d486b9" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/curl.html.js").then(({ data }) => data),
-  // path: /linux/git.html
-  "v-9b411b8a": () => import(/* webpackChunkName: "v-9b411b8a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/git.html.js").then(({ data }) => data),
-  // path: /linux/git_rsync.html
-  "v-50f5646d": () => import(/* webpackChunkName: "v-50f5646d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/git_rsync.html.js").then(({ data }) => data),
-  // path: /linux/gtilab.html
-  "v-25736214": () => import(/* webpackChunkName: "v-25736214" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/gtilab.html.js").then(({ data }) => data),
-  // path: /linux/jenkins.html
-  "v-442e01d7": () => import(/* webpackChunkName: "v-442e01d7" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/jenkins.html.js").then(({ data }) => data),
-  // path: /linux/kubernetes.html
-  "v-255108df": () => import(/* webpackChunkName: "v-255108df" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/kubernetes.html.js").then(({ data }) => data),
-  // path: /linux/nginx.html
-  "v-0fd0231a": () => import(/* webpackChunkName: "v-0fd0231a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/nginx.html.js").then(({ data }) => data),
-  // path: /linux/vim.html
-  "v-86c1b21a": () => import(/* webpackChunkName: "v-86c1b21a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/vim.html.js").then(({ data }) => data),
-  // path: /linux/vpn.html
-  "v-309f9e59": () => import(/* webpackChunkName: "v-309f9e59" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/vpn.html.js").then(({ data }) => data),
   // path: /mca/01DesignPettern.html
   "v-e3b8bdee": () => import(/* webpackChunkName: "v-e3b8bdee" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/mca/01DesignPettern.html.js").then(({ data }) => data),
   // path: /mca/02MultiThread.html
@@ -245,24 +241,6 @@ export const pagesData = {
   "v-c782d882": () => import(/* webpackChunkName: "v-c782d882" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/sourcecode/spring-1-DLBF.html.js").then(({ data }) => data),
   // path: /sourcecode/spring-2-CPXAC.html
   "v-55879f79": () => import(/* webpackChunkName: "v-55879f79" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/sourcecode/spring-2-CPXAC.html.js").then(({ data }) => data),
-  // path: /web/jqueryForm.html
-  "v-2614a543": () => import(/* webpackChunkName: "v-2614a543" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/jqueryForm.html.js").then(({ data }) => data),
-  // path: /web/vueBase.html
-  "v-81285cd4": () => import(/* webpackChunkName: "v-81285cd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/vueBase.html.js").then(({ data }) => data),
-  // path: /tool/docker.html
-  "v-6538ac8a": () => import(/* webpackChunkName: "v-6538ac8a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/docker.html.js").then(({ data }) => data),
-  // path: /tool/dockerRsync.html
-  "v-b8f2c12c": () => import(/* webpackChunkName: "v-b8f2c12c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/dockerRsync.html.js").then(({ data }) => data),
-  // path: /tool/hadoop.html
-  "v-065006d6": () => import(/* webpackChunkName: "v-065006d6" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/hadoop.html.js").then(({ data }) => data),
-  // path: /tool/idea.html
-  "v-3222c078": () => import(/* webpackChunkName: "v-3222c078" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/idea.html.js").then(({ data }) => data),
-  // path: /tool/mindoc.html
-  "v-62391416": () => import(/* webpackChunkName: "v-62391416" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/mindoc.html.js").then(({ data }) => data),
-  // path: /tool/regex.html
-  "v-4029f9b0": () => import(/* webpackChunkName: "v-4029f9b0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/regex.html.js").then(({ data }) => data),
-  // path: /tool/springCloud.html
-  "v-7a59fbef": () => import(/* webpackChunkName: "v-7a59fbef" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/springCloud.html.js").then(({ data }) => data),
   // path: /study/assembly.html
   "v-c7b05d58": () => import(/* webpackChunkName: "v-c7b05d58" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/assembly.html.js").then(({ data }) => data),
   // path: /study/c__.html
@@ -281,30 +259,24 @@ export const pagesData = {
   "v-1da1b0d0": () => import(/* webpackChunkName: "v-1da1b0d0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/train.html.js").then(({ data }) => data),
   // path: /study/work_20221011.html
   "v-5ed355cd": () => import(/* webpackChunkName: "v-5ed355cd" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/work_20221011.html.js").then(({ data }) => data),
-  // path: /english/word/01%E9%9F%B3%E6%A0%87.html
-  "v-53530ec2": () => import(/* webpackChunkName: "v-53530ec2" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/01音标.html.js").then(({ data }) => data),
-  // path: /english/word/02%E5%90%8C%E4%B9%89%E8%AF%8D.html
-  "v-b00e7104": () => import(/* webpackChunkName: "v-b00e7104" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/02同义词.html.js").then(({ data }) => data),
-  // path: /english/word/03%E5%8F%A5%E5%AD%90.html
-  "v-57ef7e0a": () => import(/* webpackChunkName: "v-57ef7e0a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/03句子.html.js").then(({ data }) => data),
-  // path: /english/word/04%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
-  "v-35a68cdf": () => import(/* webpackChunkName: "v-35a68cdf" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/04归类记忆.html.js").then(({ data }) => data),
-  // path: /english/word/05%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%861.html
-  "v-10afccfb": () => import(/* webpackChunkName: "v-10afccfb" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/05词伙记忆1.html.js").then(({ data }) => data),
-  // path: /english/word/05%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%862.html
-  "v-1264a59a": () => import(/* webpackChunkName: "v-1264a59a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/05词伙记忆2.html.js").then(({ data }) => data),
-  // path: /english/word/06%E7%9F%AD%E8%AF%AD.html
-  "v-0895ee86": () => import(/* webpackChunkName: "v-0895ee86" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/06短语.html.js").then(({ data }) => data),
-  // path: /english/word/06%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%86%203.html
-  "v-3b260a75": () => import(/* webpackChunkName: "v-3b260a75" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/06词伙记忆 3.html.js").then(({ data }) => data),
-  // path: /english/word/07%E5%B0%8F%E7%8E%8B%E5%AD%90.html
-  "v-4f35703a": () => import(/* webpackChunkName: "v-4f35703a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/07小王子.html.js").then(({ data }) => data),
-  // path: /english/word/08%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7.html
-  "v-21d6231c": () => import(/* webpackChunkName: "v-21d6231c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/08老人与海.html.js").then(({ data }) => data),
-  // path: /english/word/09%E6%98%93%E6%B7%B7%E6%B7%86.html
-  "v-713545d5": () => import(/* webpackChunkName: "v-713545d5" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/09易混淆.html.js").then(({ data }) => data),
-  // path: /english/word/10%E6%8B%BC%E6%8E%A5%E8%AF%8D.html
-  "v-0e228394": () => import(/* webpackChunkName: "v-0e228394" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/10拼接词.html.js").then(({ data }) => data),
+  // path: /tool/docker.html
+  "v-6538ac8a": () => import(/* webpackChunkName: "v-6538ac8a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/docker.html.js").then(({ data }) => data),
+  // path: /tool/dockerRsync.html
+  "v-b8f2c12c": () => import(/* webpackChunkName: "v-b8f2c12c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/dockerRsync.html.js").then(({ data }) => data),
+  // path: /tool/hadoop.html
+  "v-065006d6": () => import(/* webpackChunkName: "v-065006d6" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/hadoop.html.js").then(({ data }) => data),
+  // path: /tool/idea.html
+  "v-3222c078": () => import(/* webpackChunkName: "v-3222c078" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/idea.html.js").then(({ data }) => data),
+  // path: /tool/mindoc.html
+  "v-62391416": () => import(/* webpackChunkName: "v-62391416" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/mindoc.html.js").then(({ data }) => data),
+  // path: /tool/regex.html
+  "v-4029f9b0": () => import(/* webpackChunkName: "v-4029f9b0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/regex.html.js").then(({ data }) => data),
+  // path: /tool/springCloud.html
+  "v-7a59fbef": () => import(/* webpackChunkName: "v-7a59fbef" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/springCloud.html.js").then(({ data }) => data),
+  // path: /web/jqueryForm.html
+  "v-2614a543": () => import(/* webpackChunkName: "v-2614a543" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/jqueryForm.html.js").then(({ data }) => data),
+  // path: /web/vueBase.html
+  "v-81285cd4": () => import(/* webpackChunkName: "v-81285cd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/vueBase.html.js").then(({ data }) => data),
   // path: /english/grammar/01%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6.html
   "v-9bc01392": () => import(/* webpackChunkName: "v-9bc01392" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/01基本框架.html.js").then(({ data }) => data),
   // path: /english/grammar/11%E5%8A%A8%E8%AF%8D.html
@@ -331,20 +303,44 @@ export const pagesData = {
   "v-bd765e40": () => import(/* webpackChunkName: "v-bd765e40" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/32从句.html.js").then(({ data }) => data),
   // path: /english/grammar/32%E5%A4%8D%E6%9D%82%E5%8F%A5.html
   "v-b1142818": () => import(/* webpackChunkName: "v-b1142818" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/32复杂句.html.js").then(({ data }) => data),
+  // path: /english/word/01%E9%9F%B3%E6%A0%87.html
+  "v-53530ec2": () => import(/* webpackChunkName: "v-53530ec2" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/01音标.html.js").then(({ data }) => data),
+  // path: /english/word/02%E5%90%8C%E4%B9%89%E8%AF%8D.html
+  "v-b00e7104": () => import(/* webpackChunkName: "v-b00e7104" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/02同义词.html.js").then(({ data }) => data),
+  // path: /english/word/03%E5%8F%A5%E5%AD%90.html
+  "v-57ef7e0a": () => import(/* webpackChunkName: "v-57ef7e0a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/03句子.html.js").then(({ data }) => data),
+  // path: /english/word/04%E5%BD%92%E7%B1%BB%E8%AE%B0%E5%BF%86.html
+  "v-35a68cdf": () => import(/* webpackChunkName: "v-35a68cdf" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/04归类记忆.html.js").then(({ data }) => data),
+  // path: /english/word/05%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%861.html
+  "v-10afccfb": () => import(/* webpackChunkName: "v-10afccfb" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/05词伙记忆1.html.js").then(({ data }) => data),
+  // path: /english/word/05%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%862.html
+  "v-1264a59a": () => import(/* webpackChunkName: "v-1264a59a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/05词伙记忆2.html.js").then(({ data }) => data),
+  // path: /english/word/06%E7%9F%AD%E8%AF%AD.html
+  "v-0895ee86": () => import(/* webpackChunkName: "v-0895ee86" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/06短语.html.js").then(({ data }) => data),
+  // path: /english/word/06%E8%AF%8D%E4%BC%99%E8%AE%B0%E5%BF%86%203.html
+  "v-3b260a75": () => import(/* webpackChunkName: "v-3b260a75" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/06词伙记忆 3.html.js").then(({ data }) => data),
+  // path: /english/word/07%E5%B0%8F%E7%8E%8B%E5%AD%90.html
+  "v-4f35703a": () => import(/* webpackChunkName: "v-4f35703a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/07小王子.html.js").then(({ data }) => data),
+  // path: /english/word/08%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7.html
+  "v-21d6231c": () => import(/* webpackChunkName: "v-21d6231c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/08老人与海.html.js").then(({ data }) => data),
+  // path: /english/word/09%E6%98%93%E6%B7%B7%E6%B7%86.html
+  "v-713545d5": () => import(/* webpackChunkName: "v-713545d5" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/09易混淆.html.js").then(({ data }) => data),
+  // path: /english/word/10%E6%8B%BC%E6%8E%A5%E8%AF%8D.html
+  "v-0e228394": () => import(/* webpackChunkName: "v-0e228394" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/10拼接词.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
-  // path: /algorithm/
-  "v-70bc2959": () => import(/* webpackChunkName: "v-70bc2959" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/index.html.js").then(({ data }) => data),
-  // path: /java/
-  "v-14c69af4": () => import(/* webpackChunkName: "v-14c69af4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/index.html.js").then(({ data }) => data),
-  // path: /life/
-  "v-14e6315a": () => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.js").then(({ data }) => data),
-  // path: /database/
-  "v-2e25198a": () => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.js").then(({ data }) => data),
   // path: /book/
   "v-145c230d": () => import(/* webpackChunkName: "v-145c230d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/index.html.js").then(({ data }) => data),
+  // path: /database/
+  "v-2e25198a": () => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.js").then(({ data }) => data),
+  // path: /algorithm/
+  "v-70bc2959": () => import(/* webpackChunkName: "v-70bc2959" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/index.html.js").then(({ data }) => data),
+  // path: /life/
+  "v-14e6315a": () => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.js").then(({ data }) => data),
   // path: /linux/
   "v-f0383c18": () => import(/* webpackChunkName: "v-f0383c18" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/linux/index.html.js").then(({ data }) => data),
+  // path: /java/
+  "v-14c69af4": () => import(/* webpackChunkName: "v-14c69af4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/java/index.html.js").then(({ data }) => data),
   // path: /mca/
   "v-7449da7d": () => import(/* webpackChunkName: "v-7449da7d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/mca/index.html.js").then(({ data }) => data),
   // path: /middleware/
@@ -357,16 +353,16 @@ export const pagesData = {
   "v-20ed7098": () => import(/* webpackChunkName: "v-20ed7098" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/pattern/index.html.js").then(({ data }) => data),
   // path: /sourcecode/
   "v-2dde280e": () => import(/* webpackChunkName: "v-2dde280e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/sourcecode/index.html.js").then(({ data }) => data),
-  // path: /web/
-  "v-744e6dd4": () => import(/* webpackChunkName: "v-744e6dd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/index.html.js").then(({ data }) => data),
-  // path: /tool/
-  "v-1559ca3e": () => import(/* webpackChunkName: "v-1559ca3e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/index.html.js").then(({ data }) => data),
   // path: /study/
   "v-d7188082": () => import(/* webpackChunkName: "v-d7188082" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/study/index.html.js").then(({ data }) => data),
-  // path: /english/word/
-  "v-02234fad": () => import(/* webpackChunkName: "v-02234fad" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/index.html.js").then(({ data }) => data),
-  // path: /english/
-  "v-43539db8": () => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.js").then(({ data }) => data),
+  // path: /tool/
+  "v-1559ca3e": () => import(/* webpackChunkName: "v-1559ca3e" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/tool/index.html.js").then(({ data }) => data),
+  // path: /web/
+  "v-744e6dd4": () => import(/* webpackChunkName: "v-744e6dd4" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/web/index.html.js").then(({ data }) => data),
   // path: /english/grammar/
   "v-612219c0": () => import(/* webpackChunkName: "v-612219c0" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/grammar/index.html.js").then(({ data }) => data),
+  // path: /english/
+  "v-43539db8": () => import(/* webpackChunkName: "v-43539db8" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/index.html.js").then(({ data }) => data),
+  // path: /english/word/
+  "v-02234fad": () => import(/* webpackChunkName: "v-02234fad" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/english/word/index.html.js").then(({ data }) => data),
 }
