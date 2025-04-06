@@ -13,14 +13,6 @@ export const pagesData = {
   "v-73028839": () => import(/* webpackChunkName: "v-73028839" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/TheCleanCoder.html.js").then(({ data }) => data),
   // path: /book/acmen.html
   "v-384fdc9c": () => import(/* webpackChunkName: "v-384fdc9c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/acmen.html.js").then(({ data }) => data),
-  // path: /database/elk.html
-  "v-c850f220": () => import(/* webpackChunkName: "v-c850f220" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/elk.html.js").then(({ data }) => data),
-  // path: /database/mysql0_base.html
-  "v-0da4529c": () => import(/* webpackChunkName: "v-0da4529c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql0_base.html.js").then(({ data }) => data),
-  // path: /database/mysql1_upgrade.html
-  "v-3ff9ab92": () => import(/* webpackChunkName: "v-3ff9ab92" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql1_upgrade.html.js").then(({ data }) => data),
-  // path: /database/oracle.html
-  "v-7641cc00": () => import(/* webpackChunkName: "v-7641cc00" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/oracle.html.js").then(({ data }) => data),
   // path: /algorithm/00basic.html
   "v-34ce4b44": () => import(/* webpackChunkName: "v-34ce4b44" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/00basic.html.js").then(({ data }) => data),
   // path: /algorithm/01dataStructrue.html
@@ -63,6 +55,14 @@ export const pagesData = {
   "v-15e0146a": () => import(/* webpackChunkName: "v-15e0146a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/19hash.html.js").then(({ data }) => data),
   // path: /algorithm/20orderedList.html
   "v-720b4465": () => import(/* webpackChunkName: "v-720b4465" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/20orderedList.html.js").then(({ data }) => data),
+  // path: /database/elk.html
+  "v-c850f220": () => import(/* webpackChunkName: "v-c850f220" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/elk.html.js").then(({ data }) => data),
+  // path: /database/mysql0_base.html
+  "v-0da4529c": () => import(/* webpackChunkName: "v-0da4529c" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql0_base.html.js").then(({ data }) => data),
+  // path: /database/mysql1_upgrade.html
+  "v-3ff9ab92": () => import(/* webpackChunkName: "v-3ff9ab92" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/mysql1_upgrade.html.js").then(({ data }) => data),
+  // path: /database/oracle.html
+  "v-7641cc00": () => import(/* webpackChunkName: "v-7641cc00" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/oracle.html.js").then(({ data }) => data),
   // path: /life/MyAndYou.html
   "v-54a2568b": () => import(/* webpackChunkName: "v-54a2568b" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/MyAndYou.html.js").then(({ data }) => data),
   // path: /life/chengdu.html
@@ -331,10 +331,10 @@ export const pagesData = {
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
   // path: /book/
   "v-145c230d": () => import(/* webpackChunkName: "v-145c230d" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/book/index.html.js").then(({ data }) => data),
-  // path: /database/
-  "v-2e25198a": () => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.js").then(({ data }) => data),
   // path: /algorithm/
   "v-70bc2959": () => import(/* webpackChunkName: "v-70bc2959" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/algorithm/index.html.js").then(({ data }) => data),
+  // path: /database/
+  "v-2e25198a": () => import(/* webpackChunkName: "v-2e25198a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/database/index.html.js").then(({ data }) => data),
   // path: /life/
   "v-14e6315a": () => import(/* webpackChunkName: "v-14e6315a" */"/Users/gaoqisen/Documents/hope/src/.vuepress/.temp/pages/life/index.html.js").then(({ data }) => data),
   // path: /linux/

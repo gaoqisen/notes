@@ -231,14 +231,87 @@
 </tbody>
 </table>
 <h3 id="_4-2-mvcc" tabindex="-1"><a class="header-anchor" href="#_4-2-mvcc" aria-hidden="true">#</a> 4.2 MVCC</h3>
-<p>为了解决上面的问题，有两个方法。一个是直接加悲观锁，每次修改时都锁住这种方式性能最不好。另外一个就是乐观锁，利用版本的方式。mysql 的开发者为了提高性能于是设计了 MVCC（多并发版本控制），主要目的是为了解决多并发加锁太重的一个方式。做到读写冲突时，不加锁也不阻塞。</p>
+<p>多版本并发控制，利用多个事务版本机制实现（乐观锁 + redo log）避免了加锁操作。在同一事务中利用read view查询之前的数据。</p>
+<table>
+<thead>
+<tr>
+<th>事务读取可性问题</th>
+<th>第一次快照读</th>
+<th>后面的快照读</th>
+<th>原因（read view生成时机）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RR</td>
+<td>可见</td>
+<td>不可见</td>
+<td>第一次快照读生成之后复用</td>
+</tr>
+<tr>
+<td>RC</td>
+<td>可见</td>
+<td>可见</td>
+<td>每次快照读都生成</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>快照读：读写冲突不加锁，读取的是历史版本数据。如Select …</li>
+<li>当前读：加锁操作（悲观锁），读取的是最新版本数据。如：select … lock in share mode / Select …. For update / Update/delete/insert</li>
+</ul>
+<p>为了解决 ACID的问题，有两个方法。一个是直接加悲观锁，每次修改时都锁住这种方式性能最不好。另外一个就是乐观锁，利用版本的方式。mysql 的开发者为了提高性能于是设计了 MVCC（多并发版本控制），主要目的是为了解决多并发加锁太重的一个方式。做到读写冲突时，不加锁也不阻塞。</p>
 <p>MVCC 最主要的就是利用 undo log 去记录回滚日志，用回滚日志里面的事务 id  加上当前事务读取的信息进行判断。具体 Mysql可见性算法伪代码如下：</p>
+<p><strong>MVCC重要的三个概念: 隐式字段、undo log、read view</strong></p>
+<ul>
+<li>隐式字段： 除了自定义的字段外，数据库隐式的定义了其他字段</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>DB_ROW_ID</th>
+<th>隐式主键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DB_TRX_ID(trx_id)</td>
+<td>当前事务ID(递增)</td>
+</tr>
+<tr>
+<td>DB_ROLL_PTR</td>
+<td>回滚指针</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Undo log: 在记录日志的时候事务ID递增后回滚指针指向上一个版本</li>
+<li>Read View: 在事务执行快照读的一刻会生成数据库系统的快照</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>trx_list</th>
+<th>记录活跃事务ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>up_limit_id</td>
+<td>事务列表最小ID</td>
+</tr>
+<tr>
+<td>low_limit_id</td>
+<td>尚未分配ID(最大ID+1)</td>
+</tr>
+</tbody>
+</table>
 <div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 快照读所需的 ReadView 类</span>
 <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">ReadView</span> <span class="token punctuation">{</span>
     <span class="token comment">// 创建该 ReadView 的事务 ID</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> creator_trx_id<span class="token punctuation">;</span>
     <span class="token comment">// 正在活跃的事务 ID 列表（未提交的事务，升序列表）</span>
-    <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> alive_list<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">></span></span> trx_list<span class="token punctuation">;</span>
     <span class="token comment">// 当前系统中尚未分配的下一个事务 ID，即大于 alive_list 中所有事务 ID 的最小值</span>
     <span class="token keyword">public</span> <span class="token keyword">int</span> low_limit_id<span class="token punctuation">;</span>
     <span class="token comment">// alive_list 中的最小事务 ID</span>
@@ -286,7 +359,7 @@
         <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token comment">// 情况四：事务在 ReadView 创建时活跃，判断是否已提交</span>
-    <span class="token keyword">return</span> <span class="token operator">!</span>readView<span class="token punctuation">.</span>alive_list<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>trxId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token operator">!</span>readView<span class="token punctuation">.</span>trx_list<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>trxId<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这样 mysql 就用了事务的隔离级别解决了多线程并发读写冲突的问题。</p>
@@ -369,11 +442,177 @@ SELECT @@transaction_isolation;
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>在 MySQL 的 RR 隔离级别下，只有纯快照读（无写操作）且正确使用间隙锁时才能完全避免幻读。若涉及写操作、未正确加锁或索引设计不当，仍可能发生幻读。彻底避免幻读需：
 	- 对范围查询使用 SELECT ... FOR UPDATE 显式加锁。
 	- 升级至 Serializable 隔离级别（牺牲并发性能）。
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、查询语句优化" tabindex="-1"><a class="header-anchor" href="#五、查询语句优化" aria-hidden="true">#</a> 五、查询语句优化</h2>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="五、索引" tabindex="-1"><a class="header-anchor" href="#五、索引" aria-hidden="true">#</a> 五、索引</h2>
 <p>数据记录的数据量级增多后，如果是挨个查询的效率就很低了。这时候为了快速查找，就像一本书的目录一样会给数据建立索引。索引建立之后就能快速的定位数据。Mysql 的索引是使用的B+Tree 实现的，普通节点记录索引数据，叶子节点记录具体的数据。</p>
 <p>Mysql 中如果定义了主键，就会把主键作为默认的聚簇索引，聚簇索引的叶子节点就记录了所有的数据。在创建普通索引的时候是按照创建的字段进行索引的，索引的指针是指向聚簇索引的位置。如果普通索引查询的字段不是普通索引的字段（覆盖索引）这时候就需要进行回表操作，也就是先通过普通索引找到聚簇索引的值，在通过聚簇索引找到具体的数据。</p>
 <p>那么优化查询语句的时候，就需要从建立合适的索引+查询语句使用索引的方向去优化。</p>
-<h3 id="_5-1-选择合适的索引" tabindex="-1"><a class="header-anchor" href="#_5-1-选择合适的索引" aria-hidden="true">#</a> 5.1 选择合适的索引</h3>
+<table>
+<thead>
+<tr>
+<th>名词解释</th>
+<th>描述</th>
+<th>存储引擎</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>聚簇索引</td>
+<td>索引文件和数据存放在一起</td>
+<td>innodb</td>
+</tr>
+<tr>
+<td>非聚簇索引</td>
+<td>索引文件和数据没有存放在一起</td>
+<td>myisam、innodb</td>
+</tr>
+<tr>
+<td>回表</td>
+<td>获取所有数据时候先通过普通索引查询，后通过主键索引</td>
+<td></td>
+</tr>
+<tr>
+<td>覆盖索引</td>
+<td>普通索引就包含查询的值</td>
+<td></td>
+</tr>
+<tr>
+<td>索引下推</td>
+<td>从server端的查询下推到存储引擎</td>
+<td></td>
+</tr>
+<tr>
+<td>页分裂</td>
+<td>b+树插入数据，叶子节点不够时</td>
+<td></td>
+</tr>
+<tr>
+<td>页合并</td>
+<td>b+树删除数据时</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5-1-索引结构" tabindex="-1"><a class="header-anchor" href="#_5-1-索引结构" aria-hidden="true">#</a> 5.1 索引结构</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>B+Tree</th>
+<th>Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>结构</td>
+<td>有序树结构</td>
+<td>K,v散列hash值</td>
+</tr>
+<tr>
+<td>缺点</td>
+<td>冗余节点数据占用内存</td>
+<td>无法比较大小，不能范围查询</td>
+</tr>
+<tr>
+<td>排序</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>大小匹配</td>
+<td>支持</td>
+<td>不支持(hash算法后不连续)</td>
+</tr>
+<tr>
+<td>最左前缀匹配</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>等值查找</td>
+<td>效率一般</td>
+<td>效率高</td>
+</tr>
+</tbody>
+</table>
+<p>B树和B+树的区别</p>
+<p>存储数据：</p>
+<p>B树：不存在重复数据</p>
+<p>B+树：索引列只存key，叶子节点存储key和数据</p>
+<h3 id="_5-2-索引分类" tabindex="-1"><a class="header-anchor" href="#_5-2-索引分类" aria-hidden="true">#</a> 5.2 索引分类</h3>
+<ul>
+<li>逻辑角度</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>主键索引</th>
+<th>建立的主键唯一</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>唯一索引</td>
+<td>一般给业务唯一数据建立</td>
+</tr>
+<tr>
+<td>普通索引</td>
+<td>不唯一的数据作为检索条件</td>
+</tr>
+<tr>
+<td>全文索引</td>
+<td>文本关键字时，一般用es</td>
+</tr>
+<tr>
+<td>组合索引</td>
+<td>多个字段作为检索条件</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>物理存储角度</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>聚簇索引</th>
+<th>索引和数据在一个文件</th>
+<th>InnoDB的主键使用的就是聚簇索引</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>非聚簇索引</td>
+<td>索引和数据分开存放</td>
+<td>MyISAM不管是主键还是二级索引都是使用的非聚簇索引</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>数据结构</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>tree（b tree，b+tree）常用</th>
+<th>适用于查找范围内数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hash（hash索引）</td>
+<td>适用于随机访问场合</td>
+</tr>
+<tr>
+<td>full-text（全文索引）</td>
+<td>查找问题中关键字，一般用ES</td>
+</tr>
+<tr>
+<td>R-tree（空间索引）不常用</td>
+<td>查询比较接近的数据GIS不完善</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5-3-选择合适的索引" tabindex="-1"><a class="header-anchor" href="#_5-3-选择合适的索引" aria-hidden="true">#</a> 5.3 选择合适的索引</h3>
 <p>查询量大的创建索引</p>
 <ul>
 <li>高频访问的数据：比如订单表通过订单号查询数据，这时候给订单号加索引。订单号一般都是主键索引</li>
@@ -396,7 +635,7 @@ SELECT @@transaction_isolation;
 <li>哈希索引：查询效率极高，不支持范围查询、排序和分组, 一般用 redis 缓存实现</li>
 <li>全文索引：检索博客里面的文本数据时，一般用的是 Elasticsearch</li>
 </ul>
-<h3 id="_5-2-避免索引失效" tabindex="-1"><a class="header-anchor" href="#_5-2-避免索引失效" aria-hidden="true">#</a> 5.2  避免索引失效</h3>
+<h3 id="_5-4-避免索引失效" tabindex="-1"><a class="header-anchor" href="#_5-4-避免索引失效" aria-hidden="true">#</a> 5.4  避免索引失效</h3>
 <ol>
 <li>避免在索引列上进行计算、函数操作</li>
 </ol>
@@ -486,7 +725,127 @@ SELECT @@transaction_isolation;
 <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products <span class="token keyword">WHERE</span> name <span class="token operator">LIKE</span> <span class="token string">'%apple%'</span><span class="token punctuation">;</span>
 <span class="token comment">-- 优化后，可使用索引</span>
 <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products <span class="token keyword">WHERE</span> name <span class="token operator">LIKE</span> <span class="token string">'apple%'</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-3-执行计划" tabindex="-1"><a class="header-anchor" href="#_5-3-执行计划" aria-hidden="true">#</a> 5.3 执行计划</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>5.6.41版本的 sql 执行的索引 type 情况</p>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>索引</th>
+<th>优化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>like ‘%name%’</td>
+<td>all❌</td>
+<td></td>
+</tr>
+<tr>
+<td>like ‘name%’</td>
+<td>range</td>
+<td></td>
+</tr>
+<tr>
+<td>like ‘%name’</td>
+<td>All❌</td>
+<td></td>
+</tr>
+<tr>
+<td>in(‘name’)</td>
+<td>数量少ref数量多range</td>
+<td></td>
+</tr>
+<tr>
+<td>not in (‘name’)</td>
+<td>All</td>
+<td></td>
+</tr>
+<tr>
+<td>a = name or b = age</td>
+<td>range</td>
+<td></td>
+</tr>
+<tr>
+<td>is not null</td>
+<td>all❌</td>
+<td></td>
+</tr>
+<tr>
+<td>is null</td>
+<td>ref</td>
+<td></td>
+</tr>
+<tr>
+<td>where concat(id, ‘1’)=10</td>
+<td>All❌</td>
+<td>给函数也加索引</td>
+</tr>
+<tr>
+<td>where id = concat(‘2’, ‘1’)</td>
+<td>ref</td>
+<td></td>
+</tr>
+<tr>
+<td>where id + 1 = 10</td>
+<td>all❌</td>
+<td></td>
+</tr>
+<tr>
+<td>where id = 10 + 1</td>
+<td>ref</td>
+<td></td>
+</tr>
+<tr>
+<td>隐式转换</td>
+<td>all❌</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>索引失效（6点）：非like前缀、not in、is not null、函数、计算、隐式转换</p>
+<h2 id="六、优化器" tabindex="-1"><a class="header-anchor" href="#六、优化器" aria-hidden="true">#</a> 六、优化器</h2>
+<p><strong>优化原则</strong></p>
+<table>
+<thead>
+<tr>
+<th>更小更好</th>
+<th>选择最小的数据类型减少磁盘空间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简单更好</td>
+<td>尽量使用mysql存在的数据类型</td>
+</tr>
+<tr>
+<td>尽量避免null</td>
+<td>可为null的列需要更多的存储空间</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>show profile</td>
+<td>显示查询具体的执行情况</td>
+</tr>
+<tr>
+<td>Performance schema</td>
+<td>性能模块，可以用来做监控</td>
+</tr>
+<tr>
+<td>show processlist</td>
+<td>监控数据连接</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6-1-执行计划" tabindex="-1"><a class="header-anchor" href="#_6-1-执行计划" aria-hidden="true">#</a> 6.1  执行计划</h3>
 <p>通常在优化查询时，我们希望 <code v-pre>type</code> 的值尽可能接近 <code v-pre>system</code>、<code v-pre>const</code>、<code v-pre>eq_ref</code> 等高效类型，避免出现 <code v-pre>ALL</code> 这种低效的全表扫描情况。</p>
 <table>
 <thead>
@@ -572,7 +931,7 @@ SELECT @@transaction_isolation;
 </tr>
 </tbody>
 </table>
-<h3 id="_5-4-成本计算" tabindex="-1"><a class="header-anchor" href="#_5-4-成本计算" aria-hidden="true">#</a> 5.4 成本计算</h3>
+<h3 id="_6-2-成本计算" tabindex="-1"><a class="header-anchor" href="#_6-2-成本计算" aria-hidden="true">#</a> 6.2 成本计算</h3>
 <p>在 MySQL 中，查询优化器会对不同的查询执行计划进行成本计算，从而选择成本最低的执行计划来执行查询。成本计算主要考虑两方面的成本：I/O 成本和 CPU 成本，下面详细介绍相关内容。</p>
 <p>I/O 成本：I/O 成本主要涉及磁盘 I/O 操作，也就是从磁盘读取数据页的开销。因为磁盘的读写速度远低于内存，所以 I/O 成本在整体成本中占比较大。MySQL 会根据需要读取的数据页数量来估算 I/O 成本。例如，当需要从磁盘读取大量的数据页时，I/O 成本就会很高。</p>
 <p>CPU 成本：CPU 成本是指在内存中对数据进行处理的开销，包括对数据进行排序、比较、过滤等操作。虽然 CPU 的处理速度很快，但当处理大量数据时，CPU 成本也会显著增加。</p>
@@ -613,7 +972,7 @@ SELECT @@transaction_isolation;
 <p>可以通过 <code v-pre>EXPLAIN FORMAT=JSON</code> 语句查看查询的执行计划及相关成本信息。例如：</p>
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">EXPLAIN</span> FORMAT<span class="token operator">=</span>JSON <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> order_date <span class="token operator">BETWEEN</span> <span class="token string">'2023-01-01'</span> <span class="token operator">AND</span> <span class="token string">'2023-12-31'</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>返回结果中会包含 <code v-pre>cost_info</code> 部分，显示了不同操作的成本估算，帮助我们分析查询的性能。</p>
-<h3 id="_5-5-优化慢sql" tabindex="-1"><a class="header-anchor" href="#_5-5-优化慢sql" aria-hidden="true">#</a> 5.5 优化慢SQL</h3>
+<h3 id="_6-3-优化慢sql" tabindex="-1"><a class="header-anchor" href="#_6-3-优化慢sql" aria-hidden="true">#</a> 6.3 优化慢SQL</h3>
 <p>深入分析执行计划：EXPLAIN 是 SQL 优化的必备工具。</p>
 <ul>
 <li>检查查询条件看是否存在索引失效，索引失效想办法解决失效问题</li>
@@ -633,8 +992,41 @@ SQL 语句与表结构优化：避免复杂查询和大字段。
 数据库配置：少日志 + 合理线程池 + 增加服务器资源
 架构扩展：读写分离 + 分库分表 + 大数据查询
 应用层面：批量 + 缓存 + 异步	
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="六、其他" tabindex="-1"><a class="header-anchor" href="#六、其他" aria-hidden="true">#</a> 六、其他</h2>
-<h3 id="_6-1-死锁检测" tabindex="-1"><a class="header-anchor" href="#_6-1-死锁检测" aria-hidden="true">#</a> 6.1 死锁检测</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="七、锁" tabindex="-1"><a class="header-anchor" href="#七、锁" aria-hidden="true">#</a> 七、锁</h2>
+<h3 id="_7-1-分类" tabindex="-1"><a class="header-anchor" href="#_7-1-分类" aria-hidden="true">#</a> 7.1 分类</h3>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>共享锁（读锁）、排他（写锁）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>粒度</td>
+<td>表锁、行锁、记录锁（行锁）、间隙锁、临键锁</td>
+</tr>
+<tr>
+<td>状态</td>
+<td>意向共享锁、意向排它锁</td>
+</tr>
+</tbody>
+</table>
+<p>间隙锁: 解决RR级别下的当前读出现幻读的情况。在行锁的前后指针上都加锁</p>
+<p>意向锁：都是innodb自动加的，不需要用户干预</p>
+<p><strong>1.2 案例</strong></p>
+<p>一张表t id(主键)、c(普通索引)、d 字段 插入数据(0,0,0),(5,5,5),(10,10,10),(15,15,15)</p>
+<ul>
+<li>update t set d=1 where id = 7 主键索引上的 (5,10)间隙锁</li>
+<li>update t set d=1 where id = 5 主键索引上的 5行锁</li>
+<li>update t set d=1 where c = 7 普通索引上的 (5,10)间隙锁</li>
+<li>update t set d=1 where c = 5 普通索引上的 (0,5]临键锁 (5,10)间隙锁</li>
+<li>update t set d=1 where c &lt;11 普通索引上的 (0,15]临键锁</li>
+<li>update t set d=1 where c &gt;=10 普通索引上的 (5,10]临键锁 (10,~]的临键锁</li>
+<li>update t set d=1 where c &gt;=10 and c &lt;11 普通索引上的 (5,15]临键锁</li>
+<li>update t set d=1 where id &gt;=10 and id &lt;11 主键索引上的 10行锁 (10,15)间隙锁</li>
+</ul>
+<h3 id="_7-2-死锁检测" tabindex="-1"><a class="header-anchor" href="#_7-2-死锁检测" aria-hidden="true">#</a> 7.2 死锁检测</h3>
 <p>原因: 多个事务争夺资源形成循环等待
 检测机制: 事务视为节点，锁等待视为向边。图中存在环则为死锁</p>
 <ul>
@@ -643,11 +1035,11 @@ SQL 语句与表结构优化：避免复杂查询和大字段。
 </ul>
 <p>日志分析：SHOW ENGINE INNODB STATUS 查看锁日志
 死锁优化：控制锁检查频率、减少锁冲突、业务层容错（重试机制、熔断降级）</p>
-<h3 id="_6-2-表加字段" tabindex="-1"><a class="header-anchor" href="#_6-2-表加字段" aria-hidden="true">#</a> 6.2 表加字段</h3>
-<p>mysql线上数据加字段如何解决（数据量大时）</p>
+<h3 id="_7-3-表加字段" tabindex="-1"><a class="header-anchor" href="#_7-3-表加字段" aria-hidden="true">#</a> 7.3 表加字段</h3>
+<p>一般线上加字段的时候数据库会给数据加锁，这种情况就会出现加锁耗时长影响业务的情况，那么mysql线上数据加字段如何解决</p>
 <ul>
 <li>MyIsam: 每次新增字段都会重建表，建立临时表。耗时长</li>
-<li>innodb（5.6 之后）：可以为空的字段直接修改表的元数据后异步填充数据、非空默认值不复杂可能原地修改数据、非空默认值复杂（如默认值是日期）可能重建表。 5.6 之前所有加字段操作都会重建表</li>
+<li>Innodb（5.6 之后）：可以为空的字段直接修改表的元数据后异步填充数据、非空默认值不复杂可能原地修改数据、非空默认值复杂（如默认值是日期）可能重建表。 5.6 之前所有加字段操作都会重建表</li>
 <li>建议大表用pt-online-schema-change 工具增加字段， 避免缩表</li>
 </ul>
 <table>
@@ -676,7 +1068,8 @@ SQL 语句与表结构优化：避免复杂查询和大字段。
 </tr>
 </tbody>
 </table>
-<h3 id="_6-3-各个中间件对比" tabindex="-1"><a class="header-anchor" href="#_6-3-各个中间件对比" aria-hidden="true">#</a> 6.3 各个中间件对比</h3>
+<p>数据迁移时，先关闭索引，数据迁移完成之后在打开索引。 这样效率高。</p>
+<h2 id="八、中间件对比" tabindex="-1"><a class="header-anchor" href="#八、中间件对比" aria-hidden="true">#</a> 八、中间件对比</h2>
 <p>核心机制对比</p>
 <table>
 <thead>
